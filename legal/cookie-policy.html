@@ -3,12 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Politique de cookies — MusePlayer</title>
-<meta name="description" content="Le site MusePlayer n'utilise aucun cookie de suivi ni de publicité.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23a640f2'/%3E%3Cpath d='M12 22V10.8L22 9v10.4' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='10' cy='23' r='2.6' fill='white'/%3E%3Ccircle cx='20' cy='21' r='2.6' fill='white'/%3E%3C/svg%3E">
+<title>Politique de cookies — Cloud Music</title>
+<meta name="description" content="Le site Cloud Music n'utilise aucun cookie de suivi ni de publicité.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%229%22%20fill%3D%22%23a640f2%22/%3E%3Cg%20fill%3D%22%23ffffff%22%3E%3Ccircle%20cx%3D%2213%22%20cy%3D%2215%22%20r%3D%225.4%22/%3E%3Ccircle%20cx%3D%2218.5%22%20cy%3D%2212.6%22%20r%3D%226.4%22/%3E%3Ccircle%20cx%3D%2223%22%20cy%3D%2216%22%20r%3D%224.6%22/%3E%3Crect%20x%3D%229%22%20y%3D%2215%22%20width%3D%2216%22%20height%3D%228.4%22%20rx%3D%224.2%22/%3E%3C/g%3E%3Cg%20fill%3D%22%230b0b0e%22%3E%3Crect%20x%3D%2217.5%22%20y%3D%2214.3%22%20width%3D%221.8%22%20height%3D%229%22%20rx%3D%220.9%22/%3E%3Cpath%20d%3D%22M19.3%2014.3c2.7-.7%204.3.5%204.3%202.2%200%201.2-1%202-2.2%202.2-.5.1-1-.2-1.1-.6-.1-.4.1-.9.6-1%20.6-.2%201-.5%201-1.1%200-.6-.9-1-2.1-.7-.5.1-1-.2-1.1-.7-.1-.4.1-.9.6-1.3z%22/%3E%3Ccircle%20cx%3D%2216.6%22%20cy%3D%2223.3%22%20r%3D%222.2%22/%3E%3C/g%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+
+<!-- Logo réutilisable (nav + footer) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cm-logo" viewBox="0 0 32 32">
+    <rect width="32" height="32" rx="9" fill="url(#cm-g)"/>
+    <g fill="#ffffff">
+      <circle cx="13" cy="15" r="5.4"/>
+      <circle cx="18.5" cy="12.6" r="6.4"/>
+      <circle cx="23" cy="16" r="4.6"/>
+      <rect x="9" y="15" width="16" height="8.4" rx="4.2"/>
+    </g>
+    <g fill="#0b0b0e">
+      <rect x="17.5" y="14.3" width="1.8" height="9" rx="0.9"/>
+      <path d="M19.3 14.3c2.7-.7 4.3.5 4.3 2.2 0 1.2-1 2-2.2 2.2-.5.1-1-.2-1.1-.6-.1-.4.1-.9.6-1 .6-.2 1-.5 1-1.1 0-.6-.9-1-2.1-.7-.5.1-1-.2-1.1-.7-.1-.4.1-.9.6-1.3z"/>
+      <circle cx="16.6" cy="23.3" r="2.2"/>
+    </g>
+    <defs>
+      <linearGradient id="cm-g" x1="0" y1="0" x2="32" y2="32">
+        <stop stop-color="#a640f2"/><stop offset="1" stop-color="#b852ff"/>
+      </linearGradient>
+    </defs>
+  </symbol>
+</svg>
 
 <div class="scrubber"><div class="scrubber__fill"></div></div>
 <div class="scrubber__label"></div>
@@ -16,21 +39,17 @@
 <header class="nav">
   <div class="wrap nav__row">
     <a href="../index.html" class="nav__brand">
-      <svg class="nav__mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="32" height="32" rx="9" fill="url(#g1)"/>
-        <path d="M12 22V10.8L22 9v10.4" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="10" cy="23" r="2.6" fill="white"/>
-        <circle cx="20" cy="21" r="2.6" fill="white"/>
-        <defs><linearGradient id="g1" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#a640f2"/><stop offset="1" stop-color="#b852ff"/></linearGradient></defs>
-      </svg>
-      MusePlayer
+      <svg class="nav__mark" viewBox="0 0 32 32"><use href="#cm-logo"/></svg>
+      Cloud Music
     </a>
     <nav class="nav__links">
       <a href="../index.html#fonctionnalites">Fonctionnalités</a>
       <a href="../index.html#confidentialite">Confidentialité</a>
       <a href="../index.html#a-propos">À propos</a>
-      <a href="../index.html#contact" class="nav__cta">Contact</a>
     </nav>
+    <div class="nav__right">
+      <a href="../index.html#contact" class="nav__cta">Contact</a>
+    </div>
   </div>
 </header>
 
@@ -48,19 +67,19 @@
     <div class="wrap">
 
 <h2>Ce site n'utilise pas de cookies de suivi</h2>
-<p>Le site museplayer.app est une simple vitrine statique, hébergée sur GitHub Pages. Il ne dépose aucun cookie publicitaire, aucun cookie de mesure d'audience et n'intègre aucun outil de suivi tiers (pas de Google Analytics, pas de pixel publicitaire, pas de réseau social embarqué).</p>
+<p>Le site ce site est une simple vitrine statique, hébergée sur GitHub Pages. Il ne dépose aucun cookie publicitaire, aucun cookie de mesure d'audience et n'intègre aucun outil de suivi tiers (pas de Google Analytics, pas de pixel publicitaire, pas de réseau social embarqué).</p>
 
 <h2>Cookies techniques liés à l'hébergement</h2>
 <p>Comme tout site hébergé sur GitHub Pages, des cookies strictement techniques peuvent être déposés par l'infrastructure de GitHub pour assurer le bon fonctionnement du service (par exemple la répartition de charge). Ces cookies sont gérés par GitHub, Inc., indépendamment de l'éditeur de ce site. Pour en savoir plus, consultez la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">politique de confidentialité de GitHub</a>.</p>
 
-<h2>Et dans l'application MusePlayer ?</h2>
-<p>L'application iOS MusePlayer n'utilise pas de cookies : ce mécanisme est propre aux navigateurs web. Vos préférences, votre bibliothèque et vos statistiques d'écoute sont stockées localement sur votre appareil (mémoire de l'app et trousseau iOS), comme expliqué dans la <a href="privacy-policy.html">politique de confidentialité</a>.</p>
+<h2>Et dans l'application Cloud Music ?</h2>
+<p>L'application iOS Cloud Music n'utilise pas de cookies : ce mécanisme est propre aux navigateurs web. Vos préférences, votre bibliothèque et vos statistiques d'écoute sont stockées localement sur votre appareil (mémoire de l'app et trousseau iOS), comme expliqué dans la <a href="privacy-policy.html">politique de confidentialité</a>.</p>
 
 <h2>Gérer les cookies de votre navigateur</h2>
 <p>Vous pouvez à tout moment configurer votre navigateur pour bloquer ou supprimer les cookies déposés par les sites que vous visitez, y compris ceux, purement techniques, décrits ci-dessus.</p>
 
 <h2>Contact</h2>
-<p>Une question sur cette politique ? Écrivez à <a href="mailto:contact@museplayer.app">contact@museplayer.app</a>.</p>
+<p>Une question sur cette politique ? Écrivez à <a href="mailto:contact@ce site">contact@ce site</a>.</p>
 
     </div>
   </section>
@@ -71,14 +90,8 @@
     <div class="footer__top">
       <div>
         <div class="footer__brand">
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="9" fill="url(#g2)"/>
-            <path d="M12 22V10.8L22 9v10.4" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="10" cy="23" r="2.6" fill="white"/>
-            <circle cx="20" cy="21" r="2.6" fill="white"/>
-            <defs><linearGradient id="g2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#a640f2"/><stop offset="1" stop-color="#b852ff"/></linearGradient></defs>
-          </svg>
-          MusePlayer
+          <svg viewBox="0 0 32 32"><use href="#cm-logo"/></svg>
+          Cloud Music
         </div>
         <p class="footer__tagline">Votre musique, connectée à votre cloud. Une application personnelle, sans publicité ni compte.</p>
       </div>
@@ -93,7 +106,7 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:contact@museplayer.app">contact@museplayer.app</a></li>
+          <li><a href="mailto:contact@ce site">contact@ce site</a></li>
           <li><a href="../index.html#contact">Formulaire de contact</a></li>
         </ul>
       </div>
@@ -109,7 +122,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 MusePlayer. Application personnelle, usage non commercial.</span>
+      <span>© 2026 Cloud Music. Application personnelle, usage non commercial.</span>
       <span>Fait à la main, sans tracker.</span>
     </div>
   </div>
