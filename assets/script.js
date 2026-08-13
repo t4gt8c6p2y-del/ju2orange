@@ -23,10 +23,6 @@
       var key = el.getAttribute("data-i18n");
       if (dict[key] !== undefined) el.innerHTML = dict[key];
     });
-    document.querySelectorAll("[data-track-label-key]").forEach(function(el){
-      var key = el.getAttribute("data-track-label-key");
-      if (dict[key] !== undefined) el.setAttribute("data-track-label", dict[key]);
-    });
     document.documentElement.lang = lang;
     document.documentElement.dir = (window.CM_RTL || []).indexOf(lang) !== -1 ? "rtl" : "ltr";
     document.querySelectorAll(".lang-select").forEach(function(sel){ sel.value = lang; });
@@ -47,19 +43,22 @@
     renderTrack(lang, currentTrackIndex);
     try { localStorage.setItem(STORAGE_KEY, lang); } catch(e) {}
     window.CM_CURRENT_LANG = lang;
+    requestAnimationFrame(positionIndicator);
   }
 
   /* ---------------- Lecteur de démonstration interactif ---------------- */
   var currentTrackIndex = 0;
   var isPlaying = false;
+  var shuffleOn = false;
+  var repeatOn = false;
   var progressPct = 24;
   var progressTimer = null;
 
   var COVERS = [
-    { from: "#a640f2", to: "#3a1a5c", shape: "moon" },
-    { from: "#b852ff", to: "#231029", shape: "bars" },
-    { from: "#7a2fd6", to: "#160a20", shape: "wave" },
-    { from: "#c76bff", to: "#1c0e2e", shape: "grid" }
+    { from: "#a640f2", to: "#3a1259", shape: "moon" },   // piste 1 : toujours violet (marque)
+    { from: "#ff9d4d", to: "#3a1a08", shape: "bars" },    // ambre
+    { from: "#33d2a6", to: "#082e24", shape: "wave" },    // émeraude
+    { from: "#ff5c8a", to: "#3a0d1c", shape: "grid" }     // rose
   ];
 
   function coverSVG(idx){
@@ -69,17 +68,17 @@
     var bg = '<rect width="100" height="100" fill="url(#cg' + idx + ')"/>';
     var shape = "";
     if (c.shape === "moon"){
-      shape = '<circle cx="68" cy="30" r="20" fill="rgba(255,255,255,0.14)"/><circle cx="60" cy="26" r="20" fill="' + c.to + '"/>';
+      shape = '<circle cx="68" cy="30" r="20" fill="rgba(255,255,255,0.16)"/><circle cx="60" cy="26" r="20" fill="' + c.to + '"/>';
     } else if (c.shape === "bars"){
-      shape = '<g fill="rgba(255,255,255,0.18)">' +
+      shape = '<g fill="rgba(255,255,255,0.22)">' +
         '<rect x="20" y="55" width="8" height="30"/><rect x="34" y="35" width="8" height="50"/>' +
         '<rect x="48" y="45" width="8" height="40"/><rect x="62" y="20" width="8" height="65"/>' +
         '<rect x="76" y="40" width="8" height="45"/></g>';
     } else if (c.shape === "wave"){
-      shape = '<path d="M0 60 Q 20 40 40 60 T 80 60 T 120 60" stroke="rgba(255,255,255,0.22)" stroke-width="6" fill="none"/>' +
-              '<path d="M0 75 Q 20 55 40 75 T 80 75 T 120 75" stroke="rgba(255,255,255,0.12)" stroke-width="6" fill="none"/>';
+      shape = '<path d="M0 60 Q 20 40 40 60 T 80 60 T 120 60" stroke="rgba(255,255,255,0.28)" stroke-width="6" fill="none"/>' +
+              '<path d="M0 75 Q 20 55 40 75 T 80 75 T 120 75" stroke="rgba(255,255,255,0.16)" stroke-width="6" fill="none"/>';
     } else {
-      shape = '<g stroke="rgba(255,255,255,0.16)" stroke-width="2">' +
+      shape = '<g stroke="rgba(255,255,255,0.2)" stroke-width="2">' +
         '<line x1="0" y1="25" x2="100" y2="25"/><line x1="0" y1="50" x2="100" y2="50"/><line x1="0" y1="75" x2="100" y2="75"/>' +
         '<line x1="25" y1="0" x2="25" y2="100"/><line x1="50" y1="0" x2="50" y2="100"/><line x1="75" y1="0" x2="75" y2="100"/></g>';
     }
@@ -128,7 +127,7 @@
         progressPct += 0.6;
         if (progressPct >= 100){
           progressPct = 0;
-          nextTrack();
+          advance();
         }
         updateProgressUI();
       }, 180);
@@ -147,15 +146,35 @@
     }
   }
 
-  function nextTrack(){
-    currentTrackIndex = (currentTrackIndex + 1) % 4;
-    progressPct = 0;
+  // Avance à la piste suivante en respectant répétition / lecture aléatoire
+  function advance(){
+    if (repeatOn){
+      progressPct = 0; // rejoue la même piste
+      return;
+    }
+    if (shuffleOn){
+      var next = currentTrackIndex;
+      if (Math.random() < 0.999){
+        do { next = Math.floor(Math.random() * 4); } while (next === currentTrackIndex);
+      }
+      currentTrackIndex = next;
+    } else {
+      currentTrackIndex = (currentTrackIndex + 1) % 4;
+    }
     renderTrack(window.CM_CURRENT_LANG || "en", currentTrackIndex);
+  }
+
+  function nextTrack(){
+    progressPct = 0;
+    if (shuffleOn){ advance(); } else {
+      currentTrackIndex = (currentTrackIndex + 1) % 4;
+      renderTrack(window.CM_CURRENT_LANG || "en", currentTrackIndex);
+    }
     updateProgressUI();
   }
   function prevTrack(){
-    currentTrackIndex = (currentTrackIndex + 3) % 4;
     progressPct = 0;
+    currentTrackIndex = (currentTrackIndex + 3) % 4;
     renderTrack(window.CM_CURRENT_LANG || "en", currentTrackIndex);
     updateProgressUI();
   }
@@ -166,10 +185,22 @@
     var playBtn = document.getElementById("player-play");
     var nextBtn = document.getElementById("player-next");
     var prevBtn = document.getElementById("player-prev");
+    var shuffleBtn = document.getElementById("player-shuffle");
+    var repeatBtn = document.getElementById("player-repeat");
     var barBg = document.getElementById("player-bar-bg");
     if (playBtn) playBtn.addEventListener("click", function(){ setPlaying(!isPlaying); });
     if (nextBtn) nextBtn.addEventListener("click", function(){ nextTrack(); });
     if (prevBtn) prevBtn.addEventListener("click", function(){ prevTrack(); });
+    if (shuffleBtn) shuffleBtn.addEventListener("click", function(){
+      shuffleOn = !shuffleOn;
+      shuffleBtn.classList.toggle("is-on", shuffleOn);
+      shuffleBtn.setAttribute("aria-pressed", shuffleOn ? "true" : "false");
+    });
+    if (repeatBtn) repeatBtn.addEventListener("click", function(){
+      repeatOn = !repeatOn;
+      repeatBtn.classList.toggle("is-on", repeatOn);
+      repeatBtn.setAttribute("aria-pressed", repeatOn ? "true" : "false");
+    });
     if (barBg) barBg.addEventListener("click", function(e){
       var rect = barBg.getBoundingClientRect();
       progressPct = Math.max(0, Math.min(100, ((e.clientX - rect.left) / rect.width) * 100));
@@ -184,39 +215,55 @@
       SUPPORTED.forEach(function(code){
         var opt = document.createElement("option");
         opt.value = code;
-        opt.textContent = window.CM_LANGS[code];
+        var flag = (window.CM_FLAGS && window.CM_FLAGS[code]) || "";
+        opt.textContent = (flag ? flag + " " : "") + window.CM_LANGS[code];
         sel.appendChild(opt);
       });
       sel.addEventListener("change", function(){ setLanguage(sel.value); });
     });
   }
 
-  /* ---------------- Barre de progression / scrubber ---------------- */
-  function initScrubber(){
-    var fill = document.querySelector('.scrubber__fill');
-    var label = document.querySelector('.scrubber__label');
-    var sections = document.querySelectorAll('[data-track-label]');
+  /* ---------------- Onglets de navigation + indicateur ---------------- */
+  var navTabs = [];
+  var navSections = [];
+  var activeTabIndex = 0;
 
-    function onScroll(){
-      if (!fill) return;
-      var doc = document.documentElement;
-      var scrollTop = doc.scrollTop || document.body.scrollTop;
-      var scrollHeight = (doc.scrollHeight || document.body.scrollHeight) - doc.clientHeight;
-      var pct = scrollHeight > 0 ? Math.min(100, (scrollTop / scrollHeight) * 100) : 0;
-      fill.style.width = pct.toFixed(1) + '%';
+  function initNavTabs(){
+    navTabs = Array.prototype.slice.call(document.querySelectorAll(".nav__tab"));
+    if (!navTabs.length) return;
+    navSections = navTabs.map(function(tab){
+      var id = tab.getAttribute("data-section");
+      return id === "top" ? document.body : document.getElementById(id);
+    });
+    window.addEventListener("resize", positionIndicator);
+  }
 
-      if (label){
-        label.classList.add('is-visible');
-        var current = null;
-        sections.forEach(function(sec){
-          var rect = sec.getBoundingClientRect();
-          if (rect.top <= 120) current = sec;
-        });
-        if (current) label.textContent = current.getAttribute('data-track-label');
-      }
+  function positionIndicator(){
+    var indicator = document.getElementById("nav-indicator");
+    var tabsWrap = document.getElementById("nav-tabs");
+    if (!indicator || !tabsWrap || !navTabs[activeTabIndex]) return;
+    var tab = navTabs[activeTabIndex];
+    var wrapRect = tabsWrap.getBoundingClientRect();
+    var tabRect = tab.getBoundingClientRect();
+    indicator.style.width = tabRect.width + "px";
+    indicator.style.transform = "translateX(" + (tabRect.left - wrapRect.left + tabsWrap.scrollLeft) + "px)";
+  }
+
+  function updateActiveTab(){
+    if (!navSections.length) return;
+    var current = 0;
+    for (var i = 0; i < navSections.length; i++){
+      var sec = navSections[i];
+      if (!sec) continue;
+      var rect = sec.getBoundingClientRect();
+      if (rect.top <= 140) current = i;
     }
-    document.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    if (current !== activeTabIndex){
+      navTabs[activeTabIndex] && navTabs[activeTabIndex].classList.remove("is-active");
+      activeTabIndex = current;
+      navTabs[activeTabIndex].classList.add("is-active");
+      positionIndicator();
+    }
   }
 
   /* ---------------- Apparition au scroll ---------------- */
@@ -240,8 +287,12 @@
   document.addEventListener('DOMContentLoaded', function(){
     buildLangSelects();
     initPlayer();
-    initScrubber();
+    initNavTabs();
     initReveal();
     setLanguage(detectLang());
+    navTabs[0] && navTabs[0].classList.add("is-active");
+    positionIndicator();
+    document.addEventListener('scroll', updateActiveTab, { passive: true });
+    updateActiveTab();
   });
 })();

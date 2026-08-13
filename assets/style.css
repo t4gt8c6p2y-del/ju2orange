@@ -22,7 +22,7 @@
   --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
-  --wrap: 1080px;
+  --wrap: 1320px;
 }
 
 *, *::before, *::after{ box-sizing: border-box; }
@@ -59,7 +59,10 @@ p{ margin: 0; }
 .wrap{
   max-width: var(--wrap);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
+}
+@media (min-width: 1500px){
+  .wrap{ padding: 0 12px; }
 }
 
 .eyebrow{
@@ -71,101 +74,69 @@ p{ margin: 0; }
 }
 
 /* ---------------------------------------------------------
-   Barre de progression façon lecture audio — signature du site.
-   Se remplit avec le scroll, comme la barre de lecture de l'app.
-   --------------------------------------------------------- */
-.scrubber{
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: var(--line-soft);
-  z-index: 200;
-}
-.scrubber__fill{
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  transition: width 0.08s linear;
-}
-.scrubber__label{
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  z-index: 200;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--text-dim);
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(6px);
-  padding: 4px 9px;
-  border-radius: 20px;
-  border: 1px solid var(--line);
-  opacity: 0;
-  transform: translateY(-4px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  pointer-events: none;
-  white-space: nowrap;
-}
-.scrubber__label.is-visible{ opacity: 1; transform: translateY(0); }
-
-/* ---------------------------------------------------------
-   Nav
+   Barre d'onglets — indicateur qui se positionne sous
+   l'onglet correspondant à la section actuellement visible
+   (ne bouge pas en continu avec le scroll, seulement par section).
    --------------------------------------------------------- */
 .nav{
   position: sticky;
-  top: 3px;
+  top: 0;
   z-index: 150;
   background: rgba(0,0,0,0.72);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line-soft);
 }
 .nav__row{
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 16px;
-  padding: 16px 24px;
-}
-.nav__brand{
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 17px;
-  justify-self: start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
 }
-.nav__mark{ width: 26px; height: 26px; flex-shrink: 0; }
-.nav__links{
+.nav__tabs{
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 28px;
-  flex-wrap: wrap;
+  gap: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
-.nav__links a{
+.nav__tabs::-webkit-scrollbar{ display: none; }
+.nav__tab{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 18px 2px;
   font-size: 14px;
   color: var(--text-dim);
-  transition: color 0.15s ease;
   white-space: nowrap;
+  transition: color 0.15s ease;
 }
-.nav__links a:hover{ color: var(--text); }
+.nav__tab:hover{ color: var(--text); }
+.nav__tab.is-active{ color: var(--text); }
+.nav__tab.is-brand{
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text);
+}
+.nav__tab img{ width: 22px; height: 22px; border-radius: 6px; flex-shrink: 0; }
+.nav__indicator{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1), width 0.35s cubic-bezier(.4,0,.2,1);
+}
 .nav__right{
   display: flex;
   align-items: center;
   gap: 12px;
-  justify-self: end;
+  flex-shrink: 0;
+  padding: 12px 0;
 }
-.nav__cta{
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--bg) !important;
-  background: var(--text);
-  padding: 9px 16px;
-  border-radius: 100px;
-  white-space: nowrap;
-}
-.nav__cta:hover{ background: var(--accent-2); color: var(--text) !important; }
 
 .lang-select{
   appearance: none;
@@ -181,13 +152,10 @@ p{ margin: 0; }
 }
 .lang-select:hover{ border-color: var(--accent-2); color: var(--text); }
 
-@media (max-width: 900px){
-  .nav__links a:not(.nav__cta){ display: none; }
-  .nav__row{ grid-template-columns: 1fr auto; }
-  .nav__links{ display: none; }
-}
-@media (max-width: 640px){
-  .nav__row{ padding: 12px 18px; }
+@media (max-width: 720px){
+  .nav__tab span{ display: none; }
+  .nav__tab.is-brand span{ display: inline; }
+  .nav__tabs{ gap: 22px; }
 }
 
 /* ---------------------------------------------------------
@@ -232,8 +200,8 @@ p{ margin: 0; }
   box-shadow: 0 0 0 3px rgba(184,82,255,0.18);
 }
 .hero h1{
-  font-size: clamp(42px, 6.2vw, 74px);
-  line-height: 0.98;
+  font-size: clamp(30px, 4.4vw, 48px);
+  line-height: 1.12;
   margin-bottom: 22px;
 }
 .hero h1 em{
@@ -397,11 +365,14 @@ p{ margin: 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 26px;
+  gap: 20px;
 }
 .player-card__controls svg{ width: 18px; height: 18px; color: var(--text-dim); }
 .player-card__controls .is-main{ width: 44px; height: 44px; color: var(--bg); background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 .player-card__controls .is-main svg{ width: 16px; height: 16px; color: var(--bg); }
+.player-card__controls .is-toggle svg{ width: 15px; height: 15px; }
+.player-card__controls .is-toggle.is-on{ color: var(--accent-2); }
+.player-card__controls .is-toggle.is-on svg{ color: var(--accent-2); }
 
 /* Égaliseur décoratif */
 .eq{ display: flex; align-items: flex-end; gap: 3px; height: 14px; }
@@ -516,6 +487,9 @@ section{ padding: 100px 0; }
   gap: 18px;
 }
 .grid--3{ grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 1100px){
+  .grid{ grid-template-columns: repeat(4, 1fr); }
+}
 @media (max-width: 780px){
   .grid, .grid--3{ grid-template-columns: 1fr; }
 }

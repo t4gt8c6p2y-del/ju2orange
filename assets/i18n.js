@@ -1,14 +1,26 @@
-// Cloud Music — dictionnaire de traduction (7 langues les plus parlées au monde)
-// Codes: en (anglais), zh (mandarin), hi (hindi), es (espagnol), fr (français), ar (arabe), bn (bengali)
+// Cloud Music — dictionnaire de traduction (langues les plus utilisées sur l'App Store, orientation Europe)
+// Codes: fr (français), en (anglais), de (allemand), it (italien), es (espagnol), ar (arabe), zh (mandarin), hi (hindi)
 
 window.CM_LANGS = {
-  en: "English",
-  zh: "中文",
-  hi: "हिन्दी",
-  es: "Español",
   fr: "Français",
+  en: "English",
+  de: "Deutsch",
+  it: "Italiano",
+  es: "Español",
   ar: "العربية",
-  bn: "বাংলা"
+  zh: "中文",
+  hi: "हिन्दी"
+};
+
+window.CM_FLAGS = {
+  fr: "🇫🇷",
+  en: "🇬🇧",
+  de: "🇩🇪",
+  it: "🇮🇹",
+  es: "🇪🇸",
+  ar: "🇸🇦",
+  zh: "🇨🇳",
+  hi: "🇮🇳"
 };
 
 window.CM_RTL = ["ar"];
@@ -16,52 +28,67 @@ window.CM_RTL = ["ar"];
 window.CM_SLOGANS = {
   fr: [
     "Un lecteur de musique pour réunir <em>la musique que vous possédez déjà</em>.",
-    "<em>Votre musique vous appartient</em> — écoutez-la partout, à votre façon.",
-    "La musique que vous avez déjà, <em>organisée enfin comme il faut</em>.",
-    "Partout où vous allez, <em>votre bibliothèque vous suit</em>.",
-    "Pas de catalogue, pas d'abonnement : <em>juste votre musique, à vous</em>."
+    "<em>Votre musique vous appartient</em> — écoutez-la depuis n'importe où.",
+    "Pas de catalogue, pas d'abonnement : <em>juste votre musique, à vous</em>.",
+    "Toute votre musique, <em>organisée comme vous l'entendez</em>.",
+    "Emportez votre bibliothèque partout, <em>sans effort</em>.",
+    "Votre musique, votre bibliothèque, <em>vos règles</em>."
   ],
   en: [
     "A music player built to bring together <em>the music you already own</em>.",
-    "<em>Your music belongs to you</em> — listen to it anywhere, your way.",
-    "The music you already have, <em>finally organized properly</em>.",
-    "Wherever you go, <em>your library comes with you</em>.",
-    "No catalog, no subscription: <em>just your music, yours alone</em>."
+    "<em>Your music belongs to you</em> — listen to it from anywhere.",
+    "No catalog, no subscription: <em>just your music, yours alone</em>.",
+    "All your music, <em>organized exactly your way</em>.",
+    "Take your library everywhere, <em>effortlessly</em>.",
+    "Your music, your library, <em>your rules</em>."
   ],
-  zh: [
-    "一款音乐播放器，只为整理<em>你早已拥有的音乐</em>。",
-    "<em>音乐是你的</em> —— 随时随地，用你喜欢的方式聆听。",
-    "你已经拥有的音乐，<em>终于井井有条</em>。",
-    "无论走到哪里，<em>你的音乐库都跟着你</em>。",
-    "没有曲库，没有订阅：<em>只有属于你的音乐</em>。"
+  de: [
+    "Ein Musikplayer, der <em>die Musik, die dir bereits gehört</em>, an einem Ort vereint.",
+    "<em>Deine Musik gehört dir</em> — hör sie dir an, wo immer du willst.",
+    "Kein Katalog, kein Abo: <em>nur deine Musik, ganz allein dir</em>.",
+    "Deine ganze Musik, <em>endlich richtig organisiert</em>.",
+    "Nimm deine Bibliothek überallhin mit, <em>ganz mühelos</em>.",
+    "Deine Musik, deine Bibliothek, <em>deine Regeln</em>."
   ],
-  hi: [
-    "एक म्यूज़िक प्लेयर, जो <em>आपके पास पहले से मौजूद संगीत</em> को एक जगह लाता है।",
-    "<em>आपका संगीत आपका है</em> — इसे कहीं भी, अपने तरीके से सुनें।",
-    "जो संगीत आपके पास पहले से है, अब <em>आख़िरकार सही ढंग से व्यवस्थित</em>।",
-    "आप जहाँ भी जाएँ, <em>आपकी लाइब्रेरी आपके साथ रहती है</em>।",
-    "कोई कैटलॉग नहीं, कोई सब्सक्रिप्शन नहीं: <em>सिर्फ़ आपका अपना संगीत</em>।"
+  it: [
+    "Un lettore musicale pensato per riunire <em>la musica che possiedi già</em>.",
+    "<em>La tua musica ti appartiene</em> — ascoltala ovunque tu voglia.",
+    "Nessun catalogo, nessun abbonamento: <em>solo la tua musica, solo tua</em>.",
+    "Tutta la tua musica, <em>organizzata finalmente come si deve</em>.",
+    "Porta la tua libreria ovunque, <em>senza sforzo</em>.",
+    "La tua musica, la tua libreria, <em>le tue regole</em>."
   ],
   es: [
     "Un reproductor de música para reunir <em>la música que ya tienes</em>.",
-    "<em>Tu música te pertenece</em> — escúchala donde quieras, a tu manera.",
-    "La música que ya tienes, <em>por fin bien organizada</em>.",
-    "Vayas donde vayas, <em>tu biblioteca te acompaña</em>.",
-    "Sin catálogo, sin suscripción: <em>solo tu música, tuya de verdad</em>."
+    "<em>Tu música te pertenece</em> — escúchala desde donde quieras.",
+    "Sin catálogo, sin suscripción: <em>solo tu música, tuya de verdad</em>.",
+    "Toda tu música, <em>organizada exactamente a tu manera</em>.",
+    "Lleva tu biblioteca a todas partes, <em>sin esfuerzo</em>.",
+    "Tu música, tu biblioteca, <em>tus reglas</em>."
   ],
   ar: [
     "مشغّل موسيقى صُمم لجمع <em>الموسيقى التي تملكها بالفعل</em>.",
-    "<em>موسيقاك ملك لك</em> — استمع إليها في أي مكان وبطريقتك الخاصة.",
-    "الموسيقى التي تملكها بالفعل، <em>منظّمة أخيرًا كما يجب</em>.",
-    "أينما ذهبت، <em>مكتبتك ترافقك</em>.",
-    "بلا كتالوج وبلا اشتراك: <em>فقط موسيقاك أنت</em>."
+    "<em>موسيقاك ملك لك</em> — استمع إليها من أي مكان.",
+    "بلا كتالوج وبلا اشتراك: <em>فقط موسيقاك أنت</em>.",
+    "كل موسيقاك، <em>منظّمة تمامًا كما تريد</em>.",
+    "احمل مكتبتك أينما ذهبت، <em>بلا أي عناء</em>.",
+    "موسيقاك، مكتبتك، <em>قواعدك أنت</em>."
   ],
-  bn: [
-    "এমন একটি মিউজিক প্লেয়ার, যা <em>আপনার আগে থেকে থাকা গানগুলো</em> এক জায়গায় নিয়ে আসে।",
-    "<em>আপনার গান আপনারই</em> — যেখানে খুশি, নিজের মতো করে শুনুন।",
-    "আপনার কাছে যে গান আগে থেকেই আছে, তা এখন <em>অবশেষে গোছানো</em>।",
-    "আপনি যেখানেই যান, <em>আপনার লাইব্রেরি সাথেই থাকে</em>।",
-    "কোনো ক্যাটালগ নেই, সাবস্ক্রিপশন নেই: <em>শুধু আপনার নিজের গান</em>।"
+  zh: [
+    "一款音乐播放器，只为整理<em>你早已拥有的音乐</em>。",
+    "<em>音乐是你的</em> —— 随时随地，尽情聆听。",
+    "没有曲库，没有订阅：<em>只有属于你的音乐</em>。",
+    "你的全部音乐，<em>按你喜欢的方式整理</em>。",
+    "随身携带你的音乐库，<em>毫不费力</em>。",
+    "你的音乐，你的音乐库，<em>你说了算</em>。"
+  ],
+  hi: [
+    "एक म्यूज़िक प्लेयर, जो <em>आपके पास पहले से मौजूद संगीत</em> को एक जगह लाता है।",
+    "<em>आपका संगीत आपका है</em> — इसे कहीं से भी सुनें।",
+    "कोई कैटलॉग नहीं, कोई सब्सक्रिप्शन नहीं: <em>सिर्फ़ आपका अपना संगीत</em>।",
+    "आपका पूरा संगीत, <em>बिल्कुल आपके तरीके से व्यवस्थित</em>।",
+    "अपनी लाइब्रेरी हर जगह ले जाएं, <em>बिना किसी मेहनत के</em>।",
+    "आपका संगीत, आपकी लाइब्रेरी, <em>आपके नियम</em>।"
   ]
 };
 
@@ -78,17 +105,17 @@ window.CM_TRACKS = {
     { title: "Early Morning", source: "WebDAV Server", format: "MP3" },
     { title: "Sea Street", source: "Local Files", format: "WAV" }
   ],
-  zh: [
-    { title: "F小调夜曲", source: "Google Drive", format: "FLAC" },
-    { title: "天际线（现场版）", source: "NAS · Jellyfin", format: "M4A" },
-    { title: "清晨", source: "WebDAV 服务器", format: "MP3" },
-    { title: "海街", source: "本地文件", format: "WAV" }
+  de: [
+    { title: "Notturno in f-Moll", source: "Google Drive", format: "FLAC" },
+    { title: "Skyline (Live)", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Früher Morgen", source: "WebDAV-Server", format: "MP3" },
+    { title: "Meeresstraße", source: "Lokale Dateien", format: "WAV" }
   ],
-  hi: [
-    { title: "नॉक्टर्न इन एफ माइनर", source: "Google Drive", format: "FLAC" },
-    { title: "स्काईलाइन (लाइव)", source: "NAS · Jellyfin", format: "M4A" },
-    { title: "सुबह-सवेरे", source: "WebDAV सर्वर", format: "MP3" },
-    { title: "समुद्री गली", source: "लोकल फ़ाइलें", format: "WAV" }
+  it: [
+    { title: "Notturno in Fa minore", source: "Google Drive", format: "FLAC" },
+    { title: "Skyline (Live)", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Mattina presto", source: "Server WebDAV", format: "MP3" },
+    { title: "Via del Mare", source: "File locali", format: "WAV" }
   ],
   es: [
     { title: "Nocturno en Fa menor", source: "Google Drive", format: "FLAC" },
@@ -102,11 +129,17 @@ window.CM_TRACKS = {
     { title: "الصباح الباكر", source: "خادم WebDAV", format: "MP3" },
     { title: "شارع البحر", source: "ملفات محلية", format: "WAV" }
   ],
-  bn: [
-    { title: "নকটার্ন ইন এফ মাইনর", source: "Google Drive", format: "FLAC" },
-    { title: "স্কাইলাইন (লাইভ)", source: "NAS · Jellyfin", format: "M4A" },
-    { title: "ভোরবেলা", source: "WebDAV সার্ভার", format: "MP3" },
-    { title: "সমুদ্র সড়ক", source: "লোকাল ফাইল", format: "WAV" }
+  zh: [
+    { title: "F小调夜曲", source: "Google Drive", format: "FLAC" },
+    { title: "天际线（现场版）", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "清晨", source: "WebDAV 服务器", format: "MP3" },
+    { title: "海街", source: "本地文件", format: "WAV" }
+  ],
+  hi: [
+    { title: "नॉक्टर्न इन एफ माइनर", source: "Google Drive", format: "FLAC" },
+    { title: "स्काईलाइन (लाइव)", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "सुबह-सवेरे", source: "WebDAV सर्वर", format: "MP3" },
+    { title: "समुद्री गली", source: "लोकल फ़ाइलें", format: "WAV" }
   ]
 };
 
@@ -119,6 +152,8 @@ fr: {
 "hero.b2":"<strong>Connectez</strong> Google Drive, MEGA, OneDrive et bien d'autres services cloud.",
 "hero.b3":"<strong>Reliez vos NAS</strong> via Emby, Jellyfin ou Plex.",
 "hero.b4":"<strong>Accédez à votre serveur</strong> en FTP, WebDAV ou NFS.",
+"hero.b5":"<strong>Aucune publicité</strong>, pour une écoute sans interruption.",
+"hero.b6":"<strong>Aucune collecte de données</strong> : votre vie privée est préservée.",
 "hero.cta1":"Découvrir l'app","hero.cta2":"Aucune collecte de données",
 "hero.note":"iOS 16 ou version ultérieure · Aucun compte requis · Sans publicité",
 "player.from":"depuis",
@@ -153,7 +188,7 @@ fr: {
 "cta.eyebrow":"Bientôt disponible","cta.title":"Cloud Music arrive sur l'App Store",
 "cta.desc":"Une question, un bug à signaler, ou une idée de fonctionnalité pour votre cloud préféré ? Écrivez-moi directement.",
 "cta.privacy":"Politique de confidentialité",
-"footer.tagline":"Votre musique, connectée à votre cloud. Une application personnelle, sans publicité ni compte.",
+"footer.tagline":"Écoutez votre musique en local ou depuis le cloud, dans une interface unique.",
 "footer.app":"App","footer.contact":"Contact","footer.legal":"Légal","footer.form":"Formulaire de contact",
 "footer.bottom1":"© 2026 Cloud Music. Application personnelle, usage non commercial.","footer.bottom2":"Fait à la main, sans tracker."
 },
@@ -165,6 +200,8 @@ en: {
 "hero.b2":"<strong>Connect</strong> Google Drive, MEGA, OneDrive and many other cloud services.",
 "hero.b3":"<strong>Link your NAS</strong> through Emby, Jellyfin or Plex.",
 "hero.b4":"<strong>Reach your own server</strong> over FTP, WebDAV or NFS.",
+"hero.b5":"<strong>No ads</strong>, for uninterrupted listening.",
+"hero.b6":"<strong>No data collection</strong>: your privacy stays protected.",
 "hero.cta1":"Explore the app","hero.cta2":"No data collection",
 "hero.note":"iOS 16 or later · No account required · No ads",
 "player.from":"from",
@@ -199,7 +236,7 @@ en: {
 "cta.eyebrow":"Coming soon","cta.title":"Cloud Music is coming to the App Store",
 "cta.desc":"A question, a bug to report, or a feature idea for your favorite cloud? Write to me directly.",
 "cta.privacy":"Privacy policy",
-"footer.tagline":"Your music, connected to your cloud. A personal app, with no ads and no account.",
+"footer.tagline":"Listen to your music locally or from the cloud, in a single interface.",
 "footer.app":"App","footer.contact":"Contact","footer.legal":"Legal","footer.form":"Contact form",
 "footer.bottom1":"© 2026 Cloud Music. Personal, non-commercial app.","footer.bottom2":"Handmade, tracker-free."
 },
@@ -211,6 +248,8 @@ zh: {
 "hero.b2":"<strong>连接</strong> Google Drive、MEGA、OneDrive 等多种云存储服务。",
 "hero.b3":"<strong>连接你的 NAS</strong>，支持 Emby、Jellyfin 或 Plex。",
 "hero.b4":"<strong>访问你自己的服务器</strong>，支持 FTP、WebDAV 或 NFS。",
+"hero.b5":"<strong>无广告</strong>，畅听无干扰。",
+"hero.b6":"<strong>不收集数据</strong>：你的隐私始终受到保护。",
 "hero.cta1":"了解应用","hero.cta2":"不收集任何数据",
 "hero.note":"iOS 16 或更高版本 · 无需账号 · 无广告",
 "player.from":"来自",
@@ -245,7 +284,7 @@ zh: {
 "cta.eyebrow":"即将上线","cta.title":"Cloud Music 即将登陆 App Store",
 "cta.desc":"有问题、想反馈 bug，或者对你喜欢的云服务有功能建议？欢迎直接写信给我。",
 "cta.privacy":"隐私政策",
-"footer.tagline":"你的音乐，连接你的云端。一款没有广告、无需账号的个人应用。",
+"footer.tagline":"随心聆听本地或云端的音乐，只需一个统一的界面。",
 "footer.app":"应用","footer.contact":"联系","footer.legal":"法律","footer.form":"联系表单",
 "footer.bottom1":"© 2026 Cloud Music。个人非商业应用。","footer.bottom2":"手工打造，无追踪器。"
 },
@@ -257,6 +296,8 @@ hi: {
 "hero.b2":"<strong>कनेक्ट करें</strong> Google Drive, MEGA, OneDrive और कई अन्य क्लाउड सेवाएँ।",
 "hero.b3":"<strong>अपने NAS को जोड़ें</strong> Emby, Jellyfin या Plex के ज़रिए।",
 "hero.b4":"<strong>अपने सर्वर तक पहुँचें</strong> FTP, WebDAV या NFS से।",
+"hero.b5":"<strong>कोई विज्ञापन नहीं</strong>, निर्बाध सुनने के लिए।",
+"hero.b6":"<strong>कोई डेटा संग्रह नहीं</strong>: आपकी गोपनीयता सुरक्षित रहती है।",
 "hero.cta1":"ऐप देखें","hero.cta2":"कोई डेटा संग्रह नहीं",
 "hero.note":"iOS 16 या नया वर्शन · किसी अकाउंट की ज़रूरत नहीं · कोई विज्ञापन नहीं",
 "player.from":"स्रोत",
@@ -291,9 +332,105 @@ hi: {
 "cta.eyebrow":"जल्द आ रहा है","cta.title":"Cloud Music जल्द App Store पर",
 "cta.desc":"कोई सवाल, कोई बग रिपोर्ट करनी है, या अपनी पसंदीदा क्लाउड सेवा के लिए कोई फ़ीचर आइडिया? सीधे मुझे लिखें।",
 "cta.privacy":"गोपनीयता नीति",
-"footer.tagline":"आपका संगीत, आपके क्लाउड से जुड़ा। बिना विज्ञापन और बिना अकाउंट वाला एक पर्सनल ऐप।",
+"footer.tagline":"अपना संगीत लोकल या क्लाउड से सुनें, एक ही इंटरफ़ेस में।",
 "footer.app":"ऐप","footer.contact":"संपर्क","footer.legal":"कानूनी","footer.form":"संपर्क फ़ॉर्म",
 "footer.bottom1":"© 2026 Cloud Music। पर्सनल, गैर-व्यावसायिक ऐप।","footer.bottom2":"बिना ट्रैकर के, हाथ से बनाया गया।"
+},
+
+de: {
+"nav.features":"Funktionen","nav.privacy":"Datenschutz","nav.about":"Über uns","nav.contact":"Kontakt",
+"hero.kicker":"iOS-App · persönlicher Audioplayer",
+"hero.b1":"<strong>Höre</strong> deine Musik lokal oder aus der Cloud, in einer einzigen Oberfläche.",
+"hero.b2":"<strong>Verbinde</strong> Google Drive, MEGA, OneDrive und viele weitere Cloud-Dienste.",
+"hero.b3":"<strong>Binde dein NAS ein</strong> über Emby, Jellyfin oder Plex.",
+"hero.b4":"<strong>Greife auf deinen eigenen Server zu</strong> per FTP, WebDAV oder NFS.",
+"hero.b5":"<strong>Keine Werbung</strong>, für ununterbrochenes Hören.",
+"hero.b6":"<strong>Keine Datenerfassung</strong>: deine Privatsphäre bleibt geschützt.",
+"hero.cta1":"App entdecken","hero.cta2":"Keine Datenerfassung",
+"hero.note":"iOS 16 oder neuer · Kein Konto erforderlich · Keine Werbung",
+"player.from":"von",
+"a.eyebrow":"Seite A","a.title":"Deine Musik, wo auch immer sie liegt",
+"a.desc":"Du musst dich nicht auf eine Cloud festlegen oder alles neu hochladen: Cloud Music holt deine Dateien dort ab, wo sie bereits liegen.",
+"a.t1.title":"Google Drive & OneDrive","a.t1.desc":"Offizielle Anmeldung (OAuth) bei deinem Konto: Ordner durchsuchen, streamen oder für die Offline-Wiedergabe herunterladen.","a.t1.tag":"OAuth",
+"a.t2.title":"MEGA, per einfachem Link","a.t2.desc":"Füge einen MEGA-Freigabelink (Ordner oder Datei) ein: kein Konto, keine Anmeldung nötig — alles wird direkt auf deinem Gerät entschlüsselt.","a.t2.tag":"Öffentlicher Link",
+"a.t3.title":"NAS: Emby, Jellyfin, Plex","a.t3.desc":"Verbinde deinen Heim-Medienserver und finde deine persönliche Bibliothek direkt in der App.","a.t3.tag":"NAS",
+"a.t4.title":"Eigener Server: FTP, WebDAV, NFS","a.t4.desc":"Greife per Standardprotokoll auf einen Server oder Netzwerkspeicher zu, ganz ohne kommerzielle Cloud.","a.t4.tag":"Netzwerk",
+"a.t5.title":"Dateien & Ordner des Geräts","a.t5.desc":"Importiere einen einzelnen Titel, mehrere Dateien gleichzeitig oder einen ganzen Ordner aus der iOS-App „Dateien“.","a.t5.tag":"Lokal",
+"a.t6.title":"Vereinte Bibliothek","a.t6.desc":"Filtere nach Quelle — alles, offline, nur lokal oder pro Dienst — ohne einen bereits importierten Titel je zu duplizieren.","a.t6.tag":"Keine Duplikate",
+"b.eyebrow":"Seite B","b.title":"Im Player","b.desc":"Die kleinen Hördetails, die man erst vermisst, wenn sie fehlen.",
+"b.c1.title":"Einstellbarer Crossfade","b.c1.desc":"Ein sanfter Übergang zwischen zwei Titeln, 1 bis 12 Sekunden, direkt in den Einstellungen anpassbar.",
+"b.c2.title":"Zufallswiedergabe, zwei Varianten","b.c2.desc":"Klassisches Shuffle oder ein „verbesserter“ Modus, der denselben Künstler nicht zweimal hintereinander abspielt.",
+"b.c3.title":"Titel oder ganze Warteschlange wiederholen","b.c3.desc":"Einen Song in Schleife abspielen, um ihn zu lernen, oder die ganze Warteschlange, damit die Musik nie ausgeht.",
+"b.c4.title":"Siri-Kurzbefehle","b.c4.desc":"„Spiele Musik auf Cloud Music ab“, pausieren oder Wiedergabe umschalten — per Stimme, ohne die App überhaupt zu öffnen.",
+"c.eyebrow":"Seite C","c.title":"Eine Bibliothek, die sich von selbst ordnet","c.desc":"Einen Titel finden, ein fehlendes Cover ergänzen, Playlists organisieren — ohne einen ganzen Abend zu verlieren.",
+"c.t1.title":"Fehlertolerante Suche","c.t1.desc":"Die Suche ignoriert Akzente, Tippfehler und Satzzeichen — bei Titel, Künstler und Album.","c.t1.tag":"Unscharf",
+"c.t2.title":"Automatische Metadaten & Cover","c.t2.desc":"Cloud Music sucht Titel, Künstler, Album und Cover für schlecht benannte Dateien — du bestätigst, alles wird mit einem Tipp korrigiert.","c.t2.tag":"Automatisch",
+"c.t3.title":"Individuelle Playlists","c.t3.desc":"Erstelle Playlists mit eigenem Cover, ordne sie neu an und halte deine Lieblingskünstler und -alben griffbereit.","c.t3.tag":"Favoriten",
+"c.t4.title":"Hörstatistiken","c.t4.desc":"Hörzeit nach Tag, Woche, Monat oder insgesamt, plus ein klarer Überblick über den Speicherplatz auf deinem Gerät.","c.t4.tag":"Statistik",
+"d.eyebrow":"Seite D","d.title":"Keine Datenerfassung","d.desc":"Cloud Music ist eine persönliche App, gebaut für einen einzigen Zweck: dich.",
+"d.l1":"<strong>Kein Cloud-Music-Konto.</strong> Du verbindest dich direkt mit deinem eigenen Cloud-Dienst, nie mit einem Server von Cloud Music.",
+"d.l2":"<strong>Tokens bleiben auf dem Gerät.</strong> Nach der Anmeldung bleibt der Zugriff auf deine Cloud im sicheren iOS-Schlüsselbund — er verlässt ihn nie.",
+"d.l3":"<strong>Keine Werbung, keine Tracker.</strong> Nichts wird gesammelt, weiterverkauft oder zu kommerziellen Zwecken weitergegeben.",
+"d.l4":"<strong>Verschlüsseltes Backup, nur für dich.</strong> Exportiere Playlists, Favoriten und Statistiken in eine passwortgeschützte Datei — stelle sie wieder her, wo immer du willst.",
+"d.link":"Vollständige Datenschutzerklärung lesen →",
+"about.eyebrow":"Über uns",
+"about.sig":"Ein Player, gebaut für <span>eine einzige Bibliothek</span> — deine, nicht für einen Streaming-Katalog.",
+"about.p1":"Cloud Music entstand aus einer einfachen Beobachtung: Viele von uns besitzen bereits Musik — gekauft, digitalisiert, über die Jahre übertragen — verstreut auf einer Cloud, einem NAS und dem Speicher des Telefons. Keine App hat sie je wirklich zusammengeführt.",
+"about.p2":"Es ist eine persönliche App, entwickelt und gepflegt von einem einzelnen Entwickler, ohne kommerzielle Ambitionen: kein Abo, kein Katalog zum Verkaufen, keine von einem Werbealgorithmus diktierten Empfehlungen. Einfach ein sorgfältig gebauter Player für die Musik, die du bereits hast.",
+"cta.eyebrow":"Demnächst","cta.title":"Cloud Music kommt bald in den App Store",
+"cta.desc":"Eine Frage, ein Fehler zum Melden, oder eine Funktionsidee für deine bevorzugte Cloud? Schreib mir direkt.",
+"cta.privacy":"Datenschutzerklärung",
+"footer.tagline":"Höre deine Musik lokal oder aus der Cloud, in einer einzigen Oberfläche.",
+"footer.app":"App","footer.contact":"Kontakt","footer.legal":"Rechtliches","footer.form":"Kontaktformular",
+"footer.bottom1":"© 2026 Cloud Music. Persönliche, nicht kommerzielle App.","footer.bottom2":"Handgemacht, ohne Tracker."
+},
+
+it: {
+"nav.features":"Funzionalità","nav.privacy":"Privacy","nav.about":"Chi siamo","nav.contact":"Contatti",
+"hero.kicker":"App iOS · lettore audio personale",
+"hero.b1":"<strong>Ascolta</strong> la tua musica in locale o dal cloud, in un'unica interfaccia.",
+"hero.b2":"<strong>Collega</strong> Google Drive, MEGA, OneDrive e molti altri servizi cloud.",
+"hero.b3":"<strong>Collega il tuo NAS</strong> tramite Emby, Jellyfin o Plex.",
+"hero.b4":"<strong>Accedi al tuo server</strong> via FTP, WebDAV o NFS.",
+"hero.b5":"<strong>Nessuna pubblicità</strong>, per un ascolto senza interruzioni.",
+"hero.b6":"<strong>Nessuna raccolta dati</strong>: la tua privacy resta protetta.",
+"hero.cta1":"Scopri l'app","hero.cta2":"Nessuna raccolta dati",
+"hero.note":"iOS 16 o successivo · Nessun account richiesto · Senza pubblicità",
+"player.from":"da",
+"a.eyebrow":"Lato A","a.title":"La tua musica, ovunque si trovi",
+"a.desc":"Non devi scegliere un solo cloud né ricaricare tutto: Cloud Music va a recuperare i tuoi file dove già si trovano.",
+"a.t1.title":"Google Drive e OneDrive","a.t1.desc":"Accesso ufficiale (OAuth) al tuo account: sfoglia le cartelle, ascolta in streaming o scarica per l'ascolto offline.","a.t1.tag":"OAuth",
+"a.t2.title":"MEGA, con un semplice link","a.t2.desc":"Incolla un link di condivisione MEGA (cartella o file): nessun account o accesso richiesto, tutto viene decifrato direttamente sul tuo dispositivo.","a.t2.tag":"Link pubblico",
+"a.t3.title":"NAS: Emby, Jellyfin, Plex","a.t3.desc":"Collega il tuo server multimediale domestico e trova la tua libreria personale direttamente nell'app.","a.t3.tag":"NAS",
+"a.t4.title":"Server personale: FTP, WebDAV, NFS","a.t4.desc":"Accedi a un server o a uno spazio di rete tramite protocolli standard, senza passare da un cloud commerciale.","a.t4.tag":"Rete",
+"a.t5.title":"File e cartelle del dispositivo","a.t5.desc":"Importa un brano, più file insieme, o un'intera cartella dall'app File di iOS.","a.t5.tag":"Locale",
+"a.t6.title":"Libreria unificata","a.t6.desc":"Filtra per origine — tutto, offline, solo locale o per servizio — senza mai duplicare un brano già importato.","a.t6.tag":"Nessun duplicato",
+"b.eyebrow":"Lato B","b.title":"Dentro il lettore","b.desc":"I dettagli d'ascolto che si notano solo quando mancano.",
+"b.c1.title":"Dissolvenza incrociata regolabile","b.c1.desc":"Una transizione morbida tra due brani, da 1 a 12 secondi, regolabile direttamente nelle impostazioni.",
+"b.c2.title":"Riproduzione casuale, due modalità","b.c2.desc":"Casuale classica, oppure una variante «avanzata» che evita di riproporre lo stesso artista due volte di fila.",
+"b.c3.title":"Ripeti un brano o l'intera coda","b.c3.desc":"Ripeti un brano in loop per impararlo, o l'intera coda perché la musica non si fermi mai.",
+"b.c4.title":"Comandi rapidi Siri","b.c4.desc":"«Riproduci musica su Cloud Music», metti in pausa, o cambia la riproduzione — a voce, senza nemmeno aprire l'app.",
+"c.eyebrow":"Lato C","c.title":"Una libreria che si organizza da sola","c.desc":"Trovare un brano, completare una copertina mancante, organizzare playlist — senza perderci la serata.",
+"c.t1.title":"Ricerca tollerante","c.t1.desc":"La ricerca ignora accenti, errori di battitura e punteggiatura, su titolo, artista e album.","c.t1.tag":"Approssimata",
+"c.t2.title":"Metadati e copertine automatici","c.t2.desc":"Cloud Music cerca titolo, artista, album e copertina per i tuoi file mal nominati — tu approvi, e tutto si corregge in un tocco.","c.t2.tag":"Automatico",
+"c.t3.title":"Playlist personalizzate","c.t3.desc":"Crea playlist con una copertina propria, riordinale, e tieni sempre a portata di mano artisti e album preferiti.","c.t3.tag":"Preferiti",
+"c.t4.title":"Statistiche di ascolto","c.t4.desc":"Tempo d'ascolto per giorno, settimana, mese o da sempre, più una panoramica chiara dello spazio usato sul dispositivo.","c.t4.tag":"Statistiche",
+"d.eyebrow":"Lato D","d.title":"Nessuna raccolta dati","d.desc":"Cloud Music è un'app personale, pensata per un solo scopo: il tuo.",
+"d.l1":"<strong>Nessun account Cloud Music.</strong> Ti connetti direttamente al tuo servizio cloud, mai a un server di Cloud Music.",
+"d.l2":"<strong>Token conservati sul dispositivo.</strong> Dopo l'accesso, l'accesso al tuo cloud resta nel portachiavi sicuro (Keychain) di iOS — non ne esce mai.",
+"d.l3":"<strong>Nessuna pubblicità, nessun tracker.</strong> Nulla viene raccolto, rivenduto o trasmesso a scopo commerciale.",
+"d.l4":"<strong>Backup cifrato, solo per te.</strong> Esporta playlist, preferiti e statistiche in un file protetto da password — ripristinalo dove vuoi.",
+"d.link":"Leggi l'informativa sulla privacy completa →",
+"about.eyebrow":"Chi siamo",
+"about.sig":"Un lettore pensato per <span>un'unica libreria</span>, la tua — non per un catalogo di streaming.",
+"about.p1":"Cloud Music nasce da un'osservazione semplice: molti di noi possiedono già musica — acquistata, copiata, trasferita nel corso degli anni — sparsa tra un cloud, un NAS e lo spazio del telefono. Nessuna app le riuniva davvero.",
+"about.p2":"È un'app personale, sviluppata e mantenuta da un solo sviluppatore, senza ambizioni commerciali: nessun abbonamento, nessun catalogo da vendere, nessun consiglio dettato da un algoritmo pubblicitario. Solo un lettore curato per la musica che già possiedi.",
+"cta.eyebrow":"Prossimamente","cta.title":"Cloud Music arriva sull'App Store",
+"cta.desc":"Una domanda, un bug da segnalare, o un'idea di funzionalità per il tuo cloud preferito? Scrivimi direttamente.",
+"cta.privacy":"Informativa sulla privacy",
+"footer.tagline":"Ascolta la tua musica in locale o dal cloud, in un'unica interfaccia.",
+"footer.app":"App","footer.contact":"Contatti","footer.legal":"Legale","footer.form":"Modulo di contatto",
+"footer.bottom1":"© 2026 Cloud Music. App personale, uso non commerciale.","footer.bottom2":"Fatto a mano, senza tracker."
 },
 
 es: {
@@ -303,6 +440,8 @@ es: {
 "hero.b2":"<strong>Conecta</strong> Google Drive, MEGA, OneDrive y muchos otros servicios en la nube.",
 "hero.b3":"<strong>Enlaza tu NAS</strong> mediante Emby, Jellyfin o Plex.",
 "hero.b4":"<strong>Accede a tu propio servidor</strong> por FTP, WebDAV o NFS.",
+"hero.b5":"<strong>Sin publicidad</strong>, para una escucha sin interrupciones.",
+"hero.b6":"<strong>Sin recopilación de datos</strong>: tu privacidad queda protegida.",
 "hero.cta1":"Descubrir la app","hero.cta2":"Sin recopilación de datos",
 "hero.note":"iOS 16 o posterior · Sin cuenta requerida · Sin publicidad",
 "player.from":"desde",
@@ -337,7 +476,7 @@ es: {
 "cta.eyebrow":"Próximamente","cta.title":"Cloud Music llega a la App Store",
 "cta.desc":"¿Alguna pregunta, un error que reportar, o una idea de función para tu nube favorita? Escríbeme directamente.",
 "cta.privacy":"Política de privacidad",
-"footer.tagline":"Tu música, conectada a tu nube. Una aplicación personal, sin publicidad ni cuenta.",
+"footer.tagline":"Escucha tu música en local o desde la nube, en una sola interfaz.",
 "footer.app":"App","footer.contact":"Contacto","footer.legal":"Legal","footer.form":"Formulario de contacto",
 "footer.bottom1":"© 2026 Cloud Music. Aplicación personal, uso no comercial.","footer.bottom2":"Hecho a mano, sin rastreadores."
 },
@@ -349,6 +488,8 @@ ar: {
 "hero.b2":"<strong>اربط</strong> Google Drive وMEGA وOneDrive والعديد من خدمات التخزين السحابي الأخرى.",
 "hero.b3":"<strong>اربط أجهزة NAS</strong> الخاصة بك عبر Emby أو Jellyfin أو Plex.",
 "hero.b4":"<strong>اتصل بخادمك الخاص</strong> عبر FTP أو WebDAV أو NFS.",
+"hero.b5":"<strong>بلا إعلانات</strong>، لاستماع بلا انقطاع.",
+"hero.b6":"<strong>لا جمع للبيانات</strong>: خصوصيتك تبقى محمية.",
 "hero.cta1":"اكتشف التطبيق","hero.cta2":"لا جمع للبيانات",
 "hero.note":"iOS 16 أو أحدث · بلا حساب مطلوب · بلا إعلانات",
 "player.from":"من",
@@ -383,55 +524,9 @@ ar: {
 "cta.eyebrow":"قريبًا","cta.title":"Cloud Music قادم إلى App Store",
 "cta.desc":"سؤال، خلل تريد الإبلاغ عنه، أو فكرة ميزة لخدمتك السحابية المفضّلة؟ راسلني مباشرة.",
 "cta.privacy":"سياسة الخصوصية",
-"footer.tagline":"موسيقاك، متصلة بسحابتك. تطبيق شخصي، بلا إعلانات وبلا حساب.",
+"footer.tagline":"استمع إلى موسيقاك محليًا أو من السحابة، في واجهة واحدة.",
 "footer.app":"التطبيق","footer.contact":"تواصل","footer.legal":"قانوني","footer.form":"نموذج التواصل",
 "footer.bottom1":"© 2026 Cloud Music. تطبيق شخصي غير تجاري.","footer.bottom2":"صُنع يدويًا، بلا متتبّعات."
 },
-
-bn: {
-"nav.features":"ফিচার","nav.privacy":"গোপনীয়তা","nav.about":"সম্পর্কে","nav.contact":"যোগাযোগ",
-"hero.kicker":"iOS অ্যাপ · ব্যক্তিগত অডিও প্লেয়ার",
-"hero.b1":"<strong>শুনুন</strong> আপনার সংগীত লোকাল বা ক্লাউড থেকে, একটিমাত্র ইন্টারফেসে।",
-"hero.b2":"<strong>সংযুক্ত করুন</strong> Google Drive, MEGA, OneDrive এবং আরও অনেক ক্লাউড পরিষেবা।",
-"hero.b3":"<strong>আপনার NAS যুক্ত করুন</strong> Emby, Jellyfin বা Plex-এর মাধ্যমে।",
-"hero.b4":"<strong>নিজের সার্ভারে প্রবেশ করুন</strong> FTP, WebDAV বা NFS দিয়ে।",
-"hero.cta1":"অ্যাপ দেখুন","hero.cta2":"কোনো ডেটা সংগ্রহ নেই",
-"hero.note":"iOS 16 বা তার নতুন সংস্করণ · কোনো অ্যাকাউন্ট প্রয়োজন নেই · কোনো বিজ্ঞাপন নেই",
-"player.from":"থেকে",
-"a.eyebrow":"পার্শ্ব A","a.title":"আপনার সংগীত, যেখানেই থাকুক না কেন",
-"a.desc":"আপনাকে একটিমাত্র ক্লাউড বেছে নিতে হবে না, সব আবার আপলোড করতে হবে না: Cloud Music আপনার ফাইলগুলো যেখানে আছে সেখান থেকেই নিয়ে আসে।",
-"a.t1.title":"Google Drive ও OneDrive","a.t1.desc":"আপনার অ্যাকাউন্টে অফিসিয়াল সাইন-ইন (OAuth): ফোল্ডার ব্রাউজ করুন, স্ট্রিম করুন বা অফলাইন শোনার জন্য ডাউনলোড করুন।","a.t1.tag":"OAuth",
-"a.t2.title":"MEGA, শুধু একটি লিঙ্কে","a.t2.desc":"একটি MEGA শেয়ার লিঙ্ক (ফোল্ডার বা ফাইল) পেস্ট করুন: কোনো অ্যাকাউন্ট বা সাইন-ইন দরকার নেই, সবকিছু সরাসরি আপনার ডিভাইসে ডিক্রিপ্ট হয়।","a.t2.tag":"পাবলিক লিঙ্ক",
-"a.t3.title":"NAS: Emby, Jellyfin, Plex","a.t3.desc":"আপনার হোম মিডিয়া সার্ভার সংযুক্ত করুন এবং সরাসরি অ্যাপের ভেতরেই আপনার ব্যক্তিগত লাইব্রেরি খুঁজে পান।","a.t3.tag":"NAS",
-"a.t4.title":"ব্যক্তিগত সার্ভার: FTP, WebDAV, NFS","a.t4.desc":"স্ট্যান্ডার্ড প্রোটোকলের মাধ্যমে কোনো সার্ভার বা নেটওয়ার্ক স্টোরেজে প্রবেশ করুন, কোনো বাণিজ্যিক ক্লাউড ছাড়াই।","a.t4.tag":"নেটওয়ার্ক",
-"a.t5.title":"ডিভাইসের ফাইল ও ফোল্ডার","a.t5.desc":"iOS-এর Files অ্যাপ থেকে একটি ট্র্যাক, একাধিক ফাইল একসাথে, বা পুরো ফোল্ডার ইমপোর্ট করুন।","a.t5.tag":"লোকাল",
-"a.t6.title":"একীভূত লাইব্রেরি","a.t6.desc":"উৎস অনুযায়ী ফিল্টার করুন — সবকিছু, অফলাইন, শুধু লোকাল, বা পরিষেবা অনুযায়ী — আগে থেকে থাকা কোনো গান কখনো দুবার যোগ না করেই।","a.t6.tag":"ডুপ্লিকেট নেই",
-"b.eyebrow":"পার্শ্ব B","b.title":"প্লেয়ারের ভেতরে","b.desc":"শোনার সেই ছোট ছোট বিষয়, যা কেবল অনুপস্থিত থাকলেই বোঝা যায়।",
-"b.c1.title":"সমন্বয়যোগ্য ক্রসফেড","b.c1.desc":"দুটি গানের মধ্যে ১ থেকে ১২ সেকেন্ডের মসৃণ ট্রানজিশন, সেটিংসে সরাসরি সমন্বয়যোগ্য।",
-"b.c2.title":"শাফল, দুই ধরনের","b.c2.desc":"ক্লাসিক শাফল, বা একটি \"এনহ্যান্সড\" মোড যা একই শিল্পীকে পরপর দুবার বাজানো এড়িয়ে যায়।",
-"b.c3.title":"একটি গান বা পুরো তালিকা রিপিট","b.c3.desc":"একটি গান শেখার জন্য লুপ করুন, অথবা পুরো তালিকা রিপিট করুন যাতে সংগীত কখনো থেমে না যায়।",
-"b.c4.title":"Siri শর্টকাট","b.c4.desc":"\"Cloud Music-এ গান চালাও\", পজ করো, বা প্লে/পজ পরিবর্তন করো — কণ্ঠস্বরে, অ্যাপ না খুলেই।",
-"c.eyebrow":"পার্শ্ব C","c.title":"এমন একটি লাইব্রেরি যা নিজেই গুছিয়ে নেয়","c.desc":"একটি গান খুঁজে বের করা, অনুপস্থিত কভার পূরণ করা, প্লেলিস্ট সাজানো — পুরো সন্ধ্যা ব্যয় না করেই।",
-"c.t1.title":"ত্রুটি-সহনশীল অনুসন্ধান","c.t1.desc":"অনুসন্ধান উচ্চারণ চিহ্ন, বানান ভুল ও যতিচিহ্ন উপেক্ষা করে — শিরোনাম, শিল্পী ও অ্যালবামে।","c.t1.tag":"ফাজি",
-"c.t2.title":"স্বয়ংক্রিয় মেটাডেটা ও কভার","c.t2.desc":"ভুল নামের ফাইলের জন্য Cloud Music শিরোনাম, শিল্পী, অ্যালবাম ও কভার খুঁজে দেয় — আপনি অনুমোদন করলেই এক ক্লিকে সব ঠিক হয়ে যায়।","c.t2.tag":"স্বয়ংক্রিয়",
-"c.t3.title":"কাস্টম প্লেলিস্ট","c.t3.desc":"নিজস্ব কভারসহ প্লেলিস্ট তৈরি করুন, পুনর্বিন্যাস করুন, এবং প্রিয় শিল্পী ও অ্যালবাম হাতের কাছে রাখুন।","c.t3.tag":"প্রিয়",
-"c.t4.title":"শোনার পরিসংখ্যান","c.t4.desc":"দিন, সপ্তাহ, মাস বা এখন পর্যন্ত মোট শোনার সময়, এবং ডিভাইসে ব্যবহৃত স্টোরেজের স্পষ্ট চিত্র।","c.t4.tag":"পরিসংখ্যান",
-"d.eyebrow":"পার্শ্ব D","d.title":"কোনো ডেটা সংগ্রহ নেই","d.desc":"Cloud Music একটি ব্যক্তিগত অ্যাপ, তৈরি একটিমাত্র উদ্দেশ্যে: আপনার জন্য।",
-"d.l1":"<strong>কোনো Cloud Music অ্যাকাউন্ট নেই।</strong> আপনি সরাসরি নিজের ক্লাউড পরিষেবার সাথে সংযুক্ত হন, কখনোই Cloud Music-এর কোনো সার্ভারের সাথে নয়।",
-"d.l2":"<strong>টোকেন শুধু ডিভাইসে থাকে।</strong> সাইন-ইনের পর, আপনার ক্লাউডের অ্যাক্সেস iOS-এর নিরাপদ Keychain-এ থেকে যায় — তা কখনো বাইরে যায় না।",
-"d.l3":"<strong>কোনো বিজ্ঞাপন নেই, কোনো ট্র্যাকার নেই।</strong> বাণিজ্যিক উদ্দেশ্যে কিছুই সংগ্রহ, পুনর্বিক্রয় বা প্রেরণ করা হয় না।",
-"d.l4":"<strong>এনক্রিপ্টেড ব্যাকআপ, শুধু আপনার জন্য।</strong> প্লেলিস্ট, প্রিয় ও পরিসংখ্যান পাসওয়ার্ড-সুরক্ষিত ফাইলে এক্সপোর্ট করুন — যেখানে খুশি পুনরুদ্ধার করুন।",
-"d.link":"সম্পূর্ণ গোপনীয়তা নীতি পড়ুন →",
-"about.eyebrow":"সম্পর্কে",
-"about.sig":"এমন একটি প্লেয়ার যা তৈরি হয়েছে <span>একটিমাত্র লাইব্রেরির</span> জন্য, আপনারটার জন্য — কোনো স্ট্রিমিং ক্যাটালগের জন্য নয়।",
-"about.p1":"Cloud Music-এর শুরু একটি সাধারণ পর্যবেক্ষণ থেকে: আমাদের অনেকেরই ইতিমধ্যে সংগীত আছে — বছরের পর বছর ধরে কেনা, রিপ করা, স্থানান্তরিত — যা ক্লাউড, NAS এবং ফোনের স্টোরেজের মধ্যে ছড়িয়ে ছিটিয়ে আছে। কোনো অ্যাপ কখনো সত্যিকারভাবে সেগুলো এক জায়গায় আনেনি।",
-"about.p2":"এটি একটি ব্যক্তিগত অ্যাপ, একজন মাত্র ডেভেলপার দ্বারা তৈরি ও রক্ষণাবেক্ষণ করা, কোনো বাণিজ্যিক উচ্চাকাঙ্ক্ষা ছাড়াই: কোনো সাবস্ক্রিপশন নেই, বিক্রির জন্য কোনো ক্যাটালগ নেই, বিজ্ঞাপন-চালিত সুপারিশ নেই। শুধু আপনার কাছে ইতিমধ্যে থাকা সংগীতের জন্য যত্ন সহকারে তৈরি একটি প্লেয়ার।",
-"cta.eyebrow":"শীঘ্রই আসছে","cta.title":"Cloud Music শীঘ্রই App Store-এ আসছে",
-"cta.desc":"কোনো প্রশ্ন, রিপোর্ট করার মতো কোনো বাগ, বা আপনার প্রিয় ক্লাউডের জন্য কোনো ফিচার আইডিয়া? সরাসরি আমাকে লিখুন।",
-"cta.privacy":"গোপনীয়তা নীতি",
-"footer.tagline":"আপনার সংগীত, আপনার ক্লাউডের সাথে সংযুক্ত। বিজ্ঞাপনহীন ও অ্যাকাউন্টবিহীন একটি ব্যক্তিগত অ্যাপ।",
-"footer.app":"অ্যাপ","footer.contact":"যোগাযোগ","footer.legal":"আইনি","footer.form":"যোগাযোগ ফর্ম",
-"footer.bottom1":"© ২০২৬ Cloud Music। ব্যক্তিগত, অ-বাণিজ্যিক অ্যাপ।","footer.bottom2":"হাতে তৈরি, ট্র্যাকারবিহীন।"
-}
 
 };
