@@ -30,65 +30,49 @@ window.CM_SLOGANS = {
     "Un lecteur de musique pour réunir <em>la musique que vous possédez déjà</em>.",
     "<em>Votre musique vous appartient</em> — écoutez-la depuis n'importe où.",
     "Pas de catalogue, pas d'abonnement : <em>juste votre musique, à vous</em>.",
-    "Toute votre musique, <em>organisée comme vous l'entendez</em>.",
-    "Emportez votre bibliothèque partout, <em>sans effort</em>.",
-    "Votre musique, votre bibliothèque, <em>vos règles</em>."
+    "Toute votre musique, <em>organisée comme vous l'entendez</em>."
   ],
   en: [
     "A music player built to bring together <em>the music you already own</em>.",
     "<em>Your music belongs to you</em> — listen to it from anywhere.",
     "No catalog, no subscription: <em>just your music, yours alone</em>.",
-    "All your music, <em>organized exactly your way</em>.",
-    "Take your library everywhere, <em>effortlessly</em>.",
-    "Your music, your library, <em>your rules</em>."
+    "All your music, <em>organized exactly your way</em>."
   ],
   de: [
     "Ein Musikplayer, der <em>die Musik, die dir bereits gehört</em>, an einem Ort vereint.",
     "<em>Deine Musik gehört dir</em> — hör sie dir an, wo immer du willst.",
     "Kein Katalog, kein Abo: <em>nur deine Musik, ganz allein dir</em>.",
-    "Deine ganze Musik, <em>endlich richtig organisiert</em>.",
-    "Nimm deine Bibliothek überallhin mit, <em>ganz mühelos</em>.",
-    "Deine Musik, deine Bibliothek, <em>deine Regeln</em>."
+    "Deine ganze Musik, <em>endlich richtig organisiert</em>."
   ],
   it: [
     "Un lettore musicale pensato per riunire <em>la musica che possiedi già</em>.",
     "<em>La tua musica ti appartiene</em> — ascoltala ovunque tu voglia.",
     "Nessun catalogo, nessun abbonamento: <em>solo la tua musica, solo tua</em>.",
-    "Tutta la tua musica, <em>organizzata finalmente come si deve</em>.",
-    "Porta la tua libreria ovunque, <em>senza sforzo</em>.",
-    "La tua musica, la tua libreria, <em>le tue regole</em>."
+    "Tutta la tua musica, <em>organizzata finalmente come si deve</em>."
   ],
   es: [
     "Un reproductor de música para reunir <em>la música que ya tienes</em>.",
     "<em>Tu música te pertenece</em> — escúchala desde donde quieras.",
     "Sin catálogo, sin suscripción: <em>solo tu música, tuya de verdad</em>.",
-    "Toda tu música, <em>organizada exactamente a tu manera</em>.",
-    "Lleva tu biblioteca a todas partes, <em>sin esfuerzo</em>.",
-    "Tu música, tu biblioteca, <em>tus reglas</em>."
+    "Toda tu música, <em>organizada exactamente a tu manera</em>."
   ],
   ar: [
     "مشغّل موسيقى صُمم لجمع <em>الموسيقى التي تملكها بالفعل</em>.",
     "<em>موسيقاك ملك لك</em> — استمع إليها من أي مكان.",
     "بلا كتالوج وبلا اشتراك: <em>فقط موسيقاك أنت</em>.",
-    "كل موسيقاك، <em>منظّمة تمامًا كما تريد</em>.",
-    "احمل مكتبتك أينما ذهبت، <em>بلا أي عناء</em>.",
-    "موسيقاك، مكتبتك، <em>قواعدك أنت</em>."
+    "كل موسيقاك، <em>منظّمة تمامًا كما تريد</em>."
   ],
   zh: [
     "一款音乐播放器，只为整理<em>你早已拥有的音乐</em>。",
     "<em>音乐是你的</em> —— 随时随地，尽情聆听。",
     "没有曲库，没有订阅：<em>只有属于你的音乐</em>。",
-    "你的全部音乐，<em>按你喜欢的方式整理</em>。",
-    "随身携带你的音乐库，<em>毫不费力</em>。",
-    "你的音乐，你的音乐库，<em>你说了算</em>。"
+    "你的全部音乐，<em>按你喜欢的方式整理</em>。"
   ],
   hi: [
     "एक म्यूज़िक प्लेयर, जो <em>आपके पास पहले से मौजूद संगीत</em> को एक जगह लाता है।",
     "<em>आपका संगीत आपका है</em> — इसे कहीं से भी सुनें।",
     "कोई कैटलॉग नहीं, कोई सब्सक्रिप्शन नहीं: <em>सिर्फ़ आपका अपना संगीत</em>।",
-    "आपका पूरा संगीत, <em>बिल्कुल आपके तरीके से व्यवस्थित</em>।",
-    "अपनी लाइब्रेरी हर जगह ले जाएं, <em>बिना किसी मेहनत के</em>।",
-    "आपका संगीत, आपकी लाइब्रेरी, <em>आपके नियम</em>।"
+    "आपका पूरा संगीत, <em>बिल्कुल आपके तरीके से व्यवस्थित</em>।"
   ]
 };
 
@@ -155,7 +139,7 @@ fr: {
 "hero.b5":"<strong>Aucune publicité</strong>, pour une écoute sans interruption.",
 "hero.b6":"<strong>Aucune collecte de données</strong> : votre vie privée est préservée.",
 "hero.cta1":"Découvrir l'app","hero.cta2":"Aucune collecte de données",
-"hero.note":"iOS 16 ou version ultérieure · Aucun compte requis · Sans publicité",
+"hero.note":"Lecteur audio personnel · iOS 16 ou plus · Aucun compte requis",
 "player.from":"depuis",
 "a.eyebrow":"Face A","a.title":"Vos musiques, où qu'elles soient",
 "a.desc":"Vous n'avez pas à choisir un seul cloud, ni à tout re-télécharger : Cloud Music vient chercher vos fichiers là où ils sont déjà.",
@@ -190,7 +174,7 @@ fr: {
 "cta.privacy":"Politique de confidentialité",
 "footer.tagline":"Écoutez votre musique en local ou depuis le cloud, dans une interface unique.",
 "footer.app":"App","footer.contact":"Contact","footer.legal":"Légal","footer.form":"Formulaire de contact",
-"footer.bottom1":"© 2026 Cloud Music. Application personnelle, usage non commercial.","footer.bottom2":"Fait à la main, sans tracker."
+"footer.bottom1":"© 2026 Cloud Music. Tous droits réservés.","footer.bottom2":"Fait à la main, sans tracker."
 },
 
 en: {
@@ -203,7 +187,7 @@ en: {
 "hero.b5":"<strong>No ads</strong>, for uninterrupted listening.",
 "hero.b6":"<strong>No data collection</strong>: your privacy stays protected.",
 "hero.cta1":"Explore the app","hero.cta2":"No data collection",
-"hero.note":"iOS 16 or later · No account required · No ads",
+"hero.note":"Personal audio player · iOS 16 or later · No account required",
 "player.from":"from",
 "a.eyebrow":"Side A","a.title":"Your music, wherever it lives",
 "a.desc":"You shouldn't have to pick one cloud, or re-upload everything: Cloud Music comes and gets your files wherever they already are.",
@@ -238,7 +222,7 @@ en: {
 "cta.privacy":"Privacy policy",
 "footer.tagline":"Listen to your music locally or from the cloud, in a single interface.",
 "footer.app":"App","footer.contact":"Contact","footer.legal":"Legal","footer.form":"Contact form",
-"footer.bottom1":"© 2026 Cloud Music. Personal, non-commercial app.","footer.bottom2":"Handmade, tracker-free."
+"footer.bottom1":"© 2026 Cloud Music. All rights reserved.","footer.bottom2":"Handmade, tracker-free."
 },
 
 zh: {
@@ -251,7 +235,7 @@ zh: {
 "hero.b5":"<strong>无广告</strong>，畅听无干扰。",
 "hero.b6":"<strong>不收集数据</strong>：你的隐私始终受到保护。",
 "hero.cta1":"了解应用","hero.cta2":"不收集任何数据",
-"hero.note":"iOS 16 或更高版本 · 无需账号 · 无广告",
+"hero.note":"个人音频播放器 · iOS 16 或更高版本 · 无需账号",
 "player.from":"来自",
 "a.eyebrow":"A面","a.title":"你的音乐，无论存放在哪里",
 "a.desc":"你不必只选一个云盘，也不必重新上传一遍：Cloud Music 会直接去找到你已有的文件。",
@@ -286,7 +270,7 @@ zh: {
 "cta.privacy":"隐私政策",
 "footer.tagline":"随心聆听本地或云端的音乐，只需一个统一的界面。",
 "footer.app":"应用","footer.contact":"联系","footer.legal":"法律","footer.form":"联系表单",
-"footer.bottom1":"© 2026 Cloud Music。个人非商业应用。","footer.bottom2":"手工打造，无追踪器。"
+"footer.bottom1":"© 2026 Cloud Music。保留所有权利。","footer.bottom2":"手工打造，无追踪器。"
 },
 
 hi: {
@@ -299,7 +283,7 @@ hi: {
 "hero.b5":"<strong>कोई विज्ञापन नहीं</strong>, निर्बाध सुनने के लिए।",
 "hero.b6":"<strong>कोई डेटा संग्रह नहीं</strong>: आपकी गोपनीयता सुरक्षित रहती है।",
 "hero.cta1":"ऐप देखें","hero.cta2":"कोई डेटा संग्रह नहीं",
-"hero.note":"iOS 16 या नया वर्शन · किसी अकाउंट की ज़रूरत नहीं · कोई विज्ञापन नहीं",
+"hero.note":"पर्सनल ऑडियो प्लेयर · iOS 16 या नया वर्शन · किसी अकाउंट की ज़रूरत नहीं",
 "player.from":"स्रोत",
 "a.eyebrow":"साइड A","a.title":"आपका संगीत, जहाँ भी हो",
 "a.desc":"आपको एक ही क्लाउड चुनने या सब कुछ फिर से अपलोड करने की ज़रूरत नहीं: Cloud Music आपकी फ़ाइलों तक वहीं पहुँचता है जहाँ वे पहले से मौजूद हैं।",
@@ -334,7 +318,7 @@ hi: {
 "cta.privacy":"गोपनीयता नीति",
 "footer.tagline":"अपना संगीत लोकल या क्लाउड से सुनें, एक ही इंटरफ़ेस में।",
 "footer.app":"ऐप","footer.contact":"संपर्क","footer.legal":"कानूनी","footer.form":"संपर्क फ़ॉर्म",
-"footer.bottom1":"© 2026 Cloud Music। पर्सनल, गैर-व्यावसायिक ऐप।","footer.bottom2":"बिना ट्रैकर के, हाथ से बनाया गया।"
+"footer.bottom1":"© 2026 Cloud Music। सर्वाधिकार सुरक्षित।","footer.bottom2":"बिना ट्रैकर के, हाथ से बनाया गया।"
 },
 
 de: {
@@ -347,7 +331,7 @@ de: {
 "hero.b5":"<strong>Keine Werbung</strong>, für ununterbrochenes Hören.",
 "hero.b6":"<strong>Keine Datenerfassung</strong>: deine Privatsphäre bleibt geschützt.",
 "hero.cta1":"App entdecken","hero.cta2":"Keine Datenerfassung",
-"hero.note":"iOS 16 oder neuer · Kein Konto erforderlich · Keine Werbung",
+"hero.note":"Persönlicher Audioplayer · iOS 16 oder neuer · Kein Konto erforderlich",
 "player.from":"von",
 "a.eyebrow":"Seite A","a.title":"Deine Musik, wo auch immer sie liegt",
 "a.desc":"Du musst dich nicht auf eine Cloud festlegen oder alles neu hochladen: Cloud Music holt deine Dateien dort ab, wo sie bereits liegen.",
@@ -382,7 +366,7 @@ de: {
 "cta.privacy":"Datenschutzerklärung",
 "footer.tagline":"Höre deine Musik lokal oder aus der Cloud, in einer einzigen Oberfläche.",
 "footer.app":"App","footer.contact":"Kontakt","footer.legal":"Rechtliches","footer.form":"Kontaktformular",
-"footer.bottom1":"© 2026 Cloud Music. Persönliche, nicht kommerzielle App.","footer.bottom2":"Handgemacht, ohne Tracker."
+"footer.bottom1":"© 2026 Cloud Music. Alle Rechte vorbehalten.","footer.bottom2":"Handgemacht, ohne Tracker."
 },
 
 it: {
@@ -395,7 +379,7 @@ it: {
 "hero.b5":"<strong>Nessuna pubblicità</strong>, per un ascolto senza interruzioni.",
 "hero.b6":"<strong>Nessuna raccolta dati</strong>: la tua privacy resta protetta.",
 "hero.cta1":"Scopri l'app","hero.cta2":"Nessuna raccolta dati",
-"hero.note":"iOS 16 o successivo · Nessun account richiesto · Senza pubblicità",
+"hero.note":"Lettore audio personale · iOS 16 o successivo · Nessun account richiesto",
 "player.from":"da",
 "a.eyebrow":"Lato A","a.title":"La tua musica, ovunque si trovi",
 "a.desc":"Non devi scegliere un solo cloud né ricaricare tutto: Cloud Music va a recuperare i tuoi file dove già si trovano.",
@@ -430,7 +414,7 @@ it: {
 "cta.privacy":"Informativa sulla privacy",
 "footer.tagline":"Ascolta la tua musica in locale o dal cloud, in un'unica interfaccia.",
 "footer.app":"App","footer.contact":"Contatti","footer.legal":"Legale","footer.form":"Modulo di contatto",
-"footer.bottom1":"© 2026 Cloud Music. App personale, uso non commerciale.","footer.bottom2":"Fatto a mano, senza tracker."
+"footer.bottom1":"© 2026 Cloud Music. Tutti i diritti riservati.","footer.bottom2":"Fatto a mano, senza tracker."
 },
 
 es: {
@@ -443,7 +427,7 @@ es: {
 "hero.b5":"<strong>Sin publicidad</strong>, para una escucha sin interrupciones.",
 "hero.b6":"<strong>Sin recopilación de datos</strong>: tu privacidad queda protegida.",
 "hero.cta1":"Descubrir la app","hero.cta2":"Sin recopilación de datos",
-"hero.note":"iOS 16 o posterior · Sin cuenta requerida · Sin publicidad",
+"hero.note":"Reproductor de audio personal · iOS 16 o posterior · Sin cuenta requerida",
 "player.from":"desde",
 "a.eyebrow":"Cara A","a.title":"Tu música, esté donde esté",
 "a.desc":"No tienes que elegir una sola nube ni volver a subirlo todo: Cloud Music va a buscar tus archivos allí donde ya están.",
@@ -478,7 +462,7 @@ es: {
 "cta.privacy":"Política de privacidad",
 "footer.tagline":"Escucha tu música en local o desde la nube, en una sola interfaz.",
 "footer.app":"App","footer.contact":"Contacto","footer.legal":"Legal","footer.form":"Formulario de contacto",
-"footer.bottom1":"© 2026 Cloud Music. Aplicación personal, uso no comercial.","footer.bottom2":"Hecho a mano, sin rastreadores."
+"footer.bottom1":"© 2026 Cloud Music. Todos los derechos reservados.","footer.bottom2":"Hecho a mano, sin rastreadores."
 },
 
 ar: {
@@ -491,7 +475,7 @@ ar: {
 "hero.b5":"<strong>بلا إعلانات</strong>، لاستماع بلا انقطاع.",
 "hero.b6":"<strong>لا جمع للبيانات</strong>: خصوصيتك تبقى محمية.",
 "hero.cta1":"اكتشف التطبيق","hero.cta2":"لا جمع للبيانات",
-"hero.note":"iOS 16 أو أحدث · بلا حساب مطلوب · بلا إعلانات",
+"hero.note":"مشغّل صوت شخصي · iOS 16 أو أحدث · بلا حساب مطلوب",
 "player.from":"من",
 "a.eyebrow":"الوجه A","a.title":"موسيقاك، أينما كانت",
 "a.desc":"لست مضطرًا لاختيار سحابة واحدة أو إعادة رفع كل شيء: يذهب Cloud Music لجلب ملفاتك من حيث هي موجودة بالفعل.",
@@ -526,7 +510,7 @@ ar: {
 "cta.privacy":"سياسة الخصوصية",
 "footer.tagline":"استمع إلى موسيقاك محليًا أو من السحابة، في واجهة واحدة.",
 "footer.app":"التطبيق","footer.contact":"تواصل","footer.legal":"قانوني","footer.form":"نموذج التواصل",
-"footer.bottom1":"© 2026 Cloud Music. تطبيق شخصي غير تجاري.","footer.bottom2":"صُنع يدويًا، بلا متتبّعات."
+"footer.bottom1":"© 2026 Cloud Music. جميع الحقوق محفوظة.","footer.bottom2":"صُنع يدويًا، بلا متتبّعات."
 },
 
 };

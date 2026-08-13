@@ -36,7 +36,10 @@
     <div class="hero__glow" aria-hidden="true"></div>
     <div class="wrap hero__inner">
       <div>
-        <span class="hero__kicker" data-i18n="hero.kicker"><span class="hero__dot"></span> App iOS · lecteur audio personnel</span>
+        <div class="hero__brand">
+          <img src="assets/logo.png" alt="Cloud Music">
+          <span>Cloud Music</span>
+        </div>
         <h1 id="hero-title">Un lecteur de musique pour réunir <em>la musique que vous possédez déjà</em>.</h1>
         <ul class="hero__bullets">
           <li>
@@ -87,7 +90,13 @@
         <div class="player-card__time"><span id="player-elapsed">0:57</span><span>4:00</span></div>
         <div class="player-card__controls">
           <button id="player-shuffle" type="button" class="is-toggle" aria-label="Lecture aléatoire" aria-pressed="false">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3l4 4-4 4M20 7H8a4 4 0 00-4 4v1M8 21l-4-4 4-4M4 17h12a4 4 0 004-4v-1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 3 21 3 21 8"></polyline>
+              <line x1="4" y1="20" x2="21" y2="3"></line>
+              <polyline points="21 16 21 21 16 21"></polyline>
+              <line x1="15" y1="15" x2="21" y2="21"></line>
+              <line x1="4" y1="4" x2="9" y2="9"></line>
+            </svg>
           </button>
           <button id="player-prev" type="button" aria-label="Précédent">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6L18 6v12z"/></svg>
@@ -333,13 +342,6 @@
 <footer class="footer">
   <div class="wrap">
     <div class="footer__top">
-      <div>
-        <div class="footer__brand">
-          <img src="assets/logo.png" alt="Cloud Music" width="24" height="24" style="border-radius:6px;">
-          Cloud Music
-        </div>
-        <p class="footer__tagline" data-i18n="footer.tagline">Écoutez votre musique en local ou depuis le cloud, dans une interface unique.</p>
-      </div>
       <div>
         <h4 data-i18n="footer.app">App</h4>
         <ul>

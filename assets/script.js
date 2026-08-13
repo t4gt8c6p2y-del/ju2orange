@@ -51,7 +51,7 @@
   var isPlaying = false;
   var shuffleOn = false;
   var repeatOn = false;
-  var progressPct = 24;
+  var progressPct = 0;
   var progressTimer = null;
 
   var COVERS = [
@@ -124,13 +124,13 @@
     clearInterval(progressTimer);
     if (playing){
       progressTimer = setInterval(function(){
-        progressPct += 0.6;
+        progressPct += 100 / 240; // 240s de démo = 1 seconde réelle par seconde de piste
         if (progressPct >= 100){
           progressPct = 0;
-          advance();
+          handleTrackEnd();
         }
         updateProgressUI();
-      }, 180);
+      }, 1000);
     }
   }
 
@@ -146,17 +146,19 @@
     }
   }
 
-  // Avance à la piste suivante en respectant répétition / lecture aléatoire
-  function advance(){
+  // Fin naturelle d'une piste : respecte répétition / lecture aléatoire
+  function handleTrackEnd(){
     if (repeatOn){
       progressPct = 0; // rejoue la même piste
       return;
     }
+    pickNext();
+  }
+
+  function pickNext(){
     if (shuffleOn){
       var next = currentTrackIndex;
-      if (Math.random() < 0.999){
-        do { next = Math.floor(Math.random() * 4); } while (next === currentTrackIndex);
-      }
+      do { next = Math.floor(Math.random() * 4); } while (next === currentTrackIndex);
       currentTrackIndex = next;
     } else {
       currentTrackIndex = (currentTrackIndex + 1) % 4;
@@ -166,10 +168,7 @@
 
   function nextTrack(){
     progressPct = 0;
-    if (shuffleOn){ advance(); } else {
-      currentTrackIndex = (currentTrackIndex + 1) % 4;
-      renderTrack(window.CM_CURRENT_LANG || "en", currentTrackIndex);
-    }
+    pickNext(); // le bouton "suivant" change toujours de piste, même en répétition
     updateProgressUI();
   }
   function prevTrack(){
@@ -206,6 +205,7 @@
       progressPct = Math.max(0, Math.min(100, ((e.clientX - rect.left) / rect.width) * 100));
       updateProgressUI();
     });
+    setPlaying(true); // lecture par défaut au chargement
   }
 
   /* ---------------- Sélecteur de langue ---------------- */

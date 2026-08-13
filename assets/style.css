@@ -199,6 +199,24 @@ p{ margin: 0; }
   background: var(--accent-2);
   box-shadow: 0 0 0 3px rgba(184,82,255,0.18);
 }
+.hero__brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.hero__brand img{
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.hero__brand span{
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(32px, 4.8vw, 50px);
+  letter-spacing: -0.01em;
+}
+
 .hero h1{
   font-size: clamp(30px, 4.4vw, 48px);
   line-height: 1.12;
@@ -319,8 +337,18 @@ p{ margin: 0; }
 .player-card__controls button:hover{ color: var(--accent-2); transform: scale(1.08); }
 .player-card__controls .is-main{ cursor: pointer; }
 .player-card__controls .is-main:hover{ color: var(--bg); transform: scale(1.06); }
-.player-card__bar{ cursor: pointer; }
-.player-card__bar span{ transition: width 0.2s linear; }
+.player-card__bar{ cursor: pointer; position: relative; }
+.player-card__bar span{ transition: width 0.2s linear; position: relative; }
+.player-card__bar span::after{
+  content: "";
+  position: absolute;
+  right: -5px; top: 50%;
+  transform: translateY(-50%);
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(184,82,255,0.35);
+}
 .player-card.is-playing .eq span{ animation-play-state: running; }
 .eq span{ animation-play-state: paused; height: 3px; }
 .player-card__meta{
@@ -344,7 +372,6 @@ p{ margin: 0; }
   height: 4px;
   border-radius: 4px;
   background: var(--card-2);
-  overflow: hidden;
   margin-bottom: 8px;
 }
 .player-card__bar span{
@@ -616,7 +643,7 @@ section{ padding: 100px 0; }
 }
 .footer__top{
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   padding-bottom: 44px;
 }
