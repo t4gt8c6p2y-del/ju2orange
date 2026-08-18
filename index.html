@@ -25,6 +25,33 @@
     </div>
     <div class="nav__right">
       <select class="lang-select" aria-label="Langue / Language"></select>
+      <div class="menu-wrap">
+        <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+        <div class="menu-panel" id="menu-panel">
+          <div class="menu-group">
+            <a href="index.html" class="menu-heading">Accueil</a>
+            <a href="index.html#fonctionnalites" class="menu-sub">Fonctionnalités</a>
+            <a href="index.html#confidentialite" class="menu-sub">Confidentialité</a>
+            <a href="index.html#a-propos" class="menu-sub">À propos</a>
+          </div>
+          <div class="menu-group">
+            <a href="documentation.html" class="menu-heading">Documentation</a>
+          </div>
+          <div class="menu-group">
+            <a href="blog.html" class="menu-heading">Blog</a>
+          </div>
+          <div class="menu-legal">
+            <span class="menu-legal-label">Légal</span>
+            <a href="legal/legal-notice.html">Mentions légales</a>
+            <a href="legal/privacy-policy.html">Confidentialité</a>
+            <a href="legal/cookie-policy.html">Cookies</a>
+            <a href="legal/terms-and-conditions.html">Conditions générales</a>
+            <a href="legal/license-agreement.html">Licence</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -61,10 +88,6 @@
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span data-i18n="hero.b5"><strong>Aucune publicité</strong>, pour une écoute sans interruption.</span>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span data-i18n="hero.b6"><strong>Aucune collecte de données</strong> : votre vie privée est préservée.</span>
           </li>
         </ul>
         <div class="hero__actions">
@@ -108,7 +131,12 @@
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 6l8.5 6L6 18z"/></svg>
           </button>
           <button id="player-repeat" type="button" class="is-toggle" aria-label="Répéter" aria-pressed="false">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="17 1 21 5 17 9"></polyline>
+              <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+              <polyline points="7 23 3 19 7 15"></polyline>
+              <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+            </svg>
           </button>
         </div>
       </div>
@@ -123,57 +151,58 @@
           <span class="eyebrow" data-i18n="nav.features">Fonctionnalités</span>
           <h2 data-i18n="a.title">Vos musiques, où qu'elles soient</h2>
         </div>
-        <p data-i18n="a.desc">Vous n'avez pas à choisir un seul cloud, ni à tout re-télécharger : Cloud Music vient chercher vos fichiers là où ils sont déjà.</p>
       </div>
 
       <div class="tracklist reveal">
         <div class="track">
-          <span class="track__num">01</span>
+          <span class="track__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+          </span>
           <div class="track__body">
-            <h3 data-i18n="a.t1.title">Google Drive &amp; OneDrive</h3>
+            <h3 data-i18n="a.t1.title">Google Drive, MEGA, et bien d'autres…</h3>
             <p data-i18n="a.t1.desc">Connexion officielle (OAuth) à votre compte : parcourez vos dossiers, écoutez en streaming ou téléchargez pour une écoute hors ligne.</p>
           </div>
-          <span class="track__tag" data-i18n="a.t1.tag">OAuth</span>
+          <button type="button" class="track__tag" data-modal="drives" data-i18n="a.t1.tag">Voir tous les drives</button>
         </div>
         <div class="track">
-          <span class="track__num">02</span>
+          <span class="track__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.07 0l2.83-2.83a5 5 0 00-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 00-7.07 0L4.1 13.83a5 5 0 007.07 7.07L12.5 19.5"/></svg>
+          </span>
           <div class="track__body">
             <h3 data-i18n="a.t2.title">MEGA, par simple lien</h3>
             <p data-i18n="a.t2.desc">Collez un lien de partage MEGA (dossier ou fichier) : aucun compte ni connexion nécessaire, tout se déchiffre directement sur votre appareil.</p>
           </div>
-          <span class="track__tag" data-i18n="a.t2.tag">Lien public</span>
+          <button type="button" class="track__tag" data-modal="links" data-i18n="a.t2.tag">Voir plus</button>
         </div>
         <div class="track">
-          <span class="track__num">03</span>
+          <span class="track__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><circle cx="7" cy="7.5" r="0.8" fill="currentColor" stroke="none"/><circle cx="7" cy="16.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+          </span>
           <div class="track__body">
             <h3 data-i18n="a.t3.title">NAS : Emby, Jellyfin, Plex</h3>
             <p data-i18n="a.t3.desc">Connectez votre serveur multimédia domestique et retrouvez votre bibliothèque personnelle directement dans l'app.</p>
           </div>
-          <span class="track__tag" data-i18n="a.t3.tag">NAS</span>
+          <button type="button" class="track__tag" data-modal="nas" data-i18n="a.t3.tag">Voir plus</button>
         </div>
         <div class="track">
-          <span class="track__num">04</span>
+          <span class="track__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
+          </span>
           <div class="track__body">
             <h3 data-i18n="a.t4.title">Serveur personnel : FTP, WebDAV, NFS</h3>
             <p data-i18n="a.t4.desc">Accédez à un serveur ou un espace réseau via les protocoles standards, sans passer par un cloud commercial.</p>
           </div>
-          <span class="track__tag" data-i18n="a.t4.tag">Réseau</span>
+          <button type="button" class="track__tag" data-modal="network" data-i18n="a.t4.tag">Voir plus</button>
         </div>
         <div class="track">
-          <span class="track__num">05</span>
+          <span class="track__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+          </span>
           <div class="track__body">
             <h3 data-i18n="a.t5.title">Fichiers &amp; dossiers de l'appareil</h3>
             <p data-i18n="a.t5.desc">Importez un titre, plusieurs fichiers d'un coup, ou un dossier entier depuis l'app Fichiers d'iOS.</p>
           </div>
-          <span class="track__tag" data-i18n="a.t5.tag">Local</span>
-        </div>
-        <div class="track">
-          <span class="track__num">06</span>
-          <div class="track__body">
-            <h3 data-i18n="a.t6.title">Bibliothèque unifiée</h3>
-            <p data-i18n="a.t6.desc">Filtrez par source — tout, hors ligne, local uniquement, ou par service — sans jamais dupliquer un morceau déjà importé.</p>
-          </div>
-          <span class="track__tag" data-i18n="a.t6.tag">Sans doublon</span>
+          <span class="track__tag" style="cursor:default;" data-i18n="a.t5.tag">Local</span>
         </div>
       </div>
 
@@ -374,6 +403,15 @@
     </div>
   </div>
 </footer>
+
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button type="button" class="modal-close" id="modal-close" aria-label="Fermer">×</button>
+    <h3 class="modal-title" id="modal-title">Services compatibles</h3>
+    <p class="modal-sub" id="modal-sub"></p>
+    <div id="modal-body"></div>
+  </div>
+</div>
 
 <script src="assets/i18n.js"></script>
 <script src="assets/script.js"></script>

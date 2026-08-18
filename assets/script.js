@@ -43,7 +43,6 @@
     renderTrack(lang, currentTrackIndex);
     try { localStorage.setItem(STORAGE_KEY, lang); } catch(e) {}
     window.CM_CURRENT_LANG = lang;
-    requestAnimationFrame(positionIndicator);
   }
 
   /* ---------------- Lecteur de démonstration interactif ---------------- */
@@ -223,7 +222,7 @@
     });
   }
 
-  /* ---------------- Onglets de navigation + indicateur ---------------- */
+  /* ---------------- Onglets de navigation + barre de progression du site ---------------- */
   var navTabs = [];
   var navSections = [];
   var activeTabIndex = 0;
@@ -235,18 +234,18 @@
       var id = tab.getAttribute("data-section");
       return id === "top" ? document.body : document.getElementById(id);
     });
-    window.addEventListener("resize", positionIndicator);
   }
 
-  function positionIndicator(){
+  // La barre sous les onglets représente la progression de lecture de la PAGE entière (0 à 100%)
+  function updateScrollProgress(){
     var indicator = document.getElementById("nav-indicator");
-    var tabsWrap = document.getElementById("nav-tabs");
-    if (!indicator || !tabsWrap || !navTabs[activeTabIndex]) return;
-    var tab = navTabs[activeTabIndex];
-    var wrapRect = tabsWrap.getBoundingClientRect();
-    var tabRect = tab.getBoundingClientRect();
-    indicator.style.width = tabRect.width + "px";
-    indicator.style.transform = "translateX(" + (tabRect.left - wrapRect.left + tabsWrap.scrollLeft) + "px)";
+    if (!indicator) return;
+    var doc = document.documentElement;
+    var scrollTop = doc.scrollTop || document.body.scrollTop;
+    var scrollHeight = (doc.scrollHeight || document.body.scrollHeight) - doc.clientHeight;
+    var pct = scrollHeight > 0 ? Math.min(100, (scrollTop / scrollHeight) * 100) : 0;
+    indicator.style.width = pct + "%";
+    indicator.style.transform = "translateX(0)";
   }
 
   function updateActiveTab(){
@@ -262,8 +261,129 @@
       navTabs[activeTabIndex] && navTabs[activeTabIndex].classList.remove("is-active");
       activeTabIndex = current;
       navTabs[activeTabIndex].classList.add("is-active");
-      positionIndicator();
     }
+  }
+
+  /* ---------------- Menu déroulant du site ---------------- */
+  function initSiteMenu(){
+    var trigger = document.getElementById("menu-trigger");
+    var panel = document.getElementById("menu-panel");
+    if (!trigger || !panel) return;
+    function close(){
+      panel.classList.remove("is-open");
+      trigger.setAttribute("aria-expanded", "false");
+    }
+    trigger.addEventListener("click", function(e){
+      e.stopPropagation();
+      var open = panel.classList.toggle("is-open");
+      trigger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    document.addEventListener("click", function(e){
+      if (!panel.contains(e.target) && e.target !== trigger) close();
+    });
+    document.addEventListener("keydown", function(e){
+      if (e.key === "Escape") close();
+    });
+  }
+
+  /* ---------------- Fenêtre modale : services compatibles ---------------- */
+  var POPUP_DATA = {
+    drives: {
+      title: "Tous les drives compatibles",
+      sub: "Cloud Music se connecte directement à votre compte, sans jamais transmettre vos identifiants.",
+      hasStorage: true,
+      rows: [
+        { name: "Google Drive", color: "#1a73e8", initial: "G", stars: 4, comment: "15 Go offerts, bien intégré à Gmail et Docs, mais l'espace est partagé avec vos e-mails et vos photos.", storage: "15 Go" },
+        { name: "MEGA", color: "#d9272e", initial: "M", stars: 3, comment: "20 Go offerts avec chiffrement de bout en bout, mais la bande passante de téléchargement est limitée sur l'offre gratuite.", storage: "20 Go" },
+        { name: "OneDrive", color: "#0364b8", initial: "O", stars: 3, comment: "5 Go offerts, bien intégré à Windows, mais l'offre gratuite reste plus limitée que la concurrence.", storage: "5 Go" },
+        { name: "Box", color: "#0061d5", initial: "B", stars: 3, comment: "10 Go offerts, fiable pour les documents, mais chaque fichier est limité à 250 Mo sur l'offre gratuite.", storage: "10 Go" },
+        { name: "Yandex Disk", color: "#ffcc00", initial: "Y", stars: 3, comment: "5 Go offerts à l'inscription, simple d'utilisation, extensible via les offres Yandex 360.", storage: "5 Go" }
+      ]
+    },
+    links: {
+      title: "Liens de partage compatibles",
+      sub: "Collez un lien public : aucun compte ni connexion nécessaire.",
+      hasStorage: true,
+      rows: [
+        { name: "MEGA", color: "#d9272e", initial: "M", stars: 4, comment: "Le seul service pris en charge pour l'instant : collez un lien de partage MEGA et Cloud Music s'occupe du déchiffrement, sans compte requis.", storage: "20 Go" }
+      ]
+    },
+    nas: {
+      title: "Serveurs NAS compatibles",
+      sub: "Connectez le média-serveur installé sur votre NAS domestique.",
+      hasStorage: false,
+      rows: [
+        { name: "Jellyfin", color: "#00a4dc", initial: "J", stars: 5, comment: "Totalement gratuit et open-source, sans compte ni abonnement requis pour l'utiliser." },
+        { name: "Emby", color: "#52b54b", initial: "E", stars: 4, comment: "Interface soignée et apps natives sur presque toutes les plateformes ; certaines fonctions restent réservées à la version payante." },
+        { name: "Plex", color: "#e5a00d", initial: "P", stars: 4, comment: "Le plus populaire des trois, très simple à configurer, mais certaines fonctions avancées nécessitent Plex Pass." }
+      ]
+    },
+    network: {
+      title: "Protocoles réseau compatibles",
+      sub: "Accédez à un serveur personnel ou à un espace réseau sans passer par un cloud commercial.",
+      hasStorage: false,
+      rows: [
+        { name: "WebDAV", color: "#6b46c1", initial: "W", stars: 4, comment: "Standard ouvert, bien supporté par la plupart des NAS et hébergeurs, avec authentification et chiffrement HTTPS possibles." },
+        { name: "FTP", color: "#f97316", initial: "F", stars: 3, comment: "Protocole simple et universel, largement supporté, mais les transferts ne sont pas chiffrés par défaut." },
+        { name: "NFS", color: "#0891b2", initial: "N", stars: 3, comment: "Rapide sur le réseau local et très utilisé sous Linux, mais moins pratique à configurer en dehors de votre réseau domestique." }
+      ]
+    }
+  };
+
+  function starString(n){
+    var s = "";
+    for (var i = 0; i < 5; i++) s += i < n ? "★" : "☆";
+    return s;
+  }
+
+  function openModal(key){
+    var data = POPUP_DATA[key];
+    if (!data) return;
+    var overlay = document.getElementById("modal-overlay");
+    var titleEl = document.getElementById("modal-title");
+    var subEl = document.getElementById("modal-sub");
+    var body = document.getElementById("modal-body");
+    if (!overlay || !body) return;
+    titleEl.textContent = data.title;
+    subEl.textContent = data.sub;
+    body.innerHTML = data.rows.map(function(r){
+      var rowClass = data.hasStorage ? "modal-row" : "modal-row no-storage";
+      var storageHtml = data.hasStorage ? '<div class="modal-storage">' + r.storage + '</div>' : "";
+      return (
+        '<div class="' + rowClass + '">' +
+          '<div class="modal-service">' +
+            '<div class="modal-badge" style="background:' + r.color + '">' + r.initial + '</div>' +
+            '<div class="modal-service-name">' + r.name + '</div>' +
+          '</div>' +
+          '<div class="modal-rating">' +
+            '<div class="modal-stars">' + starString(r.stars) + '</div>' +
+            '<div class="modal-comment">' + r.comment + '</div>' +
+          '</div>' +
+          storageHtml +
+        '</div>'
+      );
+    }).join("");
+    overlay.classList.add("is-open");
+  }
+
+  function closeModal(){
+    var overlay = document.getElementById("modal-overlay");
+    if (overlay) overlay.classList.remove("is-open");
+  }
+
+  function initModals(){
+    document.querySelectorAll("[data-modal]").forEach(function(btn){
+      btn.addEventListener("click", function(){ openModal(btn.getAttribute("data-modal")); });
+    });
+    var overlay = document.getElementById("modal-overlay");
+    var closeBtn = document.getElementById("modal-close");
+    if (closeBtn) closeBtn.addEventListener("click", closeModal);
+    if (overlay) overlay.addEventListener("click", function(e){
+      if (e.target === overlay) closeModal();
+    });
+    document.addEventListener("keydown", function(e){
+      if (e.key === "Escape") closeModal();
+    });
   }
 
   /* ---------------- Apparition au scroll ---------------- */
@@ -288,11 +408,16 @@
     buildLangSelects();
     initPlayer();
     initNavTabs();
+    initSiteMenu();
+    initModals();
     initReveal();
     setLanguage(detectLang());
     navTabs[0] && navTabs[0].classList.add("is-active");
-    positionIndicator();
-    document.addEventListener('scroll', updateActiveTab, { passive: true });
+    document.addEventListener('scroll', function(){
+      updateScrollProgress();
+      updateActiveTab();
+    }, { passive: true });
+    updateScrollProgress();
     updateActiveTab();
   });
 })();
