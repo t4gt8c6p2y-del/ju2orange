@@ -120,7 +120,7 @@ p{ margin: 0; }
   font-size: 16px;
   color: var(--text);
 }
-.nav__tab img{ width: 22px; height: 22px; border-radius: 6px; flex-shrink: 0; }
+.nav__tab img{ width: 28px; height: 28px; border-radius: 7px; flex-shrink: 0; }
 .nav__indicator{
   position: absolute;
   bottom: 0;
@@ -163,7 +163,7 @@ p{ margin: 0; }
    --------------------------------------------------------- */
 .hero{
   position: relative;
-  padding: 96px 0 70px;
+  padding: 72px 0 40px;
   overflow: hidden;
   border-bottom: 1px solid var(--line-soft);
 }
@@ -203,11 +203,11 @@ p{ margin: 0; }
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 .hero__brand img{
-  width: 40px; height: 40px;
-  border-radius: 10px;
+  width: 60px; height: 60px;
+  border-radius: 14px;
   flex-shrink: 0;
 }
 .hero__brand span{
@@ -220,7 +220,7 @@ p{ margin: 0; }
 .hero h1{
   font-size: clamp(30px, 4.4vw, 48px);
   line-height: 1.12;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 .hero h1 em{
   font-style: normal;
@@ -233,10 +233,10 @@ p{ margin: 0; }
   margin-bottom: 34px;
 }
 .hero__bullets{
-  margin: 0 0 34px;
+  margin: 0 0 22px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 .hero__bullets li{
   display: flex;
@@ -419,8 +419,8 @@ p{ margin: 0; }
 }
 
 @media (max-width: 860px){
-  .hero{ padding: 64px 0 48px; }
-  .hero__inner{ grid-template-columns: 1fr; gap: 40px; }
+  .hero{ padding: 44px 0 8px; }
+  .hero__inner{ grid-template-columns: 1fr; gap: 28px; }
 }
 
 /* ---------------------------------------------------------
@@ -453,7 +453,7 @@ section{ padding: 100px 0; }
 }
 
 @media (max-width: 640px){
-  section{ padding: 66px 0; }
+  section{ padding: 40px 0 66px; }
   .section-head{ flex-direction: column; align-items: flex-start; gap: 10px; }
 }
 
@@ -557,10 +557,9 @@ section{ padding: 100px 0; }
 .modal-title{
   font-family: var(--font-display);
   font-size: 20px;
-  margin-bottom: 4px;
+  margin-bottom: 20px;
   padding-right: 40px;
 }
-.modal-sub{ color: var(--text-dim); font-size: 13.5px; margin-bottom: 22px; }
 .modal-row{
   display: grid;
   grid-template-columns: 1.3fr 2fr 0.8fr;

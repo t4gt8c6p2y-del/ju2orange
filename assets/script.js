@@ -236,15 +236,52 @@
     });
   }
 
-  // La barre sous les onglets représente la progression de lecture de la PAGE entière (0 à 100%)
+  // La barre sous les onglets avance en continu et touche le milieu de chaque
+  // onglet exactement au moment où la section correspondante commence à l'écran.
   function updateScrollProgress(){
     var indicator = document.getElementById("nav-indicator");
-    if (!indicator) return;
-    var doc = document.documentElement;
-    var scrollTop = doc.scrollTop || document.body.scrollTop;
-    var scrollHeight = (doc.scrollHeight || document.body.scrollHeight) - doc.clientHeight;
-    var pct = scrollHeight > 0 ? Math.min(100, (scrollTop / scrollHeight) * 100) : 0;
-    indicator.style.width = pct + "%";
+    var tabsWrap = document.getElementById("nav-tabs");
+    if (!indicator || !tabsWrap || navTabs.length < 2) return;
+
+    // Centre horizontal (en px, relatif au conteneur d'onglets) de chaque onglet
+    var wrapRect = tabsWrap.getBoundingClientRect();
+    var centers = navTabs.map(function(tab){
+      var r = tab.getBoundingClientRect();
+      return (r.left - wrapRect.left + tabsWrap.scrollLeft) + r.width / 2;
+    });
+
+    // Mesures de scroll robustes (fiables sur mobile, contrairement à document.documentElement seul)
+    var scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var docHeight = Math.max(
+      document.body.scrollHeight, document.documentElement.scrollHeight,
+      document.body.offsetHeight, document.documentElement.offsetHeight
+    );
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    var maxScroll = Math.max(1, docHeight - viewportHeight);
+
+    // Position de départ (en scroll Y) de chaque section, alignée sur les onglets
+    var OFFSET = 140; // même seuil que la détection de section active
+    var boundaries = navSections.map(function(sec){
+      if (!sec) return null;
+      var top = 0, el = sec;
+      while (el){ top += el.offsetTop || 0; el = el.offsetParent; }
+      return sec === document.body ? 0 : top;
+    });
+
+    var idx = 0;
+    for (var i = 0; i < boundaries.length; i++){
+      if (boundaries[i] !== null && (scrollTop + OFFSET) >= boundaries[i]) idx = i;
+    }
+
+    var startY = boundaries[idx] || 0;
+    var endY = (idx < boundaries.length - 1 && boundaries[idx + 1] !== null) ? boundaries[idx + 1] : maxScroll;
+    var frac = endY > startY ? Math.min(1, Math.max(0, ((scrollTop + OFFSET) - startY) / (endY - startY))) : 1;
+
+    var startX = centers[idx];
+    var endX = (idx < centers.length - 1) ? centers[idx + 1] : centers[idx];
+    var width = startX + (endX - startX) * frac;
+
+    indicator.style.width = Math.max(2, width) + "px";
     indicator.style.transform = "translateX(0)";
   }
 
@@ -290,49 +327,45 @@
   var POPUP_DATA = {
     drives: {
       title: "Tous les drives compatibles",
-      sub: "Cloud Music se connecte directement à votre compte, sans jamais transmettre vos identifiants.",
       hasStorage: true,
       rows: [
-        { name: "Google Drive", color: "#1a73e8", initial: "G", stars: 4, comment: "15 Go offerts, bien intégré à Gmail et Docs, mais l'espace est partagé avec vos e-mails et vos photos.", storage: "15 Go" },
-        { name: "MEGA", color: "#d9272e", initial: "M", stars: 3, comment: "20 Go offerts avec chiffrement de bout en bout, mais la bande passante de téléchargement est limitée sur l'offre gratuite.", storage: "20 Go" },
-        { name: "OneDrive", color: "#0364b8", initial: "O", stars: 3, comment: "5 Go offerts, bien intégré à Windows, mais l'offre gratuite reste plus limitée que la concurrence.", storage: "5 Go" },
-        { name: "Box", color: "#0061d5", initial: "B", stars: 3, comment: "10 Go offerts, fiable pour les documents, mais chaque fichier est limité à 250 Mo sur l'offre gratuite.", storage: "10 Go" },
-        { name: "Yandex Disk", color: "#ffcc00", initial: "Y", stars: 3, comment: "5 Go offerts à l'inscription, simple d'utilisation, extensible via les offres Yandex 360.", storage: "5 Go" }
+        { name: "Google Drive", color: "#1a73e8", initial: "G", stars: 5, comment: "Offre généreuse sans limite de téléchargement, avec un débit moyen élevé.", storage: "15 Go" },
+        { name: "MEGA", color: "#d9272e", initial: "M", stars: 4, comment: "20 Go offerts avec chiffrement de bout en bout, pour une bande passante gratuite plus limitée.", storage: "20 Go" },
+        { name: "OneDrive", color: "#0364b8", initial: "O", stars: 3, comment: "Bien intégré à Windows et Office, mais l'offre gratuite reste la plus modeste du marché.", storage: "5 Go" },
+        { name: "Box", color: "#0061d5", initial: "B", stars: 3, comment: "Fiable pour les documents professionnels, avec une limite de 250 Mo par fichier sur l'offre gratuite.", storage: "10 Go" },
+        { name: "Yandex Disk", color: "#ffcc00", initial: "Y", stars: 3, comment: "Simple et rapide à configurer, avec un espace gratuit extensible via les offres Yandex 360.", storage: "5 Go" }
       ]
     },
     links: {
       title: "Liens de partage compatibles",
-      sub: "Collez un lien public : aucun compte ni connexion nécessaire.",
       hasStorage: true,
       rows: [
-        { name: "MEGA", color: "#d9272e", initial: "M", stars: 4, comment: "Le seul service pris en charge pour l'instant : collez un lien de partage MEGA et Cloud Music s'occupe du déchiffrement, sans compte requis.", storage: "20 Go" }
+        { name: "MEGA", color: "#d9272e", initial: "M", stars: 4, comment: "Le seul service pris en charge pour l'instant, sans compte requis.", storage: "20 Go" }
       ]
     },
     nas: {
       title: "Serveurs NAS compatibles",
-      sub: "Connectez le média-serveur installé sur votre NAS domestique.",
       hasStorage: false,
       rows: [
-        { name: "Jellyfin", color: "#00a4dc", initial: "J", stars: 5, comment: "Totalement gratuit et open-source, sans compte ni abonnement requis pour l'utiliser." },
-        { name: "Emby", color: "#52b54b", initial: "E", stars: 4, comment: "Interface soignée et apps natives sur presque toutes les plateformes ; certaines fonctions restent réservées à la version payante." },
-        { name: "Plex", color: "#e5a00d", initial: "P", stars: 4, comment: "Le plus populaire des trois, très simple à configurer, mais certaines fonctions avancées nécessitent Plex Pass." }
+        { name: "Jellyfin", color: "#00a4dc", initial: "J", stars: 5, comment: "Entièrement gratuit et open-source, sans compte ni abonnement requis." },
+        { name: "Emby", color: "#52b54b", initial: "E", stars: 4, comment: "Interface soignée et apps natives sur presque toutes les plateformes." },
+        { name: "Plex", color: "#e5a00d", initial: "P", stars: 4, comment: "Le plus populaire des trois, très simple à configurer." }
       ]
     },
     network: {
       title: "Protocoles réseau compatibles",
-      sub: "Accédez à un serveur personnel ou à un espace réseau sans passer par un cloud commercial.",
       hasStorage: false,
       rows: [
-        { name: "WebDAV", color: "#6b46c1", initial: "W", stars: 4, comment: "Standard ouvert, bien supporté par la plupart des NAS et hébergeurs, avec authentification et chiffrement HTTPS possibles." },
-        { name: "FTP", color: "#f97316", initial: "F", stars: 3, comment: "Protocole simple et universel, largement supporté, mais les transferts ne sont pas chiffrés par défaut." },
-        { name: "NFS", color: "#0891b2", initial: "N", stars: 3, comment: "Rapide sur le réseau local et très utilisé sous Linux, mais moins pratique à configurer en dehors de votre réseau domestique." }
+        { name: "WebDAV", color: "#6b46c1", initial: "W", stars: 4, comment: "Standard ouvert, largement supporté, avec authentification et chiffrement HTTPS." },
+        { name: "FTP", color: "#f97316", initial: "F", stars: 3, comment: "Simple et universel, mais non chiffré par défaut." },
+        { name: "NFS", color: "#0891b2", initial: "N", stars: 3, comment: "Rapide en réseau local, très utilisé sous Linux." }
       ]
     }
   };
 
   function starString(n){
     var s = "";
-    for (var i = 0; i < 5; i++) s += i < n ? "★" : "☆";
+    for (var i = 0; i < n; i++) s += "⭐️";
     return s;
   }
 
@@ -341,11 +374,9 @@
     if (!data) return;
     var overlay = document.getElementById("modal-overlay");
     var titleEl = document.getElementById("modal-title");
-    var subEl = document.getElementById("modal-sub");
     var body = document.getElementById("modal-body");
     if (!overlay || !body) return;
     titleEl.textContent = data.title;
-    subEl.textContent = data.sub;
     body.innerHTML = data.rows.map(function(r){
       var rowClass = data.hasStorage ? "modal-row" : "modal-row no-storage";
       var storageHtml = data.hasStorage ? '<div class="modal-storage">' + r.storage + '</div>' : "";
@@ -357,7 +388,7 @@
           '</div>' +
           '<div class="modal-rating">' +
             '<div class="modal-stars">' + starString(r.stars) + '</div>' +
-            '<div class="modal-comment">' + r.comment + '</div>' +
+            '<div class="modal-comment">« ' + r.comment + ' »</div>' +
           '</div>' +
           storageHtml +
         '</div>'
@@ -417,6 +448,8 @@
       updateScrollProgress();
       updateActiveTab();
     }, { passive: true });
+    window.addEventListener('resize', updateScrollProgress);
+    window.addEventListener('load', updateScrollProgress);
     updateScrollProgress();
     updateActiveTab();
   });
