@@ -329,36 +329,37 @@
       title: "Tous les drives compatibles",
       hasStorage: true,
       rows: [
-        { name: "Google Drive", color: "#1a73e8", initial: "G", stars: 5, comment: "Offre généreuse sans limite de téléchargement, avec un débit moyen élevé.", storage: "15 Go" },
-        { name: "MEGA", color: "#d9272e", initial: "M", stars: 4, comment: "20 Go offerts avec chiffrement de bout en bout, pour une bande passante gratuite plus limitée.", storage: "20 Go" },
-        { name: "OneDrive", color: "#0364b8", initial: "O", stars: 3, comment: "Bien intégré à Windows et Office, mais l'offre gratuite reste la plus modeste du marché.", storage: "5 Go" },
-        { name: "Box", color: "#0061d5", initial: "B", stars: 3, comment: "Fiable pour les documents professionnels, avec une limite de 250 Mo par fichier sur l'offre gratuite.", storage: "10 Go" },
-        { name: "Yandex Disk", color: "#ffcc00", initial: "Y", stars: 3, comment: "Simple et rapide à configurer, avec un espace gratuit extensible via les offres Yandex 360.", storage: "5 Go" }
+        { name: "Google Drive", stars: 5, comment: "Offre généreuse sans limite de téléchargement, avec un débit moyen élevé.", storage: "15 Go" },
+        { name: "MEGA", stars: 4, comment: "20 Go offerts avec chiffrement de bout en bout, pour une bande passante gratuite plus limitée.", storage: "20 Go" },
+        { name: "OneDrive", stars: 3, comment: "Bien intégré à Windows et Office, mais l'offre gratuite reste la plus modeste du marché.", storage: "5 Go" },
+        { name: "Dropbox", stars: 3, comment: "Synchronisation rapide et fiable, mais l'offre gratuite se limite à 2 Go.", storage: "2 Go" },
+        { name: "Box", stars: 3, comment: "Fiable pour les documents professionnels, avec une limite de 250 Mo par fichier sur l'offre gratuite.", storage: "10 Go" },
+        { name: "Yandex Disk", stars: 3, comment: "Simple et rapide à configurer, avec un espace gratuit extensible via les offres Yandex 360.", storage: "5 Go" }
       ]
     },
     links: {
       title: "Liens de partage compatibles",
       hasStorage: true,
       rows: [
-        { name: "MEGA", color: "#d9272e", initial: "M", stars: 4, comment: "Le seul service pris en charge pour l'instant, sans compte requis.", storage: "20 Go" }
+        { name: "MEGA", stars: 4, comment: "Le seul service pris en charge pour l'instant, sans compte requis.", storage: "20 Go" }
       ]
     },
     nas: {
       title: "Serveurs NAS compatibles",
       hasStorage: false,
       rows: [
-        { name: "Jellyfin", color: "#00a4dc", initial: "J", stars: 5, comment: "Entièrement gratuit et open-source, sans compte ni abonnement requis." },
-        { name: "Emby", color: "#52b54b", initial: "E", stars: 4, comment: "Interface soignée et apps natives sur presque toutes les plateformes." },
-        { name: "Plex", color: "#e5a00d", initial: "P", stars: 4, comment: "Le plus populaire des trois, très simple à configurer." }
+        { name: "Jellyfin", stars: 5, comment: "Entièrement gratuit et open-source, sans compte ni abonnement requis." },
+        { name: "Emby", stars: 4, comment: "Interface soignée et apps natives sur presque toutes les plateformes." },
+        { name: "Plex", stars: 4, comment: "Le plus populaire des trois, très simple à configurer." }
       ]
     },
     network: {
       title: "Protocoles réseau compatibles",
       hasStorage: false,
       rows: [
-        { name: "WebDAV", color: "#6b46c1", initial: "W", stars: 4, comment: "Standard ouvert, largement supporté, avec authentification et chiffrement HTTPS." },
-        { name: "FTP", color: "#f97316", initial: "F", stars: 3, comment: "Simple et universel, mais non chiffré par défaut." },
-        { name: "NFS", color: "#0891b2", initial: "N", stars: 3, comment: "Rapide en réseau local, très utilisé sous Linux." }
+        { name: "WebDAV", stars: 4, comment: "Standard ouvert, largement supporté, avec authentification et chiffrement HTTPS." },
+        { name: "FTP", stars: 3, comment: "Simple et universel, mais non chiffré par défaut." },
+        { name: "NFS", stars: 3, comment: "Rapide en réseau local, très utilisé sous Linux." }
       ]
     }
   };
@@ -383,7 +384,6 @@
       return (
         '<div class="' + rowClass + '">' +
           '<div class="modal-service">' +
-            '<div class="modal-badge" style="background:' + r.color + '">' + r.initial + '</div>' +
             '<div class="modal-service-name">' + r.name + '</div>' +
           '</div>' +
           '<div class="modal-rating">' +

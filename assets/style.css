@@ -432,14 +432,15 @@ section{ padding: 100px 0; }
   justify-content: space-between;
   align-items: flex-end;
   gap: 30px;
-  margin-bottom: 52px;
+  margin-bottom: 34px;
   border-bottom: 1px solid var(--line-soft);
-  padding-bottom: 26px;
+  padding-bottom: 20px;
 }
 .section-head h2{
   font-size: clamp(28px, 3.4vw, 40px);
   margin-top: 10px;
 }
+.section-head h2:first-child{ margin-top: 0; }
 .section-head p{
   max-width: 40ch;
   color: var(--text-dim);
@@ -570,17 +571,7 @@ section{ padding: 100px 0; }
 }
 .modal-row:first-of-type{ border-top: none; }
 .modal-row.no-storage{ grid-template-columns: 1.3fr 2.6fr; }
-.modal-service{ display: flex; align-items: center; gap: 10px; }
-.modal-badge{
-  width: 34px; height: 34px;
-  border-radius: 9px;
-  flex-shrink: 0;
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 14px;
-  color: #fff;
-}
+.modal-service{ display: flex; align-items: center; }
 .modal-service-name{ font-size: 14.5px; font-weight: 600; }
 .modal-rating{ font-size: 12px; }
 .modal-stars{ font-size: 12px; letter-spacing: 1px; margin-bottom: 3px; }
