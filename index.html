@@ -17,10 +17,12 @@
 <img alt="Cloud Music" height="22" src="assets/logo.png" width="22"/>
 <span>Cloud Music</span>
 </a>
+<div class="nav__tabs-right">
 <a class="nav__tab" data-section="fonctionnalites" href="#fonctionnalites"><span data-i18n="nav.features">Fonctionnalités</span></a>
 <a class="nav__tab" data-section="confidentialite" href="#confidentialite"><span data-i18n="nav.privacy">Confidentialité</span></a>
 <a class="nav__tab" data-section="a-propos" href="#a-propos"><span data-i18n="nav.about">À propos</span></a>
 <a class="nav__tab" data-section="contact" href="#contact"><span data-i18n="nav.contact">Contact</span></a>
+</div>
 <span class="nav__indicator" id="nav-indicator"></span>
 </div>
 <div class="nav__right">
@@ -30,11 +32,16 @@
 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewBox="0 0 24 24"><line x1="4" x2="20" y1="7" y2="7"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="17" y2="17"></line></svg>
 </button>
 <div class="menu-panel" id="menu-panel">
-<div class="menu-group">
-<a class="menu-heading" href="index.html">Accueil</a>
+<div class="menu-group" id="menu-accueil-group">
+<button class="menu-toggle" id="menu-accueil-toggle" type="button" aria-expanded="false">
+<span>Accueil</span>
+<svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</button>
+<div class="menu-subwrap">
 <a class="menu-sub" href="index.html#fonctionnalites">Fonctionnalités</a>
 <a class="menu-sub" href="index.html#confidentialite">Confidentialité</a>
 <a class="menu-sub" href="index.html#a-propos">À propos</a>
+</div>
 </div>
 <div class="menu-group">
 <a class="menu-heading" href="documentation.html">Documentation</a>
@@ -86,6 +93,10 @@
 <li>
 <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 <span data-i18n="hero.b5"><strong>Aucune publicité</strong>, pour une écoute sans interruption.</span>
+</li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span data-i18n="hero.b6"><strong>Mode hors ligne</strong> pour écouter votre musique n'importe où.</span>
 </li>
 </ul>
 <div class="hero__actions">

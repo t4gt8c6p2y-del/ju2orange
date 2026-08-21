@@ -238,17 +238,15 @@
 
   // La barre sous les onglets avance en continu et touche le milieu de chaque
   // onglet exactement au moment où la section correspondante commence à l'écran.
+  // Si les onglets ne sont pas visibles (écran trop petit pour tous les afficher),
+  // on bascule sur une simple progression du scroll (0 à 100% de la largeur disponible).
   function updateScrollProgress(){
     var indicator = document.getElementById("nav-indicator");
     var tabsWrap = document.getElementById("nav-tabs");
+    var tabsRight = document.querySelector(".nav__tabs-right");
     if (!indicator || !tabsWrap || navTabs.length < 2) return;
 
-    // Centre horizontal (en px, relatif au conteneur d'onglets) de chaque onglet
     var wrapRect = tabsWrap.getBoundingClientRect();
-    var centers = navTabs.map(function(tab){
-      var r = tab.getBoundingClientRect();
-      return (r.left - wrapRect.left + tabsWrap.scrollLeft) + r.width / 2;
-    });
 
     // Mesures de scroll robustes (fiables sur mobile, contrairement à document.documentElement seul)
     var scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -258,6 +256,23 @@
     );
     var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     var maxScroll = Math.max(1, docHeight - viewportHeight);
+
+    // Les onglets secondaires sont-ils réellement visibles à l'écran ?
+    var tabsVisible = !!(tabsRight && tabsRight.offsetWidth > 0 && getComputedStyle(tabsRight).display !== "none");
+
+    if (!tabsVisible){
+      // Écran trop étroit pour afficher les catégories : simple barre de scroll (0 à 100%)
+      var pct = Math.min(1, Math.max(0, scrollTop / maxScroll));
+      indicator.style.width = (pct * wrapRect.width) + "px";
+      indicator.style.transform = "translateX(0)";
+      return;
+    }
+
+    // Centre horizontal (en px, relatif au conteneur d'onglets) de chaque onglet
+    var centers = navTabs.map(function(tab){
+      var r = tab.getBoundingClientRect();
+      return (r.left - wrapRect.left + tabsWrap.scrollLeft) + r.width / 2;
+    });
 
     // Position de départ (en scroll Y) de chaque section, alignée sur les onglets
     var OFFSET = 140; // même seuil que la détection de section active
@@ -273,12 +288,14 @@
       if (boundaries[i] !== null && (scrollTop + OFFSET) >= boundaries[i]) idx = i;
     }
 
+    var isLast = idx === boundaries.length - 1;
     var startY = boundaries[idx] || 0;
-    var endY = (idx < boundaries.length - 1 && boundaries[idx + 1] !== null) ? boundaries[idx + 1] : maxScroll;
+    var endY = !isLast && boundaries[idx + 1] !== null ? boundaries[idx + 1] : maxScroll;
     var frac = endY > startY ? Math.min(1, Math.max(0, ((scrollTop + OFFSET) - startY) / (endY - startY))) : 1;
 
     var startX = centers[idx];
-    var endX = (idx < centers.length - 1) ? centers[idx + 1] : centers[idx];
+    // Sur le dernier segment, la barre va jusqu'au bord droit du conteneur d'onglets
+    var endX = !isLast ? centers[idx + 1] : wrapRect.width;
     var width = startX + (endX - startX) * frac;
 
     indicator.style.width = Math.max(2, width) + "px";
@@ -321,6 +338,17 @@
     document.addEventListener("keydown", function(e){
       if (e.key === "Escape") close();
     });
+
+    // Accordéon "Accueil" : > devient v pour révéler les sous-catégories, et inversement
+    var accueilGroup = document.getElementById("menu-accueil-group");
+    var accueilToggle = document.getElementById("menu-accueil-toggle");
+    if (accueilGroup && accueilToggle){
+      accueilToggle.addEventListener("click", function(e){
+        e.stopPropagation();
+        var isOpen = accueilGroup.classList.toggle("is-open");
+        accueilToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    }
   }
 
   /* ---------------- Fenêtre modale : services compatibles ---------------- */
@@ -329,46 +357,40 @@
       title: "Tous les drives compatibles",
       hasStorage: true,
       rows: [
-        { name: "Google Drive", stars: 5, comment: "Offre généreuse sans limite de téléchargement, avec un débit moyen élevé.", storage: "15 Go" },
-        { name: "MEGA", stars: 4, comment: "20 Go offerts avec chiffrement de bout en bout, pour une bande passante gratuite plus limitée.", storage: "20 Go" },
-        { name: "OneDrive", stars: 3, comment: "Bien intégré à Windows et Office, mais l'offre gratuite reste la plus modeste du marché.", storage: "5 Go" },
-        { name: "Dropbox", stars: 3, comment: "Synchronisation rapide et fiable, mais l'offre gratuite se limite à 2 Go.", storage: "2 Go" },
-        { name: "Box", stars: 3, comment: "Fiable pour les documents professionnels, avec une limite de 250 Mo par fichier sur l'offre gratuite.", storage: "10 Go" },
-        { name: "Yandex Disk", stars: 3, comment: "Simple et rapide à configurer, avec un espace gratuit extensible via les offres Yandex 360.", storage: "5 Go" }
+        { name: "Google Drive", comment: "Offre généreuse sans limite de téléchargement, avec un débit moyen élevé.", storage: "15 Go" },
+        { name: "MEGA", comment: "20 Go offerts avec chiffrement de bout en bout, pour une bande passante gratuite plus limitée.", storage: "20 Go" },
+        { name: "OneDrive", comment: "Bien intégré à Windows et Office, mais l'offre gratuite reste la plus modeste du marché.", storage: "5 Go" },
+        { name: "Dropbox", comment: "Synchronisation rapide et fiable, mais l'offre gratuite se limite à 2 Go.", storage: "2 Go" },
+        { name: "Box", comment: "Fiable pour les documents professionnels, avec une limite de 250 Mo par fichier sur l'offre gratuite.", storage: "10 Go" },
+        { name: "Yandex Disk", comment: "Simple et rapide à configurer, avec un espace gratuit extensible via les offres Yandex 360.", storage: "5 Go" }
       ]
     },
     links: {
       title: "Liens de partage compatibles",
       hasStorage: true,
       rows: [
-        { name: "MEGA", stars: 4, comment: "Le seul service pris en charge pour l'instant, sans compte requis.", storage: "20 Go" }
+        { name: "MEGA", comment: "Le seul service pris en charge pour l'instant, sans compte requis.", storage: "20 Go" }
       ]
     },
     nas: {
       title: "Serveurs NAS compatibles",
       hasStorage: false,
       rows: [
-        { name: "Jellyfin", stars: 5, comment: "Entièrement gratuit et open-source, sans compte ni abonnement requis." },
-        { name: "Emby", stars: 4, comment: "Interface soignée et apps natives sur presque toutes les plateformes." },
-        { name: "Plex", stars: 4, comment: "Le plus populaire des trois, très simple à configurer." }
+        { name: "Jellyfin", comment: "Entièrement gratuit et open-source, sans compte ni abonnement requis." },
+        { name: "Emby", comment: "Interface soignée et apps natives sur presque toutes les plateformes." },
+        { name: "Plex", comment: "Le plus populaire des trois, très simple à configurer." }
       ]
     },
     network: {
       title: "Protocoles réseau compatibles",
       hasStorage: false,
       rows: [
-        { name: "WebDAV", stars: 4, comment: "Standard ouvert, largement supporté, avec authentification et chiffrement HTTPS." },
-        { name: "FTP", stars: 3, comment: "Simple et universel, mais non chiffré par défaut." },
-        { name: "NFS", stars: 3, comment: "Rapide en réseau local, très utilisé sous Linux." }
+        { name: "WebDAV", comment: "Standard ouvert, largement supporté, avec authentification et chiffrement HTTPS." },
+        { name: "FTP", comment: "Simple et universel, mais non chiffré par défaut." },
+        { name: "NFS", comment: "Rapide en réseau local, très utilisé sous Linux." }
       ]
     }
   };
-
-  function starString(n){
-    var s = "";
-    for (var i = 0; i < n; i++) s += "⭐️";
-    return s;
-  }
 
   function openModal(key){
     var data = POPUP_DATA[key];
@@ -387,8 +409,7 @@
             '<div class="modal-service-name">' + r.name + '</div>' +
           '</div>' +
           '<div class="modal-rating">' +
-            '<div class="modal-stars">' + starString(r.stars) + '</div>' +
-            '<div class="modal-comment">« ' + r.comment + ' »</div>' +
+            '<div class="modal-comment">' + r.comment + '</div>' +
           '</div>' +
           storageHtml +
         '</div>'

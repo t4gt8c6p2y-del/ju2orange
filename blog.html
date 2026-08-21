@@ -16,10 +16,12 @@
         <img src="assets/logo.png" alt="Cloud Music" width="22" height="22">
         <span>Cloud Music</span>
       </a>
-      <a href="index.html#fonctionnalites" class="nav__tab"><span>Fonctionnalités</span></a>
-      <a href="index.html#confidentialite" class="nav__tab"><span>Confidentialité</span></a>
-      <a href="index.html#a-propos" class="nav__tab"><span>À propos</span></a>
-      <a href="index.html#contact" class="nav__tab"><span>Contact</span></a>
+      <div class="nav__tabs-right">
+        <a href="index.html#fonctionnalites" class="nav__tab"><span>Fonctionnalités</span></a>
+        <a href="index.html#confidentialite" class="nav__tab"><span>Confidentialité</span></a>
+        <a href="index.html#a-propos" class="nav__tab"><span>À propos</span></a>
+        <a href="index.html#contact" class="nav__tab"><span>Contact</span></a>
+      </div>
       <span class="nav__indicator" id="nav-indicator"></span>
     </div>
     <div class="nav__right">
@@ -28,11 +30,16 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
         </button>
         <div class="menu-panel" id="menu-panel">
-          <div class="menu-group">
-            <a href="index.html" class="menu-heading">Accueil</a>
-            <a href="index.html#fonctionnalites" class="menu-sub">Fonctionnalités</a>
-            <a href="index.html#confidentialite" class="menu-sub">Confidentialité</a>
-            <a href="index.html#a-propos" class="menu-sub">À propos</a>
+          <div class="menu-group" id="menu-accueil-group">
+            <button class="menu-toggle" id="menu-accueil-toggle" type="button" aria-expanded="false">
+              <span>Accueil</span>
+              <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <div class="menu-subwrap">
+              <a href="index.html#fonctionnalites" class="menu-sub">Fonctionnalités</a>
+              <a href="index.html#confidentialite" class="menu-sub">Confidentialité</a>
+              <a href="index.html#a-propos" class="menu-sub">À propos</a>
+            </div>
           </div>
           <div class="menu-group">
             <a href="documentation.html" class="menu-heading">Documentation</a>
