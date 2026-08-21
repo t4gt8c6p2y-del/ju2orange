@@ -244,7 +244,7 @@
     var indicator = document.getElementById("nav-indicator");
     var tabsWrap = document.getElementById("nav-tabs");
     var tabsRight = document.querySelector(".nav__tabs-right");
-    if (!indicator || !tabsWrap || navTabs.length < 2) return;
+    if (!indicator || !tabsWrap) return;
 
     var wrapRect = tabsWrap.getBoundingClientRect();
 
@@ -257,11 +257,11 @@
     var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
     var maxScroll = Math.max(1, docHeight - viewportHeight);
 
-    // Les onglets secondaires sont-ils réellement visibles à l'écran ?
-    var tabsVisible = !!(tabsRight && tabsRight.offsetWidth > 0 && getComputedStyle(tabsRight).display !== "none");
+    // Les onglets de catégories sont-ils réellement visibles et disponibles (page d'accueil, écran assez large) ?
+    var tabsVisible = !!(tabsRight && navTabs.length >= 2 && tabsRight.offsetWidth > 0 && getComputedStyle(tabsRight).display !== "none");
 
     if (!tabsVisible){
-      // Écran trop étroit pour afficher les catégories : simple barre de scroll (0 à 100%)
+      // Pas d'onglets de catégories sur cette page, ou écran trop étroit : simple barre de scroll (0 à 100%)
       var pct = Math.min(1, Math.max(0, scrollTop / maxScroll));
       indicator.style.width = (pct * wrapRect.width) + "px";
       indicator.style.transform = "translateX(0)";
@@ -274,13 +274,14 @@
       return (r.left - wrapRect.left + tabsWrap.scrollLeft) + r.width / 2;
     });
 
-    // Position de départ (en scroll Y) de chaque section, alignée sur les onglets
+    // Position de départ (en scroll Y, absolue dans le document) de chaque section,
+    // calculée via getBoundingClientRect — la même méthode que la détection d'onglet actif,
+    // pour garantir que la barre et la couleur active pointent toujours sur la même section.
     var OFFSET = 140; // même seuil que la détection de section active
     var boundaries = navSections.map(function(sec){
       if (!sec) return null;
-      var top = 0, el = sec;
-      while (el){ top += el.offsetTop || 0; el = el.offsetParent; }
-      return sec === document.body ? 0 : top;
+      if (sec === document.body) return 0;
+      return scrollTop + sec.getBoundingClientRect().top;
     });
 
     var idx = 0;

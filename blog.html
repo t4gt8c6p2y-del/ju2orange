@@ -16,25 +16,22 @@
         <img src="assets/logo.png" alt="Cloud Music" width="22" height="22">
         <span>Cloud Music</span>
       </a>
-      <div class="nav__tabs-right">
-        <a href="index.html#fonctionnalites" class="nav__tab"><span>Fonctionnalités</span></a>
-        <a href="index.html#confidentialite" class="nav__tab"><span>Confidentialité</span></a>
-        <a href="index.html#a-propos" class="nav__tab"><span>À propos</span></a>
-        <a href="index.html#contact" class="nav__tab"><span>Contact</span></a>
-      </div>
       <span class="nav__indicator" id="nav-indicator"></span>
     </div>
     <div class="nav__right">
+      <select class="lang-select" aria-label="Langue / Language"></select>
       <div class="menu-wrap">
         <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Menu" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
         </button>
         <div class="menu-panel" id="menu-panel">
           <div class="menu-group" id="menu-accueil-group">
-            <button class="menu-toggle" id="menu-accueil-toggle" type="button" aria-expanded="false">
-              <span>Accueil</span>
-              <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
+            <div class="menu-toggle">
+              <a href="index.html" class="menu-heading">Accueil</a>
+              <button class="menu-chevron-btn" id="menu-accueil-toggle" type="button" aria-expanded="false" aria-label="Afficher les sous-catégories">
+                <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
             <div class="menu-subwrap">
               <a href="index.html#fonctionnalites" class="menu-sub">Fonctionnalités</a>
               <a href="index.html#confidentialite" class="menu-sub">Confidentialité</a>
@@ -64,9 +61,8 @@
 
 <section class="legal-hero">
   <div class="wrap">
-    <span class="eyebrow">Blog</span>
-    <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;">Notes de mise à jour</h1>
-    <p>Ce qui change dans Cloud Music, au fil des versions.</p>
+    <span class="eyebrow" data-i18n="blog.eyebrow">Blog</span>
+    <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;" data-i18n="blog.title">Notes de mise à jour</h1>
   </div>
 </section>
 
@@ -78,10 +74,8 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5v14l11-7z"/></svg>
         </span>
         <div class="track__body">
-          <h3>Lancement du site Cloud Music</h3>
-          <p>Premier lancement de la vitrine de présentation de l'application : découverte des fonctionnalités, de la politique de confidentialité et de la documentation. L'application arrive prochainement sur l'App Store.</p>
+          <h3 data-i18n="blog.soon">Arrive bientôt</h3>
         </div>
-        <span class="track__tag" style="cursor:default;">10 août 2026</span>
       </div>
     </div>
   </div>
@@ -92,22 +86,22 @@
   <div class="wrap">
     <div class="footer__top">
       <div>
-        <h4>App</h4>
+        <h4 data-i18n="footer.app">App</h4>
         <ul>
-          <li><a href="index.html#fonctionnalites">Fonctionnalités</a></li>
-          <li><a href="index.html#confidentialite">Confidentialité</a></li>
-          <li><a href="index.html#a-propos">À propos</a></li>
+          <li><a href="index.html#fonctionnalites" data-i18n="nav.features">Fonctionnalités</a></li>
+          <li><a href="index.html#confidentialite" data-i18n="nav.privacy">Confidentialité</a></li>
+          <li><a href="index.html#a-propos" data-i18n="nav.about">À propos</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contact">Contact</h4>
         <ul>
           <li><a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a></li>
-          <li><a href="index.html#contact">Formulaire de contact</a></li>
+          <li><a href="index.html#contact" data-i18n="footer.form">Formulaire de contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Légal</h4>
+        <h4 data-i18n="footer.legal">Légal</h4>
         <ul>
           <li><a href="legal/legal-notice.html">Mentions légales</a></li>
           <li><a href="legal/privacy-policy.html">Politique de confidentialité</a></li>
@@ -118,8 +112,8 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 Cloud Music. Tous droits réservés.</span>
-      <span>Fait à la main, sans tracker.</span>
+      <span data-i18n="footer.bottom1">© 2026 Cloud Music. Tous droits réservés.</span>
+      <span data-i18n="footer.bottom2">Fait à la main, sans tracker.</span>
     </div>
   </div>
 </footer>

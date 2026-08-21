@@ -16,25 +16,22 @@
         <img src="assets/logo.png" alt="Cloud Music" width="22" height="22">
         <span>Cloud Music</span>
       </a>
-      <div class="nav__tabs-right">
-        <a href="index.html#fonctionnalites" class="nav__tab"><span>Fonctionnalités</span></a>
-        <a href="index.html#confidentialite" class="nav__tab"><span>Confidentialité</span></a>
-        <a href="index.html#a-propos" class="nav__tab"><span>À propos</span></a>
-        <a href="index.html#contact" class="nav__tab"><span>Contact</span></a>
-      </div>
       <span class="nav__indicator" id="nav-indicator"></span>
     </div>
     <div class="nav__right">
+      <select class="lang-select" aria-label="Langue / Language"></select>
       <div class="menu-wrap">
         <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Menu" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
         </button>
         <div class="menu-panel" id="menu-panel">
           <div class="menu-group" id="menu-accueil-group">
-            <button class="menu-toggle" id="menu-accueil-toggle" type="button" aria-expanded="false">
-              <span>Accueil</span>
-              <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
+            <div class="menu-toggle">
+              <a href="index.html" class="menu-heading">Accueil</a>
+              <button class="menu-chevron-btn" id="menu-accueil-toggle" type="button" aria-expanded="false" aria-label="Afficher les sous-catégories">
+                <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
             <div class="menu-subwrap">
               <a href="index.html#fonctionnalites" class="menu-sub">Fonctionnalités</a>
               <a href="index.html#confidentialite" class="menu-sub">Confidentialité</a>
@@ -64,16 +61,16 @@
 
 <section class="legal-hero">
   <div class="wrap">
-    <span class="eyebrow">Documentation</span>
-    <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;">Guides &amp; tutoriels</h1>
-    <p>Tout ce qu'il faut pour connecter vos sources et bien démarrer avec Cloud Music.</p>
+    <span class="eyebrow" data-i18n="doc.eyebrow">Documentation</span>
+    <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;" data-i18n="doc.title">Guides &amp; tutoriels</h1>
+    <p data-i18n="doc.desc">Tout ce qu'il faut pour connecter vos sources et bien démarrer avec Cloud Music.</p>
     <div class="legal-nav">
-  <a href="#demarrage">Démarrage rapide</a>
-  <a href="#drives">Google Drive &amp; OneDrive</a>
-  <a href="#mega">MEGA par lien</a>
-  <a href="#nas">NAS</a>
-  <a href="#serveur">Serveur personnel</a>
-  <a href="#sauvegarde">Sauvegarde &amp; restauration</a>
+  <a href="#demarrage" data-i18n="doc.nav1">Démarrage rapide</a>
+  <a href="#drives" data-i18n="doc.nav2">Google Drive &amp; OneDrive</a>
+  <a href="#mega" data-i18n="doc.nav3">MEGA par lien</a>
+  <a href="#nas" data-i18n="doc.nav4">NAS</a>
+  <a href="#serveur" data-i18n="doc.nav5">Serveur personnel</a>
+  <a href="#sauvegarde" data-i18n="doc.nav6">Sauvegarde &amp; restauration</a>
 </div>
   </div>
 </section>
@@ -81,47 +78,47 @@
 <section class="legal-body">
   <div class="wrap">
 
-<h2 id="demarrage">Démarrage rapide</h2>
-<p>Trois étapes suffisent pour écouter votre première piste.</p>
+<h2 id="demarrage" data-i18n="doc.s1.title">Démarrage rapide</h2>
+<p data-i18n="doc.s1.p">Trois étapes suffisent pour écouter votre première piste.</p>
 <ol>
-  <li><strong>Installez Cloud Music</strong> depuis l'App Store, puis ouvrez l'application. Aucun compte n'est nécessaire.</li>
-  <li><strong>Choisissez une source</strong> depuis l'onglet Import : un service cloud, un lien MEGA, un NAS, un serveur personnel, ou les fichiers déjà présents sur votre appareil.</li>
-  <li><strong>Importez vos morceaux</strong> : Cloud Music récupère les métadonnées et pochettes automatiquement, puis les ajoute à votre bibliothèque unifiée.</li>
+  <li data-i18n="doc.s1.li1"><strong>Installez Cloud Music</strong> depuis l'App Store, puis ouvrez l'application. Aucun compte n'est nécessaire.</li>
+  <li data-i18n="doc.s1.li2"><strong>Choisissez une source</strong> depuis l'onglet Import : un service cloud, un lien MEGA, un NAS, un serveur personnel, ou les fichiers déjà présents sur votre appareil.</li>
+  <li data-i18n="doc.s1.li3"><strong>Importez vos morceaux</strong> : Cloud Music récupère les métadonnées et pochettes automatiquement, puis les ajoute à votre bibliothèque unifiée.</li>
 </ol>
 
-<h2 id="drives">Connecter Google Drive ou OneDrive</h2>
+<h2 id="drives" data-i18n="doc.s2.title">Connecter Google Drive ou OneDrive</h2>
 <ol>
-  <li>Dans l'onglet Import, sélectionnez <strong>Google Drive</strong> ou <strong>OneDrive</strong>.</li>
-  <li>Connectez-vous via la fenêtre de connexion officielle du service (OAuth) — vos identifiants ne transitent jamais par Cloud Music.</li>
-  <li>Parcourez vos dossiers et sélectionnez les fichiers audio à ajouter à votre bibliothèque, en streaming ou en téléchargement pour une écoute hors ligne.</li>
+  <li data-i18n="doc.s2.li1">Dans l'onglet Import, sélectionnez <strong>Google Drive</strong> ou <strong>OneDrive</strong>.</li>
+  <li data-i18n="doc.s2.li2">Connectez-vous via la fenêtre de connexion sécurisée du service (OAuth) — vos identifiants ne transitent jamais par Cloud Music.</li>
+  <li data-i18n="doc.s2.li3">Parcourez vos dossiers et sélectionnez les fichiers audio à ajouter à votre bibliothèque, en streaming ou en téléchargement pour une écoute hors ligne.</li>
 </ol>
 
-<h2 id="mega">Connecter MEGA par simple lien</h2>
+<h2 id="mega" data-i18n="doc.s3.title">Connecter MEGA par simple lien</h2>
 <ol>
-  <li>Copiez un lien de partage MEGA (dossier ou fichier) depuis l'application ou le site MEGA.</li>
-  <li>Dans Cloud Music, ouvrez l'onglet Import puis <strong>Lien MEGA</strong>, et collez le lien.</li>
-  <li>Aucun compte n'est nécessaire : le déchiffrement se fait directement sur votre appareil.</li>
+  <li data-i18n="doc.s3.li1">Copiez un lien de partage MEGA (dossier ou fichier) depuis l'application ou le site MEGA.</li>
+  <li data-i18n="doc.s3.li2">Dans Cloud Music, ouvrez l'onglet Import puis <strong>Lien MEGA</strong>, et collez le lien.</li>
+  <li data-i18n="doc.s3.li3">Aucun compte n'est nécessaire : le déchiffrement se fait directement sur votre appareil.</li>
 </ol>
 
-<h2 id="nas">Connecter un NAS (Emby, Jellyfin, Plex)</h2>
+<h2 id="nas" data-i18n="doc.s4.title">Connecter un NAS (Emby, Jellyfin, Plex)</h2>
 <ol>
-  <li>Assurez-vous que le serveur multimédia (Emby, Jellyfin ou Plex) est actif sur votre réseau domestique ou accessible à distance.</li>
-  <li>Dans l'onglet Import, sélectionnez <strong>NAS</strong>, puis renseignez l'adresse du serveur et vos identifiants.</li>
-  <li>Votre bibliothèque musicale hébergée sur le NAS apparaît directement dans Cloud Music.</li>
+  <li data-i18n="doc.s4.li1">Assurez-vous que le serveur multimédia (Emby, Jellyfin ou Plex) est actif sur votre réseau domestique ou accessible à distance.</li>
+  <li data-i18n="doc.s4.li2">Dans l'onglet Import, sélectionnez <strong>NAS</strong>, puis renseignez l'adresse du serveur et vos identifiants.</li>
+  <li data-i18n="doc.s4.li3">Votre bibliothèque musicale hébergée sur le NAS apparaît directement dans Cloud Music.</li>
 </ol>
 
-<h2 id="serveur">Connecter un serveur personnel (FTP, WebDAV, NFS)</h2>
+<h2 id="serveur" data-i18n="doc.s5.title">Connecter un serveur personnel (FTP, WebDAV, NFS)</h2>
 <ol>
-  <li>Dans l'onglet Import, choisissez le protocole correspondant à votre serveur : <strong>FTP</strong>, <strong>WebDAV</strong> ou <strong>NFS</strong>.</li>
-  <li>Renseignez l'adresse, le port et les identifiants d'accès à votre serveur ou espace réseau.</li>
-  <li>Parcourez les dossiers distants comme n'importe quelle autre source dans Cloud Music.</li>
+  <li data-i18n="doc.s5.li1">Dans l'onglet Import, choisissez le protocole correspondant à votre serveur : <strong>FTP</strong>, <strong>WebDAV</strong> ou <strong>NFS</strong>.</li>
+  <li data-i18n="doc.s5.li2">Renseignez l'adresse, le port et les identifiants d'accès à votre serveur ou espace réseau.</li>
+  <li data-i18n="doc.s5.li3">Parcourez les dossiers distants comme n'importe quelle autre source dans Cloud Music.</li>
 </ol>
 
-<h2 id="sauvegarde">Sauvegarder et restaurer votre bibliothèque</h2>
+<h2 id="sauvegarde" data-i18n="doc.s6.title">Sauvegarder et restaurer votre bibliothèque</h2>
 <ol>
-  <li>Dans les réglages, ouvrez <strong>Sauvegarde</strong> et choisissez un mot de passe pour chiffrer l'export.</li>
-  <li>Le fichier généré contient vos playlists, favoris, statistiques et réglages — jamais vos fichiers audio eux-mêmes.</li>
-  <li>Pour restaurer, importez ce fichier sur un autre appareil et saisissez le mot de passe utilisé lors de l'export.</li>
+  <li data-i18n="doc.s6.li1">Dans les réglages, ouvrez <strong>Sauvegarde</strong> et choisissez un mot de passe pour chiffrer l'export.</li>
+  <li data-i18n="doc.s6.li2">Le fichier généré contient vos playlists, favoris, statistiques et réglages — jamais vos fichiers audio eux-mêmes.</li>
+  <li data-i18n="doc.s6.li3">Pour restaurer, importez ce fichier sur un autre appareil et saisissez le mot de passe utilisé lors de l'export.</li>
 </ol>
 
   </div>
@@ -132,22 +129,22 @@
   <div class="wrap">
     <div class="footer__top">
       <div>
-        <h4>App</h4>
+        <h4 data-i18n="footer.app">App</h4>
         <ul>
-          <li><a href="index.html#fonctionnalites">Fonctionnalités</a></li>
-          <li><a href="index.html#confidentialite">Confidentialité</a></li>
-          <li><a href="index.html#a-propos">À propos</a></li>
+          <li><a href="index.html#fonctionnalites" data-i18n="nav.features">Fonctionnalités</a></li>
+          <li><a href="index.html#confidentialite" data-i18n="nav.privacy">Confidentialité</a></li>
+          <li><a href="index.html#a-propos" data-i18n="nav.about">À propos</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contact">Contact</h4>
         <ul>
           <li><a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a></li>
-          <li><a href="index.html#contact">Formulaire de contact</a></li>
+          <li><a href="index.html#contact" data-i18n="footer.form">Formulaire de contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Légal</h4>
+        <h4 data-i18n="footer.legal">Légal</h4>
         <ul>
           <li><a href="legal/legal-notice.html">Mentions légales</a></li>
           <li><a href="legal/privacy-policy.html">Politique de confidentialité</a></li>
@@ -158,8 +155,8 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 Cloud Music. Tous droits réservés.</span>
-      <span>Fait à la main, sans tracker.</span>
+      <span data-i18n="footer.bottom1">© 2026 Cloud Music. Tous droits réservés.</span>
+      <span data-i18n="footer.bottom2">Fait à la main, sans tracker.</span>
     </div>
   </div>
 </footer>

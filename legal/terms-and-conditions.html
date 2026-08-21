@@ -26,16 +26,19 @@
       <span class="nav__indicator" id="nav-indicator"></span>
     </div>
     <div class="nav__right">
+      <select class="lang-select" aria-label="Langue / Language"></select>
       <div class="menu-wrap">
         <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Menu" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
         </button>
         <div class="menu-panel" id="menu-panel">
           <div class="menu-group" id="menu-accueil-group">
-            <button class="menu-toggle" id="menu-accueil-toggle" type="button" aria-expanded="false">
-              <span>Accueil</span>
-              <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
+            <div class="menu-toggle">
+              <a href="../index.html" class="menu-heading">Accueil</a>
+              <button class="menu-chevron-btn" id="menu-accueil-toggle" type="button" aria-expanded="false" aria-label="Afficher les sous-catégories">
+                <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
             <div class="menu-subwrap">
               <a href="../index.html#fonctionnalites" class="menu-sub">Fonctionnalités</a>
               <a href="../index.html#confidentialite" class="menu-sub">Confidentialité</a>
@@ -50,11 +53,11 @@
           </div>
           <div class="menu-legal">
             <span class="menu-legal-label">Légal</span>
-            <a href="legal-notice.html">Mentions légales</a>
-            <a href="privacy-policy.html">Confidentialité</a>
-            <a href="cookie-policy.html">Cookies</a>
-            <a href="terms-and-conditions.html">Conditions générales</a>
-            <a href="license-agreement.html">Licence</a>
+            <a href="legal-notice.html" data-i18n="legal.nav.notice">Mentions légales</a>
+            <a href="privacy-policy.html" data-i18n="legal.nav.privacy">Confidentialité</a>
+            <a href="cookie-policy.html" data-i18n="legal.nav.cookies">Cookies</a>
+            <a href="terms-and-conditions.html" data-i18n="legal.nav.terms">Conditions générales</a>
+            <a href="license-agreement.html" data-i18n="legal.nav.license">Licence</a>
           </div>
         </div>
       </div>
@@ -65,48 +68,48 @@
 <main>
   <section class="legal-hero">
     <div class="wrap">
-      <span class="eyebrow">Légal</span>
-      <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;">Conditions générales</h1>
-      <p>Dernière mise à jour : 10 août 2026</p>
-      <div class="legal-nav"><a href="legal-notice.html">Mentions légales</a><a href="privacy-policy.html">Confidentialité</a><a href="cookie-policy.html">Cookies</a><a href="terms-and-conditions.html" class="is-current">Conditions générales</a><a href="license-agreement.html">Licence</a></div>
+      <span class="eyebrow" data-i18n="legal.eyebrow">Légal</span>
+      <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;" data-i18n="tc.h1">Conditions générales</h1>
+      <p data-i18n="legal.updated">Dernière mise à jour : 10 août 2026</p>
+      <div class="legal-nav"><a href="legal-notice.html">Mentions légales</a><a href="privacy-policy.html">Confidentialité</a><a href="cookie-policy.html">Cookies</a><a href="terms-and-conditions.html" class="is-current" data-i18n="legal.nav.terms">Conditions générales</a><a href="license-agreement.html">Licence</a></div>
     </div>
   </section>
 
   <section class="legal-body">
     <div class="wrap">
 
-<h2>Objet</h2>
-<p>Les présentes conditions générales encadrent l'utilisation du site et de l'application iOS Cloud Music (ci-après « l'application »). En utilisant le site ou l'application, vous acceptez ces conditions.</p>
+<h2 data-i18n="tc.h2.purpose">Objet</h2>
+<p data-i18n="tc.p.purpose">Les présentes conditions générales encadrent l'utilisation du site et de l'application iOS Cloud Music (ci-après « l'application »). En utilisant le site ou l'application, vous acceptez ces conditions.</p>
 
-<h2>Description du service</h2>
-<p>Cloud Music est un lecteur audio pour iOS qui permet de connecter des services de stockage cloud tiers (Google Drive, OneDrive, MEGA) ou des fichiers locaux, afin d'écouter des fichiers musicaux que vous possédez déjà. Cloud Music n'héberge, ne vend ni ne fournit aucun contenu musical : vous devez disposer de vos propres fichiers audio et des droits nécessaires pour les écouter.</p>
+<h2 data-i18n="tc.h2.desc">Description du service</h2>
+<p data-i18n="tc.p.desc">Cloud Music est un lecteur audio pour iOS qui permet de connecter des services de stockage cloud tiers (Google Drive, OneDrive, MEGA) ou des fichiers locaux, afin d'écouter des fichiers musicaux que vous possédez déjà. Cloud Music n'héberge, ne vend ni ne fournit aucun contenu musical : vous devez disposer de vos propres fichiers audio et des droits nécessaires pour les écouter.</p>
 
-<h2>Votre responsabilité</h2>
+<h2 data-i18n="tc.h2.resp">Votre responsabilité</h2>
 <ul>
-  <li>Vous êtes seul responsable des fichiers que vous importez ou connectez dans l'application, et devez détenir les droits nécessaires sur ces contenus.</li>
-  <li>Vous devez respecter les conditions d'utilisation propres à chaque service cloud connecté (Google Drive, OneDrive, MEGA, etc.).</li>
-  <li>Toute utilisation de l'application à des fins de contrefaçon ou de partage non autorisé d'œuvres protégées est strictement interdite.</li>
+  <li data-i18n="tc.li.resp1">Vous êtes seul responsable des fichiers que vous importez ou connectez dans l'application, et devez détenir les droits nécessaires sur ces contenus.</li>
+  <li data-i18n="tc.li.resp2">Vous devez respecter les conditions d'utilisation propres à chaque service cloud connecté (Google Drive, OneDrive, MEGA, etc.).</li>
+  <li data-i18n="tc.li.resp3">Toute utilisation de l'application à des fins de contrefaçon ou de partage non autorisé d'œuvres protégées est strictement interdite.</li>
 </ul>
 
-<h2>Fonctionnalité de métadonnées</h2>
-<p>Cloud Music propose une recherche facultative de métadonnées (titre, artiste, album, pochette) auprès de services tiers publics, afin de compléter des fichiers mal renseignés. Ces informations sont fournies à titre indicatif et peuvent être inexactes ou indisponibles.</p>
+<h2 data-i18n="tc.h2.meta">Fonctionnalité de métadonnées</h2>
+<p data-i18n="tc.p.meta">Cloud Music propose une recherche facultative de métadonnées (titre, artiste, album, pochette) auprès de services tiers publics, afin de compléter des fichiers mal renseignés. Ces informations sont fournies à titre indicatif et peuvent être inexactes ou indisponibles.</p>
 
-<h2>Disponibilité</h2>
-<p>L'application est développée et maintenue par un développeur indépendant, à titre personnel. Aucune garantie de disponibilité continue, de compatibilité future avec les services cloud tiers, ni de délai de correction des bugs n'est fournie.</p>
+<h2 data-i18n="tc.h2.avail">Disponibilité</h2>
+<p data-i18n="tc.p.avail">L'application est développée et maintenue par un développeur indépendant, à titre personnel. Aucune garantie de disponibilité continue, de compatibilité future avec les services cloud tiers, ni de délai de correction des bugs n'est fournie.</p>
 
-<h2>Absence de garantie</h2>
-<p>L'application et le site sont fournis « en l'état », sans garantie d'aucune sorte, explicite ou implicite. L'éditeur ne saurait être tenu responsable d'une perte de données, d'une interruption de service côté fournisseur cloud, ou de tout dommage indirect résultant de l'utilisation de l'application.</p>
+<h2 data-i18n="tc.h2.warranty">Absence de garantie</h2>
+<p data-i18n="tc.p.warranty">L'application et le site sont fournis « en l'état », sans garantie d'aucune sorte, explicite ou implicite. L'éditeur ne saurait être tenu responsable d'une perte de données, d'une interruption de service côté fournisseur cloud, ou de tout dommage indirect résultant de l'utilisation de l'application.</p>
 
-<h2>Distribution via l'App Store</h2>
-<p>L'application est distribuée via l'App Store d'Apple et son usage est également soumis aux règles standard d'Apple, notamment aux conditions décrites dans le <a href="license-agreement.html">contrat de licence</a>.</p>
+<h2 data-i18n="tc.h2.appstore">Distribution via l'App Store</h2>
+<p data-i18n="tc.p.appstore">L'application est distribuée via l'App Store d'Apple et son usage est également soumis aux règles standard d'Apple, notamment aux conditions décrites dans le <a href="license-agreement.html">contrat de licence</a>.</p>
 
-<h2>Modifications</h2>
-<p>Ces conditions peuvent être mises à jour à tout moment ; la date de dernière mise à jour est indiquée en haut de cette page. Il est recommandé de la consulter périodiquement.</p>
+<h2 data-i18n="tc.h2.changes">Modifications</h2>
+<p data-i18n="tc.p.changes">Ces conditions peuvent être mises à jour à tout moment ; la date de dernière mise à jour est indiquée en haut de cette page. Il est recommandé de la consulter périodiquement.</p>
 
-<h2>Droit applicable</h2>
-<p>Les présentes conditions sont soumises au droit français, sans préjudice des dispositions impératives éventuellement applicables dans votre pays de résidence.</p>
+<h2 data-i18n="tc.h2.law">Droit applicable</h2>
+<p data-i18n="tc.p.law">Les présentes conditions sont soumises au droit français, sans préjudice des dispositions impératives éventuellement applicables dans votre pays de résidence.</p>
 
-<h2>Contact</h2>
+<h2 data-i18n="tc.h2.contact">Contact</h2>
 <p><a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a></p>
 
     </div>

@@ -26,16 +26,19 @@
       <span class="nav__indicator" id="nav-indicator"></span>
     </div>
     <div class="nav__right">
+      <select class="lang-select" aria-label="Langue / Language"></select>
       <div class="menu-wrap">
         <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Menu" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
         </button>
         <div class="menu-panel" id="menu-panel">
           <div class="menu-group" id="menu-accueil-group">
-            <button class="menu-toggle" id="menu-accueil-toggle" type="button" aria-expanded="false">
-              <span>Accueil</span>
-              <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
+            <div class="menu-toggle">
+              <a href="../index.html" class="menu-heading">Accueil</a>
+              <button class="menu-chevron-btn" id="menu-accueil-toggle" type="button" aria-expanded="false" aria-label="Afficher les sous-catégories">
+                <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
             <div class="menu-subwrap">
               <a href="../index.html#fonctionnalites" class="menu-sub">Fonctionnalités</a>
               <a href="../index.html#confidentialite" class="menu-sub">Confidentialité</a>
@@ -50,11 +53,11 @@
           </div>
           <div class="menu-legal">
             <span class="menu-legal-label">Légal</span>
-            <a href="legal-notice.html">Mentions légales</a>
-            <a href="privacy-policy.html">Confidentialité</a>
-            <a href="cookie-policy.html">Cookies</a>
-            <a href="terms-and-conditions.html">Conditions générales</a>
-            <a href="license-agreement.html">Licence</a>
+            <a href="legal-notice.html" data-i18n="legal.nav.notice">Mentions légales</a>
+            <a href="privacy-policy.html" data-i18n="legal.nav.privacy">Confidentialité</a>
+            <a href="cookie-policy.html" data-i18n="legal.nav.cookies">Cookies</a>
+            <a href="terms-and-conditions.html" data-i18n="legal.nav.terms">Conditions générales</a>
+            <a href="license-agreement.html" data-i18n="legal.nav.license">Licence</a>
           </div>
         </div>
       </div>
@@ -65,41 +68,41 @@
 <main>
   <section class="legal-hero">
     <div class="wrap">
-      <span class="eyebrow">Légal</span>
-      <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;">Contrat de licence</h1>
-      <p>Dernière mise à jour : 10 août 2026</p>
-      <div class="legal-nav"><a href="legal-notice.html">Mentions légales</a><a href="privacy-policy.html">Confidentialité</a><a href="cookie-policy.html">Cookies</a><a href="terms-and-conditions.html">Conditions générales</a><a href="license-agreement.html" class="is-current">Licence</a></div>
+      <span class="eyebrow" data-i18n="legal.eyebrow">Légal</span>
+      <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;" data-i18n="la.h1">Contrat de licence</h1>
+      <p data-i18n="legal.updated">Dernière mise à jour : 10 août 2026</p>
+      <div class="legal-nav"><a href="legal-notice.html">Mentions légales</a><a href="privacy-policy.html">Confidentialité</a><a href="cookie-policy.html">Cookies</a><a href="terms-and-conditions.html">Conditions générales</a><a href="license-agreement.html" class="is-current" data-i18n="legal.nav.license">Licence</a></div>
     </div>
   </section>
 
   <section class="legal-body">
     <div class="wrap">
 
-<h2>Contrat de licence utilisateur final</h2>
-<p>Cloud Music est distribué exclusivement via l'App Store d'Apple. Sauf accord de licence distinct fourni au moment de l'achat ou du téléchargement, votre utilisation de l'application est régie par le <strong>Contrat de licence type pour les applications tierces</strong> d'Apple (Licensed Application End User License Agreement).</p>
-<p>Vous pouvez consulter l'intégralité de ce contrat type sur le site d'Apple : <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">apple.com/legal/internet-services/itunes/dev/stdeula</a>.</p>
+<h2 data-i18n="la.h2.eula">Contrat de licence utilisateur final</h2>
+<p data-i18n="la.p.eula1">Cloud Music est distribué exclusivement via l'App Store d'Apple. Sauf accord de licence distinct fourni au moment de l'achat ou du téléchargement, votre utilisation de l'application est régie par le <strong>Contrat de licence type pour les applications tierces</strong> d'Apple (Licensed Application End User License Agreement).</p>
+<p data-i18n="la.p.eula2">Vous pouvez consulter l'intégralité de ce contrat type sur le site d'Apple : <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">apple.com/legal/internet-services/itunes/dev/stdeula</a>.</p>
 
-<h2>Ce que la licence vous permet</h2>
+<h2 data-i18n="la.h2.allowed">Ce que la licence vous permet</h2>
 <ul>
-  <li>Une licence personnelle, non exclusive et non transférable d'utilisation de Cloud Music sur les appareils Apple que vous possédez ou contrôlez, conformément aux règles d'utilisation de l'App Store.</li>
-  <li>L'usage de l'application est strictement personnel et non commercial.</li>
+  <li data-i18n="la.li.allowed1">Une licence personnelle, non exclusive et non transférable d'utilisation de Cloud Music sur les appareils Apple que vous possédez ou contrôlez, conformément aux règles d'utilisation de l'App Store.</li>
+  <li data-i18n="la.li.allowed2">L'usage de l'application est strictement personnel et non commercial.</li>
 </ul>
 
-<h2>Ce que la licence ne permet pas</h2>
+<h2 data-i18n="la.h2.notallowed">Ce que la licence ne permet pas</h2>
 <ul>
-  <li>Copier (hors copie de sauvegarde autorisée), désassembler, décompiler ou tenter d'extraire le code source de l'application, sauf dans la mesure permise par la loi applicable.</li>
-  <li>Louer, prêter, redistribuer ou sous-licencier l'application.</li>
-  <li>Utiliser l'application pour accéder, stocker ou diffuser des contenus dont vous ne détenez pas les droits.</li>
+  <li data-i18n="la.li.na1">Copier (hors copie de sauvegarde autorisée), désassembler, décompiler ou tenter d'extraire le code source de l'application, sauf dans la mesure permise par la loi applicable.</li>
+  <li data-i18n="la.li.na2">Louer, prêter, redistribuer ou sous-licencier l'application.</li>
+  <li data-i18n="la.li.na3">Utiliser l'application pour accéder, stocker ou diffuser des contenus dont vous ne détenez pas les droits.</li>
 </ul>
 
-<h2>Services tiers connectés</h2>
-<p>Cette licence porte uniquement sur l'application Cloud Music. Votre utilisation de Google Drive, OneDrive, MEGA ou de tout autre service que vous connectez reste soumise aux conditions de licence propres à ces services, indépendantes de Cloud Music.</p>
+<h2 data-i18n="la.h2.thirdparty">Services tiers connectés</h2>
+<p data-i18n="la.p.thirdparty">Cette licence porte uniquement sur l'application Cloud Music. Votre utilisation de Google Drive, OneDrive, MEGA ou de tout autre service que vous connectez reste soumise aux conditions de licence propres à ces services, indépendantes de Cloud Music.</p>
 
-<h2>Propriété</h2>
-<p>L'application Cloud Music, son code, son interface et sa marque restent la propriété de son développeur. Aucune disposition du présent contrat ne vous transfère de droit de propriété intellectuelle sur l'application.</p>
+<h2 data-i18n="la.h2.ownership">Propriété</h2>
+<p data-i18n="la.p.ownership">L'application Cloud Music, son code, son interface et sa marque restent la propriété de son développeur. Aucune disposition du présent contrat ne vous transfère de droit de propriété intellectuelle sur l'application.</p>
 
-<h2>Contact</h2>
-<p>Pour toute question relative à cette licence : <a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a></p>
+<h2 data-i18n="la.h2.contact">Contact</h2>
+<p data-i18n="la.p.contact">Pour toute question relative à cette licence : <a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a></p>
 
     </div>
   </section>

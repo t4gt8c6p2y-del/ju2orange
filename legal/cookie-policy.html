@@ -26,16 +26,19 @@
       <span class="nav__indicator" id="nav-indicator"></span>
     </div>
     <div class="nav__right">
+      <select class="lang-select" aria-label="Langue / Language"></select>
       <div class="menu-wrap">
         <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Menu" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
         </button>
         <div class="menu-panel" id="menu-panel">
           <div class="menu-group" id="menu-accueil-group">
-            <button class="menu-toggle" id="menu-accueil-toggle" type="button" aria-expanded="false">
-              <span>Accueil</span>
-              <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
+            <div class="menu-toggle">
+              <a href="../index.html" class="menu-heading">Accueil</a>
+              <button class="menu-chevron-btn" id="menu-accueil-toggle" type="button" aria-expanded="false" aria-label="Afficher les sous-catégories">
+                <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
             <div class="menu-subwrap">
               <a href="../index.html#fonctionnalites" class="menu-sub">Fonctionnalités</a>
               <a href="../index.html#confidentialite" class="menu-sub">Confidentialité</a>
@@ -50,11 +53,11 @@
           </div>
           <div class="menu-legal">
             <span class="menu-legal-label">Légal</span>
-            <a href="legal-notice.html">Mentions légales</a>
-            <a href="privacy-policy.html">Confidentialité</a>
-            <a href="cookie-policy.html">Cookies</a>
-            <a href="terms-and-conditions.html">Conditions générales</a>
-            <a href="license-agreement.html">Licence</a>
+            <a href="legal-notice.html" data-i18n="legal.nav.notice">Mentions légales</a>
+            <a href="privacy-policy.html" data-i18n="legal.nav.privacy">Confidentialité</a>
+            <a href="cookie-policy.html" data-i18n="legal.nav.cookies">Cookies</a>
+            <a href="terms-and-conditions.html" data-i18n="legal.nav.terms">Conditions générales</a>
+            <a href="license-agreement.html" data-i18n="legal.nav.license">Licence</a>
           </div>
         </div>
       </div>
@@ -65,30 +68,30 @@
 <main>
   <section class="legal-hero">
     <div class="wrap">
-      <span class="eyebrow">Légal</span>
-      <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;">Politique de cookies</h1>
-      <p>Dernière mise à jour : 10 août 2026</p>
-      <div class="legal-nav"><a href="legal-notice.html">Mentions légales</a><a href="privacy-policy.html">Confidentialité</a><a href="cookie-policy.html" class="is-current">Cookies</a><a href="terms-and-conditions.html">Conditions générales</a><a href="license-agreement.html">Licence</a></div>
+      <span class="eyebrow" data-i18n="legal.eyebrow">Légal</span>
+      <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;" data-i18n="cp.h1">Politique de cookies</h1>
+      <p data-i18n="legal.updated">Dernière mise à jour : 10 août 2026</p>
+      <div class="legal-nav"><a href="legal-notice.html">Mentions légales</a><a href="privacy-policy.html">Confidentialité</a><a href="cookie-policy.html" class="is-current" data-i18n="legal.nav.cookies">Cookies</a><a href="terms-and-conditions.html">Conditions générales</a><a href="license-agreement.html">Licence</a></div>
     </div>
   </section>
 
   <section class="legal-body">
     <div class="wrap">
 
-<h2>Ce site n'utilise pas de cookies de suivi</h2>
-<p>Ce site est une simple vitrine statique, hébergée sur GitHub Pages. Il ne dépose aucun cookie publicitaire, aucun cookie de mesure d'audience et n'intègre aucun outil de suivi tiers (pas de Google Analytics, pas de pixel publicitaire, pas de réseau social embarqué).</p>
+<h2 data-i18n="cp.h2.notrack">Ce site n'utilise pas de cookies de suivi</h2>
+<p data-i18n="cp.p.notrack">Ce site est une simple vitrine statique, hébergée sur GitHub Pages. Il ne dépose aucun cookie publicitaire, aucun cookie de mesure d'audience et n'intègre aucun outil de suivi tiers (pas de Google Analytics, pas de pixel publicitaire, pas de réseau social embarqué).</p>
 
-<h2>Cookies techniques liés à l'hébergement</h2>
-<p>Comme tout site hébergé sur GitHub Pages, des cookies strictement techniques peuvent être déposés par l'infrastructure de GitHub pour assurer le bon fonctionnement du service (par exemple la répartition de charge). Ces cookies sont gérés par GitHub, Inc., indépendamment de l'éditeur de ce site. Pour en savoir plus, consultez la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">politique de confidentialité de GitHub</a>.</p>
+<h2 data-i18n="cp.h2.tech">Cookies techniques liés à l'hébergement</h2>
+<p data-i18n="cp.p.tech">Comme tout site hébergé sur GitHub Pages, des cookies strictement techniques peuvent être déposés par l'infrastructure de GitHub pour assurer le bon fonctionnement du service (par exemple la répartition de charge). Ces cookies sont gérés par GitHub, Inc., indépendamment de l'éditeur de ce site. Pour en savoir plus, consultez la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">politique de confidentialité de GitHub</a>.</p>
 
-<h2>Et dans l'application Cloud Music ?</h2>
-<p>L'application iOS Cloud Music n'utilise pas de cookies : ce mécanisme est propre aux navigateurs web. Vos préférences, votre bibliothèque et vos statistiques d'écoute sont stockées localement sur votre appareil (mémoire de l'app et trousseau iOS), comme expliqué dans la <a href="privacy-policy.html">politique de confidentialité</a>.</p>
+<h2 data-i18n="cp.h2.app">Et dans l'application Cloud Music ?</h2>
+<p data-i18n="cp.p.app">L'application iOS Cloud Music n'utilise pas de cookies : ce mécanisme est propre aux navigateurs web. Vos préférences, votre bibliothèque et vos statistiques d'écoute sont stockées localement sur votre appareil (mémoire de l'app et trousseau iOS), comme expliqué dans la <a href="privacy-policy.html">politique de confidentialité</a>.</p>
 
-<h2>Gérer les cookies de votre navigateur</h2>
-<p>Vous pouvez à tout moment configurer votre navigateur pour bloquer ou supprimer les cookies déposés par les sites que vous visitez, y compris ceux, purement techniques, décrits ci-dessus.</p>
+<h2 data-i18n="cp.h2.manage">Gérer les cookies de votre navigateur</h2>
+<p data-i18n="cp.p.manage">Vous pouvez à tout moment configurer votre navigateur pour bloquer ou supprimer les cookies déposés par les sites que vous visitez, y compris ceux, purement techniques, décrits ci-dessus.</p>
 
-<h2>Contact</h2>
-<p>Une question sur cette politique ? Écrivez à <a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a>.</p>
+<h2 data-i18n="cp.h2.contact">Contact</h2>
+<p data-i18n="cp.p.contact">Une question sur cette politique ? Écrivez à <a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a>.</p>
 
     </div>
   </section>
