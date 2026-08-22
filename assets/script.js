@@ -18,6 +18,7 @@
   }
 
   function applyTranslations(lang){
+    if (!window.CM_I18N) return; // page sans i18n.js (ex. pages légales, volontairement figées en anglais)
     var dict = window.CM_I18N[lang] || window.CM_I18N.en;
     document.querySelectorAll("[data-i18n]").forEach(function(el){
       var key = el.getAttribute("data-i18n");
@@ -29,6 +30,7 @@
   }
 
   function applySlogan(lang){
+    if (!window.CM_SLOGANS) return;
     var pool = (window.CM_SLOGANS && window.CM_SLOGANS[lang]) || window.CM_SLOGANS.en;
     var pick = pool[Math.floor(Math.random() * pool.length)];
     var el = document.getElementById("hero-title");
@@ -98,6 +100,7 @@
   }
 
   function renderTrack(lang, idx){
+    if (!window.CM_TRACKS || !window.CM_I18N) return;
     var list = (window.CM_TRACKS && window.CM_TRACKS[lang]) || window.CM_TRACKS.en;
     var track = list[idx % list.length];
     var titleEl = document.getElementById("player-title");
@@ -209,7 +212,9 @@
 
   /* ---------------- Sélecteur de langue ---------------- */
   function buildLangSelects(){
-    document.querySelectorAll(".lang-select").forEach(function(sel){
+    var selects = document.querySelectorAll(".lang-select");
+    if (!selects.length || !window.CM_LANGS) return; // page sans sélecteur de langue (ex. pages légales) ou i18n.js non chargé
+    selects.forEach(function(sel){
       sel.innerHTML = "";
       SUPPORTED.forEach(function(code){
         var opt = document.createElement("option");
@@ -226,6 +231,10 @@
   var navTabs = [];
   var navSections = [];
   var activeTabIndex = 0;
+  // Seuil (en px) utilisé à la fois pour activer un onglet et pour placer l'indicateur :
+  // calé sur la hauteur réelle du header sticky (~65px) + une petite marge, pour qu'une
+  // section soit considérée "démarrée" au moment exact où elle apparaît sous le header.
+  var NAV_OFFSET = 80;
 
   function initNavTabs(){
     navTabs = Array.prototype.slice.call(document.querySelectorAll(".nav__tab"));
@@ -244,9 +253,14 @@
     var indicator = document.getElementById("nav-indicator");
     var tabsWrap = document.getElementById("nav-tabs");
     var tabsRight = document.querySelector(".nav__tabs-right");
+    var navRight = document.querySelector(".nav__right");
     if (!indicator || !tabsWrap) return;
 
     var wrapRect = tabsWrap.getBoundingClientRect();
+
+    // Bord le plus à droite atteignable par la barre : le bord droit du bloc
+    // langue + menu (nav__right) si présent, sinon le bord du conteneur d'onglets.
+    var rightMost = navRight ? (navRight.getBoundingClientRect().right - wrapRect.left) : wrapRect.width;
 
     // Mesures de scroll robustes (fiables sur mobile, contrairement à document.documentElement seul)
     var scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -263,7 +277,7 @@
     if (!tabsVisible){
       // Pas d'onglets de catégories sur cette page, ou écran trop étroit : simple barre de scroll (0 à 100%)
       var pct = Math.min(1, Math.max(0, scrollTop / maxScroll));
-      indicator.style.width = (pct * wrapRect.width) + "px";
+      indicator.style.width = (pct * rightMost) + "px";
       indicator.style.transform = "translateX(0)";
       return;
     }
@@ -277,7 +291,6 @@
     // Position de départ (en scroll Y, absolue dans le document) de chaque section,
     // calculée via getBoundingClientRect — la même méthode que la détection d'onglet actif,
     // pour garantir que la barre et la couleur active pointent toujours sur la même section.
-    var OFFSET = 140; // même seuil que la détection de section active
     var boundaries = navSections.map(function(sec){
       if (!sec) return null;
       if (sec === document.body) return 0;
@@ -286,17 +299,17 @@
 
     var idx = 0;
     for (var i = 0; i < boundaries.length; i++){
-      if (boundaries[i] !== null && (scrollTop + OFFSET) >= boundaries[i]) idx = i;
+      if (boundaries[i] !== null && (scrollTop + NAV_OFFSET) >= boundaries[i]) idx = i;
     }
 
     var isLast = idx === boundaries.length - 1;
     var startY = boundaries[idx] || 0;
     var endY = !isLast && boundaries[idx + 1] !== null ? boundaries[idx + 1] : maxScroll;
-    var frac = endY > startY ? Math.min(1, Math.max(0, ((scrollTop + OFFSET) - startY) / (endY - startY))) : 1;
+    var frac = endY > startY ? Math.min(1, Math.max(0, ((scrollTop + NAV_OFFSET) - startY) / (endY - startY))) : 1;
 
     var startX = centers[idx];
-    // Sur le dernier segment, la barre va jusqu'au bord droit du conteneur d'onglets
-    var endX = !isLast ? centers[idx + 1] : wrapRect.width;
+    // Sur le dernier segment, la barre va jusqu'au bord droit atteignable (langue + menu inclus)
+    var endX = !isLast ? centers[idx + 1] : rightMost;
     var width = startX + (endX - startX) * frac;
 
     indicator.style.width = Math.max(2, width) + "px";
@@ -310,7 +323,7 @@
       var sec = navSections[i];
       if (!sec) continue;
       var rect = sec.getBoundingClientRect();
-      if (rect.top <= 140) current = i;
+      if (rect.top <= NAV_OFFSET) current = i;
     }
     if (current !== activeTabIndex){
       navTabs[activeTabIndex] && navTabs[activeTabIndex].classList.remove("is-active");
@@ -358,37 +371,37 @@
       title: "Tous les drives compatibles",
       hasStorage: true,
       rows: [
-        { name: "Google Drive", comment: "Offre généreuse sans limite de téléchargement, avec un débit moyen élevé.", storage: "15 Go" },
-        { name: "MEGA", comment: "20 Go offerts avec chiffrement de bout en bout, pour une bande passante gratuite plus limitée.", storage: "20 Go" },
-        { name: "OneDrive", comment: "Bien intégré à Windows et Office, mais l'offre gratuite reste la plus modeste du marché.", storage: "5 Go" },
-        { name: "Dropbox", comment: "Synchronisation rapide et fiable, mais l'offre gratuite se limite à 2 Go.", storage: "2 Go" },
-        { name: "Box", comment: "Fiable pour les documents professionnels, avec une limite de 250 Mo par fichier sur l'offre gratuite.", storage: "10 Go" },
-        { name: "Yandex Disk", comment: "Simple et rapide à configurer, avec un espace gratuit extensible via les offres Yandex 360.", storage: "5 Go" }
+        { name: "Google Drive", comment: "Offre gratuite généreuse, sans limite de téléchargement, avec un débit moyen élevé et une connexion sécurisée (OAuth).", storage: "15 Go" },
+        { name: "MEGA", comment: "Chiffrement de bout en bout et bon débit, mais la bande passante gratuite est limitée en cas d'usage intensif.", storage: "20 Go" },
+        { name: "OneDrive", comment: "Connexion sécurisée et bonne intégration à l'écosystème Microsoft, mais l'offre gratuite reste la plus modeste du marché.", storage: "5 Go" },
+        { name: "Dropbox", comment: "Synchronisation rapide et fiable sur connexion chiffrée, avec une offre gratuite limitée en espace.", storage: "2 Go" },
+        { name: "Box", comment: "Connexion sécurisée orientée usage professionnel, avec une limite de 250 Mo par fichier sur l'offre gratuite.", storage: "10 Go" },
+        { name: "Yandex Disk", comment: "Configuration rapide et connexion chiffrée, avec un débit correct sur une offre gratuite standard.", storage: "5 Go" }
       ]
     },
     links: {
       title: "Liens de partage compatibles",
       hasStorage: true,
       rows: [
-        { name: "MEGA", comment: "Le seul service pris en charge pour l'instant, sans compte requis.", storage: "20 Go" }
+        { name: "MEGA", comment: "Débit élevé et déchiffrement effectué directement sur l'appareil, sans limite de téléchargement particulière.", storage: "20 Go" }
       ]
     },
     nas: {
       title: "Serveurs NAS compatibles",
       hasStorage: false,
       rows: [
-        { name: "Jellyfin", comment: "Entièrement gratuit et open-source, sans compte ni abonnement requis." },
-        { name: "Emby", comment: "Interface soignée et apps natives sur presque toutes les plateformes." },
-        { name: "Plex", comment: "Le plus populaire des trois, très simple à configurer." }
+        { name: "Jellyfin", comment: "Solution open-source et entièrement gratuite, sans compte ni abonnement, avec un débit qui dépend uniquement de votre réseau." },
+        { name: "Emby", comment: "Interface soignée et applications natives sur la plupart des plateformes, avec connexion chiffrable via HTTPS." },
+        { name: "Plex", comment: "Le plus populaire des trois, simple à configurer, avec un accès à distance sécurisé disponible en option." }
       ]
     },
     network: {
       title: "Protocoles réseau compatibles",
       hasStorage: false,
       rows: [
-        { name: "WebDAV", comment: "Standard ouvert, largement supporté, avec authentification et chiffrement HTTPS." },
-        { name: "FTP", comment: "Simple et universel, mais non chiffré par défaut." },
-        { name: "NFS", comment: "Rapide en réseau local, très utilisé sous Linux." }
+        { name: "WebDAV", comment: "Standard ouvert largement supporté, avec authentification et chiffrement via HTTPS." },
+        { name: "FTP", comment: "Protocole simple et universel, mais non chiffré par défaut : à réserver à un réseau de confiance." },
+        { name: "NFS", comment: "Débit élevé en réseau local et très répandu sous Linux, sans chiffrement natif." }
       ]
     }
   };

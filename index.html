@@ -34,30 +34,30 @@
 <div class="menu-panel" id="menu-panel">
 <div class="menu-group" id="menu-accueil-group">
 <div class="menu-toggle">
-<a class="menu-heading" href="index.html">Accueil</a>
+<a class="menu-heading" data-i18n="menu.home" href="index.html">Accueil</a>
 <button class="menu-chevron-btn" id="menu-accueil-toggle" type="button" aria-expanded="false" aria-label="Afficher les sous-catégories">
 <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
 </button>
 </div>
 <div class="menu-subwrap">
-<a class="menu-sub" href="index.html#fonctionnalites">Fonctionnalités</a>
-<a class="menu-sub" href="index.html#confidentialite">Confidentialité</a>
-<a class="menu-sub" href="index.html#a-propos">À propos</a>
+<a class="menu-sub" data-i18n="nav.features" href="index.html#fonctionnalites">Fonctionnalités</a>
+<a class="menu-sub" data-i18n="nav.privacy" href="index.html#confidentialite">Confidentialité</a>
+<a class="menu-sub" data-i18n="nav.about" href="index.html#a-propos">À propos</a>
 </div>
 </div>
 <div class="menu-group">
-<a class="menu-heading" href="documentation.html">Documentation</a>
+<a class="menu-heading" data-i18n="doc.eyebrow" href="documentation.html">Documentation</a>
 </div>
 <div class="menu-group">
-<a class="menu-heading" href="blog.html">Blog</a>
+<a class="menu-heading" data-i18n="blog.eyebrow" href="blog.html">Blog</a>
 </div>
 <div class="menu-legal">
-<span class="menu-legal-label">Légal</span>
-<a href="legal/legal-notice.html">Mentions légales</a>
-<a href="legal/privacy-policy.html">Confidentialité</a>
-<a href="legal/cookie-policy.html">Cookies</a>
-<a href="legal/terms-and-conditions.html">Conditions générales</a>
-<a href="legal/license-agreement.html">Licence</a>
+<span class="menu-legal-label" data-i18n="footer.legal">Légal</span>
+<a data-i18n="legal.nav.notice" href="legal/legal-notice.html">Mentions légales</a>
+<a data-i18n="legal.nav.privacy" href="legal/privacy-policy.html">Confidentialité</a>
+<a data-i18n="legal.nav.cookies" href="legal/cookie-policy.html">Cookies</a>
+<a data-i18n="legal.nav.terms" href="legal/terms-and-conditions.html">Conditions générales</a>
+<a data-i18n="legal.nav.license" href="legal/license-agreement.html">Licence</a>
 </div>
 </div>
 </div>
@@ -213,29 +213,18 @@
 <span class="track__tag" data-i18n="a.t5.tag" style="cursor:default;">Local</span>
 </div>
 </div>
-<div aria-label="Formats audio pris en charge" class="formats reveal">
-<span class="format-badge">MP3</span>
-<span class="format-badge">M4A</span>
-<span class="format-badge">WAV</span>
-<span class="format-badge">FLAC</span>
-<span class="format-badge">AAC</span>
-<span class="format-badge">AIFF</span>
-<span class="format-badge">OGG</span>
-<span class="format-badge">OPUS</span>
-</div>
 <div class="section-head reveal" style="margin-top:70px;">
 <div><h2 data-i18n="c.title">Fonctionnalités principales</h2></div>
 </div>
 <div class="tracklist reveal">
 <div class="track">
 <span class="track__icon">
-<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg>
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><line x1="18" x2="18" y1="20" y2="10"></line><line x1="12" x2="12" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="14"></line></svg>
 </span>
 <div class="track__body">
-<h3 data-i18n="c.t1.title">Recherche tolérante</h3>
-<p data-i18n="c.t1.desc">Cherchez « l'ete » et retrouvez « L'Été » : la recherche ignore accents, fautes de frappe et ponctuation, sur le titre, l'artiste et l'album.</p>
+<h3 data-i18n="c.t4.title">Statistiques d'écoute</h3>
+<p data-i18n="c.t4.desc">Temps d'écoute par jour, semaine, mois ou depuis le début.</p>
 </div>
-<span class="track__tag" data-i18n="c.t1.tag" style="cursor:default;">Fuzzy</span>
 </div>
 <div class="track">
 <span class="track__icon">
@@ -243,29 +232,44 @@
 </span>
 <div class="track__body">
 <h3 data-i18n="c.t2.title">Métadonnées &amp; pochettes automatiques</h3>
-<p data-i18n="c.t2.desc">Cloud Music recherche titre, artiste, album et pochette pour vos fichiers mal nommés — vous validez, tout se corrige d'un geste.</p>
+<p data-i18n="c.t2.desc">Cloud Music recherche titre, artiste, album et pochette — vous validez, tout se corrige d'un geste.</p>
 </div>
-<span class="track__tag" data-i18n="c.t2.tag" style="cursor:default;">Auto</span>
-</div>
-<div class="track">
-<span class="track__icon">
-<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><line x1="8" x2="21" y1="6" y2="6"></line><line x1="8" x2="21" y1="12" y2="12"></line><line x1="8" x2="21" y1="18" y2="18"></line><line x1="3" x2="3.01" y1="6" y2="6"></line><line x1="3" x2="3.01" y1="12" y2="12"></line><line x1="3" x2="3.01" y1="18" y2="18"></line></svg>
-</span>
-<div class="track__body">
-<h3 data-i18n="c.t3.title">Playlists personnalisées</h3>
-<p data-i18n="c.t3.desc">Créez des playlists avec leur propre pochette, réorganisez-les, et gardez vos artistes et albums préférés à portée de main.</p>
-</div>
-<span class="track__tag" data-i18n="c.t3.tag" style="cursor:default;">Favoris</span>
 </div>
 <div class="track">
 <span class="track__icon">
-<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><line x1="18" x2="18" y1="20" y2="10"></line><line x1="12" x2="12" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="14"></line></svg>
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><line x1="4" x2="4" y1="21" y2="10"></line><line x1="4" x2="4" y1="7" y2="3"></line><line x1="12" x2="12" y1="21" y2="14"></line><line x1="12" x2="12" y1="11" y2="3"></line><line x1="20" x2="20" y1="21" y2="16"></line><line x1="20" x2="20" y1="13" y2="3"></line><circle cx="4" cy="8.5" fill="currentColor" r="1.6" stroke="none"></circle><circle cx="12" cy="12.5" fill="currentColor" r="1.6" stroke="none"></circle><circle cx="20" cy="14.5" fill="currentColor" r="1.6" stroke="none"></circle></svg>
 </span>
 <div class="track__body">
-<h3 data-i18n="c.t4.title">Statistiques d'écoute</h3>
-<p data-i18n="c.t4.desc">Temps d'écoute par jour, semaine, mois ou depuis le début, et un aperçu clair du stockage utilisé sur l'appareil.</p>
+<h3 data-i18n="c.t5.title">Égaliseur &amp; amplification</h3>
+<p data-i18n="c.t5.desc">Ajustez les fréquences par bande et amplifiez le volume au-delà du niveau normal pour les fichiers enregistrés trop bas.</p>
 </div>
-<span class="track__tag" data-i18n="c.t4.tag" style="cursor:default;">Stats</span>
+</div>
+<div class="track">
+<span class="track__icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><rect height="9" rx="1.5" width="7" x="3" y="3"></rect><rect height="5" rx="1.5" width="7" x="14" y="3"></rect><rect height="9" rx="1.5" width="7" x="14" y="12"></rect><rect height="5" rx="1.5" width="7" x="3" y="16"></rect></svg>
+</span>
+<div class="track__body">
+<h3 data-i18n="c.t6.title">Widgets</h3>
+<p data-i18n="c.t6.desc">Retrouvez la piste en cours et les contrôles de lecture directement depuis l'écran d'accueil ou l'écran verrouillé.</p>
+</div>
+</div>
+<div class="track">
+<span class="track__icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><rect height="14" rx="2.5" width="20" x="2" y="5"></rect><line x1="6" x2="12" y1="10" y2="10"></line><line x1="6" x2="16" y1="14" y2="14"></line></svg>
+</span>
+<div class="track__body">
+<h3 data-i18n="c.t7.title">Paroles synchronisées</h3>
+<p data-i18n="c.t7.desc">Affichez les paroles de vos morceaux grâce à la base de données lrclib, synchronisées avec la lecture quand elles sont disponibles.</p>
+</div>
+</div>
+<div class="track">
+<span class="track__icon">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18c1.4 0 2-.7 2-1.6 0-.4-.2-.8-.4-1.1-.3-.3-.4-.6-.4-1 0-.8.7-1.5 1.5-1.5H16a4 4 0 004-4c0-4.4-3.6-8.8-8-8.8z"></path><circle cx="7.5" cy="10.5" fill="currentColor" r="1.3" stroke="none"></circle><circle cx="10.5" cy="7" fill="currentColor" r="1.3" stroke="none"></circle><circle cx="15" cy="8" fill="currentColor" r="1.3" stroke="none"></circle></svg>
+</span>
+<div class="track__body">
+<h3 data-i18n="c.t8.title">Apparence personnalisable</h3>
+<p data-i18n="c.t8.desc">Choisissez parmi plusieurs thèmes et couleurs pour adapter l'interface à votre goût.</p>
+</div>
 </div>
 </div>
 <div class="section-head reveal" style="margin-top:70px;">
@@ -299,6 +303,38 @@
 </div>
 <h3 data-i18n="b.c4.title">Raccourcis Siri</h3>
 <p data-i18n="b.c4.desc">« Joue de la musique sur Cloud Music », mets en pause, ou bascule lecture — à la voix, sans même ouvrir l'app.</p>
+</div>
+</div>
+<div class="reveal" style="margin-top:56px;">
+<p class="formats-label" data-i18n="formats.audio.label">Formats audio pris en charge</p>
+<div aria-label="Formats audio pris en charge" class="formats">
+<span class="format-badge">MP3</span>
+<span class="format-badge">M4A</span>
+<span class="format-badge">WAV</span>
+<span class="format-badge">FLAC</span>
+<span class="format-badge">AAC</span>
+<span class="format-badge">AIFF</span>
+<span class="format-badge">OGG</span>
+<span class="format-badge">OPUS</span>
+</div>
+<p class="formats-label" data-i18n="formats.subs.label" style="margin-top:26px;">Formats de sous-titres pris en charge (paroles)</p>
+<div aria-label="Formats de sous-titres pris en charge" class="formats">
+<span class="format-badge">DVB</span>
+<span class="format-badge">DVDSUB</span>
+<span class="format-badge">MicroDVD</span>
+<span class="format-badge">MPL2</span>
+<span class="format-badge">PGS</span>
+<span class="format-badge">SMI</span>
+<span class="format-badge">SSA/ASS</span>
+<span class="format-badge">SRT</span>
+<span class="format-badge">SUB</span>
+<span class="format-badge">SUP</span>
+<span class="format-badge">Timed Text</span>
+<span class="format-badge">TMP</span>
+<span class="format-badge">TXT</span>
+<span class="format-badge">VobSub</span>
+<span class="format-badge">VTT</span>
+<span class="format-badge">XSUB</span>
 </div>
 </div>
 </div>
