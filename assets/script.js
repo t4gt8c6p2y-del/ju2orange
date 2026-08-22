@@ -45,6 +45,7 @@
     renderTrack(lang, currentTrackIndex);
     try { localStorage.setItem(STORAGE_KEY, lang); } catch(e) {}
     window.CM_CURRENT_LANG = lang;
+    if (typeof refreshOpenModal === "function") refreshOpenModal();
   }
 
   /* ---------------- Lecteur de démonstration interactif ---------------- */
@@ -366,57 +367,30 @@
   }
 
   /* ---------------- Fenêtre modale : services compatibles ---------------- */
-  var POPUP_DATA = {
-    drives: {
-      title: "Tous les drives compatibles",
-      hasStorage: true,
-      rows: [
-        { name: "Google Drive", comment: "Offre gratuite généreuse, sans limite de téléchargement, avec un débit moyen élevé et une connexion sécurisée (OAuth).", storage: "15 Go" },
-        { name: "MEGA", comment: "Chiffrement de bout en bout et bon débit, mais la bande passante gratuite est limitée en cas d'usage intensif.", storage: "20 Go" },
-        { name: "OneDrive", comment: "Connexion sécurisée et bonne intégration à l'écosystème Microsoft, mais l'offre gratuite reste la plus modeste du marché.", storage: "5 Go" },
-        { name: "Dropbox", comment: "Synchronisation rapide et fiable sur connexion chiffrée, avec une offre gratuite limitée en espace.", storage: "2 Go" },
-        { name: "Box", comment: "Connexion sécurisée orientée usage professionnel, avec une limite de 250 Mo par fichier sur l'offre gratuite.", storage: "10 Go" },
-        { name: "Yandex Disk", comment: "Configuration rapide et connexion chiffrée, avec un débit correct sur une offre gratuite standard.", storage: "5 Go" }
-      ]
-    },
-    links: {
-      title: "Liens de partage compatibles",
-      hasStorage: true,
-      rows: [
-        { name: "MEGA", comment: "Débit élevé et déchiffrement effectué directement sur l'appareil, sans limite de téléchargement particulière.", storage: "20 Go" }
-      ]
-    },
-    nas: {
-      title: "Serveurs NAS compatibles",
-      hasStorage: false,
-      rows: [
-        { name: "Jellyfin", comment: "Solution open-source et entièrement gratuite, sans compte ni abonnement, avec un débit qui dépend uniquement de votre réseau." },
-        { name: "Emby", comment: "Interface soignée et applications natives sur la plupart des plateformes, avec connexion chiffrable via HTTPS." },
-        { name: "Plex", comment: "Le plus populaire des trois, simple à configurer, avec un accès à distance sécurisé disponible en option." }
-      ]
-    },
-    network: {
-      title: "Protocoles réseau compatibles",
-      hasStorage: false,
-      rows: [
-        { name: "WebDAV", comment: "Standard ouvert largement supporté, avec authentification et chiffrement via HTTPS." },
-        { name: "FTP", comment: "Protocole simple et universel, mais non chiffré par défaut : à réserver à un réseau de confiance." },
-        { name: "NFS", comment: "Débit élevé en réseau local et très répandu sous Linux, sans chiffrement natif." }
-      ]
-    }
-  };
+  // Le contenu traduit (titres, noms, commentaires, quotas) vit dans CM_MODALS (assets/i18n.js).
+  // Seule l'info invariante (la catégorie a-t-elle une colonne "quota" ?) reste ici.
+  var MODAL_HAS_STORAGE = { drives: true, links: true, nas: false, network: false };
+  var currentModalKey = null;
+
+  function getModalData(key){
+    var lang = window.CM_CURRENT_LANG || "fr";
+    var byLang = (window.CM_MODALS && (window.CM_MODALS[lang] || window.CM_MODALS.en)) || null;
+    return byLang ? byLang[key] : null;
+  }
 
   function openModal(key){
-    var data = POPUP_DATA[key];
+    var data = getModalData(key);
     if (!data) return;
+    currentModalKey = key;
+    var hasStorage = MODAL_HAS_STORAGE[key];
     var overlay = document.getElementById("modal-overlay");
     var titleEl = document.getElementById("modal-title");
     var body = document.getElementById("modal-body");
     if (!overlay || !body) return;
     titleEl.textContent = data.title;
     body.innerHTML = data.rows.map(function(r){
-      var rowClass = data.hasStorage ? "modal-row" : "modal-row no-storage";
-      var storageHtml = data.hasStorage ? '<div class="modal-storage">' + r.storage + '</div>' : "";
+      var rowClass = hasStorage ? "modal-row" : "modal-row no-storage";
+      var storageHtml = hasStorage ? '<div class="modal-storage">' + r.storage + '</div>' : "";
       return (
         '<div class="' + rowClass + '">' +
           '<div class="modal-service">' +
@@ -432,9 +406,14 @@
     overlay.classList.add("is-open");
   }
 
+  function refreshOpenModal(){
+    if (currentModalKey) openModal(currentModalKey);
+  }
+
   function closeModal(){
     var overlay = document.getElementById("modal-overlay");
     if (overlay) overlay.classList.remove("is-open");
+    currentModalKey = null;
   }
 
   function initModals(){

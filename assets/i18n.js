@@ -153,7 +153,7 @@ fr: {
 "b.eyebrow":"Face B","b.title":"Dans le lecteur","b.desc":"Les détails d'écoute qu'on remarque surtout quand ils manquent.",
 "b.c1.title":"Fondu enchaîné réglable","b.c1.desc":"Une transition douce entre deux titres, de 1 à 12 secondes, ajustable directement dans les réglages.",
 "b.c2.title":"Lecture aléatoire, deux vitesses","b.c2.desc":"Mode aléatoire classique, ou variante « améliorée » pour un tirage qui évite de recoller deux fois le même artiste.",
-"b.c3.title":"Répétition d'un titre ou de la file","b.c3.desc":"Un morceau en boucle pour l'apprendre, ou toute la file pour ne jamais retomber sur le silence.",
+"b.c3.title":"Mode veille","b.c3.desc":"Programmez l'arrêt automatique de la lecture après une durée choisie, pour vous endormir en musique.",
 "b.c4.title":"Raccourcis Siri","b.c4.desc":"« Joue de la musique sur Cloud Music », mets en pause, ou bascule lecture — à la voix, sans même ouvrir l'app.",
 "c.eyebrow":"Face C","c.title":"Fonctionnalités principales","c.desc":"Consultez vos statistiques d'écoute, réglez le son à votre goût, personnalisez l'application — sans y passer la soirée.",
 "c.t4.title":"Statistiques d'écoute","c.t4.desc":"Temps d'écoute par jour, semaine, mois ou depuis le début.",
@@ -170,14 +170,14 @@ fr: {
 "d.l4":"<strong>Sauvegarde chiffrée, à vous seul.</strong> Exportez playlists, favoris et statistiques dans un fichier protégé par mot de passe — à restaurer où vous voulez.",
 "d.link":"Lire la politique de confidentialité complète →",
 "about.eyebrow":"À propos",
-"about.sig":"Un lecteur pensé pour <span>la musique que vous possédez déjà</span> — pas pour un catalogue à faire défiler.",
+"about.sig":"Un lecteur pensé pour <span>la musique que vous possédez déjà</span>.",
 "about.p1":"Cloud Music est né d'un constat simple : beaucoup d'entre nous possédons déjà de la musique — achetée, enregistrée, transférée au fil des années — éparpillée entre un cloud, un NAS et l'espace de stockage du téléphone. Le but de Cloud Music est de les réunir.",
 "about.p2":"C'est une application personnelle, développée et maintenue par un seul développeur, centrée sur votre musique — pas sur un catalogue à vendre, ni sur des recommandations dictées par un algorithme publicitaire.",
 "cta.eyebrow":"Bientôt disponible","cta.title":"Cloud Music arrive sur l'App Store",
 "cta.desc":"Une question, un bug à signaler, ou une idée de fonctionnalité pour votre cloud préféré ? Écrivez-moi directement.",
 "cta.privacy":"Politique de confidentialité",
 "footer.tagline":"Écoutez votre musique en local ou depuis le cloud, dans une interface unique.",
-"footer.app":"App","footer.contact":"Contact","footer.legal":"Légal","footer.form":"Formulaire de contact","legal.nav.notice":"Mentions légales","legal.nav.privacy":"Confidentialité","legal.nav.cookies":"Cookies","legal.nav.terms":"Conditions générales","legal.nav.license":"Licence",
+"footer.app":"App","footer.contact":"Contact","footer.legal":"Légal","footer.form":"Formulaire de contact","legal.nav.notice":"Mentions légales","legal.nav.privacy":"Confidentialité","legal.nav.cookies":"Cookies","legal.nav.terms":"Conditions générales","legal.nav.license":"Licence","footer.legal.notice":"Mentions légales","footer.legal.privacy":"Politique de confidentialité","footer.legal.cookies":"Politique de cookies","footer.legal.terms":"Conditions générales","footer.legal.license":"Contrat de licence",
 "footer.bottom1":"© 2026 Cloud Music. Tous droits réservés.","footer.bottom2":"Fait à la main, sans tracker.","doc.eyebrow":"Documentation","doc.title":"Guides & tutoriels","doc.desc":"Tout ce qu'il faut pour connecter vos sources et bien démarrer avec Cloud Music.",
 "doc.nav1":"Démarrage rapide","doc.nav2":"Google Drive & OneDrive","doc.nav3":"MEGA par lien","doc.nav4":"NAS","doc.nav5":"Serveur personnel","doc.nav6":"Sauvegarde & restauration",
 "doc.s1.title":"Démarrage rapide","doc.s1.p":"Trois étapes suffisent pour écouter votre première piste.",
@@ -231,7 +231,7 @@ en: {
 "b.eyebrow":"Side B","b.title":"Inside the player","b.desc":"The little listening details you only notice when they're missing.",
 "b.c1.title":"Adjustable crossfade","b.c1.desc":"A smooth transition between two tracks, from 1 to 12 seconds, adjustable right in settings.",
 "b.c2.title":"Shuffle, two flavors","b.c2.desc":"Classic shuffle, or an \"enhanced\" mode that avoids playing the same artist twice in a row.",
-"b.c3.title":"Repeat one track or the whole queue","b.c3.desc":"Loop a single song to learn it, or repeat the whole queue so the music never runs out.",
+"b.c3.title":"Sleep timer","b.c3.desc":"Schedule playback to stop automatically after a set duration, so you can fall asleep to music.",
 "b.c4.title":"Siri Shortcuts","b.c4.desc":"\"Play music on Cloud Music\", pause, or toggle playback — by voice, without even opening the app.",
 "c.eyebrow":"Side C","c.title":"Core features","c.desc":"Check your listening stats, tune the sound to your taste, personalize the app — without losing an evening to it.",
 "c.t4.title":"Listening stats","c.t4.desc":"Listening time by day, week, month or all time.",
@@ -248,14 +248,14 @@ en: {
 "d.l4":"<strong>Encrypted backup, for you alone.</strong> Export playlists, favorites and stats into a password-protected file — restore it wherever you like.",
 "d.link":"Read the full privacy policy →",
 "about.eyebrow":"About",
-"about.sig":"A player designed for <span>the music you already own</span> — not for a catalog to scroll through.",
+"about.sig":"A player designed for <span>the music you already own</span>.",
 "about.p1":"Cloud Music started from a simple observation: many of us already own music — bought, ripped, transferred over the years — scattered across a cloud drive, a NAS and the phone's own storage. Cloud Music exists to bring it all together.",
 "about.p2":"It's a personal app, built and maintained by a single developer, focused on your music — not on a catalog to sell, or on recommendations driven by an ad algorithm.",
 "cta.eyebrow":"Coming soon","cta.title":"Cloud Music is coming to the App Store",
 "cta.desc":"A question, a bug to report, or a feature idea for your favorite cloud? Write to me directly.",
 "cta.privacy":"Privacy policy",
 "footer.tagline":"Listen to your music locally or from the cloud, in a single interface.",
-"footer.app":"App","footer.contact":"Contact","footer.legal":"Legal","footer.form":"Contact form",
+"footer.app":"App","footer.contact":"Contact","footer.legal":"Legal","footer.form":"Contact form","footer.legal.notice":"Legal Notice","footer.legal.privacy":"Privacy Policy","footer.legal.cookies":"Cookie Policy","footer.legal.terms":"Terms &amp; Conditions","footer.legal.license":"License Agreement",
 "footer.bottom1":"© 2026 Cloud Music. All rights reserved.","footer.bottom2":"Handmade, tracker-free.","legal.eyebrow":"Legal","legal.updated":"Last updated: August 10, 2026","legal.nav.notice":"Legal Notice","legal.nav.privacy":"Privacy","legal.nav.cookies":"Cookies","legal.nav.terms":"Terms &amp; Conditions","legal.nav.license":"License","ln.h1":"Legal Notice","ln.h2.editor":"Site publisher","ln.p.editor":"This site (as well as the Cloud Music application it presents) is published on a personal basis by:","ln.li.name":"<strong>Benjamin Maire</strong> — independent developer","ln.li.contact":"Contact: <a href=\"mailto:CloudMusicContact@proton.me\">CloudMusicContact@proton.me</a>","ln.h2.director":"Publication director","ln.p.director":"Benjamin Maire, also responsible for the content published on this site.","ln.h2.hosting":"Site hosting","ln.p.hosting":"This site is hosted by GitHub Pages, a service of GitHub, Inc. — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States.","ln.h2.nature":"Nature of the site","ln.p.nature":"This site is a showcase for the Cloud Music iOS application, a personal project. Depending on the version, the application may offer features accessible through a paid subscription. This site itself does not display any advertising and does not collect data for advertising purposes.","ln.h2.ip":"Intellectual property","ln.p.ip":"The text, layout, graphic elements and code of this site are the property of its publisher, unless otherwise stated. The names of the third-party services mentioned (Google Drive, OneDrive, MEGA, Dropbox, Box, Yandex Disk, Emby, Jellyfin, Plex, Deezer, Apple, App Store) belong to their respective owners and are used solely for descriptive purposes, to indicate the services Cloud Music is compatible with.","ln.h2.contact":"Contact","ln.p.contact":"For any question about this site or the application, write to <a href=\"mailto:CloudMusicContact@proton.me\">CloudMusicContact@proton.me</a>.","pp.h1":"Privacy Policy","pp.intro":"Cloud Music is a personal music player application for iOS. It lets you connect to cloud storage services (Google Drive, OneDrive, MEGA, Dropbox, Box, Yandex Disk, etc.), a home NAS (Emby, Jellyfin, Plex), or a personal server (FTP, WebDAV, NFS), to listen to or download audio files you already own.","pp.h2.data":"What data is used","pp.p.data":"Cloud Music only accesses the files and folders in <strong>your</strong> account or on <strong>your</strong> device, with <strong>your</strong> explicit authorization: secure sign-in (OAuth) for cloud services like Google Drive or OneDrive, an encrypted share link for MEGA, or login credentials for a NAS or personal server. The application only requests the permissions strictly necessary to list, read and download audio files.","pp.h2.storage":"Where your data is stored","pp.p.storage":"Your login credentials are never transmitted to Cloud Music or to any third-party server: the connection happens directly between your device and the relevant cloud service. Access tokens obtained after signing in are stored only on your device, in iOS's secure Keychain, and never leave it.","pp.h2.share":"Sharing with third parties","pp.p.share":"Cloud Music does not share, sell or transmit any personal data to third parties. No ads, no trackers, no data collection for commercial purposes.","pp.h2.delete":"Deleting your data","pp.p.delete":"You can disconnect from a cloud service or delete all of the application's data at any time from Cloud Music's internal settings. You can also revoke Cloud Music's access directly from the security settings of your Google, Microsoft, MEGA, etc. account.","pp.h2.contact":"Contact","pp.p.contact":"For any question: <a href=\"mailto:CloudMusicContact@proton.me\">CloudMusicContact@proton.me</a>","cp.h1":"Cookie Policy","cp.h2.notrack":"This site does not use tracking cookies","cp.p.notrack":"This site is a simple static showcase, hosted on GitHub Pages. It does not set any advertising cookies, any audience-measurement cookies, and does not include any third-party tracking tool (no Google Analytics, no advertising pixel, no embedded social network).","cp.h2.tech":"Technical cookies related to hosting","cp.p.tech":"Like any site hosted on GitHub Pages, strictly technical cookies may be set by GitHub's infrastructure to ensure the service works properly (for example, load balancing). These cookies are managed by GitHub, Inc., independently of this site's publisher. To learn more, see <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener\">GitHub's privacy statement</a>.","cp.h2.app":"What about the Cloud Music app?","cp.p.app":"The Cloud Music iOS app does not use cookies: that mechanism is specific to web browsers. Your preferences, library and listening stats are stored locally on your device (app storage and iOS Keychain), as explained in the <a href=\"privacy-policy.html\">privacy policy</a>.","cp.h2.manage":"Managing your browser's cookies","cp.p.manage":"You can configure your browser at any time to block or delete cookies set by the sites you visit, including the purely technical ones described above.","cp.h2.contact":"Contact","cp.p.contact":"Have a question about this policy? Write to <a href=\"mailto:CloudMusicContact@proton.me\">CloudMusicContact@proton.me</a>.","tc.h1":"Terms &amp; Conditions","tc.h2.purpose":"Purpose","tc.p.purpose":"These terms and conditions govern the use of the site and the Cloud Music iOS application (hereinafter \"the application\"). By using the site or the application, you accept these terms.","tc.h2.desc":"Service description","tc.p.desc":"Cloud Music is an audio player for iOS that lets you connect third-party cloud storage services (Google Drive, OneDrive, MEGA) or local files, to listen to music files you already own. Cloud Music does not host, sell or provide any music content: you must have your own audio files and the necessary rights to listen to them.","tc.h2.resp":"Your responsibility","tc.li.resp1":"You are solely responsible for the files you import or connect within the application, and must hold the necessary rights to that content.","tc.li.resp2":"You must comply with the terms of use specific to each connected cloud service (Google Drive, OneDrive, MEGA, etc.).","tc.li.resp3":"Any use of the application for copyright infringement or unauthorized sharing of protected works is strictly prohibited.","tc.h2.meta":"Metadata feature","tc.p.meta":"Cloud Music offers an optional metadata lookup (title, artist, album, cover art) from public third-party services, to complete poorly tagged files. This information is provided for guidance only and may be inaccurate or unavailable.","tc.h2.avail":"Availability","tc.p.avail":"The application is developed and maintained by an independent developer, on a personal basis. No guarantee of continuous availability, future compatibility with third-party cloud services, or bug-fix turnaround time is provided.","tc.h2.warranty":"No warranty","tc.p.warranty":"The application and the site are provided \"as is\", without warranty of any kind, express or implied. The publisher cannot be held liable for any data loss, service interruption on the cloud provider's side, or any indirect damage resulting from use of the application.","tc.h2.appstore":"Distribution via the App Store","tc.p.appstore":"The application is distributed via Apple's App Store and its use is also subject to Apple's standard rules, in particular the terms described in the <a href=\"license-agreement.html\">license agreement</a>.","tc.h2.changes":"Changes","tc.p.changes":"These terms may be updated at any time; the last-updated date is shown at the top of this page. We recommend checking it periodically.","tc.h2.law":"Governing law","tc.p.law":"These terms are governed by French law, without prejudice to any mandatory provisions that may apply in your country of residence.","tc.h2.contact":"Contact","la.h1":"License Agreement","la.h2.eula":"End User License Agreement","la.p.eula1":"Cloud Music is distributed exclusively through Apple's App Store. Unless a separate license agreement is provided at the time of purchase or download, your use of the application is governed by Apple's <strong>Standard Licensed Application End User License Agreement</strong>.","la.p.eula2":"You can read the full standard agreement on Apple's website: <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\" target=\"_blank\" rel=\"noopener\">apple.com/legal/internet-services/itunes/dev/stdeula</a>.","la.h2.allowed":"What the license allows","la.li.allowed1":"A personal, non-exclusive and non-transferable license to use Cloud Music on Apple devices you own or control, in accordance with the App Store's usage rules.","la.li.allowed2":"Use of the application is strictly personal and non-commercial.","la.h2.notallowed":"What the license does not allow","la.li.na1":"Copying (other than an authorized backup copy), disassembling, decompiling or attempting to extract the application's source code, except to the extent permitted by applicable law.","la.li.na2":"Renting, lending, redistributing or sublicensing the application.","la.li.na3":"Using the application to access, store or distribute content you do not hold the rights to.","la.h2.thirdparty":"Connected third-party services","la.p.thirdparty":"This license covers only the Cloud Music application. Your use of Google Drive, OneDrive, MEGA or any other service you connect remains subject to that service's own license terms, independent of Cloud Music.","la.h2.ownership":"Ownership","la.p.ownership":"The Cloud Music application, its code, interface and brand remain the property of its developer. No provision of this agreement transfers any intellectual property right in the application to you.","la.h2.contact":"Contact","la.p.contact":"For any question about this license: <a href=\"mailto:CloudMusicContact@proton.me\">CloudMusicContact@proton.me</a>","doc.eyebrow":"Documentation","doc.title":"Guides & tutorials","doc.desc":"Everything you need to connect your sources and get started with Cloud Music.",
 "doc.nav1":"Quick start","doc.nav2":"Google Drive & OneDrive","doc.nav3":"MEGA by link","doc.nav4":"NAS","doc.nav5":"Personal server","doc.nav6":"Backup & restore",
 "doc.s1.title":"Quick start","doc.s1.p":"Three steps are all it takes to hear your first track.",
@@ -309,7 +309,7 @@ zh: {
 "b.eyebrow":"B面","b.title":"播放器内部","b.desc":"那些平时不会注意、缺失时却格外明显的听歌细节。",
 "b.c1.title":"可调节的淡入淡出","b.c1.desc":"两首歌曲之间的平滑过渡，时长 1 到 12 秒可在设置中调整。",
 "b.c2.title":"两种随机播放模式","b.c2.desc":"经典随机播放，或「增强」模式，避免连续两次播放同一位艺术家。",
-"b.c3.title":"单曲循环或列表循环","b.c3.desc":"单曲循环便于学唱，或整份列表循环让音乐永不间断。",
+"b.c3.title":"睡眠定时器","b.c3.desc":"设置播放在指定时长后自动停止，伴着音乐安心入睡。",
 "b.c4.title":"Siri 快捷指令","b.c4.desc":"「在 Cloud Music 播放音乐」「暂停」「切换播放」——用语音操作，甚至无需打开应用。",
 "c.eyebrow":"C面","c.title":"核心功能","c.desc":"查看收听统计、按喜好调节音效、自定义应用外观——不必花上一整晚。",
 "c.t4.title":"收听统计","c.t4.desc":"按天、周、月或全部时间查看收听时长。",
@@ -326,14 +326,14 @@ zh: {
 "d.l4":"<strong>加密备份，只属于你。</strong>将歌单、收藏与统计数据导出为密码保护的文件，随时随地恢复。",
 "d.link":"阅读完整隐私政策 →",
 "about.eyebrow":"关于",
-"about.sig":"一款为<span>你早已拥有的音乐</span>而生的播放器——而非用来滚动浏览的曲库。",
+"about.sig":"一款为<span>你早已拥有的音乐</span>而生的播放器。",
 "about.p1":"Cloud Music 源于一个简单的发现：许多人早已拥有音乐——多年间购买、抓取、转存下来——却分散在云盘、NAS 和手机存储之间。Cloud Music 的目标就是把它们汇聚到一起。",
 "about.p2":"这是一款由一位独立开发者开发和维护的个人应用，专注于你的音乐——而不是待售的曲库，也不是由广告算法驱动的推荐。",
 "cta.eyebrow":"即将上线","cta.title":"Cloud Music 即将登陆 App Store",
 "cta.desc":"有问题、想反馈 bug，或者对你喜欢的云服务有功能建议？欢迎直接写信给我。",
 "cta.privacy":"隐私政策",
 "footer.tagline":"随心聆听本地或云端的音乐，只需一个统一的界面。",
-"footer.app":"应用","footer.contact":"联系","footer.legal":"法律","footer.form":"联系表单","legal.nav.notice":"法律声明","legal.nav.privacy":"隐私","legal.nav.cookies":"Cookie","legal.nav.terms":"使用条款","legal.nav.license":"许可协议",
+"footer.app":"应用","footer.contact":"联系","footer.legal":"法律","footer.form":"联系表单","legal.nav.notice":"法律声明","legal.nav.privacy":"隐私","legal.nav.cookies":"Cookie","legal.nav.terms":"使用条款","legal.nav.license":"许可协议","footer.legal.notice":"法律声明","footer.legal.privacy":"隐私政策","footer.legal.cookies":"Cookie 政策","footer.legal.terms":"使用条款","footer.legal.license":"许可协议",
 "footer.bottom1":"© 2026 Cloud Music。保留所有权利。","footer.bottom2":"手工打造，无追踪器。","doc.eyebrow":"文档","doc.title":"指南与教程","doc.desc":"连接你的音源并开始使用 Cloud Music 所需的一切。",
 "doc.nav1":"快速开始","doc.nav2":"Google Drive 与 OneDrive","doc.nav3":"通过链接使用 MEGA","doc.nav4":"NAS","doc.nav5":"个人服务器","doc.nav6":"备份与恢复",
 "doc.s1.title":"快速开始","doc.s1.p":"只需三步即可听到你的第一首歌。",
@@ -387,7 +387,7 @@ hi: {
 "b.eyebrow":"साइड B","b.title":"प्लेयर के भीतर","b.desc":"सुनने से जुड़ी वे बारीकियाँ, जिनकी कमी तभी महसूस होती है जब वे न हों।",
 "b.c1.title":"एडजस्टेबल क्रॉसफ़ेड","b.c1.desc":"दो गानों के बीच 1 से 12 सेकंड तक की मुलायम ट्रांज़िशन, सेटिंग्स में सीधे बदली जा सकती है।",
 "b.c2.title":"शफ़ल, दो तरीकों में","b.c2.desc":"क्लासिक शफ़ल, या एक \"एन्हांस्ड\" मोड जो एक ही कलाकार को लगातार दो बार बजने से बचाता है।",
-"b.c3.title":"एक गाना या पूरी लिस्ट रिपीट करें","b.c3.desc":"किसी गाने को सीखने के लिए लूप करें, या पूरी लिस्ट रिपीट करें ताकि संगीत कभी न रुके।",
+"b.c3.title":"स्लीप टाइमर","b.c3.desc":"तय समय के बाद प्लेबैक अपने आप बंद करने का शेड्यूल बनाएं, ताकि आप संगीत के साथ सो सकें।",
 "b.c4.title":"Siri शॉर्टकट्स","b.c4.desc":"\"Cloud Music पर गाना बजाओ\", पॉज़ करो, या प्ले/पॉज़ बदलो — बोलकर, ऐप खोले बिना भी।",
 "c.eyebrow":"साइड C","c.title":"मुख्य फ़ीचर्स","c.desc":"अपने सुनने के आँकड़े देखें, साउंड को अपने हिसाब से एडजस्ट करें, ऐप को पर्सनलाइज़ करें — बिना पूरी शाम लगाए।",
 "c.t4.title":"सुनने के आँकड़े","c.t4.desc":"दिन, हफ़्ते, महीने या हमेशा के हिसाब से सुनने का समय।",
@@ -404,14 +404,14 @@ hi: {
 "d.l4":"<strong>एन्क्रिप्टेड बैकअप, सिर्फ़ आपके लिए।</strong> प्लेलिस्ट, पसंदीदा और आँकड़े पासवर्ड-सुरक्षित फ़ाइल में एक्सपोर्ट करें — कहीं भी रीस्टोर करें।",
 "d.link":"पूरी गोपनीयता नीति पढ़ें →",
 "about.eyebrow":"परिचय",
-"about.sig":"एक ऐसा प्लेयर जो <span>आपके पास पहले से मौजूद संगीत</span> के लिए बना है — किसी स्क्रॉल करने वाले कैटलॉग के लिए नहीं।",
+"about.sig":"एक ऐसा प्लेयर जो <span>आपके पास पहले से मौजूद संगीत</span> के लिए बना है।",
 "about.p1":"Cloud Music एक साधारण सी बात से शुरू हुआ: हममें से कई लोगों के पास पहले से संगीत मौजूद है — सालों में ख़रीदा, रिप किया, ट्रांसफ़र किया गया — जो क्लाउड, NAS और फ़ोन की स्टोरेज में बिखरा पड़ा है। Cloud Music का मकसद इसे एक जगह लाना है।",
 "about.p2":"यह एक पर्सनल ऐप है, जिसे एक अकेले डेवलपर ने बनाया और बनाए रखा है, जो आपके संगीत पर केंद्रित है — न कि बेचने के लिए किसी कैटलॉग पर, न ही विज्ञापन-चालित सिफ़ारिशों पर।",
 "cta.eyebrow":"जल्द आ रहा है","cta.title":"Cloud Music जल्द App Store पर",
 "cta.desc":"कोई सवाल, कोई बग रिपोर्ट करनी है, या अपनी पसंदीदा क्लाउड सेवा के लिए कोई फ़ीचर आइडिया? सीधे मुझे लिखें।",
 "cta.privacy":"गोपनीयता नीति",
 "footer.tagline":"अपना संगीत लोकल या क्लाउड से सुनें, एक ही इंटरफ़ेस में।",
-"footer.app":"ऐप","footer.contact":"संपर्क","footer.legal":"कानूनी","footer.form":"संपर्क फ़ॉर्म","legal.nav.notice":"कानूनी सूचना","legal.nav.privacy":"गोपनीयता","legal.nav.cookies":"कुकीज़","legal.nav.terms":"नियम एवं शर्तें","legal.nav.license":"लाइसेंस",
+"footer.app":"ऐप","footer.contact":"संपर्क","footer.legal":"कानूनी","footer.form":"संपर्क फ़ॉर्म","legal.nav.notice":"कानूनी सूचना","legal.nav.privacy":"गोपनीयता","legal.nav.cookies":"कुकीज़","legal.nav.terms":"नियम एवं शर्तें","legal.nav.license":"लाइसेंस","footer.legal.notice":"कानूनी सूचना","footer.legal.privacy":"गोपनीयता नीति","footer.legal.cookies":"कुकी नीति","footer.legal.terms":"नियम एवं शर्तें","footer.legal.license":"लाइसेंस अनुबंध",
 "footer.bottom1":"© 2026 Cloud Music। सर्वाधिकार सुरक्षित।","footer.bottom2":"बिना ट्रैकर के, हाथ से बनाया गया।","doc.eyebrow":"डॉक्यूमेंटेशन","doc.title":"गाइड और ट्यूटोरियल","doc.desc":"अपने स्रोत जोड़ने और Cloud Music के साथ शुरुआत करने के लिए जो कुछ चाहिए।",
 "doc.nav1":"क्विक स्टार्ट","doc.nav2":"Google Drive और OneDrive","doc.nav3":"MEGA लिंक से","doc.nav4":"NAS","doc.nav5":"पर्सनल सर्वर","doc.nav6":"बैकअप और रीस्टोर",
 "doc.s1.title":"क्विक स्टार्ट","doc.s1.p":"आपका पहला ट्रैक सुनने के लिए बस तीन स्टेप्स काफ़ी हैं।",
@@ -465,7 +465,7 @@ de: {
 "b.eyebrow":"Seite B","b.title":"Im Player","b.desc":"Die kleinen Hördetails, die man erst vermisst, wenn sie fehlen.",
 "b.c1.title":"Einstellbarer Crossfade","b.c1.desc":"Ein sanfter Übergang zwischen zwei Titeln, 1 bis 12 Sekunden, direkt in den Einstellungen anpassbar.",
 "b.c2.title":"Zufallswiedergabe, zwei Varianten","b.c2.desc":"Klassisches Shuffle oder ein „verbesserter“ Modus, der denselben Künstler nicht zweimal hintereinander abspielt.",
-"b.c3.title":"Titel oder ganze Warteschlange wiederholen","b.c3.desc":"Einen Song in Schleife abspielen, um ihn zu lernen, oder die ganze Warteschlange, damit die Musik nie ausgeht.",
+"b.c3.title":"Einschlaf-Timer","b.c3.desc":"Lege fest, dass die Wiedergabe nach einer bestimmten Zeit automatisch stoppt, um zu Musik einzuschlafen.",
 "b.c4.title":"Siri-Kurzbefehle","b.c4.desc":"„Spiele Musik auf Cloud Music ab“, pausieren oder Wiedergabe umschalten — per Stimme, ohne die App überhaupt zu öffnen.",
 "c.eyebrow":"Seite C","c.title":"Kernfunktionen","c.desc":"Sieh dir deine Hörstatistiken an, stelle den Klang nach deinem Geschmack ein, personalisiere die App — ohne einen ganzen Abend zu verlieren.",
 "c.t4.title":"Hörstatistiken","c.t4.desc":"Hörzeit nach Tag, Woche, Monat oder insgesamt.",
@@ -482,14 +482,14 @@ de: {
 "d.l4":"<strong>Verschlüsseltes Backup, nur für dich.</strong> Exportiere Playlists, Favoriten und Statistiken in eine passwortgeschützte Datei — stelle sie wieder her, wo immer du willst.",
 "d.link":"Vollständige Datenschutzerklärung lesen →",
 "about.eyebrow":"Über uns",
-"about.sig":"Ein Player, gemacht für <span>die Musik, die dir bereits gehört</span> — nicht für einen Katalog zum Durchscrollen.",
+"about.sig":"Ein Player, gemacht für <span>die Musik, die dir bereits gehört</span>.",
 "about.p1":"Cloud Music entstand aus einer einfachen Beobachtung: Viele von uns besitzen bereits Musik — gekauft, digitalisiert, über die Jahre übertragen — verstreut auf einer Cloud, einem NAS und dem Speicher des Telefons. Cloud Music soll genau das zusammenführen.",
 "about.p2":"Es ist eine persönliche App, entwickelt und gepflegt von einem einzelnen Entwickler, ganz auf deine Musik ausgerichtet — nicht auf einen Katalog zum Verkaufen oder auf Empfehlungen, die ein Werbealgorithmus diktiert.",
 "cta.eyebrow":"Demnächst","cta.title":"Cloud Music kommt bald in den App Store",
 "cta.desc":"Eine Frage, ein Fehler zum Melden, oder eine Funktionsidee für deine bevorzugte Cloud? Schreib mir direkt.",
 "cta.privacy":"Datenschutzerklärung",
 "footer.tagline":"Höre deine Musik lokal oder aus der Cloud, in einer einzigen Oberfläche.",
-"footer.app":"App","footer.contact":"Kontakt","footer.legal":"Rechtliches","footer.form":"Kontaktformular","legal.nav.notice":"Impressum","legal.nav.privacy":"Datenschutz","legal.nav.cookies":"Cookies","legal.nav.terms":"Allgemeine Geschäftsbedingungen","legal.nav.license":"Lizenz",
+"footer.app":"App","footer.contact":"Kontakt","footer.legal":"Rechtliches","footer.form":"Kontaktformular","legal.nav.notice":"Impressum","legal.nav.privacy":"Datenschutz","legal.nav.cookies":"Cookies","legal.nav.terms":"Allgemeine Geschäftsbedingungen","legal.nav.license":"Lizenz","footer.legal.notice":"Impressum","footer.legal.privacy":"Datenschutzerklärung","footer.legal.cookies":"Cookie-Richtlinie","footer.legal.terms":"Allgemeine Geschäftsbedingungen","footer.legal.license":"Lizenzvereinbarung",
 "footer.bottom1":"© 2026 Cloud Music. Alle Rechte vorbehalten.","footer.bottom2":"Handgemacht, ohne Tracker.","doc.eyebrow":"Dokumentation","doc.title":"Anleitungen & Tutorials","doc.desc":"Alles, um deine Quellen zu verbinden und mit Cloud Music loszulegen.",
 "doc.nav1":"Schnellstart","doc.nav2":"Google Drive & OneDrive","doc.nav3":"MEGA per Link","doc.nav4":"NAS","doc.nav5":"Eigener Server","doc.nav6":"Sicherung & Wiederherstellung",
 "doc.s1.title":"Schnellstart","doc.s1.p":"Drei Schritte genügen, um deinen ersten Titel zu hören.",
@@ -543,7 +543,7 @@ it: {
 "b.eyebrow":"Lato B","b.title":"Dentro il lettore","b.desc":"I dettagli d'ascolto che si notano solo quando mancano.",
 "b.c1.title":"Dissolvenza incrociata regolabile","b.c1.desc":"Una transizione morbida tra due brani, da 1 a 12 secondi, regolabile direttamente nelle impostazioni.",
 "b.c2.title":"Riproduzione casuale, due modalità","b.c2.desc":"Casuale classica, oppure una variante «avanzata» che evita di riproporre lo stesso artista due volte di fila.",
-"b.c3.title":"Ripeti un brano o l'intera coda","b.c3.desc":"Ripeti un brano in loop per impararlo, o l'intera coda perché la musica non si fermi mai.",
+"b.c3.title":"Timer per lo spegnimento","b.c3.desc":"Programma l'arresto automatico della riproduzione dopo un tempo scelto, per addormentarti in musica.",
 "b.c4.title":"Comandi rapidi Siri","b.c4.desc":"«Riproduci musica su Cloud Music», metti in pausa, o cambia la riproduzione — a voce, senza nemmeno aprire l'app.",
 "c.eyebrow":"Lato C","c.title":"Funzionalità principali","c.desc":"Consulta le tue statistiche di ascolto, regola il suono a tuo piacimento, personalizza l'app — senza perderci la serata.",
 "c.t4.title":"Statistiche di ascolto","c.t4.desc":"Tempo d'ascolto per giorno, settimana, mese o da sempre.",
@@ -560,14 +560,14 @@ it: {
 "d.l4":"<strong>Backup cifrato, solo per te.</strong> Esporta playlist, preferiti e statistiche in un file protetto da password — ripristinalo dove vuoi.",
 "d.link":"Leggi l'informativa sulla privacy completa →",
 "about.eyebrow":"Chi siamo",
-"about.sig":"Un lettore pensato per <span>la musica che possiedi già</span> — non per un catalogo da scorrere.",
+"about.sig":"Un lettore pensato per <span>la musica che possiedi già</span>.",
 "about.p1":"Cloud Music nasce da un'osservazione semplice: molti di noi possiedono già musica — acquistata, copiata, trasferita nel corso degli anni — sparsa tra un cloud, un NAS e lo spazio del telefono. Lo scopo di Cloud Music è riunirla.",
 "about.p2":"È un'app personale, sviluppata e mantenuta da un solo sviluppatore, pensata per la tua musica — non per un catalogo da vendere né per consigli dettati da un algoritmo pubblicitario.",
 "cta.eyebrow":"Prossimamente","cta.title":"Cloud Music arriva sull'App Store",
 "cta.desc":"Una domanda, un bug da segnalare, o un'idea di funzionalità per il tuo cloud preferito? Scrivimi direttamente.",
 "cta.privacy":"Informativa sulla privacy",
 "footer.tagline":"Ascolta la tua musica in locale o dal cloud, in un'unica interfaccia.",
-"footer.app":"App","footer.contact":"Contatti","footer.legal":"Legale","footer.form":"Modulo di contatto","legal.nav.notice":"Note legali","legal.nav.privacy":"Privacy","legal.nav.cookies":"Cookie","legal.nav.terms":"Termini e condizioni","legal.nav.license":"Licenza",
+"footer.app":"App","footer.contact":"Contatti","footer.legal":"Legale","footer.form":"Modulo di contatto","legal.nav.notice":"Note legali","legal.nav.privacy":"Privacy","legal.nav.cookies":"Cookie","legal.nav.terms":"Termini e condizioni","legal.nav.license":"Licenza","footer.legal.notice":"Note legali","footer.legal.privacy":"Informativa sulla privacy","footer.legal.cookies":"Informativa sui cookie","footer.legal.terms":"Termini e condizioni","footer.legal.license":"Contratto di licenza",
 "footer.bottom1":"© 2026 Cloud Music. Tutti i diritti riservati.","footer.bottom2":"Fatto a mano, senza tracker.","doc.eyebrow":"Documentazione","doc.title":"Guide e tutorial","doc.desc":"Tutto il necessario per collegare le tue fonti e iniziare con Cloud Music.",
 "doc.nav1":"Avvio rapido","doc.nav2":"Google Drive e OneDrive","doc.nav3":"MEGA tramite link","doc.nav4":"NAS","doc.nav5":"Server personale","doc.nav6":"Backup e ripristino",
 "doc.s1.title":"Avvio rapido","doc.s1.p":"Bastano tre passaggi per ascoltare il tuo primo brano.",
@@ -621,7 +621,7 @@ es: {
 "b.eyebrow":"Cara B","b.title":"Dentro del reproductor","b.desc":"Esos detalles de escucha que solo se notan cuando faltan.",
 "b.c1.title":"Fundido cruzado ajustable","b.c1.desc":"Una transición suave entre dos pistas, de 1 a 12 segundos, ajustable directamente en los ajustes.",
 "b.c2.title":"Aleatorio, en dos modos","b.c2.desc":"Aleatorio clásico, o una variante «mejorada» que evita repetir el mismo artista dos veces seguidas.",
-"b.c3.title":"Repetir una pista o toda la cola","b.c3.desc":"Repite una canción en bucle para aprenderla, o toda la cola para que la música no se acabe nunca.",
+"b.c3.title":"Temporizador de apagado","b.c3.desc":"Programa la reproducción para que se detenga automáticamente tras un tiempo elegido, y te duermas con música.",
 "b.c4.title":"Atajos de Siri","b.c4.desc":"«Reproduce música en Cloud Music», pausa, o cambia la reproducción — con la voz, sin ni siquiera abrir la app.",
 "c.eyebrow":"Cara C","c.title":"Funciones principales","c.desc":"Consulta tus estadísticas de escucha, ajusta el sonido a tu gusto, personaliza la app — sin perder toda la tarde.",
 "c.t4.title":"Estadísticas de escucha","c.t4.desc":"Tiempo de escucha por día, semana, mes o desde siempre.",
@@ -638,14 +638,14 @@ es: {
 "d.l4":"<strong>Copia de seguridad cifrada, solo para ti.</strong> Exporta playlists, favoritos y estadísticas en un archivo protegido por contraseña — restáuralo donde quieras.",
 "d.link":"Leer la política de privacidad completa →",
 "about.eyebrow":"Nosotros",
-"about.sig":"Un reproductor pensado para <span>la música que ya tienes</span> — no para un catálogo que desplazar.",
+"about.sig":"Un reproductor pensado para <span>la música que ya tienes</span>.",
 "about.p1":"Cloud Music nació de una observación simple: muchos ya tenemos música propia —comprada, ripeada, transferida a lo largo de los años— repartida entre una nube, un NAS y el almacenamiento del teléfono. El objetivo de Cloud Music es reunirla.",
 "about.p2":"Es una aplicación personal, desarrollada y mantenida por un único desarrollador, centrada en tu música — no en un catálogo que vender ni en recomendaciones dictadas por un algoritmo publicitario.",
 "cta.eyebrow":"Próximamente","cta.title":"Cloud Music llega a la App Store",
 "cta.desc":"¿Alguna pregunta, un error que reportar, o una idea de función para tu nube favorita? Escríbeme directamente.",
 "cta.privacy":"Política de privacidad",
 "footer.tagline":"Escucha tu música en local o desde la nube, en una sola interfaz.",
-"footer.app":"App","footer.contact":"Contacto","footer.legal":"Legal","footer.form":"Formulario de contacto","legal.nav.notice":"Aviso legal","legal.nav.privacy":"Privacidad","legal.nav.cookies":"Cookies","legal.nav.terms":"Términos y condiciones","legal.nav.license":"Licencia",
+"footer.app":"App","footer.contact":"Contacto","footer.legal":"Legal","footer.form":"Formulario de contacto","legal.nav.notice":"Aviso legal","legal.nav.privacy":"Privacidad","legal.nav.cookies":"Cookies","legal.nav.terms":"Términos y condiciones","legal.nav.license":"Licencia","footer.legal.notice":"Aviso legal","footer.legal.privacy":"Política de privacidad","footer.legal.cookies":"Política de cookies","footer.legal.terms":"Términos y condiciones","footer.legal.license":"Contrato de licencia",
 "footer.bottom1":"© 2026 Cloud Music. Todos los derechos reservados.","footer.bottom2":"Hecho a mano, sin rastreadores.","doc.eyebrow":"Documentación","doc.title":"Guías y tutoriales","doc.desc":"Todo lo necesario para conectar tus fuentes y empezar con Cloud Music.",
 "doc.nav1":"Inicio rápido","doc.nav2":"Google Drive y OneDrive","doc.nav3":"MEGA por enlace","doc.nav4":"NAS","doc.nav5":"Servidor personal","doc.nav6":"Copia de seguridad y restauración",
 "doc.s1.title":"Inicio rápido","doc.s1.p":"Bastan tres pasos para escuchar tu primera pista.",
@@ -699,7 +699,7 @@ ar: {
 "b.eyebrow":"الوجه B","b.title":"داخل المشغّل","b.desc":"تفاصيل الاستماع التي لا نلاحظها إلا حين تغيب.",
 "b.c1.title":"تلاشٍ متقاطع قابل للتعديل","b.c1.desc":"انتقال سلس بين مقطعين، من 1 إلى 12 ثانية، قابل للتعديل مباشرة من الإعدادات.",
 "b.c2.title":"تشغيل عشوائي بوضعين","b.c2.desc":"تشغيل عشوائي كلاسيكي، أو وضع «محسّن» يتجنّب تكرار نفس الفنان مرتين متتاليتين.",
-"b.c3.title":"تكرار مقطع واحد أو القائمة كاملة","b.c3.desc":"كرّر أغنية واحدة لتعلّمها، أو كرّر القائمة كاملة كي لا تتوقف الموسيقى أبدًا.",
+"b.c3.title":"مؤقّت النوم","b.c3.desc":"اضبط إيقاف التشغيل تلقائيًا بعد مدة تحددها، لتنام على أنغام الموسيقى.",
 "b.c4.title":"اختصارات Siri","b.c4.desc":"«شغّل الموسيقى على Cloud Music»، أوقف مؤقتًا، أو بدّل التشغيل — بالصوت، دون فتح التطبيق حتى.",
 "c.eyebrow":"الوجه C","c.title":"الميزات الأساسية","c.desc":"اطّلع على إحصاءات الاستماع، واضبط الصوت كما يناسبك، وخصّص شكل التطبيق — دون إضاعة أمسية كاملة.",
 "c.t4.title":"إحصاءات الاستماع","c.t4.desc":"وقت الاستماع يوميًا وأسبوعيًا وشهريًا أو منذ البداية.",
@@ -716,14 +716,14 @@ ar: {
 "d.l4":"<strong>نسخة احتياطية مشفّرة، لك وحدك.</strong> صدّر قوائم التشغيل والمفضّلة والإحصاءات في ملف محمي بكلمة مرور — واستعده أينما شئت.",
 "d.link":"اقرأ سياسة الخصوصية كاملة ←",
 "about.eyebrow":"من نحن",
-"about.sig":"مشغّل صُمم من أجل <span>الموسيقى التي تملكها بالفعل</span> — لا من أجل كتالوج للتصفّح.",
+"about.sig":"مشغّل صُمم من أجل <span>الموسيقى التي تملكها بالفعل</span>.",
 "about.p1":"وُلد Cloud Music من ملاحظة بسيطة: كثيرون منا يملكون بالفعل موسيقى — اشتروها، نسخوها، نقلوها على مر السنين — متناثرة بين سحابة وNAS ومساحة تخزين الهاتف. هدف Cloud Music هو جمعها كلها.",
 "about.p2":"إنه تطبيق شخصي، طوّره ويصونه مطوّر واحد، يركّز على موسيقاك — لا على كتالوج للبيع ولا على توصيات تمليها خوارزمية إعلانية.",
 "cta.eyebrow":"قريبًا","cta.title":"Cloud Music قادم إلى App Store",
 "cta.desc":"سؤال، خلل تريد الإبلاغ عنه، أو فكرة ميزة لخدمتك السحابية المفضّلة؟ راسلني مباشرة.",
 "cta.privacy":"سياسة الخصوصية",
 "footer.tagline":"استمع إلى موسيقاك محليًا أو من السحابة، في واجهة واحدة.",
-"footer.app":"التطبيق","footer.contact":"تواصل","footer.legal":"قانوني","footer.form":"نموذج التواصل","legal.nav.notice":"الإشعار القانوني","legal.nav.privacy":"الخصوصية","legal.nav.cookies":"ملفات تعريف الارتباط","legal.nav.terms":"الشروط والأحكام","legal.nav.license":"الترخيص",
+"footer.app":"التطبيق","footer.contact":"تواصل","footer.legal":"قانوني","footer.form":"نموذج التواصل","legal.nav.notice":"الإشعار القانوني","legal.nav.privacy":"الخصوصية","legal.nav.cookies":"ملفات تعريف الارتباط","legal.nav.terms":"الشروط والأحكام","legal.nav.license":"الترخيص","footer.legal.notice":"الإشعار القانوني","footer.legal.privacy":"سياسة الخصوصية","footer.legal.cookies":"سياسة ملفات تعريف الارتباط","footer.legal.terms":"الشروط والأحكام","footer.legal.license":"اتفاقية الترخيص",
 "footer.bottom1":"© 2026 Cloud Music. جميع الحقوق محفوظة.","footer.bottom2":"صُنع يدويًا، بلا متتبّعات.","doc.eyebrow":"التوثيق","doc.title":"الأدلة والدروس","doc.desc":"كل ما تحتاجه لربط مصادرك والبدء مع Cloud Music.",
 "doc.nav1":"بداية سريعة","doc.nav2":"Google Drive وOneDrive","doc.nav3":"MEGA عبر رابط","doc.nav4":"NAS","doc.nav5":"خادم شخصي","doc.nav6":"النسخ الاحتياطي والاستعادة",
 "doc.s1.title":"بداية سريعة","doc.s1.p":"ثلاث خطوات كافية للاستماع إلى أول مقطع.",
@@ -753,4 +753,288 @@ ar: {
 "blog.eyebrow":"المدونة","blog.title":"ملاحظات التحديث","blog.soon":"قريبًا"
 },
 
+};
+
+// Contenu de la fenêtre modale "Compatible avec" (services cloud / NAS / réseau), par langue.
+window.CM_MODALS = {
+  fr: {
+    drives: {
+      title: "Tous les drives compatibles",
+      rows: [
+        { name: "Google Drive", comment: "Offre gratuite généreuse, sans limite de téléchargement, avec un débit moyen élevé et une connexion sécurisée (OAuth).", storage: "15 Go" },
+        { name: "MEGA", comment: "Chiffrement de bout en bout et bon débit, mais la bande passante gratuite est limitée en cas d'usage intensif.", storage: "20 Go" },
+        { name: "OneDrive", comment: "Connexion sécurisée et bonne intégration à l'écosystème Microsoft, mais l'offre gratuite reste la plus modeste du marché.", storage: "5 Go" },
+        { name: "Dropbox", comment: "Synchronisation rapide et fiable sur connexion chiffrée, avec une offre gratuite limitée en espace.", storage: "2 Go" },
+        { name: "Box", comment: "Connexion sécurisée orientée usage professionnel, avec une limite de 250 Mo par fichier sur l'offre gratuite.", storage: "10 Go" },
+        { name: "Yandex Disk", comment: "Configuration rapide et connexion chiffrée, avec un débit correct sur une offre gratuite standard.", storage: "5 Go" }
+      ]
+    },
+    links: {
+      title: "Liens de partage compatibles",
+      rows: [
+        { name: "MEGA", comment: "Débit élevé et déchiffrement effectué directement sur l'appareil, sans limite de téléchargement particulière.", storage: "20 Go" }
+      ]
+    },
+    nas: {
+      title: "Serveurs NAS compatibles",
+      rows: [
+        { name: "Jellyfin", comment: "Solution open-source et entièrement gratuite, sans compte ni abonnement, avec un débit qui dépend uniquement de votre réseau." },
+        { name: "Emby", comment: "Interface soignée et applications natives sur la plupart des plateformes, avec connexion chiffrable via HTTPS." },
+        { name: "Plex", comment: "Le plus populaire des trois, simple à configurer, avec un accès à distance sécurisé disponible en option." }
+      ]
+    },
+    network: {
+      title: "Protocoles réseau compatibles",
+      rows: [
+        { name: "WebDAV", comment: "Standard ouvert largement supporté, avec authentification et chiffrement via HTTPS." },
+        { name: "FTP", comment: "Protocole simple et universel, mais non chiffré par défaut : à réserver à un réseau de confiance." },
+        { name: "NFS", comment: "Débit élevé en réseau local et très répandu sous Linux, sans chiffrement natif." }
+      ]
+    }
+  },
+  en: {
+    drives: {
+      title: "All compatible drives",
+      rows: [
+        { name: "Google Drive", comment: "Generous free plan with no download limit, solid average bandwidth and a secure connection (OAuth).", storage: "15 GB" },
+        { name: "MEGA", comment: "End-to-end encryption and good bandwidth, though the free tier is throttled under heavy use.", storage: "20 GB" },
+        { name: "OneDrive", comment: "Secure connection and tight integration with the Microsoft ecosystem, but the smallest free plan on the market.", storage: "5 GB" },
+        { name: "Dropbox", comment: "Fast, reliable sync over an encrypted connection, with a free plan limited in storage space.", storage: "2 GB" },
+        { name: "Box", comment: "Secure connection geared toward professional use, with a 250 MB per-file limit on the free plan.", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "Quick setup and an encrypted connection, with decent bandwidth on the standard free plan.", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "Compatible share links",
+      rows: [
+        { name: "MEGA", comment: "High bandwidth with decryption performed directly on your device, with no particular download limit.", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "Compatible NAS servers",
+      rows: [
+        { name: "Jellyfin", comment: "Open-source and completely free, no account or subscription needed, with bandwidth limited only by your own network." },
+        { name: "Emby", comment: "Polished interface and native apps on most platforms, with an HTTPS-encryptable connection." },
+        { name: "Plex", comment: "The most popular of the three, easy to set up, with optional secure remote access." }
+      ]
+    },
+    network: {
+      title: "Compatible network protocols",
+      rows: [
+        { name: "WebDAV", comment: "Open, widely supported standard, with authentication and HTTPS encryption." },
+        { name: "FTP", comment: "Simple, universal protocol, but unencrypted by default — best kept to a trusted network." },
+        { name: "NFS", comment: "High bandwidth on a local network and very common on Linux, with no native encryption." }
+      ]
+    }
+  },
+  de: {
+    drives: {
+      title: "Alle kompatiblen Drives",
+      rows: [
+        { name: "Google Drive", comment: "Großzügiger kostenloser Plan ohne Download-Limit, solide durchschnittliche Bandbreite und eine sichere Verbindung (OAuth).", storage: "15 GB" },
+        { name: "MEGA", comment: "Ende-zu-Ende-Verschlüsselung und gute Bandbreite, wobei die kostenlose Bandbreite bei starker Nutzung gedrosselt wird.", storage: "20 GB" },
+        { name: "OneDrive", comment: "Sichere Verbindung und gute Integration in das Microsoft-Ökosystem, aber der kleinste kostenlose Plan auf dem Markt.", storage: "5 GB" },
+        { name: "Dropbox", comment: "Schnelle, zuverlässige Synchronisierung über eine verschlüsselte Verbindung, mit begrenztem kostenlosem Speicherplatz.", storage: "2 GB" },
+        { name: "Box", comment: "Sichere, auf professionelle Nutzung ausgerichtete Verbindung, mit einem Limit von 250 MB pro Datei im kostenlosen Plan.", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "Schnelle Einrichtung und verschlüsselte Verbindung, mit ordentlicher Bandbreite im kostenlosen Standardplan.", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "Kompatible Freigabelinks",
+      rows: [
+        { name: "MEGA", comment: "Hohe Bandbreite, Entschlüsselung direkt auf deinem Gerät, ohne besonderes Download-Limit.", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "Kompatible NAS-Server",
+      rows: [
+        { name: "Jellyfin", comment: "Open-Source und komplett kostenlos, ohne Konto oder Abo, die Bandbreite hängt nur von deinem eigenen Netzwerk ab." },
+        { name: "Emby", comment: "Übersichtliche Oberfläche und native Apps auf den meisten Plattformen, mit über HTTPS verschlüsselbarer Verbindung." },
+        { name: "Plex", comment: "Der beliebteste der drei, einfach einzurichten, mit optionalem sicherem Fernzugriff." }
+      ]
+    },
+    network: {
+      title: "Kompatible Netzwerkprotokolle",
+      rows: [
+        { name: "WebDAV", comment: "Offener, weit verbreiteter Standard mit Authentifizierung und HTTPS-Verschlüsselung." },
+        { name: "FTP", comment: "Einfaches, universelles Protokoll, aber standardmäßig unverschlüsselt — nur in einem vertrauenswürdigen Netzwerk verwenden." },
+        { name: "NFS", comment: "Hohe Bandbreite im lokalen Netzwerk und unter Linux weit verbreitet, ohne native Verschlüsselung." }
+      ]
+    }
+  },
+  it: {
+    drives: {
+      title: "Tutti i drive compatibili",
+      rows: [
+        { name: "Google Drive", comment: "Piano gratuito generoso senza limiti di download, buona velocità media e connessione sicura (OAuth).", storage: "15 GB" },
+        { name: "MEGA", comment: "Crittografia end-to-end e buona velocità, anche se la banda gratuita viene limitata in caso di uso intenso.", storage: "20 GB" },
+        { name: "OneDrive", comment: "Connessione sicura e buona integrazione con l'ecosistema Microsoft, ma il piano gratuito più modesto del mercato.", storage: "5 GB" },
+        { name: "Dropbox", comment: "Sincronizzazione rapida e affidabile su connessione crittografata, con un piano gratuito limitato nello spazio.", storage: "2 GB" },
+        { name: "Box", comment: "Connessione sicura pensata per un uso professionale, con un limite di 250 MB per file nel piano gratuito.", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "Configurazione rapida e connessione crittografata, con una velocità discreta nel piano gratuito standard.", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "Link di condivisione compatibili",
+      rows: [
+        { name: "MEGA", comment: "Velocità elevata e decrittazione eseguita direttamente sul dispositivo, senza un limite di download particolare.", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "Server NAS compatibili",
+      rows: [
+        { name: "Jellyfin", comment: "Open-source e completamente gratuito, senza account né abbonamento, con una velocità che dipende solo dalla tua rete." },
+        { name: "Emby", comment: "Interfaccia curata e app native sulla maggior parte delle piattaforme, con connessione crittografabile via HTTPS." },
+        { name: "Plex", comment: "Il più popolare dei tre, semplice da configurare, con accesso remoto sicuro disponibile come opzione." }
+      ]
+    },
+    network: {
+      title: "Protocolli di rete compatibili",
+      rows: [
+        { name: "WebDAV", comment: "Standard aperto e ampiamente supportato, con autenticazione e crittografia HTTPS." },
+        { name: "FTP", comment: "Protocollo semplice e universale, ma non crittografato di default: da riservare a una rete affidabile." },
+        { name: "NFS", comment: "Velocità elevata in rete locale e molto diffuso su Linux, senza crittografia nativa." }
+      ]
+    }
+  },
+  es: {
+    drives: {
+      title: "Todos los drives compatibles",
+      rows: [
+        { name: "Google Drive", comment: "Plan gratuito generoso sin límite de descarga, buena velocidad media y conexión segura (OAuth).", storage: "15 GB" },
+        { name: "MEGA", comment: "Cifrado de extremo a extremo y buena velocidad, aunque el ancho de banda gratuito se limita con un uso intenso.", storage: "20 GB" },
+        { name: "OneDrive", comment: "Conexión segura y buena integración con el ecosistema Microsoft, pero el plan gratuito más modesto del mercado.", storage: "5 GB" },
+        { name: "Dropbox", comment: "Sincronización rápida y fiable sobre conexión cifrada, con un plan gratuito limitado en espacio.", storage: "2 GB" },
+        { name: "Box", comment: "Conexión segura orientada a uso profesional, con un límite de 250 MB por archivo en el plan gratuito.", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "Configuración rápida y conexión cifrada, con una velocidad correcta en el plan gratuito estándar.", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "Enlaces de compartición compatibles",
+      rows: [
+        { name: "MEGA", comment: "Velocidad alta y descifrado realizado directamente en tu dispositivo, sin límite de descarga particular.", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "Servidores NAS compatibles",
+      rows: [
+        { name: "Jellyfin", comment: "Open-source y totalmente gratuito, sin cuenta ni suscripción, con una velocidad que depende solo de tu propia red." },
+        { name: "Emby", comment: "Interfaz cuidada y apps nativas en la mayoría de plataformas, con conexión cifrable vía HTTPS." },
+        { name: "Plex", comment: "El más popular de los tres, fácil de configurar, con acceso remoto seguro disponible como opción." }
+      ]
+    },
+    network: {
+      title: "Protocolos de red compatibles",
+      rows: [
+        { name: "WebDAV", comment: "Estándar abierto y ampliamente soportado, con autenticación y cifrado HTTPS." },
+        { name: "FTP", comment: "Protocolo simple y universal, pero sin cifrar por defecto: resérvalo para una red de confianza." },
+        { name: "NFS", comment: "Velocidad alta en red local y muy usado en Linux, sin cifrado nativo." }
+      ]
+    }
+  },
+  zh: {
+    drives: {
+      title: "所有兼容的网盘",
+      rows: [
+        { name: "Google Drive", comment: "免费额度慷慨，无下载限制，平均速率较高，并采用安全连接（OAuth）。", storage: "15 GB" },
+        { name: "MEGA", comment: "端到端加密，速率良好，但高强度使用时免费带宽会受到限制。", storage: "20 GB" },
+        { name: "OneDrive", comment: "连接安全，与微软生态系统集成良好，但免费额度是市面上最小的。", storage: "5 GB" },
+        { name: "Dropbox", comment: "同步快速可靠，连接加密，但免费额度存储空间有限。", storage: "2 GB" },
+        { name: "Box", comment: "连接安全，面向专业场景，免费额度下单个文件限制为 250 MB。", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "配置快捷，连接加密，标准免费额度下速率尚可。", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "支持的分享链接",
+      rows: [
+        { name: "MEGA", comment: "速率高，解密直接在设备本地完成，没有特别的下载限制。", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "支持的 NAS 服务器",
+      rows: [
+        { name: "Jellyfin", comment: "开源且完全免费，无需账号或订阅，速率仅取决于你自己的网络。" },
+        { name: "Emby", comment: "界面精致，在大多数平台都有原生应用，支持通过 HTTPS 加密连接。" },
+        { name: "Plex", comment: "三者中最受欢迎，配置简单，可选启用安全的远程访问。" }
+      ]
+    },
+    network: {
+      title: "支持的网络协议",
+      rows: [
+        { name: "WebDAV", comment: "开放且广泛支持的标准，支持身份验证和 HTTPS 加密。" },
+        { name: "FTP", comment: "简单通用的协议，但默认不加密——建议仅在可信网络中使用。" },
+        { name: "NFS", comment: "局域网内速率高，在 Linux 上非常普及，但没有原生加密。" }
+      ]
+    }
+  },
+  hi: {
+    drives: {
+      title: "सभी सपोर्टेड ड्राइव",
+      rows: [
+        { name: "Google Drive", comment: "बिना डाउनलोड लिमिट के उदार फ्री प्लान, अच्छी औसत स्पीड और सिक्योर कनेक्शन (OAuth)।", storage: "15 GB" },
+        { name: "MEGA", comment: "एंड-टू-एंड एन्क्रिप्शन और अच्छी स्पीड, लेकिन ज़्यादा इस्तेमाल पर फ्री बैंडविड्थ सीमित हो जाती है।", storage: "20 GB" },
+        { name: "OneDrive", comment: "सिक्योर कनेक्शन और Microsoft इकोसिस्टम के साथ अच्छा इंटीग्रेशन, लेकिन मार्केट का सबसे छोटा फ्री प्लान।", storage: "5 GB" },
+        { name: "Dropbox", comment: "एन्क्रिप्टेड कनेक्शन पर तेज़ और भरोसेमंद सिंक, लेकिन फ्री प्लान में स्टोरेज सीमित।", storage: "2 GB" },
+        { name: "Box", comment: "प्रोफेशनल इस्तेमाल के लिए बना सिक्योर कनेक्शन, फ्री प्लान में प्रति फ़ाइल 250 MB की लिमिट।", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "तेज़ सेटअप और एन्क्रिप्टेड कनेक्शन, स्टैंडर्ड फ्री प्लान में ठीक-ठाक स्पीड।", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "सपोर्टेड शेयर लिंक",
+      rows: [
+        { name: "MEGA", comment: "तेज़ स्पीड और डिक्रिप्शन सीधे आपके डिवाइस पर होता है, कोई खास डाउनलोड लिमिट नहीं।", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "सपोर्टेड NAS सर्वर",
+      rows: [
+        { name: "Jellyfin", comment: "ओपन-सोर्स और पूरी तरह मुफ़्त, बिना अकाउंट या सब्सक्रिप्शन के, स्पीड सिर्फ़ आपके अपने नेटवर्क पर निर्भर करती है।" },
+        { name: "Emby", comment: "साफ़-सुथरा इंटरफ़ेस और ज़्यादातर प्लेटफ़ॉर्म्स पर नेटिव ऐप्स, HTTPS के ज़रिए एन्क्रिप्टेबल कनेक्शन।" },
+        { name: "Plex", comment: "तीनों में सबसे लोकप्रिय, सेटअप करना आसान, विकल्प के तौर पर सिक्योर रिमोट एक्सेस उपलब्ध।" }
+      ]
+    },
+    network: {
+      title: "सपोर्टेड नेटवर्क प्रोटोकॉल",
+      rows: [
+        { name: "WebDAV", comment: "खुला और व्यापक रूप से सपोर्टेड स्टैंडर्ड, ऑथेंटिकेशन और HTTPS एन्क्रिप्शन के साथ।" },
+        { name: "FTP", comment: "सिंपल और यूनिवर्सल प्रोटोकॉल, लेकिन डिफ़ॉल्ट रूप से अनएन्क्रिप्टेड — सिर्फ़ भरोसेमंद नेटवर्क पर इस्तेमाल करें।" },
+        { name: "NFS", comment: "लोकल नेटवर्क पर तेज़ स्पीड और Linux पर बेहद आम, बिना नेटिव एन्क्रिप्शन के।" }
+      ]
+    }
+  },
+  ar: {
+    drives: {
+      title: "كل خدمات التخزين المتوافقة",
+      rows: [
+        { name: "Google Drive", comment: "خطة مجانية سخية بلا حدّ للتنزيل، وسرعة متوسطة جيدة، واتصال آمن (OAuth).", storage: "15 جيجابايت" },
+        { name: "MEGA", comment: "تشفير من طرف إلى طرف وسرعة جيدة، لكن يُحدّ من النطاق الترددي المجاني عند الاستخدام المكثّف.", storage: "20 جيجابايت" },
+        { name: "OneDrive", comment: "اتصال آمن وتكامل جيد مع منظومة مايكروسوفت، لكنها أصغر خطة مجانية في السوق.", storage: "5 جيجابايت" },
+        { name: "Dropbox", comment: "مزامنة سريعة وموثوقة عبر اتصال مشفّر، مع خطة مجانية محدودة المساحة.", storage: "2 جيجابايت" },
+        { name: "Box", comment: "اتصال آمن موجّه للاستخدام الاحترافي، بحدّ 250 ميجابايت لكل ملف في الخطة المجانية.", storage: "10 جيجابايت" },
+        { name: "Yandex Disk", comment: "إعداد سريع واتصال مشفّر، بسرعة مقبولة في الخطة المجانية القياسية.", storage: "5 جيجابايت" }
+      ]
+    },
+    links: {
+      title: "روابط المشاركة المتوافقة",
+      rows: [
+        { name: "MEGA", comment: "سرعة عالية وفك التشفير يتم مباشرة على جهازك، دون حدّ تنزيل خاص.", storage: "20 جيجابايت" }
+      ]
+    },
+    nas: {
+      title: "خوادم NAS المتوافقة",
+      rows: [
+        { name: "Jellyfin", comment: "مفتوح المصدر ومجاني بالكامل، دون حساب أو اشتراك، وتعتمد السرعة فقط على شبكتك الخاصة." },
+        { name: "Emby", comment: "واجهة أنيقة وتطبيقات أصلية على معظم المنصات، مع اتصال قابل للتشفير عبر HTTPS." },
+        { name: "Plex", comment: "الأكثر شيوعًا بين الثلاثة، سهل الإعداد، مع إمكانية الوصول عن بُعد الآمن كخيار." }
+      ]
+    },
+    network: {
+      title: "بروتوكولات الشبكة المتوافقة",
+      rows: [
+        { name: "WebDAV", comment: "معيار مفتوح ومدعوم على نطاق واسع، مع مصادقة وتشفير HTTPS." },
+        { name: "FTP", comment: "بروتوكول بسيط وعام، لكنه غير مشفّر افتراضيًا — يُفضَّل استخدامه فقط على شبكة موثوقة." },
+        { name: "NFS", comment: "سرعة عالية على الشبكة المحلية وشائع جدًا على Linux، دون تشفير أصلي." }
+      ]
+    }
+  }
 };
