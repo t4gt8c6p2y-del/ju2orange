@@ -79,20 +79,41 @@
 
 <p>Cloud Music is a personal music player application for iOS. It lets you connect to cloud storage services (Google Drive, OneDrive, MEGA, Dropbox, Box, Yandex Disk, etc.), a home NAS (Emby, Jellyfin, Plex), or a personal server (FTP, WebDAV, NFS), to listen to or download audio files you already own.</p>
 
+<h2>Data controller</h2>
+<p>The publisher of Cloud Music, identified in the <a href="legal-notice.html">Legal Notice</a>, is the data controller for the limited processing described below. For any question or request, contact <a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a>.</p>
+
 <h2>What data is used</h2>
-<p>Cloud Music only accesses the files and folders in <strong>your</strong> account or on <strong>your</strong> device, with <strong>your</strong> explicit authorization: secure sign-in (OAuth) for cloud services like Google Drive or OneDrive, an encrypted share link for MEGA, or login credentials for a NAS or personal server. The application only requests the permissions strictly necessary to list, read and download audio files.</p>
+<p>Cloud Music only accesses the files and folders in <strong>your</strong> account or on <strong>your</strong> device, with <strong>your</strong> explicit authorization:</p>
+<ul>
+  <li>Secure sign-in (OAuth) for cloud services such as Google Drive, OneDrive, Dropbox, Box or Yandex Disk.</li>
+  <li>For MEGA, either: signing in with your MEGA email and password to browse your account and pick the files you want to add, or opening a public MEGA share link without any account. In both cases, the connection and any decryption happen directly between your device and MEGA's own servers, through MEGA's official SDK — your MEGA credentials are entered on-device and are never sent to or stored by Cloud Music or any server we operate.</li>
+  <li>Login credentials for a NAS (Emby, Jellyfin, Plex) or a personal server (FTP, WebDAV, NFS).</li>
+</ul>
+<p>The application only requests the permissions strictly necessary to list, read and download audio files.</p>
+
+<h2>Metadata &amp; lyrics lookup</h2>
+<p>If you use the optional "search metadata" feature, Cloud Music sends the poorly-tagged file's existing information (such as title and artist, never the audio file itself) to the <strong>Deezer</strong> public database to retrieve and copy over the title, artist, album and cover art. For synchronized lyrics, Cloud Music queries the <strong>lrclib</strong> public database using the same kind of information. These lookups are optional, triggered by your action, and limited to track metadata — no account identifiers or file contents are sent.</p>
 
 <h2>Where your data is stored</h2>
 <p>Your login credentials are never transmitted to Cloud Music or to any third-party server: the connection happens directly between your device and the relevant cloud service. Access tokens obtained after signing in are stored only on your device, in iOS's secure Keychain, and never leave it.</p>
 
+<h2>Legal basis and retention</h2>
+<p>Processing is based on the performance of the service you request (connecting a source, looking up metadata) and, where applicable, your consent (e.g. triggering a metadata search). Cloud Music does not operate a server that stores your files or credentials: tokens and settings are kept on your device only, for as long as you keep the app installed and the connection active, and are deleted when you disconnect the service or delete the app.</p>
+
 <h2>Sharing with third parties</h2>
-<p>Cloud Music does not share, sell or transmit any personal data to third parties. No ads, no trackers, no data collection for commercial purposes.</p>
+<p>Cloud Music does not share, sell or transmit any personal data to third parties for commercial purposes. No ads, no trackers, no data collection for advertising. The only outbound requests are: (a) the direct connection your device makes to the cloud/NAS/server you choose to use, and (b) the optional metadata/lyrics lookups described above, sent directly from your device to Deezer or lrclib.</p>
+
+<h2>Google user data — Limited Use disclosure</h2>
+<p>Cloud Music's use and transfer of information received from Google APIs (e.g. Google Drive) adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. In particular, Cloud Music does not: use or transfer this data for serving advertisements of any kind; use or transfer this data to determine creditworthiness or for lending purposes; sell this data or transfer it to data brokers or other information resellers; use this data to train or improve generalized (non-personalized) AI or machine-learning models; or allow humans to read this data, except where strictly necessary for security purposes, to comply with applicable law, or with your affirmative consent for a specific support request.</p>
 
 <h2>Subscription payments</h2>
 <p>Some features may require a paid subscription. Subscriptions are billed and managed entirely by Apple through the App Store and StoreKit: Cloud Music never receives or stores your payment details (card number, billing address, etc.). Managing, cancelling or requesting a refund for a subscription is done through your Apple ID account settings.</p>
 
 <h2>Deleting your data</h2>
 <p>You can disconnect from a cloud service or delete all of the application's data at any time from Cloud Music's internal settings. You can also revoke Cloud Music's access directly from the security settings of your Google, Microsoft, MEGA, etc. account.</p>
+
+<h2>Your rights</h2>
+<p>If the GDPR applies to you, you have the right to access, correct, delete, restrict or object to the processing of the limited data described above, and the right to data portability. Since Cloud Music does not hold a server-side account of your data, most of these rights are exercised directly within the app or with the relevant cloud provider. For anything only the publisher can act on, write to <a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a>. You also have the right to lodge a complaint with your local data protection authority (in France, the CNIL — <a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>).</p>
 
 <h2>Contact</h2>
 <p>For any question: <a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a></p>
