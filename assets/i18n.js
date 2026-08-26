@@ -79,49 +79,49 @@ window.CM_SLOGANS = {
 window.CM_TRACKS = {
   fr: [
     { title: "Nocturne en Fa mineur", source: "Google Drive", format: "FLAC" },
-    { title: "Skyline (Live)", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Skyline", source: "NAS · Jellyfin", format: "M4A" },
     { title: "Petit matin", source: "Serveur WebDAV", format: "MP3" },
     { title: "Rue de la Mer", source: "Fichiers locaux", format: "WAV" }
   ],
   en: [
     { title: "Nocturne in F minor", source: "Google Drive", format: "FLAC" },
-    { title: "Skyline (Live)", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Skyline", source: "NAS · Jellyfin", format: "M4A" },
     { title: "Early Morning", source: "WebDAV Server", format: "MP3" },
     { title: "Sea Street", source: "Local Files", format: "WAV" }
   ],
   de: [
     { title: "Notturno in f-Moll", source: "Google Drive", format: "FLAC" },
-    { title: "Skyline (Live)", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Skyline", source: "NAS · Jellyfin", format: "M4A" },
     { title: "Früher Morgen", source: "WebDAV-Server", format: "MP3" },
     { title: "Meeresstraße", source: "Lokale Dateien", format: "WAV" }
   ],
   it: [
     { title: "Notturno in Fa minore", source: "Google Drive", format: "FLAC" },
-    { title: "Skyline (Live)", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Skyline", source: "NAS · Jellyfin", format: "M4A" },
     { title: "Mattina presto", source: "Server WebDAV", format: "MP3" },
     { title: "Via del Mare", source: "File locali", format: "WAV" }
   ],
   es: [
     { title: "Nocturno en Fa menor", source: "Google Drive", format: "FLAC" },
-    { title: "Skyline (En vivo)", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Skyline", source: "NAS · Jellyfin", format: "M4A" },
     { title: "Madrugada", source: "Servidor WebDAV", format: "MP3" },
     { title: "Calle del Mar", source: "Archivos locales", format: "WAV" }
   ],
   ar: [
     { title: "نوكتورن في فا الصغير", source: "Google Drive", format: "FLAC" },
-    { title: "سكايلاين (حفلة حية)", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "سكايلاين", source: "NAS · Jellyfin", format: "M4A" },
     { title: "الصباح الباكر", source: "خادم WebDAV", format: "MP3" },
     { title: "شارع البحر", source: "ملفات محلية", format: "WAV" }
   ],
   zh: [
     { title: "F小调夜曲", source: "Google Drive", format: "FLAC" },
-    { title: "天际线（现场版）", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "天际线", source: "NAS · Jellyfin", format: "M4A" },
     { title: "清晨", source: "WebDAV 服务器", format: "MP3" },
     { title: "海街", source: "本地文件", format: "WAV" }
   ],
   hi: [
     { title: "नॉक्टर्न इन एफ माइनर", source: "Google Drive", format: "FLAC" },
-    { title: "स्काईलाइन (लाइव)", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "स्काईलाइन", source: "NAS · Jellyfin", format: "M4A" },
     { title: "सुबह-सवेरे", source: "WebDAV सर्वर", format: "MP3" },
     { title: "समुद्री गली", source: "लोकल फ़ाइलें", format: "WAV" }
   ]
