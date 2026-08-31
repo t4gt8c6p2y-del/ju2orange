@@ -1,4 +1,4 @@
-// Cloud Music — interactions du site (vanilla JS, aucune dépendance)
+// Cloud Music X — interactions du site (vanilla JS, aucune dépendance)
 
 (function(){
   var SUPPORTED = Object.keys(window.CM_LANGS || { fr: 1, en: 1 });
