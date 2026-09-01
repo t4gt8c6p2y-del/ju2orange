@@ -1,0 +1,1040 @@
+// Cloud Music X — dictionnaire de traduction (langues les plus utilisées sur l'App Store, orientation Europe)
+// Codes: fr (français), en (anglais), de (allemand), it (italien), es (espagnol), ar (arabe), zh (mandarin), hi (hindi)
+
+window.CM_LANGS = {
+  fr: "Français",
+  en: "English",
+  de: "Deutsch",
+  it: "Italiano",
+  es: "Español",
+  ar: "العربية",
+  zh: "中文",
+  hi: "हिन्दी"
+};
+
+window.CM_FLAGS = {
+  fr: "🇫🇷",
+  en: "🇬🇧",
+  de: "🇩🇪",
+  it: "🇮🇹",
+  es: "🇪🇸",
+  ar: "🇸🇦",
+  zh: "🇨🇳",
+  hi: "🇮🇳"
+};
+
+window.CM_RTL = ["ar"];
+
+window.CM_SLOGANS = {
+  fr: [
+    "Un lecteur de musique pour réunir <em>la musique que vous possédez déjà</em>.",
+    "<em>Votre musique vous appartient</em> — écoutez-la depuis n'importe où.",
+    "Toute votre musique, <em>réunie en un seul endroit</em>.",
+    "Toute votre musique, <em>organisée comme vous l'entendez</em>."
+  ],
+  en: [
+    "A music player built to bring together <em>the music you already own</em>.",
+    "<em>Your music belongs to you</em> — listen to it from anywhere.",
+    "All your music, <em>brought together in one place</em>.",
+    "All your music, <em>organized exactly your way</em>."
+  ],
+  de: [
+    "Ein Musikplayer, der <em>die Musik, die dir bereits gehört</em>, an einem Ort vereint.",
+    "<em>Deine Musik gehört dir</em> — hör sie dir an, wo immer du willst.",
+    "Deine ganze Musik, <em>an einem einzigen Ort vereint</em>.",
+    "Deine ganze Musik, <em>endlich richtig organisiert</em>."
+  ],
+  it: [
+    "Un lettore musicale pensato per riunire <em>la musica che possiedi già</em>.",
+    "<em>La tua musica ti appartiene</em> — ascoltala ovunque tu voglia.",
+    "Tutta la tua musica, <em>riunita in un solo posto</em>.",
+    "Tutta la tua musica, <em>organizzata finalmente come si deve</em>."
+  ],
+  es: [
+    "Un reproductor de música para reunir <em>la música que ya tienes</em>.",
+    "<em>Tu música te pertenece</em> — escúchala desde donde quieras.",
+    "Toda tu música, <em>reunida en un solo lugar</em>.",
+    "Toda tu música, <em>organizada exactamente a tu manera</em>."
+  ],
+  ar: [
+    "مشغّل موسيقى صُمم لجمع <em>الموسيقى التي تملكها بالفعل</em>.",
+    "<em>موسيقاك ملك لك</em> — استمع إليها من أي مكان.",
+    "كل موسيقاك، <em>مجتمعة في مكان واحد</em>.",
+    "كل موسيقاك، <em>منظّمة تمامًا كما تريد</em>."
+  ],
+  zh: [
+    "一款音乐播放器，只为整理<em>你早已拥有的音乐</em>。",
+    "<em>音乐是你的</em> —— 随时随地，尽情聆听。",
+    "你的全部音乐，<em>汇聚一处</em>。",
+    "你的全部音乐，<em>按你喜欢的方式整理</em>。"
+  ],
+  hi: [
+    "एक म्यूज़िक प्लेयर, जो <em>आपके पास पहले से मौजूद संगीत</em> को एक जगह लाता है।",
+    "<em>आपका संगीत आपका है</em> — इसे कहीं से भी सुनें।",
+    "आपका पूरा संगीत, <em>एक ही जगह पर इकट्ठा</em>।",
+    "आपका पूरा संगीत, <em>बिल्कुल आपके तरीके से व्यवस्थित</em>।"
+  ]
+};
+
+window.CM_TRACKS = {
+  fr: [
+    { title: "Nocturne en Fa mineur", source: "Google Drive", format: "FLAC" },
+    { title: "Skyline", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Petit matin", source: "Serveur WebDAV", format: "MP3" },
+    { title: "Rue de la Mer", source: "Fichiers locaux", format: "WAV" }
+  ],
+  en: [
+    { title: "Nocturne in F minor", source: "Google Drive", format: "FLAC" },
+    { title: "Skyline", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Early Morning", source: "WebDAV Server", format: "MP3" },
+    { title: "Sea Street", source: "Local Files", format: "WAV" }
+  ],
+  de: [
+    { title: "Notturno in f-Moll", source: "Google Drive", format: "FLAC" },
+    { title: "Skyline", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Früher Morgen", source: "WebDAV-Server", format: "MP3" },
+    { title: "Meeresstraße", source: "Lokale Dateien", format: "WAV" }
+  ],
+  it: [
+    { title: "Notturno in Fa minore", source: "Google Drive", format: "FLAC" },
+    { title: "Skyline", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Mattina presto", source: "Server WebDAV", format: "MP3" },
+    { title: "Via del Mare", source: "File locali", format: "WAV" }
+  ],
+  es: [
+    { title: "Nocturno en Fa menor", source: "Google Drive", format: "FLAC" },
+    { title: "Skyline", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "Madrugada", source: "Servidor WebDAV", format: "MP3" },
+    { title: "Calle del Mar", source: "Archivos locales", format: "WAV" }
+  ],
+  ar: [
+    { title: "نوكتورن في فا الصغير", source: "Google Drive", format: "FLAC" },
+    { title: "سكايلاين", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "الصباح الباكر", source: "خادم WebDAV", format: "MP3" },
+    { title: "شارع البحر", source: "ملفات محلية", format: "WAV" }
+  ],
+  zh: [
+    { title: "F小调夜曲", source: "Google Drive", format: "FLAC" },
+    { title: "天际线", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "清晨", source: "WebDAV 服务器", format: "MP3" },
+    { title: "海街", source: "本地文件", format: "WAV" }
+  ],
+  hi: [
+    { title: "नॉक्टर्न इन एफ माइनर", source: "Google Drive", format: "FLAC" },
+    { title: "स्काईलाइन", source: "NAS · Jellyfin", format: "M4A" },
+    { title: "सुबह-सवेरे", source: "WebDAV सर्वर", format: "MP3" },
+    { title: "समुद्री गली", source: "लोकल फ़ाइलें", format: "WAV" }
+  ]
+};
+
+window.CM_I18N = {
+
+fr: {
+"nav.features":"Fonctionnalités","nav.privacy":"Confidentialité","nav.about":"À propos","nav.contact":"Contact","menu.home":"Accueil",
+"hero.kicker":"App iOS · lecteur audio personnel",
+"hero.b1":"<strong>Écoutez</strong> votre musique en local ou depuis le cloud, dans une interface unique.",
+"hero.b2":"<strong>Connectez</strong> Google Drive, MEGA, OneDrive et bien d'autres services cloud.",
+"hero.b3":"<strong>Reliez vos NAS</strong> via Emby, Jellyfin ou Plex.",
+"hero.b4":"<strong>Accédez à votre serveur</strong> en FTP, WebDAV ou NFS.",
+"hero.b5":"<strong>Aucune publicité</strong>, pour une écoute sans interruption.",
+"hero.b6":"<strong>Mode hors ligne</strong> pour écouter votre musique n'importe où.",
+
+"hero.cta1":"Télécharger l'app","hero.cta2":"Aucune collecte de données",
+"hero.note":"Lecteur audio personnel · iOS 16 ou plus · Aucun compte requis",
+"player.from":"depuis",
+"a.eyebrow":"Face A","a.title":"Vos musiques, où qu'elles soient",
+"a.desc":"Vous n'avez pas à choisir un seul cloud, ni à tout re-télécharger : Cloud Music X vient chercher vos fichiers là où ils sont déjà.",
+"a.t1.title":"Google Drive, MEGA, et bien d'autres…","a.t1.desc":"Connexion sécurisée (OAuth) à votre compte : parcourez vos dossiers, écoutez en <strong>streaming</strong> ou <strong>téléchargez</strong> pour une écoute <strong>hors ligne</strong>.","a.t1.tag":"Compatible avec",
+"a.t2.title":"Par lien simple","a.t2.desc":"Collez juste un lien de partage d'un dossier ou d'un fichier. <strong>Aucun compte ni connexion nécessaire</strong>, tout se déchiffre directement <strong>sur votre appareil</strong>.","a.t2.tag":"Compatible avec",
+"a.t3.title":"NAS : Emby, Jellyfin, Plex","a.t3.desc":"Connectez votre serveur multimédia et retrouvez votre bibliothèque personnelle directement dans l'app.","a.t3.tag":"Compatible avec",
+"a.t4.title":"Serveur : FTP, WebDAV, NFS","a.t4.desc":"Accédez à un serveur ou un espace réseau via les protocoles standards, sans passer par un cloud commercial.","a.t4.tag":"Compatible avec",
+"a.t5.title":"Fichiers & dossiers de l'appareil","a.t5.desc":"Importez un titre, plusieurs fichiers d'un coup, ou un dossier entier.","a.t5.tag":"Local",
+"a.t6.title":"Bibliothèque unifiée","a.t6.desc":"Filtrez par source — tout, hors ligne, local uniquement, ou par service — sans jamais dupliquer un morceau déjà importé.","a.t6.tag":"Sans doublon",
+"b.eyebrow":"Face B","b.title":"Dans le lecteur","b.desc":"Les détails d'écoute qu'on remarque surtout quand ils manquent.",
+"b.c1.title":"Fondu enchaîné réglable","b.c1.desc":"Une transition douce entre deux titres, de 1 à 12 secondes, ajustable directement dans les réglages.",
+"b.c2.title":"Lecture aléatoire, deux vitesses","b.c2.desc":"Mode aléatoire classique, ou variante « améliorée » pour un tirage qui évite de recoller deux fois le même artiste.",
+"b.c3.title":"Mode veille","b.c3.desc":"Programmez l'arrêt automatique de la lecture après une durée choisie, pour vous endormir en musique.",
+"b.c4.title":"Raccourcis Siri","b.c4.desc":"« Joue de la musique sur Cloud Music X », mets en pause, ou bascule lecture — à la voix, sans même ouvrir l'app.",
+"c.eyebrow":"Face C","c.title":"Fonctionnalités principales","c.desc":"Consultez vos statistiques d'écoute, réglez le son à votre goût, personnalisez l'application — sans y passer la soirée.",
+"c.t4.title":"Statistiques d'écoute","c.t4.desc":"Temps d'écoute par jour, semaine, mois ou depuis le début.",
+"c.t2.title":"Métadonnées & pochettes automatiques","c.t2.desc":"Cloud Music X recherche titre, artiste, album et pochette — vous validez, tout se corrige d'un geste.",
+"c.t5.title":"Égaliseur & amplification","c.t5.desc":"Ajustez les fréquences par bande et amplifiez le volume au-delà du niveau normal pour les fichiers enregistrés trop bas.",
+"c.t6.title":"Widgets","c.t6.desc":"Retrouvez la piste en cours et les contrôles de lecture directement depuis l'écran d'accueil ou l'écran verrouillé.",
+"c.t7.title":"Paroles synchronisées","c.t7.desc":"Affichez les paroles de vos morceaux grâce à la base de données lrclib, synchronisées avec la lecture quand elles sont disponibles.",
+"c.t8.title":"Apparence personnalisable","c.t8.desc":"Choisissez parmi plusieurs thèmes et couleurs pour adapter l'interface à votre goût.",
+"formats.audio.label":"Formats audio pris en charge","formats.subs.label":"Formats de sous-titres pris en charge (paroles)",
+"d.eyebrow":"Face D","d.title":"Aucune collecte de données","d.desc":"Cloud Music X est une application personnelle, pensée pour un seul usage : la vôtre.",
+"d.l1":"<strong>Aucun compte Cloud Music X.</strong> Vous vous connectez directement à votre propre service cloud, jamais à un serveur Cloud Music X.",
+"d.l2":"<strong>Jetons stockés sur l'appareil.</strong> Après connexion, l'accès à votre cloud reste dans le trousseau (Keychain) sécurisé d'iOS — il n'en sort jamais.",
+"d.l3":"<strong>Aucune publicité, aucun tracker.</strong> Rien n'est collecté, revendu ou transmis à des fins commerciales.",
+"d.l4":"<strong>Sauvegarde chiffrée, à vous seul.</strong> Exportez playlists, favoris et statistiques dans un fichier protégé par mot de passe — à restaurer où vous voulez.",
+"d.link":"Lire la politique de confidentialité complète →",
+"about.eyebrow":"À propos",
+"about.sig":"Un lecteur pensé pour <span>la musique que vous possédez déjà</span>.",
+"about.p1":"Cloud Music X est né d'un constat simple : beaucoup d'entre nous possédons déjà de la musique — achetée, enregistrée, transférée au fil des années — éparpillée entre un cloud, un NAS et l'espace de stockage du téléphone. Le but de Cloud Music X est de les réunir.",
+"about.p2":"C'est une application personnelle, développée et maintenue par un seul développeur, centrée sur votre musique — pas sur un catalogue à vendre, ni sur des recommandations dictées par un algorithme publicitaire.",
+"cta.eyebrow":"Bientôt disponible","cta.title":"Cloud Music X arrive sur l'App Store",
+"cta.desc":"Une question, un bug à signaler, ou une idée de fonctionnalité pour votre cloud préféré ? Écrivez-moi directement.",
+"cta.privacy":"Politique de confidentialité",
+"footer.tagline":"Écoutez votre musique en local ou depuis le cloud, dans une interface unique.",
+"footer.app":"App","footer.contact":"Contact","footer.legal":"Légal","footer.form":"Formulaire de contact","legal.nav.notice":"Mentions légales","legal.nav.privacy":"Confidentialité","legal.nav.cookies":"Cookies","legal.nav.terms":"Conditions générales","legal.nav.license":"Licence","footer.legal.notice":"Mentions légales","footer.legal.privacy":"Politique de confidentialité","footer.legal.cookies":"Politique de cookies","footer.legal.terms":"Conditions générales","footer.legal.license":"Contrat de licence",
+"footer.bottom1":"© 2026 CloudMusicX. Tous droits réservés.","footer.bottom2":"Fait à la main, sans tracker.","doc.eyebrow":"Documentation","doc.title":"Guides & tutoriels","doc.desc":"Tout ce qu'il faut pour connecter vos sources et bien démarrer avec Cloud Music X.",
+"doc.nav1":"Démarrage rapide","doc.nav2":"Google Drive & OneDrive","doc.nav3":"MEGA par lien","doc.nav4":"NAS","doc.nav5":"Serveur personnel","doc.nav6":"Sauvegarde & restauration",
+"doc.s1.title":"Démarrage rapide","doc.s1.p":"Trois étapes suffisent pour écouter votre première piste.",
+"doc.s1.li1":"<strong>Installez Cloud Music X</strong> depuis l'App Store, puis ouvrez l'application. Aucun compte n'est nécessaire.",
+"doc.s1.li2":"<strong>Choisissez une source</strong> depuis l'onglet Import : un service cloud, un lien MEGA, un NAS, un serveur personnel, ou les fichiers déjà présents sur votre appareil.",
+"doc.s1.li3":"<strong>Importez vos morceaux</strong> : Cloud Music X récupère les métadonnées et pochettes automatiquement, puis les ajoute à votre bibliothèque unifiée.",
+"doc.s2.title":"Connecter Google Drive ou OneDrive",
+"doc.s2.li1":"Dans l'onglet Import, sélectionnez <strong>Google Drive</strong> ou <strong>OneDrive</strong>.",
+"doc.s2.li2":"Connectez-vous via la fenêtre de connexion sécurisée du service (OAuth) — vos identifiants ne transitent jamais par Cloud Music X.",
+"doc.s2.li3":"Parcourez vos dossiers et sélectionnez les fichiers audio à ajouter à votre bibliothèque, en streaming ou en téléchargement pour une écoute hors ligne.",
+"doc.s3.title":"Connecter MEGA (compte ou simple lien)","doc.s3.intro":"Deux façons de connecter MEGA, selon vos besoins :",
+"doc.s3.li1":"<strong>Avec votre compte MEGA</strong> : connectez-vous avec votre e-mail et votre mot de passe pour accéder à l'ensemble de vos fichiers et choisir ceux à ajouter. Vos identifiants sont transmis uniquement aux serveurs de MEGA, jamais à Cloud Music X.",
+"doc.s3.li2":"<strong>Par simple lien de partage</strong> : copiez un lien de partage MEGA (dossier ou fichier), ouvrez l'onglet Import puis <strong>Lien MEGA</strong>, et collez le lien.",
+"doc.s3.li3":"Avec un lien de partage, aucun compte n'est nécessaire : le déchiffrement se fait directement sur votre appareil.",
+"doc.s4.title":"Connecter un NAS (Emby, Jellyfin, Plex)",
+"doc.s4.li1":"Assurez-vous que le serveur multimédia (Emby, Jellyfin ou Plex) est actif sur votre réseau domestique ou accessible à distance.",
+"doc.s4.li2":"Dans l'onglet Import, sélectionnez <strong>NAS</strong>, puis renseignez l'adresse du serveur et vos identifiants.",
+"doc.s4.li3":"Votre bibliothèque musicale hébergée sur le NAS apparaît directement dans Cloud Music X.",
+"doc.s5.title":"Connecter un serveur personnel (FTP, WebDAV, NFS)",
+"doc.s5.li1":"Dans l'onglet Import, choisissez le protocole correspondant à votre serveur : <strong>FTP</strong>, <strong>WebDAV</strong> ou <strong>NFS</strong>.",
+"doc.s5.li2":"Renseignez l'adresse, le port et les identifiants d'accès à votre serveur ou espace réseau.",
+"doc.s5.li3":"Parcourez les dossiers distants comme n'importe quelle autre source dans Cloud Music X.",
+"doc.s6.title":"Sauvegarder et restaurer votre bibliothèque",
+"doc.s6.li1":"Dans les réglages, ouvrez <strong>Sauvegarde</strong> et choisissez un mot de passe pour chiffrer l'export.",
+"doc.s6.li2":"Le fichier généré contient vos playlists, favoris, statistiques et réglages — jamais vos fichiers audio eux-mêmes.",
+"doc.s6.li3":"Pour restaurer, importez ce fichier sur un autre appareil et saisissez le mot de passe utilisé lors de l'export.",
+"blog.eyebrow":"Blog","blog.title":"Notes de mise à jour","blog.soon":"Arrive bientôt"
+},
+
+en: {
+"nav.features":"Features","nav.privacy":"Privacy","nav.about":"About","nav.contact":"Contact","menu.home":"Home",
+"hero.kicker":"iOS app · personal audio player",
+"hero.b1":"<strong>Listen</strong> to your music locally or from the cloud, in a single interface.",
+"hero.b2":"<strong>Connect</strong> Google Drive, MEGA, OneDrive and many other cloud services.",
+"hero.b3":"<strong>Link your NAS</strong> through Emby, Jellyfin or Plex.",
+"hero.b4":"<strong>Reach your own server</strong> over FTP, WebDAV or NFS.",
+"hero.b5":"<strong>No ads</strong>, for uninterrupted listening.",
+"hero.b6":"<strong>Offline mode</strong> to listen to your music anywhere.",
+
+"hero.cta1":"Download the app","hero.cta2":"No data collection",
+"hero.note":"Personal audio player · iOS 16 or later · No account required",
+"player.from":"from",
+"a.eyebrow":"Side A","a.title":"Your music, wherever it lives",
+"a.desc":"You shouldn't have to pick one cloud, or re-upload everything: Cloud Music X comes and gets your files wherever they already are.",
+"a.t1.title":"Google Drive, MEGA, and many more…","a.t1.desc":"Secure sign-in (OAuth) to your account: browse your folders, <strong>stream</strong> or <strong>download</strong> for <strong>offline</strong> listening.","a.t1.tag":"Compatible with",
+"a.t2.title":"With a simple link","a.t2.desc":"Just paste a share link for a folder or file. <strong>No account or sign-in needed</strong> — everything is decrypted right <strong>on your device</strong>.","a.t2.tag":"Compatible with",
+"a.t3.title":"NAS: Emby, Jellyfin, Plex","a.t3.desc":"Connect your media server and find your personal library straight inside the app.","a.t3.tag":"Compatible with",
+"a.t4.title":"Server: FTP, WebDAV, NFS","a.t4.desc":"Reach a server or network share through standard protocols, no commercial cloud required.","a.t4.tag":"Compatible with",
+"a.t5.title":"Files & folders on your device","a.t5.desc":"Import a single track, several files at once, or an entire folder.","a.t5.tag":"Local",
+"a.t6.title":"One unified library","a.t6.desc":"Filter by source — everything, offline, local only, or per service — without ever duplicating a track you already imported.","a.t6.tag":"No duplicates",
+"b.eyebrow":"Side B","b.title":"Inside the player","b.desc":"The little listening details you only notice when they're missing.",
+"b.c1.title":"Adjustable crossfade","b.c1.desc":"A smooth transition between two tracks, from 1 to 12 seconds, adjustable right in settings.",
+"b.c2.title":"Shuffle, two flavors","b.c2.desc":"Classic shuffle, or an \"enhanced\" mode that avoids playing the same artist twice in a row.",
+"b.c3.title":"Sleep timer","b.c3.desc":"Schedule playback to stop automatically after a set duration, so you can fall asleep to music.",
+"b.c4.title":"Siri Shortcuts","b.c4.desc":"\"Play music on Cloud Music X\", pause, or toggle playback — by voice, without even opening the app.",
+"c.eyebrow":"Side C","c.title":"Core features","c.desc":"Check your listening stats, tune the sound to your taste, personalize the app — without losing an evening to it.",
+"c.t4.title":"Listening stats","c.t4.desc":"Listening time by day, week, month or all time.",
+"c.t2.title":"Automatic metadata & covers","c.t2.desc":"Cloud Music X looks up title, artist, album and cover art — you approve, everything gets fixed in one tap.",
+"c.t5.title":"Equalizer & boost","c.t5.desc":"Adjust frequencies band by band and boost the volume beyond the normal level for files recorded too quietly.",
+"c.t6.title":"Widgets","c.t6.desc":"See the current track and playback controls right from your Home Screen or Lock Screen.",
+"c.t7.title":"Synced lyrics","c.t7.desc":"View lyrics for your tracks via the lrclib database, synced with playback when available.",
+"c.t8.title":"Customizable appearance","c.t8.desc":"Choose from several themes and colors to match the interface to your taste.",
+"formats.audio.label":"Supported audio formats","formats.subs.label":"Supported subtitle formats (lyrics)",
+"d.eyebrow":"Side D","d.title":"No data collection","d.desc":"Cloud Music X is a personal app, built for one purpose: yours.",
+"d.l1":"<strong>No Cloud Music X account.</strong> You connect directly to your own cloud service, never to a Cloud Music X server.",
+"d.l2":"<strong>Tokens stay on your device.</strong> After signing in, access to your cloud stays in iOS's secure Keychain — it never leaves.",
+"d.l3":"<strong>No ads, no trackers.</strong> Nothing is collected, resold or shared for commercial purposes.",
+"d.l4":"<strong>Encrypted backup, for you alone.</strong> Export playlists, favorites and stats into a password-protected file — restore it wherever you like.",
+"d.link":"Read the full privacy policy →",
+"about.eyebrow":"About",
+"about.sig":"A player designed for <span>the music you already own</span>.",
+"about.p1":"Cloud Music X started from a simple observation: many of us already own music — bought, ripped, transferred over the years — scattered across a cloud drive, a NAS and the phone's own storage. Cloud Music X exists to bring it all together.",
+"about.p2":"It's a personal app, built and maintained by a single developer, focused on your music — not on a catalog to sell, or on recommendations driven by an ad algorithm.",
+"cta.eyebrow":"Coming soon","cta.title":"Cloud Music X is coming to the App Store",
+"cta.desc":"A question, a bug to report, or a feature idea for your favorite cloud? Write to me directly.",
+"cta.privacy":"Privacy policy",
+"footer.tagline":"Listen to your music locally or from the cloud, in a single interface.",
+"footer.app":"App","footer.contact":"Contact","footer.legal":"Legal","footer.form":"Contact form","footer.legal.notice":"Legal Notice","footer.legal.privacy":"Privacy Policy","footer.legal.cookies":"Cookie Policy","footer.legal.terms":"Terms &amp; Conditions","footer.legal.license":"License Agreement",
+"footer.bottom1":"© 2026 CloudMusicX. All rights reserved.","footer.bottom2":"Handmade, tracker-free.","legal.eyebrow":"Legal","legal.updated":"Last updated: August 10, 2026","legal.nav.notice":"Legal Notice","legal.nav.privacy":"Privacy","legal.nav.cookies":"Cookies","legal.nav.terms":"Terms &amp; Conditions","legal.nav.license":"License","ln.h1":"Legal Notice","ln.h2.editor":"Site publisher","ln.p.editor":"This site (as well as the Cloud Music X application it presents) is published on a personal basis by:","ln.li.name":"<strong>Benjamin Maire</strong> — independent developer","ln.li.contact":"Contact: <a href=\"mailto:CloudMusicContact@proton.me\">CloudMusicContact@proton.me</a>","ln.h2.director":"Publication director","ln.p.director":"Benjamin Maire, also responsible for the content published on this site.","ln.h2.hosting":"Site hosting","ln.p.hosting":"This site is hosted by GitHub Pages, a service of GitHub, Inc. — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States.","ln.h2.nature":"Nature of the site","ln.p.nature":"This site is a showcase for the Cloud Music X iOS application, a personal project. Depending on the version, the application may offer features accessible through a paid subscription. This site itself does not display any advertising and does not collect data for advertising purposes.","ln.h2.ip":"Intellectual property","ln.p.ip":"The text, layout, graphic elements and code of this site are the property of its publisher, unless otherwise stated. The names of the third-party services mentioned (Google Drive, OneDrive, MEGA, Dropbox, Box, Yandex Disk, Emby, Jellyfin, Plex, Deezer, Apple, App Store) belong to their respective owners and are used solely for descriptive purposes, to indicate the services Cloud Music X is compatible with.","ln.h2.contact":"Contact","ln.p.contact":"For any question about this site or the application, write to <a href=\"mailto:CloudMusicContact@proton.me\">CloudMusicContact@proton.me</a>.","pp.h1":"Privacy Policy","pp.intro":"Cloud Music X is a personal music player application for iOS. It lets you connect to cloud storage services (Google Drive, OneDrive, MEGA, Dropbox, Box, Yandex Disk, etc.), a home NAS (Emby, Jellyfin, Plex), or a personal server (FTP, WebDAV, NFS), to listen to or download audio files you already own.","pp.h2.data":"What data is used","pp.p.data":"Cloud Music X only accesses the files and folders in <strong>your</strong> account or on <strong>your</strong> device, with <strong>your</strong> explicit authorization: secure sign-in (OAuth) for cloud services like Google Drive or OneDrive, an encrypted share link for MEGA, or login credentials for a NAS or personal server. The application only requests the permissions strictly necessary to list, read and download audio files.","pp.h2.storage":"Where your data is stored","pp.p.storage":"Your login credentials are never transmitted to Cloud Music X or to any third-party server: the connection happens directly between your device and the relevant cloud service. Access tokens obtained after signing in are stored only on your device, in iOS's secure Keychain, and never leave it.","pp.h2.share":"Sharing with third parties","pp.p.share":"Cloud Music X does not share, sell or transmit any personal data to third parties. No ads, no trackers, no data collection for commercial purposes.","pp.h2.delete":"Deleting your data","pp.p.delete":"You can disconnect from a cloud service or delete all of the application's data at any time from Cloud Music X's internal settings. You can also revoke Cloud Music X's access directly from the security settings of your Google, Microsoft, MEGA, etc. account.","pp.h2.contact":"Contact","pp.p.contact":"For any question: <a href=\"mailto:CloudMusicContact@proton.me\">CloudMusicContact@proton.me</a>","cp.h1":"Cookie Policy","cp.h2.notrack":"This site does not use tracking cookies","cp.p.notrack":"This site is a simple static showcase, hosted on GitHub Pages. It does not set any advertising cookies, any audience-measurement cookies, and does not include any third-party tracking tool (no Google Analytics, no advertising pixel, no embedded social network).","cp.h2.tech":"Technical cookies related to hosting","cp.p.tech":"Like any site hosted on GitHub Pages, strictly technical cookies may be set by GitHub's infrastructure to ensure the service works properly (for example, load balancing). These cookies are managed by GitHub, Inc., independently of this site's publisher. To learn more, see <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener\">GitHub's privacy statement</a>.","cp.h2.app":"What about the Cloud Music X app?","cp.p.app":"The Cloud Music X iOS app does not use cookies: that mechanism is specific to web browsers. Your preferences, library and listening stats are stored locally on your device (app storage and iOS Keychain), as explained in the <a href=\"privacy-policy.html\">privacy policy</a>.","cp.h2.manage":"Managing your browser's cookies","cp.p.manage":"You can configure your browser at any time to block or delete cookies set by the sites you visit, including the purely technical ones described above.","cp.h2.contact":"Contact","cp.p.contact":"Have a question about this policy? Write to <a href=\"mailto:CloudMusicContact@proton.me\">CloudMusicContact@proton.me</a>.","tc.h1":"Terms &amp; Conditions","tc.h2.purpose":"Purpose","tc.p.purpose":"These terms and conditions govern the use of the site and the Cloud Music X iOS application (hereinafter \"the application\"). By using the site or the application, you accept these terms.","tc.h2.desc":"Service description","tc.p.desc":"Cloud Music X is an audio player for iOS that lets you connect third-party cloud storage services (Google Drive, OneDrive, MEGA) or local files, to listen to music files you already own. Cloud Music X does not host, sell or provide any music content: you must have your own audio files and the necessary rights to listen to them.","tc.h2.resp":"Your responsibility","tc.li.resp1":"You are solely responsible for the files you import or connect within the application, and must hold the necessary rights to that content.","tc.li.resp2":"You must comply with the terms of use specific to each connected cloud service (Google Drive, OneDrive, MEGA, etc.).","tc.li.resp3":"Any use of the application for copyright infringement or unauthorized sharing of protected works is strictly prohibited.","tc.h2.meta":"Metadata feature","tc.p.meta":"Cloud Music X offers an optional metadata lookup (title, artist, album, cover art) from public third-party services, to complete poorly tagged files. This information is provided for guidance only and may be inaccurate or unavailable.","tc.h2.avail":"Availability","tc.p.avail":"The application is developed and maintained by an independent developer, on a personal basis. No guarantee of continuous availability, future compatibility with third-party cloud services, or bug-fix turnaround time is provided.","tc.h2.warranty":"No warranty","tc.p.warranty":"The application and the site are provided \"as is\", without warranty of any kind, express or implied. The publisher cannot be held liable for any data loss, service interruption on the cloud provider's side, or any indirect damage resulting from use of the application.","tc.h2.appstore":"Distribution via the App Store","tc.p.appstore":"The application is distributed via Apple's App Store and its use is also subject to Apple's standard rules, in particular the terms described in the <a href=\"license-agreement.html\">license agreement</a>.","tc.h2.changes":"Changes","tc.p.changes":"These terms may be updated at any time; the last-updated date is shown at the top of this page. We recommend checking it periodically.","tc.h2.law":"Governing law","tc.p.law":"These terms are governed by French law, without prejudice to any mandatory provisions that may apply in your country of residence.","tc.h2.contact":"Contact","la.h1":"License Agreement","la.h2.eula":"End User License Agreement","la.p.eula1":"Cloud Music X is distributed exclusively through Apple's App Store. Unless a separate license agreement is provided at the time of purchase or download, your use of the application is governed by Apple's <strong>Standard Licensed Application End User License Agreement</strong>.","la.p.eula2":"You can read the full standard agreement on Apple's website: <a href=\"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\" target=\"_blank\" rel=\"noopener\">apple.com/legal/internet-services/itunes/dev/stdeula</a>.","la.h2.allowed":"What the license allows","la.li.allowed1":"A personal, non-exclusive and non-transferable license to use Cloud Music X on Apple devices you own or control, in accordance with the App Store's usage rules.","la.li.allowed2":"Use of the application is strictly personal and non-commercial.","la.h2.notallowed":"What the license does not allow","la.li.na1":"Copying (other than an authorized backup copy), disassembling, decompiling or attempting to extract the application's source code, except to the extent permitted by applicable law.","la.li.na2":"Renting, lending, redistributing or sublicensing the application.","la.li.na3":"Using the application to access, store or distribute content you do not hold the rights to.","la.h2.thirdparty":"Connected third-party services","la.p.thirdparty":"This license covers only the Cloud Music X application. Your use of Google Drive, OneDrive, MEGA or any other service you connect remains subject to that service's own license terms, independent of Cloud Music X.","la.h2.ownership":"Ownership","la.p.ownership":"The Cloud Music X application, its code, interface and brand remain the property of its developer. No provision of this agreement transfers any intellectual property right in the application to you.","la.h2.contact":"Contact","la.p.contact":"For any question about this license: <a href=\"mailto:CloudMusicContact@proton.me\">CloudMusicContact@proton.me</a>","doc.eyebrow":"Documentation","doc.title":"Guides & tutorials","doc.desc":"Everything you need to connect your sources and get started with Cloud Music X.",
+"doc.nav1":"Quick start","doc.nav2":"Google Drive & OneDrive","doc.nav3":"MEGA by link","doc.nav4":"NAS","doc.nav5":"Personal server","doc.nav6":"Backup & restore",
+"doc.s1.title":"Quick start","doc.s1.p":"Three steps are all it takes to hear your first track.",
+"doc.s1.li1":"<strong>Install Cloud Music X</strong> from the App Store, then open the app. No account needed.",
+"doc.s1.li2":"<strong>Pick a source</strong> from the Import tab: a cloud service, a MEGA link, a NAS, a personal server, or files already on your device.",
+"doc.s1.li3":"<strong>Import your tracks</strong>: Cloud Music X fetches metadata and cover art automatically, then adds them to your unified library.",
+"doc.s2.title":"Connect Google Drive or OneDrive",
+"doc.s2.li1":"In the Import tab, select <strong>Google Drive</strong> or <strong>OneDrive</strong>.",
+"doc.s2.li2":"Sign in through the service's secure sign-in window (OAuth) — your credentials never pass through Cloud Music X.",
+"doc.s2.li3":"Browse your folders and select audio files to add to your library, streaming them or downloading for offline listening.",
+"doc.s3.title":"Connect MEGA (account or simple link)","doc.s3.intro":"Two ways to connect MEGA, depending on what you need:",
+"doc.s3.li1":"<strong>With your MEGA account</strong>: sign in with your email and password to access your entire MEGA library and pick the files to add. Your credentials are sent only to MEGA's servers, never to Cloud Music X.",
+"doc.s3.li2":"<strong>With a share link</strong>: copy a MEGA share link (folder or file), open the Import tab, then <strong>MEGA Link</strong>, and paste it.",
+"doc.s3.li3":"With a share link, no account is needed: decryption happens right on your device.",
+"doc.s4.title":"Connect a NAS (Emby, Jellyfin, Plex)",
+"doc.s4.li1":"Make sure your media server (Emby, Jellyfin or Plex) is running on your home network or reachable remotely.",
+"doc.s4.li2":"In the Import tab, select <strong>NAS</strong>, then enter the server address and your credentials.",
+"doc.s4.li3":"Your music library hosted on the NAS appears directly inside Cloud Music X.",
+"doc.s5.title":"Connect a personal server (FTP, WebDAV, NFS)",
+"doc.s5.li1":"In the Import tab, choose the protocol matching your server: <strong>FTP</strong>, <strong>WebDAV</strong> or <strong>NFS</strong>.",
+"doc.s5.li2":"Enter the address, port and access credentials for your server or network share.",
+"doc.s5.li3":"Browse the remote folders just like any other source in Cloud Music X.",
+"doc.s6.title":"Back up and restore your library",
+"doc.s6.li1":"In settings, open <strong>Backup</strong> and choose a password to encrypt the export.",
+"doc.s6.li2":"The generated file contains your playlists, favorites, stats and settings — never your audio files themselves.",
+"doc.s6.li3":"To restore, import this file on another device and enter the password used at export time.",
+"blog.eyebrow":"Blog","blog.title":"Update notes","blog.soon":"Coming soon"
+},
+
+zh: {
+"nav.features":"功能","nav.privacy":"隐私","nav.about":"关于","nav.contact":"联系","menu.home":"首页",
+"hero.kicker":"iOS 应用 · 个人音频播放器",
+"hero.b1":"<strong>随心聆听</strong>本地或云端的音乐，只需一个统一的界面。",
+"hero.b2":"<strong>连接</strong> Google Drive、MEGA、OneDrive 等多种云存储服务。",
+"hero.b3":"<strong>连接你的 NAS</strong>，支持 Emby、Jellyfin 或 Plex。",
+"hero.b4":"<strong>访问你自己的服务器</strong>，支持 FTP、WebDAV 或 NFS。",
+"hero.b5":"<strong>无广告</strong>，畅听无干扰。",
+"hero.b6":"<strong>离线模式</strong>，随时随地聆听你的音乐。",
+
+"hero.cta1":"下载应用","hero.cta2":"不收集任何数据",
+"hero.note":"个人音频播放器 · iOS 16 或更高版本 · 无需账号",
+"player.from":"来自",
+"a.eyebrow":"A面","a.title":"你的音乐，无论存放在哪里",
+"a.desc":"你不必只选一个云盘，也不必重新上传一遍：Cloud Music X 会直接去找到你已有的文件。",
+"a.t1.title":"Google Drive、MEGA 等更多云盘…","a.t1.desc":"通过安全授权（OAuth）登录你的账号：浏览文件夹，<strong>在线播放</strong>或<strong>下载</strong>后<strong>离线收听</strong>。","a.t1.tag":"兼容",
+"a.t2.title":"只需一个链接","a.t2.desc":"只需粘贴一个文件夹或文件的分享链接。<strong>无需账号或登录</strong>，一切都<strong>在你的设备上</strong>直接解密。","a.t2.tag":"兼容",
+"a.t3.title":"NAS：Emby、Jellyfin、Plex","a.t3.desc":"连接你的媒体服务器，在应用内直接找到你的私人音乐库。","a.t3.tag":"兼容",
+"a.t4.title":"服务器：FTP、WebDAV、NFS","a.t4.desc":"通过标准协议访问服务器或网络存储空间，无需借助商业云服务。","a.t4.tag":"兼容",
+"a.t5.title":"设备上的文件与文件夹","a.t5.desc":"导入单曲、多个文件，或整个文件夹。","a.t5.tag":"本地",
+"a.t6.title":"统一音乐库","a.t6.desc":"按来源筛选——全部、离线、仅本地或按服务分类——绝不会重复导入同一首歌。","a.t6.tag":"无重复",
+"b.eyebrow":"B面","b.title":"播放器内部","b.desc":"那些平时不会注意、缺失时却格外明显的听歌细节。",
+"b.c1.title":"可调节的淡入淡出","b.c1.desc":"两首歌曲之间的平滑过渡，时长 1 到 12 秒可在设置中调整。",
+"b.c2.title":"两种随机播放模式","b.c2.desc":"经典随机播放，或「增强」模式，避免连续两次播放同一位艺术家。",
+"b.c3.title":"睡眠定时器","b.c3.desc":"设置播放在指定时长后自动停止，伴着音乐安心入睡。",
+"b.c4.title":"Siri 快捷指令","b.c4.desc":"「在 Cloud Music X 播放音乐」「暂停」「切换播放」——用语音操作，甚至无需打开应用。",
+"c.eyebrow":"C面","c.title":"核心功能","c.desc":"查看收听统计、按喜好调节音效、自定义应用外观——不必花上一整晚。",
+"c.t4.title":"收听统计","c.t4.desc":"按天、周、月或全部时间查看收听时长。",
+"c.t2.title":"自动获取元数据与封面","c.t2.desc":"Cloud Music X 会查找标题、艺术家、专辑与封面——你确认后一键修正。",
+"c.t5.title":"均衡器与音量增强","c.t5.desc":"按频段调节均衡器，并为录音音量过低的文件提供超出正常水平的音量增强。",
+"c.t6.title":"小组件","c.t6.desc":"直接从主屏幕或锁屏查看当前播放曲目与播放控件。",
+"c.t7.title":"同步歌词","c.t7.desc":"通过 lrclib 歌词数据库显示歌词，在有歌词可用时与播放进度同步。",
+"c.t8.title":"可自定义外观","c.t8.desc":"从多种主题和配色中选择，打造符合你喜好的界面。",
+"formats.audio.label":"支持的音频格式","formats.subs.label":"支持的字幕格式（歌词）",
+"d.eyebrow":"D面","d.title":"不收集任何数据","d.desc":"Cloud Music X 是一款个人应用，只为一个目的而生：属于你。",
+"d.l1":"<strong>没有 Cloud Music X 账号。</strong>你直接连接自己的云服务，从不经过 Cloud Music X 的服务器。",
+"d.l2":"<strong>令牌只留在设备上。</strong>登录后，云端访问凭证保存在 iOS 安全的钥匙串中，绝不会外传。",
+"d.l3":"<strong>没有广告，没有追踪器。</strong>不收集、不转售、也不出于商业目的传输任何信息。",
+"d.l4":"<strong>加密备份，只属于你。</strong>将歌单、收藏与统计数据导出为密码保护的文件，随时随地恢复。",
+"d.link":"阅读完整隐私政策 →",
+"about.eyebrow":"关于",
+"about.sig":"一款为<span>你早已拥有的音乐</span>而生的播放器。",
+"about.p1":"Cloud Music X 源于一个简单的发现：许多人早已拥有音乐——多年间购买、抓取、转存下来——却分散在云盘、NAS 和手机存储之间。Cloud Music X 的目标就是把它们汇聚到一起。",
+"about.p2":"这是一款由一位独立开发者开发和维护的个人应用，专注于你的音乐——而不是待售的曲库，也不是由广告算法驱动的推荐。",
+"cta.eyebrow":"即将上线","cta.title":"Cloud Music X 即将登陆 App Store",
+"cta.desc":"有问题、想反馈 bug，或者对你喜欢的云服务有功能建议？欢迎直接写信给我。",
+"cta.privacy":"隐私政策",
+"footer.tagline":"随心聆听本地或云端的音乐，只需一个统一的界面。",
+"footer.app":"应用","footer.contact":"联系","footer.legal":"法律","footer.form":"联系表单","legal.nav.notice":"法律声明","legal.nav.privacy":"隐私","legal.nav.cookies":"Cookie","legal.nav.terms":"使用条款","legal.nav.license":"许可协议","footer.legal.notice":"法律声明","footer.legal.privacy":"隐私政策","footer.legal.cookies":"Cookie 政策","footer.legal.terms":"使用条款","footer.legal.license":"许可协议",
+"footer.bottom1":"© 2026 CloudMusicX。保留所有权利。","footer.bottom2":"手工打造，无追踪器。","doc.eyebrow":"文档","doc.title":"指南与教程","doc.desc":"连接你的音源并开始使用 Cloud Music X 所需的一切。",
+"doc.nav1":"快速开始","doc.nav2":"Google Drive 与 OneDrive","doc.nav3":"通过链接使用 MEGA","doc.nav4":"NAS","doc.nav5":"个人服务器","doc.nav6":"备份与恢复",
+"doc.s1.title":"快速开始","doc.s1.p":"只需三步即可听到你的第一首歌。",
+"doc.s1.li1":"<strong>安装 Cloud Music X</strong>：从 App Store 下载并打开应用，无需账号。",
+"doc.s1.li2":"<strong>选择一个音源</strong>：在「导入」标签中选择云服务、MEGA 链接、NAS、个人服务器，或设备上已有的文件。",
+"doc.s1.li3":"<strong>导入你的歌曲</strong>：Cloud Music X 会自动获取元数据和封面，并将其加入你的统一音乐库。",
+"doc.s2.title":"连接 Google Drive 或 OneDrive",
+"doc.s2.li1":"在「导入」标签中，选择 <strong>Google Drive</strong> 或 <strong>OneDrive</strong>。",
+"doc.s2.li2":"通过该服务的安全登录窗口（OAuth）登录——你的账号信息绝不会经过 Cloud Music X。",
+"doc.s2.li3":"浏览你的文件夹，选择要加入音乐库的音频文件，可在线播放或下载后离线收听。",
+"doc.s3.title":"连接 MEGA（账号或简单链接）","doc.s3.intro":"根据你的需要，有两种方式连接 MEGA：",
+"doc.s3.li1":"<strong>使用你的 MEGA 账号</strong>：使用邮箱和密码登录，访问你的整个 MEGA 资料库并选择要添加的文件。你的凭证只会发送给 MEGA 的服务器，绝不会发送给 Cloud Music X。",
+"doc.s3.li2":"<strong>使用分享链接</strong>：复制一个 MEGA 分享链接（文件夹或文件），打开「导入」标签，然后选择 <strong>MEGA 链接</strong>，粘贴该链接。",
+"doc.s3.li3":"使用分享链接时无需账号：解密直接在你的设备上完成。",
+"doc.s4.title":"连接 NAS（Emby、Jellyfin、Plex）",
+"doc.s4.li1":"确保媒体服务器（Emby、Jellyfin 或 Plex）已在你的家庭网络中运行，或可远程访问。",
+"doc.s4.li2":"在「导入」标签中选择 <strong>NAS</strong>，然后输入服务器地址和你的账号信息。",
+"doc.s4.li3":"托管在 NAS 上的音乐库将直接显示在 Cloud Music X 中。",
+"doc.s5.title":"连接个人服务器（FTP、WebDAV、NFS）",
+"doc.s5.li1":"在「导入」标签中，选择与你的服务器匹配的协议：<strong>FTP</strong>、<strong>WebDAV</strong> 或 <strong>NFS</strong>。",
+"doc.s5.li2":"输入你的服务器或网络存储的地址、端口和访问凭据。",
+"doc.s5.li3":"像浏览 Cloud Music X 中的其他音源一样浏览远程文件夹。",
+"doc.s6.title":"备份与恢复你的音乐库",
+"doc.s6.li1":"在设置中打开<strong>备份</strong>，选择一个密码来加密导出文件。",
+"doc.s6.li2":"生成的文件包含你的歌单、收藏、统计数据和设置——绝不包含音频文件本身。",
+"doc.s6.li3":"要恢复，请在另一台设备上导入该文件，并输入导出时使用的密码。",
+"blog.eyebrow":"博客","blog.title":"更新说明","blog.soon":"即将推出"
+},
+
+hi: {
+"nav.features":"फ़ीचर्स","nav.privacy":"गोपनीयता","nav.about":"परिचय","nav.contact":"संपर्क","menu.home":"होम",
+"hero.kicker":"iOS ऐप · पर्सनल ऑडियो प्लेयर",
+"hero.b1":"<strong>सुनें</strong> अपना संगीत लोकल या क्लाउड से, एक ही इंटरफ़ेस में।",
+"hero.b2":"<strong>कनेक्ट करें</strong> Google Drive, MEGA, OneDrive और कई अन्य क्लाउड सेवाएँ।",
+"hero.b3":"<strong>अपने NAS को जोड़ें</strong> Emby, Jellyfin या Plex के ज़रिए।",
+"hero.b4":"<strong>अपने सर्वर तक पहुँचें</strong> FTP, WebDAV या NFS से।",
+"hero.b5":"<strong>कोई विज्ञापन नहीं</strong>, निर्बाध सुनने के लिए।",
+"hero.b6":"कहीं भी अपना संगीत सुनने के लिए <strong>ऑफ़लाइन मोड</strong>।",
+
+"hero.cta1":"ऐप डाउनलोड करें","hero.cta2":"कोई डेटा संग्रह नहीं",
+"hero.note":"पर्सनल ऑडियो प्लेयर · iOS 16 या नया वर्शन · किसी अकाउंट की ज़रूरत नहीं",
+"player.from":"स्रोत",
+"a.eyebrow":"साइड A","a.title":"आपका संगीत, जहाँ भी हो",
+"a.desc":"आपको एक ही क्लाउड चुनने या सब कुछ फिर से अपलोड करने की ज़रूरत नहीं: Cloud Music X आपकी फ़ाइलों तक वहीं पहुँचता है जहाँ वे पहले से मौजूद हैं।",
+"a.t1.title":"Google Drive, MEGA, और भी बहुत कुछ…","a.t1.desc":"अपने अकाउंट से सुरक्षित साइन-इन (OAuth): फ़ोल्डर ब्राउज़ करें, <strong>स्ट्रीम करें</strong> या <strong>डाउनलोड करें</strong> और <strong>ऑफ़लाइन</strong> सुनें।","a.t1.tag":"संगत",
+"a.t2.title":"सिर्फ़ एक लिंक से","a.t2.desc":"बस किसी फ़ोल्डर या फ़ाइल का शेयर लिंक पेस्ट करें। <strong>किसी अकाउंट या साइन-इन की ज़रूरत नहीं</strong>, सब कुछ सीधे <strong>आपके डिवाइस पर</strong> डिक्रिप्ट होता है।","a.t2.tag":"संगत",
+"a.t3.title":"NAS: Emby, Jellyfin, Plex","a.t3.desc":"अपना मीडिया सर्वर कनेक्ट करें और अपनी पर्सनल लाइब्रेरी सीधे ऐप में पाएं।","a.t3.tag":"संगत",
+"a.t4.title":"सर्वर: FTP, WebDAV, NFS","a.t4.desc":"स्टैंडर्ड प्रोटोकॉल के ज़रिए किसी सर्वर या नेटवर्क स्टोरेज तक पहुँचें, बिना किसी कमर्शियल क्लाउड के।","a.t4.tag":"संगत",
+"a.t5.title":"डिवाइस की फ़ाइलें व फ़ोल्डर","a.t5.desc":"एक ट्रैक, कई फ़ाइलें एक साथ, या पूरा फ़ोल्डर इम्पोर्ट करें।","a.t5.tag":"लोकल",
+"a.t6.title":"एक साझा लाइब्रेरी","a.t6.desc":"स्रोत के अनुसार फ़िल्टर करें — सब कुछ, ऑफ़लाइन, केवल लोकल, या सेवा अनुसार — बिना किसी गाने को दोबारा जोड़े।","a.t6.tag":"बिना डुप्लिकेट",
+"b.eyebrow":"साइड B","b.title":"प्लेयर के भीतर","b.desc":"सुनने से जुड़ी वे बारीकियाँ, जिनकी कमी तभी महसूस होती है जब वे न हों।",
+"b.c1.title":"एडजस्टेबल क्रॉसफ़ेड","b.c1.desc":"दो गानों के बीच 1 से 12 सेकंड तक की मुलायम ट्रांज़िशन, सेटिंग्स में सीधे बदली जा सकती है।",
+"b.c2.title":"शफ़ल, दो तरीकों में","b.c2.desc":"क्लासिक शफ़ल, या एक \"एन्हांस्ड\" मोड जो एक ही कलाकार को लगातार दो बार बजने से बचाता है।",
+"b.c3.title":"स्लीप टाइमर","b.c3.desc":"तय समय के बाद प्लेबैक अपने आप बंद करने का शेड्यूल बनाएं, ताकि आप संगीत के साथ सो सकें।",
+"b.c4.title":"Siri शॉर्टकट्स","b.c4.desc":"\"Cloud Music X पर गाना बजाओ\", पॉज़ करो, या प्ले/पॉज़ बदलो — बोलकर, ऐप खोले बिना भी।",
+"c.eyebrow":"साइड C","c.title":"मुख्य फ़ीचर्स","c.desc":"अपने सुनने के आँकड़े देखें, साउंड को अपने हिसाब से एडजस्ट करें, ऐप को पर्सनलाइज़ करें — बिना पूरी शाम लगाए।",
+"c.t4.title":"सुनने के आँकड़े","c.t4.desc":"दिन, हफ़्ते, महीने या हमेशा के हिसाब से सुनने का समय।",
+"c.t2.title":"ऑटोमैटिक मेटाडेटा और कवर","c.t2.desc":"Cloud Music X टाइटल, आर्टिस्ट, एल्बम और कवर खोजता है — आप बस मंज़ूरी दें, सब कुछ एक टैप में ठीक हो जाता है।",
+"c.t5.title":"इक्वलाइज़र और बूस्ट","c.t5.desc":"हर बैंड के हिसाब से फ़्रीक्वेंसी एडजस्ट करें, और बहुत धीमी रिकॉर्डिंग वाली फ़ाइलों के लिए सामान्य स्तर से ज़्यादा वॉल्यूम बूस्ट करें।",
+"c.t6.title":"विजेट्स","c.t6.desc":"होम स्क्रीन या लॉक स्क्रीन से सीधे चालू ट्रैक और प्लेबैक कंट्रोल्स देखें।",
+"c.t7.title":"सिंक की गई लिरिक्स","c.t7.desc":"lrclib डेटाबेस के ज़रिए अपने ट्रैक्स की लिरिक्स देखें, उपलब्ध होने पर प्लेबैक के साथ सिंक की गई।",
+"c.t8.title":"कस्टमाइज़ेबल लुक","c.t8.desc":"अपनी पसंद के हिसाब से इंटरफ़ेस के लिए कई थीम और रंगों में से चुनें।",
+"formats.audio.label":"समर्थित ऑडियो फ़ॉर्मैट","formats.subs.label":"समर्थित सबटाइटल फ़ॉर्मैट (लिरिक्स)",
+"d.eyebrow":"साइड D","d.title":"कोई डेटा संग्रह नहीं","d.desc":"Cloud Music X एक पर्सनल ऐप है, सिर्फ़ एक मकसद के लिए बना: आपके लिए।",
+"d.l1":"<strong>कोई Cloud Music X अकाउंट नहीं।</strong> आप सीधे अपनी क्लाउड सेवा से जुड़ते हैं, कभी किसी Cloud Music X सर्वर से नहीं।",
+"d.l2":"<strong>टोकन सिर्फ़ डिवाइस पर।</strong> साइन-इन के बाद, आपके क्लाउड की पहुँच iOS की सुरक्षित Keychain में रहती है — वहाँ से बाहर कभी नहीं जाती।",
+"d.l3":"<strong>कोई विज्ञापन नहीं, कोई ट्रैकर नहीं।</strong> कुछ भी इकट्ठा, दोबारा बेचा या व्यावसायिक उद्देश्य से साझा नहीं किया जाता।",
+"d.l4":"<strong>एन्क्रिप्टेड बैकअप, सिर्फ़ आपके लिए।</strong> प्लेलिस्ट, पसंदीदा और आँकड़े पासवर्ड-सुरक्षित फ़ाइल में एक्सपोर्ट करें — कहीं भी रीस्टोर करें।",
+"d.link":"पूरी गोपनीयता नीति पढ़ें →",
+"about.eyebrow":"परिचय",
+"about.sig":"एक ऐसा प्लेयर जो <span>आपके पास पहले से मौजूद संगीत</span> के लिए बना है।",
+"about.p1":"Cloud Music X एक साधारण सी बात से शुरू हुआ: हममें से कई लोगों के पास पहले से संगीत मौजूद है — सालों में ख़रीदा, रिप किया, ट्रांसफ़र किया गया — जो क्लाउड, NAS और फ़ोन की स्टोरेज में बिखरा पड़ा है। Cloud Music X का मकसद इसे एक जगह लाना है।",
+"about.p2":"यह एक पर्सनल ऐप है, जिसे एक अकेले डेवलपर ने बनाया और बनाए रखा है, जो आपके संगीत पर केंद्रित है — न कि बेचने के लिए किसी कैटलॉग पर, न ही विज्ञापन-चालित सिफ़ारिशों पर।",
+"cta.eyebrow":"जल्द आ रहा है","cta.title":"Cloud Music X जल्द App Store पर",
+"cta.desc":"कोई सवाल, कोई बग रिपोर्ट करनी है, या अपनी पसंदीदा क्लाउड सेवा के लिए कोई फ़ीचर आइडिया? सीधे मुझे लिखें।",
+"cta.privacy":"गोपनीयता नीति",
+"footer.tagline":"अपना संगीत लोकल या क्लाउड से सुनें, एक ही इंटरफ़ेस में।",
+"footer.app":"ऐप","footer.contact":"संपर्क","footer.legal":"कानूनी","footer.form":"संपर्क फ़ॉर्म","legal.nav.notice":"कानूनी सूचना","legal.nav.privacy":"गोपनीयता","legal.nav.cookies":"कुकीज़","legal.nav.terms":"नियम एवं शर्तें","legal.nav.license":"लाइसेंस","footer.legal.notice":"कानूनी सूचना","footer.legal.privacy":"गोपनीयता नीति","footer.legal.cookies":"कुकी नीति","footer.legal.terms":"नियम एवं शर्तें","footer.legal.license":"लाइसेंस अनुबंध",
+"footer.bottom1":"© 2026 CloudMusicX। सर्वाधिकार सुरक्षित।","footer.bottom2":"बिना ट्रैकर के, हाथ से बनाया गया।","doc.eyebrow":"डॉक्यूमेंटेशन","doc.title":"गाइड और ट्यूटोरियल","doc.desc":"अपने स्रोत जोड़ने और Cloud Music X के साथ शुरुआत करने के लिए जो कुछ चाहिए।",
+"doc.nav1":"क्विक स्टार्ट","doc.nav2":"Google Drive और OneDrive","doc.nav3":"MEGA लिंक से","doc.nav4":"NAS","doc.nav5":"पर्सनल सर्वर","doc.nav6":"बैकअप और रीस्टोर",
+"doc.s1.title":"क्विक स्टार्ट","doc.s1.p":"आपका पहला ट्रैक सुनने के लिए बस तीन स्टेप्स काफ़ी हैं।",
+"doc.s1.li1":"<strong>Cloud Music X इंस्टॉल करें</strong> App Store से, फिर ऐप खोलें। किसी अकाउंट की ज़रूरत नहीं।",
+"doc.s1.li2":"<strong>एक स्रोत चुनें</strong> Import टैब से: कोई क्लाउड सेवा, MEGA लिंक, NAS, पर्सनल सर्वर, या आपके डिवाइस पर पहले से मौजूद फ़ाइलें।",
+"doc.s1.li3":"<strong>अपने ट्रैक इम्पोर्ट करें</strong>: Cloud Music X अपने आप मेटाडेटा और कवर ढूंढता है, फिर उन्हें आपकी एकीकृत लाइब्रेरी में जोड़ देता है।",
+"doc.s2.title":"Google Drive या OneDrive कनेक्ट करें",
+"doc.s2.li1":"Import टैब में <strong>Google Drive</strong> या <strong>OneDrive</strong> चुनें।",
+"doc.s2.li2":"सेवा की सुरक्षित साइन-इन विंडो (OAuth) से साइन इन करें — आपकी जानकारी कभी Cloud Music X से होकर नहीं गुज़रती।",
+"doc.s2.li3":"अपने फ़ोल्डर ब्राउज़ करें और लाइब्रेरी में जोड़ने के लिए ऑडियो फ़ाइलें चुनें, स्ट्रीम करें या ऑफ़लाइन सुनने के लिए डाउनलोड करें।",
+"doc.s3.title":"MEGA कनेक्ट करें (अकाउंट या सिर्फ़ लिंक)","doc.s3.intro":"आपकी ज़रूरत के हिसाब से MEGA कनेक्ट करने के दो तरीके:",
+"doc.s3.li1":"<strong>अपने MEGA अकाउंट से</strong>: अपनी पूरी MEGA लाइब्रेरी तक पहुँचने और फ़ाइलें चुनने के लिए ईमेल और पासवर्ड से साइन इन करें। आपकी जानकारी सिर्फ़ MEGA के सर्वर को भेजी जाती है, कभी Cloud Music X को नहीं।",
+"doc.s3.li2":"<strong>शेयर लिंक से</strong>: एक MEGA शेयर लिंक (फ़ोल्डर या फ़ाइल) कॉपी करें, Import टैब खोलें, फिर <strong>MEGA लिंक</strong>, और लिंक पेस्ट करें।",
+"doc.s3.li3":"शेयर लिंक के साथ किसी अकाउंट की ज़रूरत नहीं: डिक्रिप्शन सीधे आपके डिवाइस पर होता है।",
+"doc.s4.title":"NAS कनेक्ट करें (Emby, Jellyfin, Plex)",
+"doc.s4.li1":"सुनिश्चित करें कि आपका मीडिया सर्वर (Emby, Jellyfin या Plex) आपके होम नेटवर्क पर चल रहा है या रिमोट से एक्सेस किया जा सकता है।",
+"doc.s4.li2":"Import टैब में <strong>NAS</strong> चुनें, फिर सर्वर का पता और अपनी जानकारी दर्ज करें।",
+"doc.s4.li3":"NAS पर होस्ट की गई आपकी म्यूज़िक लाइब्रेरी सीधे Cloud Music X में दिखाई देती है।",
+"doc.s5.title":"पर्सनल सर्वर कनेक्ट करें (FTP, WebDAV, NFS)",
+"doc.s5.li1":"Import टैब में, अपने सर्वर से मेल खाता प्रोटोकॉल चुनें: <strong>FTP</strong>, <strong>WebDAV</strong> या <strong>NFS</strong>।",
+"doc.s5.li2":"अपने सर्वर या नेटवर्क स्टोरेज के लिए पता, पोर्ट और एक्सेस जानकारी दर्ज करें।",
+"doc.s5.li3":"Cloud Music X के किसी भी अन्य स्रोत की तरह रिमोट फ़ोल्डर ब्राउज़ करें।",
+"doc.s6.title":"अपनी लाइब्रेरी का बैकअप लें और रीस्टोर करें",
+"doc.s6.li1":"सेटिंग्स में <strong>बैकअप</strong> खोलें और एक्सपोर्ट को एन्क्रिप्ट करने के लिए एक पासवर्ड चुनें।",
+"doc.s6.li2":"जनरेट की गई फ़ाइल में आपकी प्लेलिस्ट, पसंदीदा, आँकड़े और सेटिंग्स होती हैं — कभी भी आपकी ऑडियो फ़ाइलें खुद नहीं।",
+"doc.s6.li3":"रीस्टोर करने के लिए, इस फ़ाइल को किसी अन्य डिवाइस पर इम्पोर्ट करें और एक्सपोर्ट के समय इस्तेमाल किया गया पासवर्ड डालें।",
+"blog.eyebrow":"ब्लॉग","blog.title":"अपडेट नोट्स","blog.soon":"जल्द आ रहा है"
+},
+
+de: {
+"nav.features":"Funktionen","nav.privacy":"Datenschutz","nav.about":"Über uns","nav.contact":"Kontakt","menu.home":"Startseite",
+"hero.kicker":"iOS-App · persönlicher Audioplayer",
+"hero.b1":"<strong>Höre</strong> deine Musik lokal oder aus der Cloud, in einer einzigen Oberfläche.",
+"hero.b2":"<strong>Verbinde</strong> Google Drive, MEGA, OneDrive und viele weitere Cloud-Dienste.",
+"hero.b3":"<strong>Binde dein NAS ein</strong> über Emby, Jellyfin oder Plex.",
+"hero.b4":"<strong>Greife auf deinen eigenen Server zu</strong> per FTP, WebDAV oder NFS.",
+"hero.b5":"<strong>Keine Werbung</strong>, für ununterbrochenes Hören.",
+"hero.b6":"<strong>Offline-Modus</strong>, um deine Musik überall zu hören.",
+
+"hero.cta1":"App herunterladen","hero.cta2":"Keine Datenerfassung",
+"hero.note":"Persönlicher Audioplayer · iOS 16 oder neuer · Kein Konto erforderlich",
+"player.from":"von",
+"a.eyebrow":"Seite A","a.title":"Deine Musik, wo auch immer sie liegt",
+"a.desc":"Du musst dich nicht auf eine Cloud festlegen oder alles neu hochladen: Cloud Music X holt deine Dateien dort ab, wo sie bereits liegen.",
+"a.t1.title":"Google Drive, MEGA und viele weitere …","a.t1.desc":"Sichere Anmeldung (OAuth) bei deinem Konto: Ordner durchsuchen, <strong>streamen</strong> oder für die <strong>Offline</strong>-Wiedergabe <strong>herunterladen</strong>.","a.t1.tag":"Kompatibel mit",
+"a.t2.title":"Per einfachem Link","a.t2.desc":"Füge einfach einen Freigabelink für einen Ordner oder eine Datei ein. <strong>Kein Konto, keine Anmeldung nötig</strong> — alles wird direkt <strong>auf deinem Gerät</strong> entschlüsselt.","a.t2.tag":"Kompatibel mit",
+"a.t3.title":"NAS: Emby, Jellyfin, Plex","a.t3.desc":"Verbinde deinen Medienserver und finde deine persönliche Bibliothek direkt in der App.","a.t3.tag":"Kompatibel mit",
+"a.t4.title":"Server: FTP, WebDAV, NFS","a.t4.desc":"Greife per Standardprotokoll auf einen Server oder Netzwerkspeicher zu, ganz ohne kommerzielle Cloud.","a.t4.tag":"Kompatibel mit",
+"a.t5.title":"Dateien & Ordner des Geräts","a.t5.desc":"Importiere einen einzelnen Titel, mehrere Dateien gleichzeitig oder einen ganzen Ordner.","a.t5.tag":"Lokal",
+"a.t6.title":"Vereinte Bibliothek","a.t6.desc":"Filtere nach Quelle — alles, offline, nur lokal oder pro Dienst — ohne einen bereits importierten Titel je zu duplizieren.","a.t6.tag":"Keine Duplikate",
+"b.eyebrow":"Seite B","b.title":"Im Player","b.desc":"Die kleinen Hördetails, die man erst vermisst, wenn sie fehlen.",
+"b.c1.title":"Einstellbarer Crossfade","b.c1.desc":"Ein sanfter Übergang zwischen zwei Titeln, 1 bis 12 Sekunden, direkt in den Einstellungen anpassbar.",
+"b.c2.title":"Zufallswiedergabe, zwei Varianten","b.c2.desc":"Klassisches Shuffle oder ein „verbesserter“ Modus, der denselben Künstler nicht zweimal hintereinander abspielt.",
+"b.c3.title":"Einschlaf-Timer","b.c3.desc":"Lege fest, dass die Wiedergabe nach einer bestimmten Zeit automatisch stoppt, um zu Musik einzuschlafen.",
+"b.c4.title":"Siri-Kurzbefehle","b.c4.desc":"„Spiele Musik auf Cloud Music X ab“, pausieren oder Wiedergabe umschalten — per Stimme, ohne die App überhaupt zu öffnen.",
+"c.eyebrow":"Seite C","c.title":"Kernfunktionen","c.desc":"Sieh dir deine Hörstatistiken an, stelle den Klang nach deinem Geschmack ein, personalisiere die App — ohne einen ganzen Abend zu verlieren.",
+"c.t4.title":"Hörstatistiken","c.t4.desc":"Hörzeit nach Tag, Woche, Monat oder insgesamt.",
+"c.t2.title":"Automatische Metadaten & Cover","c.t2.desc":"Cloud Music X sucht Titel, Künstler, Album und Cover — du bestätigst, alles wird mit einem Tipp korrigiert.",
+"c.t5.title":"Equalizer & Verstärkung","c.t5.desc":"Passe die Frequenzen bandweise an und verstärke die Lautstärke über den normalen Pegel hinaus bei zu leise aufgenommenen Dateien.",
+"c.t6.title":"Widgets","c.t6.desc":"Sieh den aktuellen Titel und die Wiedergabesteuerung direkt auf dem Homescreen oder Sperrbildschirm.",
+"c.t7.title":"Synchronisierte Songtexte","c.t7.desc":"Zeige Songtexte über die lrclib-Datenbank an, synchron zur Wiedergabe, sofern verfügbar.",
+"c.t8.title":"Anpassbares Erscheinungsbild","c.t8.desc":"Wähle aus mehreren Themen und Farben, um die Oberfläche nach deinem Geschmack zu gestalten.",
+"formats.audio.label":"Unterstützte Audioformate","formats.subs.label":"Unterstützte Untertitelformate (Songtexte)",
+"d.eyebrow":"Seite D","d.title":"Keine Datenerfassung","d.desc":"Cloud Music X ist eine persönliche App, gebaut für einen einzigen Zweck: dich.",
+"d.l1":"<strong>Kein Cloud-Music-Konto.</strong> Du verbindest dich direkt mit deinem eigenen Cloud-Dienst, nie mit einem Server von Cloud Music X.",
+"d.l2":"<strong>Tokens bleiben auf dem Gerät.</strong> Nach der Anmeldung bleibt der Zugriff auf deine Cloud im sicheren iOS-Schlüsselbund — er verlässt ihn nie.",
+"d.l3":"<strong>Keine Werbung, keine Tracker.</strong> Nichts wird gesammelt, weiterverkauft oder zu kommerziellen Zwecken weitergegeben.",
+"d.l4":"<strong>Verschlüsseltes Backup, nur für dich.</strong> Exportiere Playlists, Favoriten und Statistiken in eine passwortgeschützte Datei — stelle sie wieder her, wo immer du willst.",
+"d.link":"Vollständige Datenschutzerklärung lesen →",
+"about.eyebrow":"Über uns",
+"about.sig":"Ein Player, gemacht für <span>die Musik, die dir bereits gehört</span>.",
+"about.p1":"Cloud Music X entstand aus einer einfachen Beobachtung: Viele von uns besitzen bereits Musik — gekauft, digitalisiert, über die Jahre übertragen — verstreut auf einer Cloud, einem NAS und dem Speicher des Telefons. Cloud Music X soll genau das zusammenführen.",
+"about.p2":"Es ist eine persönliche App, entwickelt und gepflegt von einem einzelnen Entwickler, ganz auf deine Musik ausgerichtet — nicht auf einen Katalog zum Verkaufen oder auf Empfehlungen, die ein Werbealgorithmus diktiert.",
+"cta.eyebrow":"Demnächst","cta.title":"Cloud Music X kommt bald in den App Store",
+"cta.desc":"Eine Frage, ein Fehler zum Melden, oder eine Funktionsidee für deine bevorzugte Cloud? Schreib mir direkt.",
+"cta.privacy":"Datenschutzerklärung",
+"footer.tagline":"Höre deine Musik lokal oder aus der Cloud, in einer einzigen Oberfläche.",
+"footer.app":"App","footer.contact":"Kontakt","footer.legal":"Rechtliches","footer.form":"Kontaktformular","legal.nav.notice":"Impressum","legal.nav.privacy":"Datenschutz","legal.nav.cookies":"Cookies","legal.nav.terms":"Allgemeine Geschäftsbedingungen","legal.nav.license":"Lizenz","footer.legal.notice":"Impressum","footer.legal.privacy":"Datenschutzerklärung","footer.legal.cookies":"Cookie-Richtlinie","footer.legal.terms":"Allgemeine Geschäftsbedingungen","footer.legal.license":"Lizenzvereinbarung",
+"footer.bottom1":"© 2026 CloudMusicX. Alle Rechte vorbehalten.","footer.bottom2":"Handgemacht, ohne Tracker.","doc.eyebrow":"Dokumentation","doc.title":"Anleitungen & Tutorials","doc.desc":"Alles, um deine Quellen zu verbinden und mit Cloud Music X loszulegen.",
+"doc.nav1":"Schnellstart","doc.nav2":"Google Drive & OneDrive","doc.nav3":"MEGA per Link","doc.nav4":"NAS","doc.nav5":"Eigener Server","doc.nav6":"Sicherung & Wiederherstellung",
+"doc.s1.title":"Schnellstart","doc.s1.p":"Drei Schritte genügen, um deinen ersten Titel zu hören.",
+"doc.s1.li1":"<strong>Installiere Cloud Music X</strong> aus dem App Store und öffne die App. Kein Konto nötig.",
+"doc.s1.li2":"<strong>Wähle eine Quelle</strong> im Import-Tab: einen Cloud-Dienst, einen MEGA-Link, ein NAS, einen eigenen Server oder bereits vorhandene Dateien auf deinem Gerät.",
+"doc.s1.li3":"<strong>Importiere deine Titel</strong>: Cloud Music X ruft Metadaten und Cover automatisch ab und fügt sie deiner vereinten Bibliothek hinzu.",
+"doc.s2.title":"Google Drive oder OneDrive verbinden",
+"doc.s2.li1":"Wähle im Import-Tab <strong>Google Drive</strong> oder <strong>OneDrive</strong>.",
+"doc.s2.li2":"Melde dich über das sichere Anmeldefenster des Dienstes an (OAuth) — deine Zugangsdaten laufen nie über Cloud Music X.",
+"doc.s2.li3":"Durchsuche deine Ordner und wähle Audiodateien für deine Bibliothek aus, per Streaming oder zum Herunterladen für die Offline-Wiedergabe.",
+"doc.s3.title":"MEGA verbinden (Konto oder einfacher Link)","doc.s3.intro":"Zwei Wege, MEGA zu verbinden, je nach Bedarf:",
+"doc.s3.li1":"<strong>Mit deinem MEGA-Konto</strong>: melde dich mit E-Mail und Passwort an, um auf deine gesamte MEGA-Bibliothek zuzugreifen und Dateien auszuwählen. Deine Zugangsdaten gehen nur an die Server von MEGA, niemals an Cloud Music X.",
+"doc.s3.li2":"<strong>Per Freigabelink</strong>: kopiere einen MEGA-Freigabelink (Ordner oder Datei), öffne den Import-Tab, dann <strong>MEGA-Link</strong>, und füge ihn ein.",
+"doc.s3.li3":"Mit einem Freigabelink ist kein Konto nötig: Die Entschlüsselung erfolgt direkt auf deinem Gerät.",
+"doc.s4.title":"NAS verbinden (Emby, Jellyfin, Plex)",
+"doc.s4.li1":"Stelle sicher, dass dein Medienserver (Emby, Jellyfin oder Plex) im Heimnetzwerk läuft oder remote erreichbar ist.",
+"doc.s4.li2":"Wähle im Import-Tab <strong>NAS</strong> und gib die Serveradresse sowie deine Zugangsdaten ein.",
+"doc.s4.li3":"Deine auf dem NAS gehostete Musikbibliothek erscheint direkt in Cloud Music X.",
+"doc.s5.title":"Eigenen Server verbinden (FTP, WebDAV, NFS)",
+"doc.s5.li1":"Wähle im Import-Tab das zu deinem Server passende Protokoll: <strong>FTP</strong>, <strong>WebDAV</strong> oder <strong>NFS</strong>.",
+"doc.s5.li2":"Gib Adresse, Port und Zugangsdaten für deinen Server oder Netzwerkspeicher ein.",
+"doc.s5.li3":"Durchsuche die entfernten Ordner wie jede andere Quelle in Cloud Music X.",
+"doc.s6.title":"Bibliothek sichern und wiederherstellen",
+"doc.s6.li1":"Öffne in den Einstellungen <strong>Sicherung</strong> und wähle ein Passwort zur Verschlüsselung des Exports.",
+"doc.s6.li2":"Die erzeugte Datei enthält deine Playlists, Favoriten, Statistiken und Einstellungen — niemals deine Audiodateien selbst.",
+"doc.s6.li3":"Zum Wiederherstellen importiere diese Datei auf einem anderen Gerät und gib das beim Export verwendete Passwort ein.",
+"blog.eyebrow":"Blog","blog.title":"Update-Hinweise","blog.soon":"Demnächst verfügbar"
+},
+
+it: {
+"nav.features":"Funzionalità","nav.privacy":"Privacy","nav.about":"Chi siamo","nav.contact":"Contatti","menu.home":"Home",
+"hero.kicker":"App iOS · lettore audio personale",
+"hero.b1":"<strong>Ascolta</strong> la tua musica in locale o dal cloud, in un'unica interfaccia.",
+"hero.b2":"<strong>Collega</strong> Google Drive, MEGA, OneDrive e molti altri servizi cloud.",
+"hero.b3":"<strong>Collega il tuo NAS</strong> tramite Emby, Jellyfin o Plex.",
+"hero.b4":"<strong>Accedi al tuo server</strong> via FTP, WebDAV o NFS.",
+"hero.b5":"<strong>Nessuna pubblicità</strong>, per un ascolto senza interruzioni.",
+"hero.b6":"<strong>Modalità offline</strong> per ascoltare la tua musica ovunque.",
+
+"hero.cta1":"Scarica l'app","hero.cta2":"Nessuna raccolta dati",
+"hero.note":"Lettore audio personale · iOS 16 o successivo · Nessun account richiesto",
+"player.from":"da",
+"a.eyebrow":"Lato A","a.title":"La tua musica, ovunque si trovi",
+"a.desc":"Non devi scegliere un solo cloud né ricaricare tutto: Cloud Music X va a recuperare i tuoi file dove già si trovano.",
+"a.t1.title":"Google Drive, MEGA e molti altri…","a.t1.desc":"Accesso sicuro (OAuth) al tuo account: sfoglia le cartelle, ascolta in <strong>streaming</strong> o <strong>scarica</strong> per l'ascolto <strong>offline</strong>.","a.t1.tag":"Compatibile con",
+"a.t2.title":"Con un semplice link","a.t2.desc":"Incolla semplicemente un link di condivisione di una cartella o di un file. <strong>Nessun account o accesso richiesto</strong>, tutto viene decifrato direttamente <strong>sul tuo dispositivo</strong>.","a.t2.tag":"Compatibile con",
+"a.t3.title":"NAS: Emby, Jellyfin, Plex","a.t3.desc":"Collega il tuo server multimediale e trova la tua libreria personale direttamente nell'app.","a.t3.tag":"Compatibile con",
+"a.t4.title":"Server: FTP, WebDAV, NFS","a.t4.desc":"Accedi a un server o a uno spazio di rete tramite protocolli standard, senza passare da un cloud commerciale.","a.t4.tag":"Compatibile con",
+"a.t5.title":"File e cartelle del dispositivo","a.t5.desc":"Importa un brano, più file insieme, o un'intera cartella.","a.t5.tag":"Locale",
+"a.t6.title":"Libreria unificata","a.t6.desc":"Filtra per origine — tutto, offline, solo locale o per servizio — senza mai duplicare un brano già importato.","a.t6.tag":"Nessun duplicato",
+"b.eyebrow":"Lato B","b.title":"Dentro il lettore","b.desc":"I dettagli d'ascolto che si notano solo quando mancano.",
+"b.c1.title":"Dissolvenza incrociata regolabile","b.c1.desc":"Una transizione morbida tra due brani, da 1 a 12 secondi, regolabile direttamente nelle impostazioni.",
+"b.c2.title":"Riproduzione casuale, due modalità","b.c2.desc":"Casuale classica, oppure una variante «avanzata» che evita di riproporre lo stesso artista due volte di fila.",
+"b.c3.title":"Timer per lo spegnimento","b.c3.desc":"Programma l'arresto automatico della riproduzione dopo un tempo scelto, per addormentarti in musica.",
+"b.c4.title":"Comandi rapidi Siri","b.c4.desc":"«Riproduci musica su Cloud Music X», metti in pausa, o cambia la riproduzione — a voce, senza nemmeno aprire l'app.",
+"c.eyebrow":"Lato C","c.title":"Funzionalità principali","c.desc":"Consulta le tue statistiche di ascolto, regola il suono a tuo piacimento, personalizza l'app — senza perderci la serata.",
+"c.t4.title":"Statistiche di ascolto","c.t4.desc":"Tempo d'ascolto per giorno, settimana, mese o da sempre.",
+"c.t2.title":"Metadati e copertine automatici","c.t2.desc":"Cloud Music X cerca titolo, artista, album e copertina — tu approvi, e tutto si corregge in un tocco.",
+"c.t5.title":"Equalizzatore e amplificazione","c.t5.desc":"Regola le frequenze banda per banda e amplifica il volume oltre il livello normale per i file registrati troppo bassi.",
+"c.t6.title":"Widget","c.t6.desc":"Trova il brano in riproduzione e i controlli direttamente dalla schermata Home o dalla schermata di blocco.",
+"c.t7.title":"Testi sincronizzati","c.t7.desc":"Visualizza i testi dei tuoi brani tramite il database lrclib, sincronizzati con la riproduzione quando disponibili.",
+"c.t8.title":"Aspetto personalizzabile","c.t8.desc":"Scegli tra diversi temi e colori per adattare l'interfaccia ai tuoi gusti.",
+"formats.audio.label":"Formati audio supportati","formats.subs.label":"Formati di sottotitoli supportati (testi)",
+"d.eyebrow":"Lato D","d.title":"Nessuna raccolta dati","d.desc":"Cloud Music X è un'app personale, pensata per un solo scopo: il tuo.",
+"d.l1":"<strong>Nessun account Cloud Music X.</strong> Ti connetti direttamente al tuo servizio cloud, mai a un server di Cloud Music X.",
+"d.l2":"<strong>Token conservati sul dispositivo.</strong> Dopo l'accesso, l'accesso al tuo cloud resta nel portachiavi sicuro (Keychain) di iOS — non ne esce mai.",
+"d.l3":"<strong>Nessuna pubblicità, nessun tracker.</strong> Nulla viene raccolto, rivenduto o trasmesso a scopo commerciale.",
+"d.l4":"<strong>Backup cifrato, solo per te.</strong> Esporta playlist, preferiti e statistiche in un file protetto da password — ripristinalo dove vuoi.",
+"d.link":"Leggi l'informativa sulla privacy completa →",
+"about.eyebrow":"Chi siamo",
+"about.sig":"Un lettore pensato per <span>la musica che possiedi già</span>.",
+"about.p1":"Cloud Music X nasce da un'osservazione semplice: molti di noi possiedono già musica — acquistata, copiata, trasferita nel corso degli anni — sparsa tra un cloud, un NAS e lo spazio del telefono. Lo scopo di Cloud Music X è riunirla.",
+"about.p2":"È un'app personale, sviluppata e mantenuta da un solo sviluppatore, pensata per la tua musica — non per un catalogo da vendere né per consigli dettati da un algoritmo pubblicitario.",
+"cta.eyebrow":"Prossimamente","cta.title":"Cloud Music X arriva sull'App Store",
+"cta.desc":"Una domanda, un bug da segnalare, o un'idea di funzionalità per il tuo cloud preferito? Scrivimi direttamente.",
+"cta.privacy":"Informativa sulla privacy",
+"footer.tagline":"Ascolta la tua musica in locale o dal cloud, in un'unica interfaccia.",
+"footer.app":"App","footer.contact":"Contatti","footer.legal":"Legale","footer.form":"Modulo di contatto","legal.nav.notice":"Note legali","legal.nav.privacy":"Privacy","legal.nav.cookies":"Cookie","legal.nav.terms":"Termini e condizioni","legal.nav.license":"Licenza","footer.legal.notice":"Note legali","footer.legal.privacy":"Informativa sulla privacy","footer.legal.cookies":"Informativa sui cookie","footer.legal.terms":"Termini e condizioni","footer.legal.license":"Contratto di licenza",
+"footer.bottom1":"© 2026 CloudMusicX. Tutti i diritti riservati.","footer.bottom2":"Fatto a mano, senza tracker.","doc.eyebrow":"Documentazione","doc.title":"Guide e tutorial","doc.desc":"Tutto il necessario per collegare le tue fonti e iniziare con Cloud Music X.",
+"doc.nav1":"Avvio rapido","doc.nav2":"Google Drive e OneDrive","doc.nav3":"MEGA tramite link","doc.nav4":"NAS","doc.nav5":"Server personale","doc.nav6":"Backup e ripristino",
+"doc.s1.title":"Avvio rapido","doc.s1.p":"Bastano tre passaggi per ascoltare il tuo primo brano.",
+"doc.s1.li1":"<strong>Installa Cloud Music X</strong> dall'App Store, quindi apri l'app. Nessun account necessario.",
+"doc.s1.li2":"<strong>Scegli una fonte</strong> dalla scheda Importa: un servizio cloud, un link MEGA, un NAS, un server personale, o i file già presenti sul tuo dispositivo.",
+"doc.s1.li3":"<strong>Importa i tuoi brani</strong>: Cloud Music X recupera automaticamente metadati e copertine, poi li aggiunge alla tua libreria unificata.",
+"doc.s2.title":"Collegare Google Drive o OneDrive",
+"doc.s2.li1":"Nella scheda Importa, seleziona <strong>Google Drive</strong> o <strong>OneDrive</strong>.",
+"doc.s2.li2":"Accedi tramite la finestra di accesso sicuro del servizio (OAuth) — le tue credenziali non passano mai da Cloud Music X.",
+"doc.s2.li3":"Sfoglia le cartelle e seleziona i file audio da aggiungere alla libreria, in streaming o scaricandoli per l'ascolto offline.",
+"doc.s3.title":"Collegare MEGA (account o semplice link)","doc.s3.intro":"Due modi per collegare MEGA, a seconda delle tue esigenze:",
+"doc.s3.li1":"<strong>Con il tuo account MEGA</strong>: accedi con email e password per accedere a tutta la tua libreria MEGA e scegliere i file da aggiungere. Le tue credenziali vengono inviate solo ai server di MEGA, mai a Cloud Music X.",
+"doc.s3.li2":"<strong>Con un link di condivisione</strong>: copia un link di condivisione MEGA (cartella o file), apri la scheda Importa, poi <strong>Link MEGA</strong>, e incollalo.",
+"doc.s3.li3":"Con un link di condivisione, nessun account è necessario: la decifratura avviene direttamente sul tuo dispositivo.",
+"doc.s4.title":"Collegare un NAS (Emby, Jellyfin, Plex)",
+"doc.s4.li1":"Assicurati che il server multimediale (Emby, Jellyfin o Plex) sia attivo sulla rete domestica o raggiungibile da remoto.",
+"doc.s4.li2":"Nella scheda Importa, seleziona <strong>NAS</strong>, quindi inserisci l'indirizzo del server e le tue credenziali.",
+"doc.s4.li3":"La tua libreria musicale ospitata sul NAS compare direttamente in Cloud Music X.",
+"doc.s5.title":"Collegare un server personale (FTP, WebDAV, NFS)",
+"doc.s5.li1":"Nella scheda Importa, scegli il protocollo corrispondente al tuo server: <strong>FTP</strong>, <strong>WebDAV</strong> o <strong>NFS</strong>.",
+"doc.s5.li2":"Inserisci indirizzo, porta e credenziali di accesso al tuo server o spazio di rete.",
+"doc.s5.li3":"Sfoglia le cartelle remote come qualsiasi altra fonte in Cloud Music X.",
+"doc.s6.title":"Eseguire il backup e ripristinare la libreria",
+"doc.s6.li1":"Nelle impostazioni, apri <strong>Backup</strong> e scegli una password per cifrare l'esportazione.",
+"doc.s6.li2":"Il file generato contiene playlist, preferiti, statistiche e impostazioni — mai i file audio stessi.",
+"doc.s6.li3":"Per ripristinare, importa questo file su un altro dispositivo e inserisci la password usata durante l'esportazione.",
+"blog.eyebrow":"Blog","blog.title":"Note di aggiornamento","blog.soon":"Prossimamente"
+},
+
+es: {
+"nav.features":"Funciones","nav.privacy":"Privacidad","nav.about":"Nosotros","nav.contact":"Contacto","menu.home":"Inicio",
+"hero.kicker":"App iOS · reproductor de audio personal",
+"hero.b1":"<strong>Escucha</strong> tu música en local o desde la nube, en una sola interfaz.",
+"hero.b2":"<strong>Conecta</strong> Google Drive, MEGA, OneDrive y muchos otros servicios en la nube.",
+"hero.b3":"<strong>Enlaza tu NAS</strong> mediante Emby, Jellyfin o Plex.",
+"hero.b4":"<strong>Accede a tu propio servidor</strong> por FTP, WebDAV o NFS.",
+"hero.b5":"<strong>Sin publicidad</strong>, para una escucha sin interrupciones.",
+"hero.b6":"<strong>Modo sin conexión</strong> para escuchar tu música en cualquier lugar.",
+
+"hero.cta1":"Descargar la app","hero.cta2":"Sin recopilación de datos",
+"hero.note":"Reproductor de audio personal · iOS 16 o posterior · Sin cuenta requerida",
+"player.from":"desde",
+"a.eyebrow":"Cara A","a.title":"Tu música, esté donde esté",
+"a.desc":"No tienes que elegir una sola nube ni volver a subirlo todo: Cloud Music X va a buscar tus archivos allí donde ya están.",
+"a.t1.title":"Google Drive, MEGA y muchos más…","a.t1.desc":"Inicio de sesión seguro (OAuth) en tu cuenta: explora tus carpetas, escucha en <strong>streaming</strong> o <strong>descarga</strong> para oír <strong>sin conexión</strong>.","a.t1.tag":"Compatible con",
+"a.t2.title":"Con un simple enlace","a.t2.desc":"Solo tienes que pegar un enlace para compartir una carpeta o un archivo. <strong>Sin cuenta ni inicio de sesión</strong>, todo se descifra directamente <strong>en tu dispositivo</strong>.","a.t2.tag":"Compatible con",
+"a.t3.title":"NAS: Emby, Jellyfin, Plex","a.t3.desc":"Conecta tu servidor multimedia y encuentra tu biblioteca personal directamente en la app.","a.t3.tag":"Compatible con",
+"a.t4.title":"Servidor: FTP, WebDAV, NFS","a.t4.desc":"Accede a un servidor o unidad de red mediante protocolos estándar, sin pasar por una nube comercial.","a.t4.tag":"Compatible con",
+"a.t5.title":"Archivos y carpetas del dispositivo","a.t5.desc":"Importa una pista, varios archivos a la vez, o una carpeta entera.","a.t5.tag":"Local",
+"a.t6.title":"Biblioteca unificada","a.t6.desc":"Filtra por origen — todo, sin conexión, solo local, o por servicio — sin duplicar nunca una pista ya importada.","a.t6.tag":"Sin duplicados",
+"b.eyebrow":"Cara B","b.title":"Dentro del reproductor","b.desc":"Esos detalles de escucha que solo se notan cuando faltan.",
+"b.c1.title":"Fundido cruzado ajustable","b.c1.desc":"Una transición suave entre dos pistas, de 1 a 12 segundos, ajustable directamente en los ajustes.",
+"b.c2.title":"Aleatorio, en dos modos","b.c2.desc":"Aleatorio clásico, o una variante «mejorada» que evita repetir el mismo artista dos veces seguidas.",
+"b.c3.title":"Temporizador de apagado","b.c3.desc":"Programa la reproducción para que se detenga automáticamente tras un tiempo elegido, y te duermas con música.",
+"b.c4.title":"Atajos de Siri","b.c4.desc":"«Reproduce música en Cloud Music X», pausa, o cambia la reproducción — con la voz, sin ni siquiera abrir la app.",
+"c.eyebrow":"Cara C","c.title":"Funciones principales","c.desc":"Consulta tus estadísticas de escucha, ajusta el sonido a tu gusto, personaliza la app — sin perder toda la tarde.",
+"c.t4.title":"Estadísticas de escucha","c.t4.desc":"Tiempo de escucha por día, semana, mes o desde siempre.",
+"c.t2.title":"Metadatos y portadas automáticos","c.t2.desc":"Cloud Music X busca título, artista, álbum y portada — tú apruebas, y todo se corrige al instante.",
+"c.t5.title":"Ecualizador y amplificación","c.t5.desc":"Ajusta las frecuencias banda por banda y amplifica el volumen por encima del nivel normal para archivos grabados demasiado bajo.",
+"c.t6.title":"Widgets","c.t6.desc":"Consulta la pista en curso y los controles de reproducción directamente desde la pantalla de inicio o la pantalla de bloqueo.",
+"c.t7.title":"Letras sincronizadas","c.t7.desc":"Muestra las letras de tus canciones gracias a la base de datos lrclib, sincronizadas con la reproducción cuando están disponibles.",
+"c.t8.title":"Apariencia personalizable","c.t8.desc":"Elige entre varios temas y colores para adaptar la interfaz a tu gusto.",
+"formats.audio.label":"Formatos de audio compatibles","formats.subs.label":"Formatos de subtítulos compatibles (letras)",
+"d.eyebrow":"Cara D","d.title":"Sin recopilación de datos","d.desc":"Cloud Music X es una aplicación personal, pensada para un único uso: el tuyo.",
+"d.l1":"<strong>Sin cuenta de Cloud Music X.</strong> Te conectas directamente a tu propio servicio en la nube, nunca a un servidor de Cloud Music X.",
+"d.l2":"<strong>Tokens guardados en el dispositivo.</strong> Tras conectar, el acceso a tu nube permanece en el llavero seguro (Keychain) de iOS — nunca sale de ahí.",
+"d.l3":"<strong>Sin publicidad, sin rastreadores.</strong> No se recopila, revende ni transmite nada con fines comerciales.",
+"d.l4":"<strong>Copia de seguridad cifrada, solo para ti.</strong> Exporta playlists, favoritos y estadísticas en un archivo protegido por contraseña — restáuralo donde quieras.",
+"d.link":"Leer la política de privacidad completa →",
+"about.eyebrow":"Nosotros",
+"about.sig":"Un reproductor pensado para <span>la música que ya tienes</span>.",
+"about.p1":"Cloud Music X nació de una observación simple: muchos ya tenemos música propia —comprada, ripeada, transferida a lo largo de los años— repartida entre una nube, un NAS y el almacenamiento del teléfono. El objetivo de Cloud Music X es reunirla.",
+"about.p2":"Es una aplicación personal, desarrollada y mantenida por un único desarrollador, centrada en tu música — no en un catálogo que vender ni en recomendaciones dictadas por un algoritmo publicitario.",
+"cta.eyebrow":"Próximamente","cta.title":"Cloud Music X llega a la App Store",
+"cta.desc":"¿Alguna pregunta, un error que reportar, o una idea de función para tu nube favorita? Escríbeme directamente.",
+"cta.privacy":"Política de privacidad",
+"footer.tagline":"Escucha tu música en local o desde la nube, en una sola interfaz.",
+"footer.app":"App","footer.contact":"Contacto","footer.legal":"Legal","footer.form":"Formulario de contacto","legal.nav.notice":"Aviso legal","legal.nav.privacy":"Privacidad","legal.nav.cookies":"Cookies","legal.nav.terms":"Términos y condiciones","legal.nav.license":"Licencia","footer.legal.notice":"Aviso legal","footer.legal.privacy":"Política de privacidad","footer.legal.cookies":"Política de cookies","footer.legal.terms":"Términos y condiciones","footer.legal.license":"Contrato de licencia",
+"footer.bottom1":"© 2026 CloudMusicX. Todos los derechos reservados.","footer.bottom2":"Hecho a mano, sin rastreadores.","doc.eyebrow":"Documentación","doc.title":"Guías y tutoriales","doc.desc":"Todo lo necesario para conectar tus fuentes y empezar con Cloud Music X.",
+"doc.nav1":"Inicio rápido","doc.nav2":"Google Drive y OneDrive","doc.nav3":"MEGA por enlace","doc.nav4":"NAS","doc.nav5":"Servidor personal","doc.nav6":"Copia de seguridad y restauración",
+"doc.s1.title":"Inicio rápido","doc.s1.p":"Bastan tres pasos para escuchar tu primera pista.",
+"doc.s1.li1":"<strong>Instala Cloud Music X</strong> desde el App Store y abre la aplicación. No hace falta cuenta.",
+"doc.s1.li2":"<strong>Elige una fuente</strong> desde la pestaña Importar: un servicio en la nube, un enlace de MEGA, un NAS, un servidor personal o archivos ya presentes en tu dispositivo.",
+"doc.s1.li3":"<strong>Importa tus pistas</strong>: Cloud Music X obtiene metadatos y portadas automáticamente y los añade a tu biblioteca unificada.",
+"doc.s2.title":"Conectar Google Drive o OneDrive",
+"doc.s2.li1":"En la pestaña Importar, selecciona <strong>Google Drive</strong> u <strong>OneDrive</strong>.",
+"doc.s2.li2":"Inicia sesión mediante la ventana de acceso seguro del servicio (OAuth) — tus credenciales nunca pasan por Cloud Music X.",
+"doc.s2.li3":"Explora tus carpetas y selecciona los archivos de audio a añadir a tu biblioteca, en streaming o descargándolos para escuchar sin conexión.",
+"doc.s3.title":"Conectar MEGA (cuenta o simple enlace)","doc.s3.intro":"Dos formas de conectar MEGA, según tus necesidades:",
+"doc.s3.li1":"<strong>Con tu cuenta MEGA</strong>: inicia sesión con tu correo y contraseña para acceder a toda tu biblioteca MEGA y elegir los archivos a añadir. Tus credenciales se envían solo a los servidores de MEGA, nunca a Cloud Music X.",
+"doc.s3.li2":"<strong>Con un enlace para compartir</strong>: copia un enlace de MEGA (carpeta o archivo), abre la pestaña Importar, luego <strong>Enlace MEGA</strong>, y pégalo.",
+"doc.s3.li3":"Con un enlace para compartir, no hace falta cuenta: el descifrado ocurre directamente en tu dispositivo.",
+"doc.s4.title":"Conectar un NAS (Emby, Jellyfin, Plex)",
+"doc.s4.li1":"Asegúrate de que el servidor multimedia (Emby, Jellyfin o Plex) esté activo en tu red doméstica o accesible de forma remota.",
+"doc.s4.li2":"En la pestaña Importar, selecciona <strong>NAS</strong> e introduce la dirección del servidor y tus credenciales.",
+"doc.s4.li3":"Tu biblioteca musical alojada en el NAS aparece directamente en Cloud Music X.",
+"doc.s5.title":"Conectar un servidor personal (FTP, WebDAV, NFS)",
+"doc.s5.li1":"En la pestaña Importar, elige el protocolo correspondiente a tu servidor: <strong>FTP</strong>, <strong>WebDAV</strong> o <strong>NFS</strong>.",
+"doc.s5.li2":"Introduce la dirección, el puerto y las credenciales de acceso a tu servidor o unidad de red.",
+"doc.s5.li3":"Explora las carpetas remotas como cualquier otra fuente en Cloud Music X.",
+"doc.s6.title":"Hacer copia de seguridad y restaurar tu biblioteca",
+"doc.s6.li1":"En los ajustes, abre <strong>Copia de seguridad</strong> y elige una contraseña para cifrar la exportación.",
+"doc.s6.li2":"El archivo generado contiene tus playlists, favoritos, estadísticas y ajustes — nunca tus archivos de audio en sí.",
+"doc.s6.li3":"Para restaurar, importa este archivo en otro dispositivo e introduce la contraseña usada al exportar.",
+"blog.eyebrow":"Blog","blog.title":"Notas de actualización","blog.soon":"Próximamente"
+},
+
+ar: {
+"nav.features":"الميزات","nav.privacy":"الخصوصية","nav.about":"من نحن","nav.contact":"تواصل","menu.home":"الرئيسية",
+"hero.kicker":"تطبيق iOS · مشغّل صوت شخصي",
+"hero.b1":"<strong>استمع</strong> إلى موسيقاك محليًا أو من السحابة، في واجهة واحدة موحّدة.",
+"hero.b2":"<strong>اربط</strong> Google Drive وMEGA وOneDrive والعديد من خدمات التخزين السحابي الأخرى.",
+"hero.b3":"<strong>اربط أجهزة NAS</strong> الخاصة بك عبر Emby أو Jellyfin أو Plex.",
+"hero.b4":"<strong>اتصل بخادمك الخاص</strong> عبر FTP أو WebDAV أو NFS.",
+"hero.b5":"<strong>بلا إعلانات</strong>، لاستماع بلا انقطاع.",
+"hero.b6":"<strong>وضع عدم الاتصال</strong> للاستماع إلى موسيقاك أينما كنت.",
+
+"hero.cta1":"نزّل التطبيق","hero.cta2":"لا جمع للبيانات",
+"hero.note":"مشغّل صوت شخصي · iOS 16 أو أحدث · بلا حساب مطلوب",
+"player.from":"من",
+"a.eyebrow":"الوجه A","a.title":"موسيقاك، أينما كانت",
+"a.desc":"لست مضطرًا لاختيار سحابة واحدة أو إعادة رفع كل شيء: يذهب Cloud Music X لجلب ملفاتك من حيث هي موجودة بالفعل.",
+"a.t1.title":"Google Drive وMEGA والمزيد…","a.t1.desc":"تسجيل دخول آمن (OAuth) إلى حسابك: تصفّح مجلداتك، استمع <strong>بالبث المباشر</strong> أو <strong>نزّل</strong> للاستماع <strong>دون اتصال</strong>.","a.t1.tag":"متوافق مع",
+"a.t2.title":"برابط بسيط","a.t2.desc":"الصق فقط رابط مشاركة لمجلد أو ملف. <strong>لا حاجة لحساب أو تسجيل دخول</strong>، كل شيء يُفكّ تشفيره مباشرة <strong>على جهازك</strong>.","a.t2.tag":"متوافق مع",
+"a.t3.title":"NAS: Emby وJellyfin وPlex","a.t3.desc":"اربط خادم الوسائط الخاص بك واعثر على مكتبتك الشخصية مباشرة داخل التطبيق.","a.t3.tag":"متوافق مع",
+"a.t4.title":"خادم: FTP وWebDAV وNFS","a.t4.desc":"الوصول إلى خادم أو مساحة تخزين شبكية عبر بروتوكولات قياسية، دون المرور بسحابة تجارية.","a.t4.tag":"متوافق مع",
+"a.t5.title":"ملفات ومجلدات الجهاز","a.t5.desc":"استورد مقطعًا واحدًا، أو عدة ملفات دفعة واحدة، أو مجلدًا كاملاً.","a.t5.tag":"محلي",
+"a.t6.title":"مكتبة موحّدة","a.t6.desc":"صفِّ حسب المصدر — الكل، بلا اتصال، محلي فقط، أو حسب الخدمة — دون تكرار أي مقطع مستورد بالفعل.","a.t6.tag":"بلا تكرار",
+"b.eyebrow":"الوجه B","b.title":"داخل المشغّل","b.desc":"تفاصيل الاستماع التي لا نلاحظها إلا حين تغيب.",
+"b.c1.title":"تلاشٍ متقاطع قابل للتعديل","b.c1.desc":"انتقال سلس بين مقطعين، من 1 إلى 12 ثانية، قابل للتعديل مباشرة من الإعدادات.",
+"b.c2.title":"تشغيل عشوائي بوضعين","b.c2.desc":"تشغيل عشوائي كلاسيكي، أو وضع «محسّن» يتجنّب تكرار نفس الفنان مرتين متتاليتين.",
+"b.c3.title":"مؤقّت النوم","b.c3.desc":"اضبط إيقاف التشغيل تلقائيًا بعد مدة تحددها، لتنام على أنغام الموسيقى.",
+"b.c4.title":"اختصارات Siri","b.c4.desc":"«شغّل الموسيقى على Cloud Music X»، أوقف مؤقتًا، أو بدّل التشغيل — بالصوت، دون فتح التطبيق حتى.",
+"c.eyebrow":"الوجه C","c.title":"الميزات الأساسية","c.desc":"اطّلع على إحصاءات الاستماع، واضبط الصوت كما يناسبك، وخصّص شكل التطبيق — دون إضاعة أمسية كاملة.",
+"c.t4.title":"إحصاءات الاستماع","c.t4.desc":"وقت الاستماع يوميًا وأسبوعيًا وشهريًا أو منذ البداية.",
+"c.t2.title":"بيانات وصور غلاف تلقائية","c.t2.desc":"يبحث Cloud Music X عن العنوان والفنان والألبوم والغلاف — أنت توافق، ويُصحَّح كل شيء بلمسة واحدة.",
+"c.t5.title":"معادل الصوت والتضخيم","c.t5.desc":"اضبط الترددات نطاقًا بنطاق، وضخّم مستوى الصوت فوق المعتاد للملفات المسجَّلة بصوت منخفض جدًا.",
+"c.t6.title":"الودجت","c.t6.desc":"تابع المقطع قيد التشغيل وأدوات التحكم مباشرة من الشاشة الرئيسية أو شاشة القفل.",
+"c.t7.title":"كلمات متزامنة","c.t7.desc":"اعرض كلمات أغانيك عبر قاعدة بيانات lrclib، متزامنة مع التشغيل عند توفرها.",
+"c.t8.title":"مظهر قابل للتخصيص","c.t8.desc":"اختر من بين عدة سمات وألوان لتلائم الواجهة ذوقك.",
+"formats.audio.label":"صيغ الصوت المدعومة","formats.subs.label":"صيغ الترجمة المدعومة (كلمات الأغاني)",
+"d.eyebrow":"الوجه D","d.title":"لا جمع للبيانات","d.desc":"Cloud Music X تطبيق شخصي، صُمم لغرض واحد فقط: أنت.",
+"d.l1":"<strong>لا حساب على Cloud Music X.</strong> تتصل مباشرة بخدمتك السحابية الخاصة، ولا تمر أبدًا بخادم تابع لـ Cloud Music X.",
+"d.l2":"<strong>الرموز محفوظة على جهازك فقط.</strong> بعد تسجيل الدخول، يبقى الوصول إلى سحابتك داخل سلسلة مفاتيح iOS الآمنة — لا يغادرها أبدًا.",
+"d.l3":"<strong>بلا إعلانات، بلا متتبّعات.</strong> لا يُجمَع أو يُعاد بيعه أو يُنقَل أي شيء لأغراض تجارية.",
+"d.l4":"<strong>نسخة احتياطية مشفّرة، لك وحدك.</strong> صدّر قوائم التشغيل والمفضّلة والإحصاءات في ملف محمي بكلمة مرور — واستعده أينما شئت.",
+"d.link":"اقرأ سياسة الخصوصية كاملة ←",
+"about.eyebrow":"من نحن",
+"about.sig":"مشغّل صُمم من أجل <span>الموسيقى التي تملكها بالفعل</span>.",
+"about.p1":"وُلد Cloud Music X من ملاحظة بسيطة: كثيرون منا يملكون بالفعل موسيقى — اشتروها، نسخوها، نقلوها على مر السنين — متناثرة بين سحابة وNAS ومساحة تخزين الهاتف. هدف Cloud Music X هو جمعها كلها.",
+"about.p2":"إنه تطبيق شخصي، طوّره ويصونه مطوّر واحد، يركّز على موسيقاك — لا على كتالوج للبيع ولا على توصيات تمليها خوارزمية إعلانية.",
+"cta.eyebrow":"قريبًا","cta.title":"Cloud Music X قادم إلى App Store",
+"cta.desc":"سؤال، خلل تريد الإبلاغ عنه، أو فكرة ميزة لخدمتك السحابية المفضّلة؟ راسلني مباشرة.",
+"cta.privacy":"سياسة الخصوصية",
+"footer.tagline":"استمع إلى موسيقاك محليًا أو من السحابة، في واجهة واحدة.",
+"footer.app":"التطبيق","footer.contact":"تواصل","footer.legal":"قانوني","footer.form":"نموذج التواصل","legal.nav.notice":"الإشعار القانوني","legal.nav.privacy":"الخصوصية","legal.nav.cookies":"ملفات تعريف الارتباط","legal.nav.terms":"الشروط والأحكام","legal.nav.license":"الترخيص","footer.legal.notice":"الإشعار القانوني","footer.legal.privacy":"سياسة الخصوصية","footer.legal.cookies":"سياسة ملفات تعريف الارتباط","footer.legal.terms":"الشروط والأحكام","footer.legal.license":"اتفاقية الترخيص",
+"footer.bottom1":"© 2026 CloudMusicX. جميع الحقوق محفوظة.","footer.bottom2":"صُنع يدويًا، بلا متتبّعات.","doc.eyebrow":"التوثيق","doc.title":"الأدلة والدروس","doc.desc":"كل ما تحتاجه لربط مصادرك والبدء مع Cloud Music X.",
+"doc.nav1":"بداية سريعة","doc.nav2":"Google Drive وOneDrive","doc.nav3":"MEGA عبر رابط","doc.nav4":"NAS","doc.nav5":"خادم شخصي","doc.nav6":"النسخ الاحتياطي والاستعادة",
+"doc.s1.title":"بداية سريعة","doc.s1.p":"ثلاث خطوات كافية للاستماع إلى أول مقطع.",
+"doc.s1.li1":"<strong>ثبّت Cloud Music X</strong> من App Store، ثم افتح التطبيق. لا حاجة لحساب.",
+"doc.s1.li2":"<strong>اختر مصدرًا</strong> من علامة تبويب الاستيراد: خدمة سحابية، رابط MEGA، NAS، خادم شخصي، أو ملفات موجودة بالفعل على جهازك.",
+"doc.s1.li3":"<strong>استورد مقاطعك</strong>: يبحث Cloud Music X عن البيانات الوصفية والأغلفة تلقائيًا، ثم يضيفها إلى مكتبتك الموحّدة.",
+"doc.s2.title":"ربط Google Drive أو OneDrive",
+"doc.s2.li1":"في علامة تبويب الاستيراد، اختر <strong>Google Drive</strong> أو <strong>OneDrive</strong>.",
+"doc.s2.li2":"سجّل الدخول عبر نافذة تسجيل الدخول الآمنة للخدمة (OAuth) — بيانات اعتمادك لا تمر أبدًا عبر Cloud Music X.",
+"doc.s2.li3":"تصفّح مجلداتك واختر ملفات الصوت لإضافتها إلى مكتبتك، بالبث المباشر أو بتنزيلها للاستماع دون اتصال.",
+"doc.s3.title":"ربط MEGA (حساب أو رابط بسيط)","doc.s3.intro":"طريقتان لربط MEGA، حسب احتياجك:",
+"doc.s3.li1":"<strong>باستخدام حساب MEGA</strong>: سجّل الدخول بالبريد الإلكتروني وكلمة المرور للوصول إلى كامل مكتبتك على MEGA واختيار الملفات لإضافتها. تُرسل بياناتك إلى خوادم MEGA فقط، وليس إلى Cloud Music X أبدًا.",
+"doc.s3.li2":"<strong>باستخدام رابط مشاركة</strong>: انسخ رابط مشاركة من MEGA (مجلد أو ملف)، افتح علامة تبويب الاستيراد ثم <strong>رابط MEGA</strong>، والصق الرابط.",
+"doc.s3.li3":"مع رابط المشاركة، لا حاجة لحساب: يتم فك التشفير مباشرة على جهازك.",
+"doc.s4.title":"ربط NAS (Emby وJellyfin وPlex)",
+"doc.s4.li1":"تأكد من أن خادم الوسائط (Emby أو Jellyfin أو Plex) يعمل على شبكتك المنزلية أو يمكن الوصول إليه عن بُعد.",
+"doc.s4.li2":"في علامة تبويب الاستيراد، اختر <strong>NAS</strong>، ثم أدخل عنوان الخادم وبيانات اعتمادك.",
+"doc.s4.li3":"تظهر مكتبتك الموسيقية المستضافة على NAS مباشرة داخل Cloud Music X.",
+"doc.s5.title":"ربط خادم شخصي (FTP وWebDAV وNFS)",
+"doc.s5.li1":"في علامة تبويب الاستيراد، اختر البروتوكول المناسب لخادمك: <strong>FTP</strong> أو <strong>WebDAV</strong> أو <strong>NFS</strong>.",
+"doc.s5.li2":"أدخل العنوان والمنفذ وبيانات اعتماد الوصول إلى خادمك أو مساحتك الشبكية.",
+"doc.s5.li3":"تصفّح المجلدات البعيدة مثل أي مصدر آخر في Cloud Music X.",
+"doc.s6.title":"نسخ مكتبتك احتياطيًا واستعادتها",
+"doc.s6.li1":"في الإعدادات، افتح <strong>النسخ الاحتياطي</strong> واختر كلمة مرور لتشفير التصدير.",
+"doc.s6.li2":"يحتوي الملف المُنشأ على قوائم التشغيل والمفضلة والإحصاءات والإعدادات — أبدًا ملفات الصوت نفسها.",
+"doc.s6.li3":"للاستعادة، استورد هذا الملف على جهاز آخر وأدخل كلمة المرور المستخدمة عند التصدير.",
+"blog.eyebrow":"المدونة","blog.title":"ملاحظات التحديث","blog.soon":"قريبًا"
+},
+
+};
+
+// Contenu de la fenêtre modale "Compatible avec" (services cloud / NAS / réseau), par langue.
+window.CM_MODALS = {
+  fr: {
+    drives: {
+      title: "Tous les drives compatibles",
+      rows: [
+        { name: "Google Drive", comment: "Offre gratuite généreuse, sans limite de téléchargement, avec un débit moyen élevé et une connexion sécurisée (OAuth).", storage: "15 Go" },
+        { name: "MEGA", comment: "Chiffrement de bout en bout et bon débit, mais la bande passante gratuite est limitée en cas d'usage intensif.", storage: "20 Go" },
+        { name: "OneDrive", comment: "Connexion sécurisée et bonne intégration à l'écosystème Microsoft, mais l'offre gratuite reste la plus modeste du marché.", storage: "5 Go" },
+        { name: "Dropbox", comment: "Synchronisation rapide et fiable sur connexion chiffrée, avec une offre gratuite limitée en espace.", storage: "2 Go" },
+        { name: "Box", comment: "Connexion sécurisée orientée usage professionnel, avec une limite de 250 Mo par fichier sur l'offre gratuite.", storage: "10 Go" },
+        { name: "Yandex Disk", comment: "Configuration rapide et connexion chiffrée, avec un débit correct sur une offre gratuite standard.", storage: "5 Go" }
+      ]
+    },
+    links: {
+      title: "Liens de partage compatibles",
+      rows: [
+        { name: "MEGA", comment: "Débit élevé et déchiffrement effectué directement sur l'appareil, sans limite de téléchargement particulière.", storage: "20 Go" }
+      ]
+    },
+    nas: {
+      title: "Serveurs NAS compatibles",
+      rows: [
+        { name: "Jellyfin", comment: "Solution open-source et entièrement gratuite, sans compte ni abonnement, avec un débit qui dépend uniquement de votre réseau." },
+        { name: "Emby", comment: "Interface soignée et applications natives sur la plupart des plateformes, avec connexion chiffrable via HTTPS." },
+        { name: "Plex", comment: "Le plus populaire des trois, simple à configurer, avec un accès à distance sécurisé disponible en option." }
+      ]
+    },
+    network: {
+      title: "Protocoles réseau compatibles",
+      rows: [
+        { name: "WebDAV", comment: "Standard ouvert largement supporté, avec authentification et chiffrement via HTTPS." },
+        { name: "FTP", comment: "Protocole simple et universel, mais non chiffré par défaut : à réserver à un réseau de confiance." },
+        { name: "NFS", comment: "Débit élevé en réseau local et très répandu sous Linux, sans chiffrement natif." }
+      ]
+    }
+  },
+  en: {
+    drives: {
+      title: "All compatible drives",
+      rows: [
+        { name: "Google Drive", comment: "Generous free plan with no download limit, solid average bandwidth and a secure connection (OAuth).", storage: "15 GB" },
+        { name: "MEGA", comment: "End-to-end encryption and good bandwidth, though the free tier is throttled under heavy use.", storage: "20 GB" },
+        { name: "OneDrive", comment: "Secure connection and tight integration with the Microsoft ecosystem, but the smallest free plan on the market.", storage: "5 GB" },
+        { name: "Dropbox", comment: "Fast, reliable sync over an encrypted connection, with a free plan limited in storage space.", storage: "2 GB" },
+        { name: "Box", comment: "Secure connection geared toward professional use, with a 250 MB per-file limit on the free plan.", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "Quick setup and an encrypted connection, with decent bandwidth on the standard free plan.", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "Compatible share links",
+      rows: [
+        { name: "MEGA", comment: "High bandwidth with decryption performed directly on your device, with no particular download limit.", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "Compatible NAS servers",
+      rows: [
+        { name: "Jellyfin", comment: "Open-source and completely free, no account or subscription needed, with bandwidth limited only by your own network." },
+        { name: "Emby", comment: "Polished interface and native apps on most platforms, with an HTTPS-encryptable connection." },
+        { name: "Plex", comment: "The most popular of the three, easy to set up, with optional secure remote access." }
+      ]
+    },
+    network: {
+      title: "Compatible network protocols",
+      rows: [
+        { name: "WebDAV", comment: "Open, widely supported standard, with authentication and HTTPS encryption." },
+        { name: "FTP", comment: "Simple, universal protocol, but unencrypted by default — best kept to a trusted network." },
+        { name: "NFS", comment: "High bandwidth on a local network and very common on Linux, with no native encryption." }
+      ]
+    }
+  },
+  de: {
+    drives: {
+      title: "Alle kompatiblen Drives",
+      rows: [
+        { name: "Google Drive", comment: "Großzügiger kostenloser Plan ohne Download-Limit, solide durchschnittliche Bandbreite und eine sichere Verbindung (OAuth).", storage: "15 GB" },
+        { name: "MEGA", comment: "Ende-zu-Ende-Verschlüsselung und gute Bandbreite, wobei die kostenlose Bandbreite bei starker Nutzung gedrosselt wird.", storage: "20 GB" },
+        { name: "OneDrive", comment: "Sichere Verbindung und gute Integration in das Microsoft-Ökosystem, aber der kleinste kostenlose Plan auf dem Markt.", storage: "5 GB" },
+        { name: "Dropbox", comment: "Schnelle, zuverlässige Synchronisierung über eine verschlüsselte Verbindung, mit begrenztem kostenlosem Speicherplatz.", storage: "2 GB" },
+        { name: "Box", comment: "Sichere, auf professionelle Nutzung ausgerichtete Verbindung, mit einem Limit von 250 MB pro Datei im kostenlosen Plan.", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "Schnelle Einrichtung und verschlüsselte Verbindung, mit ordentlicher Bandbreite im kostenlosen Standardplan.", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "Kompatible Freigabelinks",
+      rows: [
+        { name: "MEGA", comment: "Hohe Bandbreite, Entschlüsselung direkt auf deinem Gerät, ohne besonderes Download-Limit.", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "Kompatible NAS-Server",
+      rows: [
+        { name: "Jellyfin", comment: "Open-Source und komplett kostenlos, ohne Konto oder Abo, die Bandbreite hängt nur von deinem eigenen Netzwerk ab." },
+        { name: "Emby", comment: "Übersichtliche Oberfläche und native Apps auf den meisten Plattformen, mit über HTTPS verschlüsselbarer Verbindung." },
+        { name: "Plex", comment: "Der beliebteste der drei, einfach einzurichten, mit optionalem sicherem Fernzugriff." }
+      ]
+    },
+    network: {
+      title: "Kompatible Netzwerkprotokolle",
+      rows: [
+        { name: "WebDAV", comment: "Offener, weit verbreiteter Standard mit Authentifizierung und HTTPS-Verschlüsselung." },
+        { name: "FTP", comment: "Einfaches, universelles Protokoll, aber standardmäßig unverschlüsselt — nur in einem vertrauenswürdigen Netzwerk verwenden." },
+        { name: "NFS", comment: "Hohe Bandbreite im lokalen Netzwerk und unter Linux weit verbreitet, ohne native Verschlüsselung." }
+      ]
+    }
+  },
+  it: {
+    drives: {
+      title: "Tutti i drive compatibili",
+      rows: [
+        { name: "Google Drive", comment: "Piano gratuito generoso senza limiti di download, buona velocità media e connessione sicura (OAuth).", storage: "15 GB" },
+        { name: "MEGA", comment: "Crittografia end-to-end e buona velocità, anche se la banda gratuita viene limitata in caso di uso intenso.", storage: "20 GB" },
+        { name: "OneDrive", comment: "Connessione sicura e buona integrazione con l'ecosistema Microsoft, ma il piano gratuito più modesto del mercato.", storage: "5 GB" },
+        { name: "Dropbox", comment: "Sincronizzazione rapida e affidabile su connessione crittografata, con un piano gratuito limitato nello spazio.", storage: "2 GB" },
+        { name: "Box", comment: "Connessione sicura pensata per un uso professionale, con un limite di 250 MB per file nel piano gratuito.", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "Configurazione rapida e connessione crittografata, con una velocità discreta nel piano gratuito standard.", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "Link di condivisione compatibili",
+      rows: [
+        { name: "MEGA", comment: "Velocità elevata e decrittazione eseguita direttamente sul dispositivo, senza un limite di download particolare.", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "Server NAS compatibili",
+      rows: [
+        { name: "Jellyfin", comment: "Open-source e completamente gratuito, senza account né abbonamento, con una velocità che dipende solo dalla tua rete." },
+        { name: "Emby", comment: "Interfaccia curata e app native sulla maggior parte delle piattaforme, con connessione crittografabile via HTTPS." },
+        { name: "Plex", comment: "Il più popolare dei tre, semplice da configurare, con accesso remoto sicuro disponibile come opzione." }
+      ]
+    },
+    network: {
+      title: "Protocolli di rete compatibili",
+      rows: [
+        { name: "WebDAV", comment: "Standard aperto e ampiamente supportato, con autenticazione e crittografia HTTPS." },
+        { name: "FTP", comment: "Protocollo semplice e universale, ma non crittografato di default: da riservare a una rete affidabile." },
+        { name: "NFS", comment: "Velocità elevata in rete locale e molto diffuso su Linux, senza crittografia nativa." }
+      ]
+    }
+  },
+  es: {
+    drives: {
+      title: "Todos los drives compatibles",
+      rows: [
+        { name: "Google Drive", comment: "Plan gratuito generoso sin límite de descarga, buena velocidad media y conexión segura (OAuth).", storage: "15 GB" },
+        { name: "MEGA", comment: "Cifrado de extremo a extremo y buena velocidad, aunque el ancho de banda gratuito se limita con un uso intenso.", storage: "20 GB" },
+        { name: "OneDrive", comment: "Conexión segura y buena integración con el ecosistema Microsoft, pero el plan gratuito más modesto del mercado.", storage: "5 GB" },
+        { name: "Dropbox", comment: "Sincronización rápida y fiable sobre conexión cifrada, con un plan gratuito limitado en espacio.", storage: "2 GB" },
+        { name: "Box", comment: "Conexión segura orientada a uso profesional, con un límite de 250 MB por archivo en el plan gratuito.", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "Configuración rápida y conexión cifrada, con una velocidad correcta en el plan gratuito estándar.", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "Enlaces de compartición compatibles",
+      rows: [
+        { name: "MEGA", comment: "Velocidad alta y descifrado realizado directamente en tu dispositivo, sin límite de descarga particular.", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "Servidores NAS compatibles",
+      rows: [
+        { name: "Jellyfin", comment: "Open-source y totalmente gratuito, sin cuenta ni suscripción, con una velocidad que depende solo de tu propia red." },
+        { name: "Emby", comment: "Interfaz cuidada y apps nativas en la mayoría de plataformas, con conexión cifrable vía HTTPS." },
+        { name: "Plex", comment: "El más popular de los tres, fácil de configurar, con acceso remoto seguro disponible como opción." }
+      ]
+    },
+    network: {
+      title: "Protocolos de red compatibles",
+      rows: [
+        { name: "WebDAV", comment: "Estándar abierto y ampliamente soportado, con autenticación y cifrado HTTPS." },
+        { name: "FTP", comment: "Protocolo simple y universal, pero sin cifrar por defecto: resérvalo para una red de confianza." },
+        { name: "NFS", comment: "Velocidad alta en red local y muy usado en Linux, sin cifrado nativo." }
+      ]
+    }
+  },
+  zh: {
+    drives: {
+      title: "所有兼容的网盘",
+      rows: [
+        { name: "Google Drive", comment: "免费额度慷慨，无下载限制，平均速率较高，并采用安全连接（OAuth）。", storage: "15 GB" },
+        { name: "MEGA", comment: "端到端加密，速率良好，但高强度使用时免费带宽会受到限制。", storage: "20 GB" },
+        { name: "OneDrive", comment: "连接安全，与微软生态系统集成良好，但免费额度是市面上最小的。", storage: "5 GB" },
+        { name: "Dropbox", comment: "同步快速可靠，连接加密，但免费额度存储空间有限。", storage: "2 GB" },
+        { name: "Box", comment: "连接安全，面向专业场景，免费额度下单个文件限制为 250 MB。", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "配置快捷，连接加密，标准免费额度下速率尚可。", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "支持的分享链接",
+      rows: [
+        { name: "MEGA", comment: "速率高，解密直接在设备本地完成，没有特别的下载限制。", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "支持的 NAS 服务器",
+      rows: [
+        { name: "Jellyfin", comment: "开源且完全免费，无需账号或订阅，速率仅取决于你自己的网络。" },
+        { name: "Emby", comment: "界面精致，在大多数平台都有原生应用，支持通过 HTTPS 加密连接。" },
+        { name: "Plex", comment: "三者中最受欢迎，配置简单，可选启用安全的远程访问。" }
+      ]
+    },
+    network: {
+      title: "支持的网络协议",
+      rows: [
+        { name: "WebDAV", comment: "开放且广泛支持的标准，支持身份验证和 HTTPS 加密。" },
+        { name: "FTP", comment: "简单通用的协议，但默认不加密——建议仅在可信网络中使用。" },
+        { name: "NFS", comment: "局域网内速率高，在 Linux 上非常普及，但没有原生加密。" }
+      ]
+    }
+  },
+  hi: {
+    drives: {
+      title: "सभी सपोर्टेड ड्राइव",
+      rows: [
+        { name: "Google Drive", comment: "बिना डाउनलोड लिमिट के उदार फ्री प्लान, अच्छी औसत स्पीड और सिक्योर कनेक्शन (OAuth)।", storage: "15 GB" },
+        { name: "MEGA", comment: "एंड-टू-एंड एन्क्रिप्शन और अच्छी स्पीड, लेकिन ज़्यादा इस्तेमाल पर फ्री बैंडविड्थ सीमित हो जाती है।", storage: "20 GB" },
+        { name: "OneDrive", comment: "सिक्योर कनेक्शन और Microsoft इकोसिस्टम के साथ अच्छा इंटीग्रेशन, लेकिन मार्केट का सबसे छोटा फ्री प्लान।", storage: "5 GB" },
+        { name: "Dropbox", comment: "एन्क्रिप्टेड कनेक्शन पर तेज़ और भरोसेमंद सिंक, लेकिन फ्री प्लान में स्टोरेज सीमित।", storage: "2 GB" },
+        { name: "Box", comment: "प्रोफेशनल इस्तेमाल के लिए बना सिक्योर कनेक्शन, फ्री प्लान में प्रति फ़ाइल 250 MB की लिमिट।", storage: "10 GB" },
+        { name: "Yandex Disk", comment: "तेज़ सेटअप और एन्क्रिप्टेड कनेक्शन, स्टैंडर्ड फ्री प्लान में ठीक-ठाक स्पीड।", storage: "5 GB" }
+      ]
+    },
+    links: {
+      title: "सपोर्टेड शेयर लिंक",
+      rows: [
+        { name: "MEGA", comment: "तेज़ स्पीड और डिक्रिप्शन सीधे आपके डिवाइस पर होता है, कोई खास डाउनलोड लिमिट नहीं।", storage: "20 GB" }
+      ]
+    },
+    nas: {
+      title: "सपोर्टेड NAS सर्वर",
+      rows: [
+        { name: "Jellyfin", comment: "ओपन-सोर्स और पूरी तरह मुफ़्त, बिना अकाउंट या सब्सक्रिप्शन के, स्पीड सिर्फ़ आपके अपने नेटवर्क पर निर्भर करती है।" },
+        { name: "Emby", comment: "साफ़-सुथरा इंटरफ़ेस और ज़्यादातर प्लेटफ़ॉर्म्स पर नेटिव ऐप्स, HTTPS के ज़रिए एन्क्रिप्टेबल कनेक्शन।" },
+        { name: "Plex", comment: "तीनों में सबसे लोकप्रिय, सेटअप करना आसान, विकल्प के तौर पर सिक्योर रिमोट एक्सेस उपलब्ध।" }
+      ]
+    },
+    network: {
+      title: "सपोर्टेड नेटवर्क प्रोटोकॉल",
+      rows: [
+        { name: "WebDAV", comment: "खुला और व्यापक रूप से सपोर्टेड स्टैंडर्ड, ऑथेंटिकेशन और HTTPS एन्क्रिप्शन के साथ।" },
+        { name: "FTP", comment: "सिंपल और यूनिवर्सल प्रोटोकॉल, लेकिन डिफ़ॉल्ट रूप से अनएन्क्रिप्टेड — सिर्फ़ भरोसेमंद नेटवर्क पर इस्तेमाल करें।" },
+        { name: "NFS", comment: "लोकल नेटवर्क पर तेज़ स्पीड और Linux पर बेहद आम, बिना नेटिव एन्क्रिप्शन के।" }
+      ]
+    }
+  },
+  ar: {
+    drives: {
+      title: "كل خدمات التخزين المتوافقة",
+      rows: [
+        { name: "Google Drive", comment: "خطة مجانية سخية بلا حدّ للتنزيل، وسرعة متوسطة جيدة، واتصال آمن (OAuth).", storage: "15 جيجابايت" },
+        { name: "MEGA", comment: "تشفير من طرف إلى طرف وسرعة جيدة، لكن يُحدّ من النطاق الترددي المجاني عند الاستخدام المكثّف.", storage: "20 جيجابايت" },
+        { name: "OneDrive", comment: "اتصال آمن وتكامل جيد مع منظومة مايكروسوفت، لكنها أصغر خطة مجانية في السوق.", storage: "5 جيجابايت" },
+        { name: "Dropbox", comment: "مزامنة سريعة وموثوقة عبر اتصال مشفّر، مع خطة مجانية محدودة المساحة.", storage: "2 جيجابايت" },
+        { name: "Box", comment: "اتصال آمن موجّه للاستخدام الاحترافي، بحدّ 250 ميجابايت لكل ملف في الخطة المجانية.", storage: "10 جيجابايت" },
+        { name: "Yandex Disk", comment: "إعداد سريع واتصال مشفّر، بسرعة مقبولة في الخطة المجانية القياسية.", storage: "5 جيجابايت" }
+      ]
+    },
+    links: {
+      title: "روابط المشاركة المتوافقة",
+      rows: [
+        { name: "MEGA", comment: "سرعة عالية وفك التشفير يتم مباشرة على جهازك، دون حدّ تنزيل خاص.", storage: "20 جيجابايت" }
+      ]
+    },
+    nas: {
+      title: "خوادم NAS المتوافقة",
+      rows: [
+        { name: "Jellyfin", comment: "مفتوح المصدر ومجاني بالكامل، دون حساب أو اشتراك، وتعتمد السرعة فقط على شبكتك الخاصة." },
+        { name: "Emby", comment: "واجهة أنيقة وتطبيقات أصلية على معظم المنصات، مع اتصال قابل للتشفير عبر HTTPS." },
+        { name: "Plex", comment: "الأكثر شيوعًا بين الثلاثة، سهل الإعداد، مع إمكانية الوصول عن بُعد الآمن كخيار." }
+      ]
+    },
+    network: {
+      title: "بروتوكولات الشبكة المتوافقة",
+      rows: [
+        { name: "WebDAV", comment: "معيار مفتوح ومدعوم على نطاق واسع، مع مصادقة وتشفير HTTPS." },
+        { name: "FTP", comment: "بروتوكول بسيط وعام، لكنه غير مشفّر افتراضيًا — يُفضَّل استخدامه فقط على شبكة موثوقة." },
+        { name: "NFS", comment: "سرعة عالية على الشبكة المحلية وشائع جدًا على Linux، دون تشفير أصلي." }
+      ]
+    }
+  }
+};

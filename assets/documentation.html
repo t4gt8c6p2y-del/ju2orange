@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentation — Cloud Music X</title>
+<meta name="description" content="Guides et tutoriels pour connecter vos sources et bien démarrer avec Cloud Music X.">
+<link rel="icon" type="image/png" href="assets/favicon.png?v=2">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav__row">
+    <div class="nav__tabs" id="nav-tabs">
+      <a href="index.html" class="nav__tab is-brand">
+        <img src="assets/logo.png?v=2" alt="Cloud Music X" width="22" height="22">
+        <span>Cloud Music X</span>
+      </a>
+      <span class="nav__indicator" id="nav-indicator"></span>
+    </div>
+    <div class="nav__right">
+      <select class="lang-select" aria-label="Langue / Language"></select>
+      <div class="menu-wrap">
+        <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+        <div class="menu-panel" id="menu-panel">
+          <div class="menu-group" id="menu-accueil-group">
+            <div class="menu-toggle">
+              <a href="index.html" class="menu-heading" data-i18n="menu.home">Accueil</a>
+              <button class="menu-chevron-btn" id="menu-accueil-toggle" type="button" aria-expanded="false" aria-label="Afficher les sous-catégories">
+                <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+            <div class="menu-subwrap">
+              <a href="index.html#fonctionnalites" class="menu-sub" data-i18n="nav.features">Fonctionnalités</a>
+              <a href="index.html#confidentialite" class="menu-sub" data-i18n="nav.privacy">Confidentialité</a>
+              <a href="index.html#a-propos" class="menu-sub" data-i18n="nav.about">À propos</a>
+            </div>
+          </div>
+          <div class="menu-group">
+            <a href="documentation.html" class="menu-heading" data-i18n="doc.eyebrow">Documentation</a>
+          </div>
+          <div class="menu-group">
+            <a href="blog.html" class="menu-heading" data-i18n="blog.eyebrow">Blog</a>
+          </div>
+          <div class="menu-legal">
+            <span class="menu-legal-label" data-i18n="footer.legal">Légal</span>
+            <a href="legal/legal-notice.html" data-i18n="legal.nav.notice">Mentions légales</a>
+            <a href="legal/privacy-policy.html" data-i18n="legal.nav.privacy">Confidentialité</a>
+            <a href="legal/cookie-policy.html" data-i18n="legal.nav.cookies">Cookies</a>
+            <a href="legal/terms-and-conditions.html" data-i18n="legal.nav.terms">Conditions générales</a>
+            <a href="legal/license-agreement.html" data-i18n="legal.nav.license">Licence</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+
+<section class="legal-hero">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="doc.eyebrow">Documentation</span>
+    <h1 style="font-size:clamp(30px,4.5vw,44px); margin-top:12px;" data-i18n="doc.title">Guides &amp; tutoriels</h1>
+    <p data-i18n="doc.desc">Tout ce qu'il faut pour connecter vos sources et bien démarrer avec Cloud Music X.</p>
+    <div class="legal-nav">
+  <a href="#demarrage" data-i18n="doc.nav1">Démarrage rapide</a>
+  <a href="#drives" data-i18n="doc.nav2">Google Drive &amp; OneDrive</a>
+  <a href="#mega" data-i18n="doc.nav3">MEGA par lien</a>
+  <a href="#nas" data-i18n="doc.nav4">NAS</a>
+  <a href="#serveur" data-i18n="doc.nav5">Serveur personnel</a>
+  <a href="#sauvegarde" data-i18n="doc.nav6">Sauvegarde &amp; restauration</a>
+</div>
+  </div>
+</section>
+
+<section class="legal-body">
+  <div class="wrap">
+
+<h2 id="demarrage" data-i18n="doc.s1.title">Démarrage rapide</h2>
+<p data-i18n="doc.s1.p">Trois étapes suffisent pour écouter votre première piste.</p>
+<ol>
+  <li data-i18n="doc.s1.li1"><strong>Installez Cloud Music X</strong> depuis l'App Store, puis ouvrez l'application. Aucun compte n'est nécessaire.</li>
+  <li data-i18n="doc.s1.li2"><strong>Choisissez une source</strong> depuis l'onglet Import : un service cloud, un lien MEGA, un NAS, un serveur personnel, ou les fichiers déjà présents sur votre appareil.</li>
+  <li data-i18n="doc.s1.li3"><strong>Importez vos morceaux</strong> : Cloud Music X récupère les métadonnées et pochettes automatiquement, puis les ajoute à votre bibliothèque unifiée.</li>
+</ol>
+
+<h2 id="drives" data-i18n="doc.s2.title">Connecter Google Drive ou OneDrive</h2>
+<ol>
+  <li data-i18n="doc.s2.li1">Dans l'onglet Import, sélectionnez <strong>Google Drive</strong> ou <strong>OneDrive</strong>.</li>
+  <li data-i18n="doc.s2.li2">Connectez-vous via la fenêtre de connexion sécurisée du service (OAuth) — vos identifiants ne transitent jamais par Cloud Music X.</li>
+  <li data-i18n="doc.s2.li3">Parcourez vos dossiers et sélectionnez les fichiers audio à ajouter à votre bibliothèque, en streaming ou en téléchargement pour une écoute hors ligne.</li>
+</ol>
+
+<h2 id="mega" data-i18n="doc.s3.title">Connecter MEGA (compte ou simple lien)</h2>
+<p data-i18n="doc.s3.intro">Deux façons de connecter MEGA, selon vos besoins :</p>
+<ol>
+  <li data-i18n="doc.s3.li1"><strong>Avec votre compte MEGA</strong> : dans l'onglet Import, sélectionnez MEGA puis connectez-vous avec votre e-mail et votre mot de passe. Vous accédez alors à l'ensemble de vos fichiers MEGA et choisissez ceux à ajouter à votre bibliothèque. Vos identifiants sont saisis directement sur votre appareil et transmis uniquement aux serveurs de MEGA, jamais à Cloud Music X.</li>
+  <li data-i18n="doc.s3.li2"><strong>Par simple lien de partage</strong> : copiez un lien de partage MEGA (dossier ou fichier), ouvrez l'onglet Import puis <strong>Lien MEGA</strong>, et collez le lien.</li>
+  <li data-i18n="doc.s3.li3">Avec un lien de partage, aucun compte n'est nécessaire : le déchiffrement se fait directement sur votre appareil.</li>
+</ol>
+
+<h2 id="nas" data-i18n="doc.s4.title">Connecter un NAS (Emby, Jellyfin, Plex)</h2>
+<ol>
+  <li data-i18n="doc.s4.li1">Assurez-vous que le serveur multimédia (Emby, Jellyfin ou Plex) est actif sur votre réseau domestique ou accessible à distance.</li>
+  <li data-i18n="doc.s4.li2">Dans l'onglet Import, sélectionnez <strong>NAS</strong>, puis renseignez l'adresse du serveur et vos identifiants.</li>
+  <li data-i18n="doc.s4.li3">Votre bibliothèque musicale hébergée sur le NAS apparaît directement dans Cloud Music X.</li>
+</ol>
+
+<h2 id="serveur" data-i18n="doc.s5.title">Connecter un serveur personnel (FTP, WebDAV, NFS)</h2>
+<ol>
+  <li data-i18n="doc.s5.li1">Dans l'onglet Import, choisissez le protocole correspondant à votre serveur : <strong>FTP</strong>, <strong>WebDAV</strong> ou <strong>NFS</strong>.</li>
+  <li data-i18n="doc.s5.li2">Renseignez l'adresse, le port et les identifiants d'accès à votre serveur ou espace réseau.</li>
+  <li data-i18n="doc.s5.li3">Parcourez les dossiers distants comme n'importe quelle autre source dans Cloud Music X.</li>
+</ol>
+
+<h2 id="sauvegarde" data-i18n="doc.s6.title">Sauvegarder et restaurer votre bibliothèque</h2>
+<ol>
+  <li data-i18n="doc.s6.li1">Dans les réglages, ouvrez <strong>Sauvegarde</strong> et choisissez un mot de passe pour chiffrer l'export.</li>
+  <li data-i18n="doc.s6.li2">Le fichier généré contient vos playlists, favoris, statistiques et réglages — jamais vos fichiers audio eux-mêmes.</li>
+  <li data-i18n="doc.s6.li3">Pour restaurer, importez ce fichier sur un autre appareil et saisissez le mot de passe utilisé lors de l'export.</li>
+</ol>
+
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <h4 data-i18n="footer.app">App</h4>
+        <ul>
+          <li><a href="index.html#fonctionnalites" data-i18n="nav.features">Fonctionnalités</a></li>
+          <li><a href="index.html#confidentialite" data-i18n="nav.privacy">Confidentialité</a></li>
+          <li><a href="index.html#a-propos" data-i18n="nav.about">À propos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <ul>
+          <li><a href="mailto:CloudMusicContact@proton.me">CloudMusicContact@proton.me</a></li>
+          <li><a href="index.html#contact" data-i18n="footer.form">Formulaire de contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.legal">Légal</h4>
+        <ul>
+          <li><a href="legal/legal-notice.html" data-i18n="footer.legal.notice">Mentions légales</a></li>
+          <li><a href="legal/privacy-policy.html" data-i18n="footer.legal.privacy">Politique de confidentialité</a></li>
+          <li><a href="legal/cookie-policy.html" data-i18n="footer.legal.cookies">Politique de cookies</a></li>
+          <li><a href="legal/terms-and-conditions.html" data-i18n="footer.legal.terms">Conditions générales</a></li>
+          <li><a href="legal/license-agreement.html" data-i18n="footer.legal.license">Contrat de licence</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer.bottom1">© 2026 CloudMusicX. Tous droits réservés.</span>
+      <span data-i18n="footer.bottom2">Fait à la main, sans tracker.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
