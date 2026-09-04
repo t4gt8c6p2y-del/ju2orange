@@ -116,7 +116,7 @@ p{ margin: 0; }
   align-items: center;
   gap: 9px;
   padding: 18px 2px;
-  font-size: 17px;
+  font-size: 13px;
   color: var(--text-dim);
   white-space: nowrap;
   transition: color 0.15s ease;
@@ -437,6 +437,9 @@ p{ margin: 0; }
    Sections génériques
    --------------------------------------------------------- */
 section{ padding: 100px 0; }
+#fonctionnalites, #confidentialite, #a-propos, #contact{
+  scroll-margin-top: 100px;
+}
 .section-head{
   display: flex;
   justify-content: space-between;
